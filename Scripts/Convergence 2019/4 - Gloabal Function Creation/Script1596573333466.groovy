@@ -63,19 +63,19 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Scr
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Data Source Variable\'])[2]/following::i[1]')
 
-WebUI.setText(findTestObject('Scripts/Script Editor/input_Add Input Parameter'), 'in')
+WebUI.setText(findTestObject('Convergence Administration Console/Scripts/Script Editor/input_Add Input Parameter'), 'in')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Input Parameter\'])[1]/following::i[1]')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Data Source Variable\'])[2]/following::i[1]')
 
-WebUI.sendKeys(findTestObject('Scripts/Script Editor/input_Add Input Parameter'), 'myParameter')
+WebUI.sendKeys(findTestObject('Convergence Administration Console/Scripts/Script Editor/input_Add Input Parameter'), 'myParameter')
 
 selenium.click('link=Add')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Input Parameter\'])[2]/following::i[1]')
 
-WebUI.sendKeys(findTestObject('Scripts/Script Editor/input_Add Output Parameter'), 'out')
+WebUI.sendKeys(findTestObject('Convergence Administration Console/Scripts/Script Editor/input_Add Output Parameter'), 'out')
 
 selenium.click('link=Add')
 
