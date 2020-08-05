@@ -108,7 +108,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('id=projectName')
 
-WebUI.setText(findTestObject('Projects/Search Filter'), '10172018_test')
+WebUI.setText(findTestObject('Convergence Administration Console/Projects/Search Filter'), '10172018_test')
 
 selenium.click('id=projectDescription')
 
