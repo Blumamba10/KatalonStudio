@@ -4,4 +4,39 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://localhost:8085/tdes'</initValue>
+      <name>tdesURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1919'</initValue>
+      <name>ExpectedVersion</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'c19_201231_0921'</initValue>
+      <name>dbName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://localhost:8082/cv'</initValue>
+      <name>cvURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\njones\\Desktop\\FilesForTesting\\835 Remits\\835_2patients_JayCannon_WilliamHarrison.txt'</initValue>
+      <name>uploadfile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\njones\\Katalon Studio\\Convergence 2019\\ScreenShots\\'</initValue>
+      <name>ssPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://localhost:8085/webapp'</initValue>
+      <name>webappURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

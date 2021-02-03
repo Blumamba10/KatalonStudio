@@ -9,20 +9,20 @@
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>Local</profileName>
+            <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/2019 Convergence Install Smoke Test</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Convergence/Install Smoke Test - MYSQL</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>Local</profileName>
+            <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/2019 Convergence Install Smoke Test</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Convergence/Install Smoke Test - MYSQL</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
