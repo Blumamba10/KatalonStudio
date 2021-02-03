@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>InsertFormField_btn</name>
+   <tag></tag>
+   <elementGuidId>d769b733-4110-45b6-aa8d-947ff00221ac</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[2]/li[2]/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>far fa-edit</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;&quot;]/body[1]/app-root[1]/main-component[1]/div[@class=&quot;tte-container&quot;]/div[@class=&quot;container tte-sidebar-container&quot;]/div[@class=&quot;row tte-sidebar-header-wrap&quot;]/sidebar-header[1]/div[@class=&quot;col-xs-12 tte-sidebar-header&quot;]/ul[@class=&quot;list-inline tte-sidebar-header-insert-icons&quot;]/li[2]/a[1]/i[@class=&quot;far fa-edit&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[2]/li[2]/a/i</value>
+   </webElementXpaths>
+</WebElementEntity>

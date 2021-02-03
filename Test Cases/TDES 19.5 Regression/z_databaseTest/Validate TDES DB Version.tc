@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate TDES DB Version</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e16043b-10a7-46cf-89db-a64633c621bd</testCaseGuid>
+</TestCaseEntity>
