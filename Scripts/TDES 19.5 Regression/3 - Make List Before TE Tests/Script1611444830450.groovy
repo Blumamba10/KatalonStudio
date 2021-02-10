@@ -44,8 +44,6 @@ WebUI.click(findTestObject('Convergence/SelectProject_values/Default Project'), 
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
 
-WebUI.delay(2)
-
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
 
 WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/createListButton'))

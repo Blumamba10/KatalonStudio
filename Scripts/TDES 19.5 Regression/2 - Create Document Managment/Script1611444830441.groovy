@@ -54,7 +54,7 @@ WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Ma
 WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/searchButton'), 1, 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/btn_Clear'), 1, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/btnClear'), 1, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/Document Type'), 'Document Type', 
     FailureHandling.STOP_ON_FAILURE)
@@ -62,7 +62,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/Do
 WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/selectDocumentType'), 
     1, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/CreatedBy_header'), 'Created By', 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/CreatedBy'), 'Created By', 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/CreatedDate'), 0, FailureHandling.STOP_ON_FAILURE)

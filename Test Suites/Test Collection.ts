@@ -13,7 +13,7 @@
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Convergence/Install Smoke Test - MYSQL</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Convergence/Convergence Smoke Test</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -22,7 +22,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Convergence/Install Smoke Test - MYSQL</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Convergence/Convergence Smoke Test</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

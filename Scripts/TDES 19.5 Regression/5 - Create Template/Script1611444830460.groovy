@@ -91,13 +91,13 @@ WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Templa
 
 WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Publish_btn'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Success_pop-up/span_Success'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/_Success_pop-up/span_Success'), 
     'SUCCESS')
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Success_pop-up/div_Template published to server'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/_Success_pop-up/div_Template published to server'), 
     'Template published to server.')
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Success_pop-up/btn_OK'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/_Success_pop-up/btn_OK'))
 
 WebUI.delay(2)
 

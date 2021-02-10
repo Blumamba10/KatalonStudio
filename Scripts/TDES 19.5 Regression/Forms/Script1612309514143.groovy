@@ -58,7 +58,11 @@ assertEquals('Display form in read-only mode', selenium.getText('xpath=(.//*[nor
 
 assertEquals('View Form', selenium.getText('id=submitButton'))
 
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+
 selenium.click('link=Administration')
+
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Utilities'))
 
 selenium.click('link=Delete Form')
 

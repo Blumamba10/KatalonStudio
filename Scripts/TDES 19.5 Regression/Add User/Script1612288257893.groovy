@@ -465,7 +465,7 @@ selenium.submit('name=logonform')
 
 assertTrue(selenium.isElementPresent('link=Convergence'))
 
-selenium.click('//a[@class=\'dropdown-toggle\'][contains(text(),\'deleteme\')]')
+selenium.doubleclick('//a[@class=\'dropdown-toggle\'][contains(text(),\'deleteme\')]')
 
 selenium.click('link=Logout')
 

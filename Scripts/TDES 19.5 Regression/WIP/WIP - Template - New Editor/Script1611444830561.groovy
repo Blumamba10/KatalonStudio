@@ -30,15 +30,17 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'))
+WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Default Projectetret'))
+WebUI.click(findTestObject('Convergence/SelectProject_values/Default Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
 
@@ -326,7 +328,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Opt
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Option Lists\'])[1]/following::button[1]')
 
-selenium.select('id=importOptionLists', 'label=List')
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/option_Linked'))
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Available Option Lists\'])[1]/following::option[1]')
 
@@ -435,8 +437,6 @@ assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and n
 assertEquals('Condition Fields', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::div[1]'))
 
 assertEquals('Action Fields', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Condition Fields\'])[1]/following::div[1]'))
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'​\'])[1]/following::button[1]')
 
 assertEquals('New Rule Name', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Creating New Rule\'])[1]/following::strong[1]'))
 

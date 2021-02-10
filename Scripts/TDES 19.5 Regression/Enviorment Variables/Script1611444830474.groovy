@@ -116,9 +116,11 @@ selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Item
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::div[1]')
 
+WebUI.delay(5)
+
 selenium.click('id=propertyName_0')
 
 selenium.click('id=removeVariabledButton')
 
-selenium.click('id=overlayConfirmOk')
+WebUI.doubleClick(findTestObject('Convergence/Scripts/EnviormentVariables_Page/button_OK'))
 
