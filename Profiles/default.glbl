@@ -6,13 +6,13 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8081/tdes'</initValue>
+      <initValue>'http://localhost:8080/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'1919'</initValue>
-      <name>ExpectedVersion</name>
+      <name>ExpectedDBVersion</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8081/cv'</initValue>
+      <initValue>'http://localhost:8080/cv'</initValue>
       <name>cvURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -38,5 +38,10 @@
       <description></description>
       <initValue>'http://localhost:8080/webapp'</initValue>
       <name>webappURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://localhost:8080/demo'</initValue>
+      <name>demoappURL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

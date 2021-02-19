@@ -15,12 +15,12 @@
       <guid>efe7825a-bee7-4e5e-b4f2-4212a858bff4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TDES 19.5 Regression/1 -Login</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/_Login</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0f02e66e-723a-46de-ac23-11df97fd313a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TDES 19_5 Jira Tests/TDES-3685 - Project Assignments</testCaseId>
+      <testCaseId>Test Cases/Convergence/TDES Jira Tests/TDES_3685_Project Assignments</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

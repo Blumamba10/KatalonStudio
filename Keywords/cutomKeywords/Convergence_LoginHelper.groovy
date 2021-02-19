@@ -25,7 +25,7 @@ import internal.GlobalVariable
  * 
  * */
 
-public class LoginHelper {
+public class Convergence_LoginHelper {
 
 	@Keyword
 	public void loginApp(String applicationURL, String username, String password){

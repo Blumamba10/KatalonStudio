@@ -15,6 +15,6 @@
       <guid>a7f05a30-611a-438b-b756-43aeb9dd7dc2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TDES 19.5 Regression/2 - Create Document Managment</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Document Managment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
