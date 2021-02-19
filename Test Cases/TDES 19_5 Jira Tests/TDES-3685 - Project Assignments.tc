@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test to add mulitple Project Assignment via Create User and Manage Project Assgnment entry points.</description>
-   <name>TDES-3685 - Project Assignments</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a2c4c515-3477-45f2-871d-bead96012e58</testCaseGuid>
-</TestCaseEntity>

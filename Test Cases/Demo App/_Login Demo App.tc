@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case logs in with invaid and vaild credentials</description>
+   <name>_Login Demo App</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>09342909-cef3-4356-b30f-6a24844189f6</testCaseGuid>
+</TestCaseEntity>
