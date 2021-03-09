@@ -15,6 +15,6 @@
       <guid>a7f05a30-611a-438b-b756-43aeb9dd7dc2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Document Managment</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/1 - Create Document Type and Index</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

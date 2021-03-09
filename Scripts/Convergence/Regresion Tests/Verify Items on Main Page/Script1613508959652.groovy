@@ -70,7 +70,7 @@ assertEquals('Updated Templates', selenium.getText('link=Updated Templates'))
 
 assertEquals('Projects', selenium.getText('xpath=(//a[contains(text(),\'Projects\')])[2]'))
 
-assertEquals('Server', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'WebPrototype\'])[2]/following::a[1]'))
+assertEquals('Server', selenium.getText('link=Server'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Server\'])[2]/following::i[1]'))
 

@@ -202,10 +202,6 @@ assertEquals('EDIT_AUTHENTICATION_METHODS', selenium.getText('xpath=(.//*[normal
 
 assertEquals('Edit Authentication Methods', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'EDIT_AUTHENTICATION_METHODS\'])[1]/following::td[1]'))
 
-assertEquals('Edit Log Email Settings', selenium.getText('//td[contains(text(),\'Edit Log Email Settings\')]'))
-
-assertEquals('Edit Log Settings', selenium.getText('//td[contains(text(),\'Edit Log Settings\')]'))
-
 assertEquals('EDIT_QUEUE_SETTINGS', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Edit Log Settings\'])[1]/following::td[1]'))
 
 assertEquals('Edit Queue Settings', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'EDIT_QUEUE_SETTINGS\'])[1]/following::td[1]'))
@@ -423,11 +419,11 @@ selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Item
 
 selenium.submit('id=frmUserList')
 
-selenium.click('id=addUserButton')
+WebUI.click(findTestObject('Convergence/Security/Users_Page/btn_addUser'))
 
-selenium.type('id=userNameInput', 'deleteme')
+WebUI.setText(findTestObject('Convergence/Security/Users_Page/Add User_Page/input_User Name'), 'deleteme')
 
-selenium.click('id=authenticateToInternalCheck')
+WebUI.click(findTestObject('Convergence/Security/Users_Page/Add User_Page/checkbox_Internal Database'))
 
 selenium.click('id=password')
 
@@ -453,6 +449,8 @@ selenium.click('id=addRoleSubmitButton')
 
 selenium.click('//a[@class=\'dropdown-toggle\'][contains(text(),\'admin\')]')
 
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+
 selenium.click('link=Logout')
 
 selenium.click('link=Return')
@@ -465,7 +463,7 @@ selenium.submit('name=logonform')
 
 assertTrue(selenium.isElementPresent('link=Convergence'))
 
-selenium.doubleclick('//a[@class=\'dropdown-toggle\'][contains(text(),\'deleteme\')]')
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_deleteme'))
 
 selenium.click('link=Logout')
 
@@ -476,4 +474,16 @@ selenium.type('id=usernameField', 'admin')
 selenium.type('id=passwordField', 'admin')
 
 selenium.click('id=loginLink')
+
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+
+WebUI.setText(findTestObject('Convergence/Security/Users_Page/input_Search Filter'), 'deleteme')
+
+WebUI.click(findTestObject('Convergence/Security/Users_Page/checkbox_Check All'))
+
+WebUI.click(findTestObject('Convergence/Security/Users_Page/delete'))
+
+WebUI.click(findTestObject('Convergence/Security/Users_Page/button_OK'))
 

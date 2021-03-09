@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Validates Elements on the Authentication Page.</description>
    <name>Authentication</name>
    <tag></tag>
    <comment></comment>

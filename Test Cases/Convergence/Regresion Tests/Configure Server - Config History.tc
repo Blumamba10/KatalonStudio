@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Validate Elements on the Configure Server page.</description>
    <name>Configure Server - Config History</name>
    <tag></tag>
    <comment></comment>

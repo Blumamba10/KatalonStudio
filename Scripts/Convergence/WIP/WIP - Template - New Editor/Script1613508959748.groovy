@@ -330,7 +330,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Opt
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Option Lists\'])[1]/following::button[1]')
 
-WebUI.selectOptionByLabel(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/select_AvailableOption'), 
+WebUI.selectOptionByLabel(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/dropdown_AvailableOption'), 
     'Linked', false)
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Available Option Lists\'])[1]/following::option[1]')

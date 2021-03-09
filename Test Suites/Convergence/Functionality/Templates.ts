@@ -15,12 +15,12 @@
       <guid>e008f7d7-3c8b-4c6b-ab5f-27d68b5a9b60</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Make List Before TE Tests</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/3 - Create Option List for Template Test</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8c428ba5-794c-4de7-b824-0a457e612ad2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Template</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/4- Create Basic Template</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

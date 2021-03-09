@@ -539,3 +539,13 @@ assertTrue(selenium.isElementPresent('id=cancelButton'))
 
 selenium.click('//form[@id=\'frmHistoryFilter\']/div/div/div/div/div/a/i')
 
+selenium.click('link=Configure')
+
+assertEquals('Configure Submitted', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
+
+selenium.click('id=enableErrorEmailCheck')
+
+selenium.click('//button[@id="overlayConfirmOk"]')
+
+selenium.click('//i[@class="shortcut-icon fas fa-check-circle"]')
+

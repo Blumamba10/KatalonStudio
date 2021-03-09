@@ -3,15 +3,19 @@
    <description></description>
    <name>a_Document Types</name>
    <tag></tag>
-   <elementGuidId>8a0901ce-65b9-4762-9fd1-9fe51e545322</elementGuidId>
+   <elementGuidId>225d9257-bdfb-4734-af00-9e0b20a6735c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='primaryNav']/div/div/ul/li[5]/ul/li/a</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.link</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>

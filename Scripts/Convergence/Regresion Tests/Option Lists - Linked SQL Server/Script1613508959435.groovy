@@ -133,7 +133,7 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Pag
     0)
 
 WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Database'), 
-    '_donotdelete', false)
+    '_DoNotDelete', false)
 
 WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Table'), 
     'tdes_action_controller', false)

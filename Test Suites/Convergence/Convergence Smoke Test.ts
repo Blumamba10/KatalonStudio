@@ -15,31 +15,37 @@
       <guid>7cde6f7d-f937-47a7-85a1-8612f1c85c8e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/_Login</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/0_Login</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6751d50c-64ec-480f-914c-5da14f33cc01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Document Managment</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/1 - Create Document Type and Index</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1f43e830-3c1a-4af9-9883-01d693cb4229</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Webapp Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>09c1e10b-bb7d-457b-97b6-fe35e3d571e9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Make List Before TE Tests</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/3 - Create Option List for Template Test</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d6a5f0cf-c90e-42f6-b9ac-39084f7580b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Template</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/4- Create Basic Template</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1c68c0df-3957-4c1b-be6b-96ec59d01218</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Gloabal Function Creation</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/5- Gloabal Function Creation</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>654aabd0-3fa9-4ba5-9345-d2ae1785029e</guid>
@@ -87,7 +93,7 @@
       <guid>574395f1-b2f7-43f9-ae0f-b4e57da7dc4e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Templates</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Validate Templates Emements</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5f08906f-e74f-4e2f-a64c-f81fb3390ea5</guid>
@@ -116,7 +122,7 @@
    <testCaseLink>
       <guid>9baa05ea-e11d-4b11-b5cd-b4c4f2994cba</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Script Editor - Assert Fields</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -148,12 +154,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Configure Server - Config History</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0e1e391d-ee80-4671-b276-03eac060d2c0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Configure Server - Actions</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f7ce3f11-3104-4823-8307-9e930c85fcdf</guid>
@@ -220,5 +220,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Import Components</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84db1e9a-98cf-420f-b5cb-bbf014bf8dc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/z_Clean Up (Delete Project)</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -35,6 +35,7 @@ public class Convergence_LoginHelper {
 		WebUI.maximizeWindow()
 
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Convergence/Login_Page/login_Btn'), 0)
+
 		WebUI.sendKeys(findTestObject('Object Repository/Convergence/Login_Page/username'), username)
 		WebUI.sendKeys(findTestObject('Object Repository/Convergence/Login_Page/password'), password)
 		WebUI.click(findTestObject('Object Repository/Convergence/Login_Page/login_Btn'))

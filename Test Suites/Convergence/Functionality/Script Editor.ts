@@ -15,7 +15,7 @@
       <guid>7a427780-40ae-49ec-b420-628713f25740</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Gloabal Function Creation</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/5- Gloabal Function Creation</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d766d58b-8055-44ec-9272-59d824f7676e</guid>
