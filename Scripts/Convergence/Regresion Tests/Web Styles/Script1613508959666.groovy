@@ -26,6 +26,9 @@ import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium as WebDriverB
 import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def driver = DriverFactory.getWebDriver()
 
@@ -236,4 +239,14 @@ selenium.type('id=idInput', 'Style Name')
 selenium.type('id=descriptionInput', 'Description')
 
 selenium.click('id=submitButton')
+
+WebUI.delay(3)
+
+WebUI.refresh()
+
+selenium.click('//input[@id="formRenderSettingsId_1"]')
+
+selenium.click('//i[@class="shortcut-icon fas fa-trash-alt"]')
+
+selenium.click('//button[@id="overlayConfirmOk"]')
 

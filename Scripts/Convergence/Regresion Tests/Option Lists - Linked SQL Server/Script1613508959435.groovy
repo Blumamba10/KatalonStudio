@@ -105,52 +105,52 @@ assertTrue(selenium.isElementPresent('id=cancelButton'))
 
 selenium.click('id=queryWizardButton')
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/label_database'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/label_database'), 
     'Database')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Database'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Database'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/label_Table'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/label_Table'), 
     'Table')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Table'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Table'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/label_Name Column'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/label_Name Column'), 
     'Name Column')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Name Column'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Name Column'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/label_Value Column'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/label_Value Column'), 
     'Value Column')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Value Column'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Value Column'), 
     0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/button_Update'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/button_Update'), 
     0)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Database'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Database'), 
     '_DoNotDelete', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Table'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Table'), 
     'tdes_action_controller', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Database'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Database'), 
     GlobalVariable.dbName, false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Table'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Table'), 
     'tdes_user', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Name Column'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Name Column'), 
     'enabled', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/select_Value Column'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/select_Value Column'), 
     'enabled', false)
 
-WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/OptionListQueryBuilder_Page/button_Update'))
+WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListQueryBuilder_Page/button_Update'))
 
 assertEquals('1', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value\'])[1]/following::td[1]'))
 

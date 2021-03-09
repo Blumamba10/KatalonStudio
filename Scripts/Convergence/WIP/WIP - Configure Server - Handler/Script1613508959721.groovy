@@ -126,7 +126,7 @@ WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'admin')
 
 WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'admin')
 
-WebUI.click(findTestObject('Convergence/Login_Page/login_Btn'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login_Page/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
 

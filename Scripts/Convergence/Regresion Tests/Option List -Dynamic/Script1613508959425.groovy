@@ -72,7 +72,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Que
 
 selenium.click('//form[@id=\'optionListDynamicFrm\']/div/div[2]/div/div/div[2]/div/div[6]')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/OptionLists_Page/Edit Dynamic Option List_Page/textarea_Query'), 'query')
+WebUI.sendKeys(findTestObject('Convergence/Templates/OptionLists_Page/_Edit Dynamic Option List_Page/textarea_Query'), 'query')
 
 // selenium.Manual Type("//div[@class='CodeMirror-cursor']", "Query")
 selenium.click('id=submitButton')

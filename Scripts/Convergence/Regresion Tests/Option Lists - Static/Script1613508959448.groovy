@@ -122,18 +122,18 @@ selenium.click('id=addNewName')
 
 selenium.typeKeys('id=addNewName', 'Option One')
 
-WebUI.clearText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListDetail_Page/Add New Option_Page/textarea_Value_addNewValue'))
+WebUI.clearText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListDetail_Page/Add New Option_Page/textarea_Value_addNewValue'))
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/OptionLists_Page/OptionListDetail_Page/Add New Option_Page/textarea_Value_addNewValue'), 
+WebUI.sendKeys(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListDetail_Page/Add New Option_Page/textarea_Value_addNewValue'), 
     'One Option Value')
 
 selenium.click('id=addOptionListItemBtn')
 
 assertTrue(selenium.isElementPresent('id=checkAll'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListDetail_Page/a_Option One'), 'Option One')
+WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListDetail_Page/a_Option One'), 'Option One')
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/OptionListDetail_Page/td_Option One Value'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/OptionLists_Page/_OptionListDetail_Page/td_Option One Value'), 
     'One Option Value')
 
 selenium.click('id=addButton')
