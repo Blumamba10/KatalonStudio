@@ -12,6 +12,12 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>98491d59-ef39-44c0-a9ba-448beb524e6c</testSuiteGuid>
    <testCaseLink>
+      <guid>81c7acb8-99fb-4b2a-9e5e-8e9f5f126cc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/z_databaseTest/Validate TDES DB Version</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>7cde6f7d-f937-47a7-85a1-8612f1c85c8e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -22,12 +28,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/1 - Create Document Type and Index</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1f43e830-3c1a-4af9-9883-01d693cb4229</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Webapp Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>09c1e10b-bb7d-457b-97b6-fe35e3d571e9</guid>
@@ -44,7 +44,7 @@
    <testCaseLink>
       <guid>1c68c0df-3957-4c1b-be6b-96ec59d01218</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/5- Gloabal Function Creation</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -86,7 +86,7 @@
    <testCaseLink>
       <guid>eb78d606-e808-460d-afe1-a3503c48b1ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Monitor - Each Queue and configure</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -122,7 +122,7 @@
    <testCaseLink>
       <guid>9baa05ea-e11d-4b11-b5cd-b4c4f2994cba</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Script Editor - Assert Fields</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>86384769-71c1-40a6-a49f-0ae77160b9b3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Option Lists - Linked SQL Server</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -222,9 +222,15 @@
       <testCaseId>Test Cases/Convergence/Regresion Tests/Import Components</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>84db1e9a-98cf-420f-b5cb-bbf014bf8dc7</guid>
+      <guid>1f43e830-3c1a-4af9-9883-01d693cb4229</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/z_Clean Up (Delete Project)</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Create Webapp Project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f912ba37-80da-4bbf-bafb-897316f7bdfc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Delete Option Lists</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

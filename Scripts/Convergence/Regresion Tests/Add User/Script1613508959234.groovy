@@ -421,9 +421,9 @@ selenium.submit('id=frmUserList')
 
 WebUI.click(findTestObject('Convergence/Security/Users_Page/btn_addUser'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/Add User_Page/input_User Name'), 'deleteme')
+WebUI.setText(findTestObject('Convergence/Security/Users_Page/_Add User_Page/input_User Name'), 'deleteme')
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/Add User_Page/checkbox_Internal Database'))
+WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/checkbox_Internal Database'))
 
 selenium.click('id=password')
 
@@ -439,19 +439,30 @@ selenium.click('//option[@value=\'100\']')
 
 selenium.click('id=checkAllCheck')
 
-selenium.click('id=submitButton')
+WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Submit'))
 
 selenium.click('id=addProjectRoleButton')
 
-selenium.click('//button[@id=\'addRoleAssociationButton\']/i')
+WebUI.delay(3)
 
-selenium.click('id=addRoleSubmitButton')
+WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Configure Project Access'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Default', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
 selenium.click('//a[@class=\'dropdown-toggle\'][contains(text(),\'admin\')]')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
 
 selenium.click('link=Logout')
+
+WebUI.delay(2)
 
 selenium.click('link=Return')
 
@@ -466,6 +477,8 @@ assertTrue(selenium.isElementPresent('link=Convergence'))
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_deleteme'))
 
 selenium.click('link=Logout')
+
+WebUI.delay(2)
 
 selenium.click('link=Return')
 

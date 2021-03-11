@@ -106,6 +106,6 @@ assertEquals('Configure', selenium.getText('xpath=(.//*[normalize-space(text()) 
 
 assertTrue(selenium.isElementPresent('id=historyQueueButton'))
 
-WebUI.verifyElementVisible(findTestObject('Convergence/Scripts/MonitorPage/em_ monitor live updates occur every 3 seconds'), 
+WebUI.verifyElementVisible(findTestObject('Convergence/Scripts/Monitor_Page/em_ monitor live updates occur every 3 seconds'), 
     FailureHandling.STOP_ON_FAILURE)
 

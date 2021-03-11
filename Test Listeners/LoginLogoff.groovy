@@ -52,7 +52,7 @@ class LoginLogoff  {
 		
 		WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'admin')
 		WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'admin')
-		WebUI.click(findTestObject('Convergence/Login_Page/login_Btn'))
+		WebUI.click(findTestObject('Convergence/Login_Page/button_Login'))
 		WebUI.delay(2)
 		Boolean result = findTestObject('Convergence/SelectProject_values/Select Project')
 		if (result == true){

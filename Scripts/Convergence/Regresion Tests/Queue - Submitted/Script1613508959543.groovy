@@ -44,7 +44,7 @@ WebUI.delay(2)
 
 selenium.click('id=submittedQueueLink')
 
-WebUI.verifyElementText(findTestObject('Convergence/Scripts/MonitorPage/Submitted Queue_Page/h1_Submitted'), 'Submitted')
+WebUI.verifyElementText(findTestObject('Convergence/Scripts/Monitor_Page/Submitted Queue_Page/h1_Submitted'), 'Submitted')
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Submitted\'])[1]/following::span[1]'))
 

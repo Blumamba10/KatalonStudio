@@ -48,7 +48,7 @@ selenium.click('link=Monitor')
 
 WebUI.delay(3)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/a_Configure_History'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/a_Configure_History'), 10)
 
 selenium.click('link=Configure')
 
@@ -99,7 +99,7 @@ assertTrue(selenium.isElementPresent('id=advancedOptions'))
 
 assertEquals('Enable advanced options', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Email Subject\'])[1]/following::label[1]'))
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/Configure Submitted_page/checkbox_Enable advanced options'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/Configure Submitted_page/checkbox_Enable advanced options'))
 
 assertEquals('Username', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Enable advanced options\'])[1]/following::label[1]'))
 
@@ -129,9 +129,9 @@ selenium.type('id=hostPortInput', '808')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/a_Configure_Submitted'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/a_Configure_Submitted'), 10)
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/a_Configure_Submitted'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/a_Configure_Submitted'))
 
 selenium.click('id=autoUnlock')
 
@@ -155,17 +155,17 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'aft
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/a_Configure_Submitted'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/a_Configure_Submitted'), 10)
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/a_Configure_Submitted'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/a_Configure_Submitted'))
 
 selenium.click('id=autoUnlock')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/button_View_Submited'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/button_View_Submited'), 10)
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/button_View_Submited'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/button_View_Submited'))
 
 assertEquals('Submitted', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
@@ -259,7 +259,9 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Err
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error After\'])[1]/following::button[2]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Next Run Time\'])[2]/following::a[1]')
+WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/a_Configure_Hold'))
 
 selenium.click('name=holdBeforeRetryEligible')
 
@@ -283,9 +285,11 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Err
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error After\'])[1]/following::button[2]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/button_View_Hold'), 10)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/button_View_Hold'))
+WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/button_View_Hold'))
 
 assertEquals('Hold', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
@@ -332,9 +336,9 @@ assertEquals('Note', selenium.getText('xpath=(.//*[normalize-space(text()) and n
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::i[1]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/button_View_Error'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/button_View_Error'), 10)
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/button_View_Error'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/button_View_Error'))
 
 assertEquals('Error', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
@@ -430,9 +434,9 @@ selenium.click('id=removeImagesYes')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No\'])[2]/following::button[2]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/MonitorPage/button_View_History'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/button_View_History'), 10)
 
-WebUI.click(findTestObject('Convergence/Scripts/MonitorPage/button_View_History'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/button_View_History'))
 
 assertEquals('History', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
@@ -538,6 +542,8 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 assertTrue(selenium.isElementPresent('id=cancelButton'))
 
 selenium.click('//form[@id=\'frmHistoryFilter\']/div/div/div/div/div/a/i')
+
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor_Page/button_View_History'), 10)
 
 selenium.click('link=Configure')
 

@@ -44,7 +44,7 @@ WebUI.delay(2)
 
 selenium.click('id=errorQueueLink')
 
-WebUI.verifyElementText(findTestObject('Convergence/Scripts/MonitorPage/Error Queue_Page/h1_Error'), 'Error')
+WebUI.verifyElementText(findTestObject('Convergence/Scripts/Monitor_Page/Error Queue_Page/h1_Error'), 'Error')
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error\'])[1]/following::span[1]'))
 
