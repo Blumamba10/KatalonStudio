@@ -66,7 +66,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Scr
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/_Select an Action or Script_popup/Actions/a_ConvertDocument'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Actions/a_ConvertDocument'))
 
 assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'ConvertDocument\'])[2]/following::label[1]'))
 

@@ -68,7 +68,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Scr
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/_Select an Action or Script_popup/Actions/a_Comment'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Actions/a_Comment'))
 
 assertEquals('Comment', selenium.getText('//h4[@class="modal-title"]'))
 
