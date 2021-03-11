@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This cleans up data entered into Convergence from steps in Smoke Test. Run this before rerunning the suite</description>
-   <name>Clean Up</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>68f1629e-a1e1-4e38-9aa1-7eaa0b9c4fe0</testCaseGuid>
-</TestCaseEntity>
