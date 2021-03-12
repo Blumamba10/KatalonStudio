@@ -36,6 +36,8 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
+WebUI.waitForElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 
 selenium.click('link=Environment Variables')

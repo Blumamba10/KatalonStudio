@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save Script_Btn</name>
+   <name>button_Save Script</name>
    <tag></tag>
    <elementGuidId>6a00fbfa-d03d-433f-b021-7ff5c3f86b0b</elementGuidId>
    <selectorCollection>

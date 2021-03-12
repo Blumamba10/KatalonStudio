@@ -179,39 +179,75 @@ assertEquals('Showing 1 to 9 of 9 entries', selenium.getText('//div[@id=\'rolesT
 
 selenium.click('//button[@id=\'deleteRoleButton_8\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_7\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_6\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_5\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_4\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_3\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_2\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_1\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_0\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
 
@@ -334,41 +370,79 @@ assertEquals('Demo-Web Application', selenium.getText('//td[contains(text(),\'De
 
 assertEquals('Showing 1 to 9 of 9 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'deleteRoleButton_8\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_7\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_6\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_5\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_4\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_3\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_2\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_1\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 selenium.click('//button[@id=\'deleteRoleButton_0\']')
 
+WebUI.delay(1)
+
 selenium.click('//button[@id=\'overlayConfirmOk\']')
+
+WebUI.delay(1)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

@@ -42,37 +42,6 @@ selenium.click('link=Default')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'), FailureHandling.CONTINUE_ON_FAILURE)
 
-selenium.click('link=Document Management')
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Document Management/a_Admin'), FailureHandling.CONTINUE_ON_FAILURE)
-
-selenium.click('link=Document Types')
-
-selenium.click('id=selectCheck_0')
-
-selenium.click('//button[@id=\'removeDocTypesButton\']/i')
-
-selenium.click('id=overlayConfirmOk')
-
-selenium.click('link=Main Console')
-
-selenium.click('link=Projects')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]')
-
-selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]', 
-    'webapp')
-
-selenium.click('id=webapp')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Manage Projects\'])[1]/following::i[5]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Manage Projects\'])[1]/following::button[4]')
-
-selenium.click('id=overlayConfirmOk')
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'), FailureHandling.CONTINUE_ON_FAILURE)

@@ -42,6 +42,8 @@ WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_D
 
 WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.waitForElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 
 selenium.click('link=Manage Functions')

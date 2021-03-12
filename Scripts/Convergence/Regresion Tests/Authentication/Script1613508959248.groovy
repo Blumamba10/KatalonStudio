@@ -49,7 +49,7 @@ assertEquals('Help', selenium.getText('xpath=(.//*[normalize-space(text()) and n
 assertEquals('Convergence supports a variety of authentication methods. These can be configured from this page.', selenium.getText(
         'xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Help\'])[1]/following::p[1]'))
 
-WebUI.click(findTestObject('Convergence/Security/Authentication_Page/h1_Help'))
+WebUI.refresh(FailureHandling.STOP_ON_FAILURE)
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Authentication Methods\'])[1]/following::div[3]')
 

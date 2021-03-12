@@ -86,7 +86,7 @@ WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script E
 
 WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Save Script_Btn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save Script'))
 
 WebUI.delay(3)
 

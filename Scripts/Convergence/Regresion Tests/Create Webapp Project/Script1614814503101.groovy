@@ -146,7 +146,7 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/input_Search Filter'), 'webapp')
+WebUI.setText(findTestObject('Convergence/Security/Users_Page/input_Search Filter'), 'webwebapp')
 
 WebUI.click(findTestObject('Convergence/Security/Users_Page/checkbox_Check All'))
 
