@@ -116,13 +116,9 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Ite
 selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]', 
     'new_environment_variable')
 
-WebUI.delay(5)
+selenium.click('//button[@id="removeVariabledButton"]')
 
-selenium.click('id=propertyName_0')
-
-selenium.click('id=removeVariabledButton')
-
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.doubleClick(findTestObject('Convergence/Scripts/EnviormentVariables_Page/button_OK'))
 

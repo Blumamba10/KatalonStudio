@@ -12,12 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>5fd47288-d6b8-4604-8e6f-483ffc0f8ecf</testSuiteGuid>
    <testCaseLink>
-      <guid>ec93c5da-6a8b-4912-abaf-4c6b7b0c87ca</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/0_Login</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>c50b55f7-c7ed-4b5b-a70a-637600b52bbf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

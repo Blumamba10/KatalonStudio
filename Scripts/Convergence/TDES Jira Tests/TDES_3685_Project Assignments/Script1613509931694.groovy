@@ -58,6 +58,8 @@ WebUI.sendKeys(findTestObject('Convergence/Security/Users_Page/_Add User_Page/in
 
 WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Next'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Configure Project Access'))
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
