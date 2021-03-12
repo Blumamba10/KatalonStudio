@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FolderEntity>
    <description>folder</description>
-   <name>_Select an Action or Script_popup</name>
+   <name>_Select Action_popup</name>
    <tag></tag>
    <folderType>WEBELEMENT</folderType>
 </FolderEntity>
