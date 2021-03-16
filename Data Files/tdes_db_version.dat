@@ -6,14 +6,14 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>4aa4ba76-de4a-4cdd-9fe2-a55272d551f8</dataFileGUID>
-   <dataSourceUrl>jdbc:sqlserver://localhost:1433;databaseName=c19_210312_1148</dataSourceUrl>
+   <dataSourceUrl>jdbc:sqlserver://localhost:1433;databaseName=c19_210315_1655</dataSourceUrl>
    <driver>DBData</driver>
    <driverClassName>java.sql.Driver;</driverClassName>
    <isInternalPath>false</isInternalPath>
    <password>Izc0OUJsb29tZGFsZQ==</password>
    <query>SELECT TOP (1000) [id]
       ,[version]
-  FROM [c19_210312_1148].[dbo].[tdes_db_version]</query>
+  FROM [c19_210315_1655].[dbo].[tdes_db_version]</query>
    <secureUserAccount>true</secureUserAccount>
    <sheetName></sheetName>
    <user>sa</user>

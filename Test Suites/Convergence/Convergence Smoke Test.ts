@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>81c7acb8-99fb-4b2a-9e5e-8e9f5f126cc7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/z_databaseTest/Validate TDES DB Version</testCaseId>
    </testCaseLink>
    <testCaseLink>
