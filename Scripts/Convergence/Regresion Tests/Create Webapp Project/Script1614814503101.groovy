@@ -130,7 +130,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Man
 assertEquals('Removing a project will delete ALL of its associated templates, scripts, option lists, and style configurations. Are you sure you want to remove the selected project?', 
     selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Confirm Remove Project\'])[1]/following::p[1]'))
 
-WebUI.delay(5)
+WebUI.delay(6)
 
 selenium.click('id=overlayConfirmOk')
 

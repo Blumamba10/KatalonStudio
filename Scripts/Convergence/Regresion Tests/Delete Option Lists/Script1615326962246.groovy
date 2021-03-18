@@ -38,17 +38,17 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.OPTIONAL)
-
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.OPTIONAL)
-
 WebUI.waitForElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'), 10, FailureHandling.OPTIONAL)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
+
+WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Convergence/Templates/OptionLists_Page/input_Search Filter'), 'Li')
 

@@ -6,21 +6,26 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>4aa4ba76-de4a-4cdd-9fe2-a55272d551f8</dataFileGUID>
-   <dataSourceUrl>jdbc:sqlserver://localhost:1433;databaseName=c19_201231_0921</dataSourceUrl>
+   <dataSourceUrl>jdbc:sqlserver://localhost:1433;databaseName=c19_210316_1555</dataSourceUrl>
    <driver>DBData</driver>
    <driverClassName>java.sql.Driver;</driverClassName>
    <isInternalPath>false</isInternalPath>
    <password>Izc0OUJsb29tZGFsZQ==</password>
-   <query>SELECT TOP (1000) [id]
-      ,[version]
-      ,[category]
-      ,[name]
-      ,[value]
-      ,[node]
-      ,[protect_value]
-      ,[projectId]
-      ,[importProtected]
-  FROM [c19_201231_0921].[dbo].[tdes_setting]</query>
+   <query>Update [c19_210316_1555].[dbo].[tdes_setting]
+Set value = '20000'
+where id = '12'
+
+Update [c19_210316_1555].[dbo].[tdes_setting]
+Set value = '20000'
+where id = '13'
+
+Update [c19_210316_1555].[dbo].[tdes_setting]
+Set value = '20000'
+where id = '14'
+
+Update [c19_210316_1555].[dbo].[tdes_setting]
+Set value = '20000'
+where id = '15'</query>
    <secureUserAccount>true</secureUserAccount>
    <sheetName></sheetName>
    <user>sa</user>
