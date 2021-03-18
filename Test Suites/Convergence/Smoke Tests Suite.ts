@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Convergence Smoke Test</name>
+   <name>Smoke Tests Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>81c7acb8-99fb-4b2a-9e5e-8e9f5f126cc7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/z_databaseTest/Validate TDES DB Version</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -86,7 +86,7 @@
    <testCaseLink>
       <guid>eb78d606-e808-460d-afe1-a3503c48b1ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Monitor - Each Queue and configure</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -110,7 +110,7 @@
    <testCaseLink>
       <guid>88e3e6c0-4a10-405f-9a04-8511a3384d08</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Web Styles</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>86384769-71c1-40a6-a49f-0ae77160b9b3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Option Lists - Linked SQL Server</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -30,75 +30,43 @@ import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 
-selenium.click('link=File Output')
+def driver = DriverFactory.getWebDriver()
 
-assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File Output\'])[2]/following::label[1]'))
+String baseUrl = 'https://www.google.com/'
 
-assertTrue(selenium.isElementPresent('id=nameInput'))
+selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::label[1]'))
+WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-assertTrue(selenium.isElementPresent('id=descriptionInput'))
+WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-selenium.click('id=ini')
+WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-assertEquals('Saving in a non-custom format will save the entire form data in that format.', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Windows INI File\'])[1]/following::div[3]'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 
-selenium.click('id=custom')
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
 
-assertTrue(selenium.isElementPresent('id=csv'))
+selenium.click('id=addScriptButton')
 
-assertEquals('Comma Separated Value File (CSV)', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Custom Format\'])[1]/following::label[1]'))
+WebUI.delay(2)
 
-assertTrue(selenium.isElementPresent('id=ini'))
+WebUI.switchToWindowIndex('1')
 
-assertEquals('Windows INI File', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Data XML File\'])[1]/following::label[1]'))
+WebUI.delay(3)
 
-assertTrue(selenium.isElementPresent('id=formxml'))
+selenium.click('id=scriptNameInput')
 
-assertEquals('Native Form XML File', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Comma Separated Value File (CSV)\'])[1]/following::label[1]'))
+selenium.type('id=scriptNameInput', 'File Utils')
 
-assertTrue(selenium.isElementPresent('id=custom'))
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Title\'])[1]/following::i[1]')
 
-assertEquals('Custom Format', selenium.getText('//div[2]/div/div/div/label'))
+selenium.click('id=scriptDescriptionInput')
 
-assertTrue(selenium.isElementPresent('id=dataxml'))
+selenium.type('id=scriptDescriptionInput', 'File Utils')
 
-assertEquals('Data XML File', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Native Form XML File\'])[1]/following::label[1]'))
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-assertEquals('Custom File Output Configuration', selenium.getText('//h6[contains(text(),\'Custom File Output Configuration\')]'))
-
-assertEquals('File Extension', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Custom File Output Configuration\'])[1]/following::label[1]'))
-
-assertTrue(selenium.isElementPresent('id=fileOutFileExtension'))
-
-assertEquals('File Output Template', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File Extension\'])[1]/following::label[1]'))
-
-assertTrue(selenium.isElementPresent('id=fileOutOutputTemplate'))
-
-assertEquals('Field List', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File Output Template\'])[1]/following::label[1]'))
-
-selenium.click('id=nameInput')
-
-selenium.typeKeys('id=nameInput', 'File_Output')
-
-selenium.typeKeys('id=descriptionInput', 'Description')
-
-selenium.click('id=fileOutFileExtension')
-
-selenium.typeKeys('id=fileOutFileExtension', '.txt')
-
-selenium.click('id=fileOutOutputTemplate')
-
-selenium.typeKeys('id=fileOutOutputTemplate', 'output template')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'(11)\'])[1]/following::div[1]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'(11)\'])[1]/following::button[1]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File Output\'])[1]/following::i[1]')
-
-selenium.click('link=Insert New Action After')
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[1]/following::button[1]')
 
 selenium.click('link=FileUtils')
 
@@ -111,9 +79,6 @@ assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()
 assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
 assertEquals('Operation', selenium.getText('//div/div/div/div/div/label'))
-
-assertEquals('Copy DirectoryCopy FileCreate DirectoryCreate Temp DirectoryDelete DirectoryDelete FileDirectory ListFile ExistsFile SizeFile setTextGet File NameGet Parent PathMove DirectoryMove FileRead Text FileText to FileRename File', 
-    selenium.getText('//select'))
 
 assertEquals('Source Directory', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Copy a directory to a specified location\'])[1]/following::label[1]'))
 
@@ -133,4 +98,18 @@ selenium.typeKeys('id=descriptionInput', 'Description')
 
 selenium.typeKeys('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Source Directory\'])[1]/following::input[1]', 
     'Source')
+
+selenium.click('//button[contains(text(),"OK")]')
+
+WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+
+WebUI.delay(2)
+
+WebUI.closeWindowIndex('1')
+
+WebUI.switchToWindowIndex('0')
+
+WebUI.setText(findTestObject('Convergence/Scripts/ManageScripts_Page/input_Search Filter'), 'File Utils')
+
+assertEquals('File Utils', selenium.getText('//a[@class="new-editor-open"]'))
 
