@@ -50,7 +50,7 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 selenium.click('id=addScriptButton')
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.switchToWindowIndex('1')
 

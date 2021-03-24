@@ -38,7 +38,7 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('ClearView/NavigationLinks/Financial_link'))
+WebUI.setEncryptedText(findTestObject('ClearView/NavigationLinks/Financial_link'), '')
 
 WebUI.click(findTestObject('ClearView/NavigationLinks/835Remits_link'))
 

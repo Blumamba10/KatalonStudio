@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8085/tdes'</initValue>
+      <initValue>'http://localhost:8083/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -33,11 +33,6 @@
       <description></description>
       <initValue>'C:\\Users\\njones\\Katalon Studio\\Convergence 2019\\ScreenShots\\'</initValue>
       <name>ssPath</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'http://localhost:8081/webapp'</initValue>
-      <name>webappURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

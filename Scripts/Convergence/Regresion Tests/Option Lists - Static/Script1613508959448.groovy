@@ -40,6 +40,14 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
 
+WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10)
+
+WebUI.doubleClick(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(2)
+
 assertEquals('Option Lists', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
 assertEquals('Items Per Page', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Option Lists\'])[2]/following::span[2]'))
@@ -76,7 +84,7 @@ selenium.click('id=optionListName')
 
 selenium.typeKeys('id=optionListName', 'List Two')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Dynamic\'])[1]/following::button[1]')
+selenium.click('//button[@id="newOptionsListSubmitBtn"]')
 
 assertEquals('Option List Detail List Two', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 

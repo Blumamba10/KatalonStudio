@@ -36,6 +36,20 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
+
+
+//Click Object -  change 'usernameField'  to  "usernameFiled"
+selenium.click('//input[@id="usernameField"]')
+
+//typeKeys in Object -  change 'usernameField'  to  "usernameFiled"
+selenium.typeKeys('//input[@id="usernameField"]')
+
+//Valid Object -  change 'usernameField'  to  "usernameFiled"
+assertEquals('admin', selenium.getText('//input[@id="usernameField"]'))
+
+
+
+
 WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)

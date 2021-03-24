@@ -99,6 +99,8 @@ selenium.click('id=checkAllCheck')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Manage Scripts\'])[2]/following::i[3]')
 
+WebUI.switchToWindowIndex('1')
+
 WebUI.delay(2)
 
 WebUI.switchToWindowIndex('1')

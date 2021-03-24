@@ -132,12 +132,6 @@
       <testCaseId>Test Cases/Convergence/Regresion Tests/Gloabl Functions - New</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>86384769-71c1-40a6-a49f-0ae77160b9b3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Option Lists - Linked SQL Server</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>fbf53789-ad41-4b4d-b293-5d4e876354f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

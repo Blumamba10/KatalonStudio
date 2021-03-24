@@ -30,8 +30,6 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
-
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
@@ -71,7 +69,7 @@ WebUI.delay(2)
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
     'Default', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
     'Full Access', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
@@ -82,17 +80,37 @@ selenium.click('//div/div[2]')
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
+WebUI.delay(2)
+
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    'IntakePrototype', false)
+    'Default', false)
 
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    'Full Access', false)
+    'Read All', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
-assertEquals('IntakePrototype-Full Access', selenium.getText('//td[contains(text(),\'IntakePrototype-Full Access\')]'))
+assertEquals('Default-Read All', selenium.getText('//td[contains(text(),\'Default-Read All\')]'))
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Default', false)
+
+WebUI.delay(1)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Web Application', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('Default-Web Application', selenium.getText('//td[contains(text(),\'Default-Web Application\')]'))
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
 
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
     'Demo', false)
@@ -106,38 +124,58 @@ assertEquals('Demo-Full Access', selenium.getText('//td[contains(text(),\'Demo-F
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
-WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    'Default', false)
+WebUI.delay(2)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '1', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Demo', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Read All', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
-assertEquals('Default-Read All', selenium.getText('//td[contains(text(),\'Default-Read All\')]'))
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
-
-WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    'Default', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '3', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('Default-Web Application', selenium.getText('//td[contains(text(),\'Default-Web Application\')]'))
+assertEquals('Demo-Read All', selenium.getText('//td[contains(text(),\'Demo-Read All\')]'))
 
 WebUI.waitForElementPresent(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'), 
     0)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '2', false)
+WebUI.delay(2)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '1', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Demo', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Web Application', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('Demo-Web Application', selenium.getText('//td[contains(text(),\'Demo-Web Application\')]'))
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'IntakePrototype', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Full Access', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('IntakePrototype-Full Access', selenium.getText('//td[contains(text(),\'IntakePrototype-Full Access\')]'))
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'IntakePrototype', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Read All', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
@@ -145,39 +183,17 @@ assertEquals('IntakePrototype-Read All', selenium.getText('//td[contains(text(),
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '2', false)
+WebUI.delay(2)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '3', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'IntakePrototype', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Web Application', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
 assertEquals('IntakePrototype-Web Application', selenium.getText('//td[contains(text(),\'IntakePrototype-Web Application\')]'))
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '4', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '1', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('Demo-Read All', selenium.getText('//td[contains(text(),\'Demo-Read All\')]'))
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '4', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '3', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('Demo-Web Application', selenium.getText('//td[contains(text(),\'Demo-Web Application\')]'))
 
 assertEquals('Showing 1 to 9 of 9 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
 
@@ -255,17 +271,23 @@ WebUI.delay(1)
 
 assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
 
-selenium.click('//div/ul/li[6]/a')
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
-assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Assignment'))
+
+WebUI.delay(2)
+
+selenium.click('//a[contains(text(),\'testUser\')]')
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
 
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
     'Default', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '2', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Full Access', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
@@ -275,38 +297,13 @@ selenium.click('//div/div[2]')
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '2', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '2', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('IntakePrototype-Full Access', selenium.getText('//td[contains(text(),\'IntakePrototype-Full Access\')]'))
-
-WebUI.waitForElementPresent(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'), 
-    0)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '4', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '2', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('Demo-Full Access', selenium.getText('//td[contains(text(),\'Demo-Full Access\')]'))
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+WebUI.delay(2)
 
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
     'Default', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '1', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Read All', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
@@ -314,11 +311,13 @@ assertEquals('Default-Read All', selenium.getText('//td[contains(text(),\'Defaul
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
+WebUI.delay(2)
+
 WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
     'Default', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '3', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Web Application', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
@@ -326,11 +325,72 @@ assertEquals('Default-Web Application', selenium.getText('//td[contains(text(),\
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '2', false)
+WebUI.delay(2)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '1', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Demo', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Full Access', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('Demo-Full Access', selenium.getText('//td[contains(text(),\'Demo-Full Access\')]'))
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Demo', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Read All', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('Demo-Read All', selenium.getText('//td[contains(text(),\'Demo-Read All\')]'))
+
+WebUI.waitForElementPresent(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'), 
+    0)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'Demo', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Web Application', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('Demo-Web Application', selenium.getText('//td[contains(text(),\'Demo-Web Application\')]'))
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'IntakePrototype', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Full Access', false)
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+
+assertEquals('IntakePrototype-Full Access', selenium.getText('//td[contains(text(),\'IntakePrototype-Full Access\')]'))
+
+WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'IntakePrototype', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Read All', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
@@ -338,39 +398,17 @@ assertEquals('IntakePrototype-Read All', selenium.getText('//td[contains(text(),
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '2', false)
+WebUI.delay(2)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '3', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+    'IntakePrototype', false)
+
+WebUI.selectOptionByLabel(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
+    'Web Application', false)
 
 WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
 
 assertEquals('IntakePrototype-Web Application', selenium.getText('//td[contains(text(),\'IntakePrototype-Web Application\')]'))
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '4', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '1', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('Demo-Read All', selenium.getText('//td[contains(text(),\'Demo-Read All\')]'))
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
-    '4', false)
-
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project Role to Add'), 
-    '3', false)
-
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
-
-assertEquals('Demo-Web Application', selenium.getText('//td[contains(text(),\'Demo-Web Application\')]'))
 
 assertEquals('Showing 1 to 9 of 9 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
 
@@ -447,6 +485,8 @@ WebUI.delay(1)
 selenium.click('//button[@id=\'overlayConfirmOk\']')
 
 WebUI.delay(1)
+
+assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id=\'rolesTable_info\']'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

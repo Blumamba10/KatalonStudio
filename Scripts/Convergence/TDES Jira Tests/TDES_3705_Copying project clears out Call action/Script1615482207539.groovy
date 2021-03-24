@@ -36,7 +36,7 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-selenium.click('link=Projects')
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
 
 WebUI.click(findTestObject('Convergence/Projects_Page/button_Add New Project'))
 
@@ -44,7 +44,8 @@ WebUI.setText(findTestObject('Convergence/Projects_Page/New Project_Page/project
 
 WebUI.setText(findTestObject('Convergence/Projects_Page/New Project_Page/projectDescription'), 'New Project (No Prototype)')
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Projects_Page/New Project_Page/Project Type_dropdown'), 'NA', false)
+WebUI.selectOptionByLabel(findTestObject('Convergence/Projects_Page/New Project_Page/Project Type_dropdown'), 'No Prototype', 
+    false)
 
 WebUI.click(findTestObject('Convergence/Projects_Page/New Project_Page/button_Submit'))
 
