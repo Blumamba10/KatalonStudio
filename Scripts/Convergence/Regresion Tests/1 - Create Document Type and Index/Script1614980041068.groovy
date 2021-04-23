@@ -36,9 +36,6 @@ String baseUrl = 'http://localhost:8082/tdes'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.openBrowser('')
-
-
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Document Management'), FailureHandling.STOP_ON_FAILURE)

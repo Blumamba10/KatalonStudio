@@ -91,7 +91,7 @@ assertEquals('', selenium.getText('xpath=(.//*[normalize-space(text()) and norma
 assertEquals('', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Page Map\'])[1]/following::i[1]'))
 
 assertEquals('This value should be set with the paramMap value returned from the MuliPageCreate action', selenium.getText(
-        'xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Page Map\'])[1]/following::div[4]'))
+        '//div[contains(text(),"This value should be set with the paramMap value r")]'))
 
 assertEquals('Page Index', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'This value should be set with the paramMap value returned from the MuliPageCreate action\'])[1]/following::label[1]'))
 
@@ -99,7 +99,7 @@ assertTrue(selenium.isEditable('xpath=(.//*[normalize-space(text()) and normaliz
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Page Index\'])[1]/following::i[1]'))
 
-assertEquals('The 1-based index of the page form id to return', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Page Index\'])[1]/following::div[4]'))
+assertEquals('The 1-based index of the page form id to return', selenium.getText('//div[contains(text(),"The 1-based index of the page form id to return")]'))
 
 selenium.click('id=nameInput')
 

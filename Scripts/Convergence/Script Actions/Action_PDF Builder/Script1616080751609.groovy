@@ -105,23 +105,23 @@ assertTrue(selenium.isEditable('xpath=(.//*[normalize-space(text()) and normaliz
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Number of files\'])[1]/following::button[1]'))
 
-assertEquals('The number of input files to be combined.', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Number of files\'])[1]/following::div[4]'))
+assertEquals('The number of input files to be combined.', selenium.getText('//div[contains(text(),"The number of input files to be combined.")]'))
 
-assertEquals('File 1', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'The number of input files to be combined.\'])[1]/following::label[1]'))
+assertEquals('File 1', selenium.getText('//label[@for="File1FileInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File 1\'])[1]/following::input[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File 1\'])[1]/following::button[1]'))
 
-assertEquals('An input file. Supported formats are: pdf, tif, gif, bmp, png, and jpg', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File 1\'])[1]/following::div[4]'))
+assertEquals('An input file. Supported formats are: pdf, tif, gif, bmp, png, and jpg', selenium.getText('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[6]/div[1]/div[1]/div[1]/div[2]'))
 
-assertEquals('File 2', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'An input file. Supported formats are: pdf, tif, gif, bmp, png, and jpg\'])[1]/following::label[1]'))
+assertEquals('File 2', selenium.getText('//label[@for="File2FileInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File 2\'])[1]/following::input[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File 2\'])[1]/following::button[1]'))
 
-assertEquals('An input file. Supported formats are: pdf, tif, gif, bmp, png, and jpg', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File 2\'])[1]/following::div[4]'))
+assertEquals('An input file. Supported formats are: pdf, tif, gif, bmp, png, and jpg', selenium.getText('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[7]/div[1]/div[1]/div[1]/div[2]'))
 
 assertEquals('Stop on Error', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'An input file. Supported formats are: pdf, tif, gif, bmp, png, and jpg\'])[2]/following::label[1]'))
 

@@ -104,7 +104,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Multipage Form Name\'])[1]/following::button[1]'))
 
 assertEquals('Not required. Name for all pages of this multi-page form/application - can be used in SWAT publish scripts', 
-    selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Multipage Form Name\'])[1]/following::div[4]'))
+    selenium.getText('//div[contains(text(),"Name for all pages of this multi-pa")]'))
 
 selenium.click('id=nameInput')
 

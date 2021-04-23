@@ -94,29 +94,27 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Read Only Fields\'])[1]/following::button[1]'))
 
-assertEquals('Read Only Groups', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Read Only Fields\'])[1]/following::label[1]'))
+assertEquals('Read Only Groups', selenium.getText('//label[@for="ReadOnlyGroupsInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Read Only Groups\'])[1]/following::input[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Read Only Groups\'])[1]/following::button[1]'))
 
-assertEquals('Editable Fields', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Read Only Groups\'])[1]/following::label[1]'))
+assertEquals('Editable Fields', selenium.getText('//label[@for="EditableFieldsInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Editable Fields\'])[1]/following::input[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Editable Fields\'])[1]/following::button[1]'))
 
-assertEquals('Editable Groups', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Editable Fields\'])[1]/following::label[1]'))
+assertEquals('Editable Groups', selenium.getText('//label[@for="EditableGroupsInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Editable Groups\'])[1]/following::input[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Editable Groups\'])[1]/following::button[1]'))
 
-assertEquals('Change Defaults', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Change Navigation Default Behavior\'])[1]/following::label[1]'))
+assertEquals('Change Defaults', selenium.getText('//label[@for="ChangeDefaultsSelectTriggerInput"]'))
 
 assertEquals('YesNo', selenium.getText('id=ChangeDefaultsSelectTriggerInput'))
-
-assertEquals('Change \'To\' Page', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat(\'Change \', "\'", \'To\', "\'", \' Page\')])[1]/following::label[1]'))
 
 assertEquals('YesNo', selenium.getText('id=Change\'To\'PageSelectTriggerInput'))
 

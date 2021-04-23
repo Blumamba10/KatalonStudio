@@ -12,9 +12,15 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>98491d59-ef39-44c0-a9ba-448beb524e6c</testSuiteGuid>
    <testCaseLink>
-      <guid>81c7acb8-99fb-4b2a-9e5e-8e9f5f126cc7</guid>
+      <guid>d9b0bda7-b535-4eed-a36b-07146c806ba6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/z_databaseTest/Set Monitor Refresh setting to 2mins</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81c7acb8-99fb-4b2a-9e5e-8e9f5f126cc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/z_databaseTest/Validate TDES DB Version</testCaseId>
    </testCaseLink>
    <testCaseLink>

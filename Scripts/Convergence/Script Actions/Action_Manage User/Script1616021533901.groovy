@@ -84,7 +84,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'User Id\'])[1]/following::button[1]'))
 
-assertEquals('Password', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'User Id\'])[1]/following::label[1]'))
+assertEquals('Password', selenium.getText('//label[@for="PasswordInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Password\'])[1]/following::input[1]'))
 

@@ -82,8 +82,6 @@ assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
 assertEquals('JSON Data', selenium.getText('//label[@for="jsonQueryDataInput"]'))
 
-assertTrue(selenium.isElementPresent('//i[@class="fas fa-bars"]'))
-
 assertTrue(selenium.isElementPresent('//input[@id="jsonQueryDataInput"]'))
 
 assertEquals('Query', selenium.getText('//label[@for="queryOperationSelect"]'))

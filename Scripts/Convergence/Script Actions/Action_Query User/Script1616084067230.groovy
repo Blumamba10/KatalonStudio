@@ -86,8 +86,6 @@ assertEquals('User Id', selenium.getText('//label[@for="UserIdInput"]'))
 
 assertTrue(selenium.isElementPresent('//input[@id="UserIdInput"]'))
 
-assertTrue(selenium.isElementPresent('//i[@class="fas fa-bars"]'))
-
 selenium.click('id=nameInput')
 
 selenium.typeKeys('id=nameInput', 'Query_User')

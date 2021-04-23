@@ -86,13 +86,13 @@ assertEquals('No. of Values', selenium.getText('xpath=(.//*[normalize-space(text
 
 assertTrue(selenium.isEditable('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No. of Values\'])[1]/following::input[1]'))
 
-assertEquals('Value 1', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No. of Values\'])[1]/following::label[1]'))
+assertEquals('Value 1', selenium.getText('//label[@for="Value1Input"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value 1\'])[1]/following::input[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value 1\'])[1]/following::button[1]'))
 
-assertEquals('Value 2', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value 1\'])[1]/following::label[1]'))
+assertEquals('Value 2', selenium.getText('//label[@for="Value2Input"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value 2\'])[1]/following::input[1]'))
 

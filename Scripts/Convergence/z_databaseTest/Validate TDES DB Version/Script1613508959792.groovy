@@ -27,3 +27,5 @@ println('DB Version = ' + dbVersion)
 
 CustomKeywords.'sqlConnection.blog.closeDatabaseConnection'()
 
+CustomKeywords.'sqlConnection.blog.executeQuery'('')
+

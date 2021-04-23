@@ -88,14 +88,14 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Media Id\'])[2]/following::i[1]'))
 
-assertEquals('Meta-Data Only', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Media Id\'])[2]/following::label[1]'))
+assertEquals('Meta-Data Only', selenium.getText('//label[@for="Meta-DataOnlySelectInput"]'))
 
 assertEquals('YesNo', selenium.getText('id=Meta-DataOnlySelectInput'))
 
 assertEquals('If Yes returns only the meta-data for the media item. Media content will not be set in the media return value.', 
     selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Meta-Data Only\'])[1]/following::div[1]'))
 
-assertEquals('Detect Content Type', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'media\'])[1]/following::label[1]'))
+assertEquals('Detect Content Type', selenium.getText('//label[@for="DetectContentTypeSelectInput"]'))
 
 assertEquals('YesNo', selenium.getText('id=DetectContentTypeSelectInput'))
 

@@ -70,27 +70,27 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add
 
 selenium.click('link=GetFormFieldValues')
 
-assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'GetFormFieldValues\'])[2]/following::label[1]'))
+assertEquals('Name', selenium.getText('//label[@for="nameInput"]'))
 
 assertTrue(selenium.isElementPresent('id=nameInput'))
 
-assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::label[1]'))
+assertEquals('Description', selenium.getText('//label[@for="descriptionInput"]'))
 
 assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
-assertEquals('Form Id', selenium.getText('//div/div/div/div/div/label'))
+assertEquals('Form Id', selenium.getText('//label[@for="FormIdInput"]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Form Id\'])[1]/following::input[1]'))
 
-assertEquals('Returned values will only be available at runtime', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Form Id\'])[1]/following::div[4]'))
+assertEquals('Returned values will only be available at runtime', selenium.getText('//div[contains(text(),"Returned values will only be available at runtime")]'))
 
-assertEquals('Prefer Labels Over Values', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Returned values will only be available at runtime\'])[1]/following::label[1]'))
+assertEquals('Prefer Labels Over Values', selenium.getText('//label[@for="PreferLabelsOverValuesSelectTriggerInput"]'))
 
 assertEquals('NoYes', selenium.getText('id=PreferLabelsOverValuesSelectTriggerInput'))
 
-assertEquals('When a label is present (typically with lists), return the label instead of the value', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Prefer Labels Over Values\'])[1]/following::div[1]'))
+assertEquals('When a label is present (typically with lists), return the label instead of the value', selenium.getText('//div[contains(text(),"When a label is present (typically with lists), re")]'))
 
-assertEquals('All Fields', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'When a label is present (typically with lists), return the label instead of the value\'])[1]/following::label[1]'))
+assertEquals('All Fields', selenium.getText('//label[@for="AllFieldsSelectTriggerInput"]'))
 
 assertEquals('NoYes', selenium.getText('id=AllFieldsSelectTriggerInput'))
 
@@ -98,18 +98,18 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'All Fields\'])[1]/following::div[1]'))
 
-assertEquals('Include All Multi-Val Selections', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'All Fields\'])[1]/following::label[1]'))
+assertEquals('Include All Multi-Val Selections', selenium.getText('//label[@for="IncludeAllMulti-ValSelectionsSelectTriggerInput"]'))
 
 assertEquals('NoYes', selenium.getText('id=IncludeAllMulti-ValSelectionsSelectTriggerInput'))
 
 assertEquals('Indicates if Multi-val fields should have all selections returned (default is only the first)', selenium.getText(
-        'xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Include All Multi-Val Selections\'])[1]/following::div[1]'))
+        '//div[contains(text(),"Indicates if Multi-val fields should have all sele")]'))
 
-assertEquals('Return XML-Safe Escaped Version of the Field Values', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Indicates if Multi-val fields should have all selections returned (default is only the first)\'])[1]/following::label[1]'))
+assertEquals('Return XML-Safe Escaped Version of the Field Values', selenium.getText('//label[@for="ReturnXML-SafeEscapedVersionoftheFieldValuesSelectInput"]'))
 
 assertEquals('NoYes', selenium.getText('id=ReturnXML-SafeEscapedVersionoftheFieldValuesSelectInput'))
 
-assertEquals('Returned values will be escaped for use in XML', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Return XML-Safe Escaped Version of the Field Values\'])[1]/following::div[1]'))
+assertEquals('Returned values will be escaped for use in XML', selenium.getText('//div[contains(text(),"Returned values will be escaped for use in XML")]'))
 
 selenium.click('id=nameInput')
 
@@ -117,7 +117,7 @@ selenium.typeKeys('id=nameInput', 'GetFormField')
 
 selenium.typeKeys('id=descriptionInput', 'Description')
 
-selenium.typeKeys('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Form Id\'])[1]/following::input[1]', 'FormID')
+selenium.typeKeys('//input[@id="FormIdInput"]', 'FormID')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Returned values will be escaped for use in XML\'])[1]/following::button[1]')
 

@@ -84,8 +84,6 @@ assertEquals('XML Data Source', selenium.getText('//label[@for="xmlDataInput"]')
 
 assertTrue(selenium.isElementPresent('//input[@id="xmlDataInput"]'))
 
-assertTrue(selenium.isElementPresent('//div[@class="input-group-append"]//button[@type="button"]'))
-
 assertEquals('Query For', selenium.getText('//label[@for="operationSelect"]'))
 
 assertEquals('Has ValueValue Is EmptyGet ValueGet XML DataGet Element ValuesGet Element Count', selenium.getText('id=operationSelect'))
