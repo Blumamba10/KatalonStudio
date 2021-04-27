@@ -103,7 +103,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'NTLM Enabled\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

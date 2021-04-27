@@ -68,25 +68,25 @@ selenium.type('id=scriptDescriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Input Parameters_addBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameters_addBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Input Parameter_textarea'), 'in')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameter_textarea'), 'in')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Input Parameters_addBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameters_addBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Input Parameter_textarea'), 'my parameters')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameter_textarea'), 'my parameters')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Output Parameters_add_Btn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Output Parameters_add_Btn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Output Parameter_textarea'), 'out')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Output Parameter_textarea'), 'out')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save Script'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save Script'))
 
 WebUI.delay(3)
 

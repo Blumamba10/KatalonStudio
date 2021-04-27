@@ -186,6 +186,12 @@
       <testCaseId>Test Cases/Convergence/Regresion Tests/Logging Configuration</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>f1c6b5eb-a25c-4f84-a874-970de8ce356d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Configure Server - Handler</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>96614824-e18c-464a-9a60-9f9cd26bff20</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -206,13 +212,13 @@
    <testCaseLink>
       <guid>fb8f9aff-1ded-487c-9caf-fcd08697f2b9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Add User</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/WIP___Add User</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2c3ab687-37e3-48ec-978f-caede67a770e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Project Roles</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -230,7 +236,7 @@
    <testCaseLink>
       <guid>f912ba37-80da-4bbf-bafb-897316f7bdfc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Delete Option Lists</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -108,7 +108,7 @@ selenium.click('//ngb-modal-window/div/div/div[3]/button')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error\'])[2]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

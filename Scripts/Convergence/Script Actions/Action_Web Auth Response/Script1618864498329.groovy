@@ -122,7 +122,7 @@ selenium.typeKeys('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'If the auth was successful, an optional description of the user (usually a name).\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

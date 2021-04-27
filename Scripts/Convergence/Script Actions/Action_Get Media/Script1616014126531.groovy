@@ -118,7 +118,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Yes
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'GetMedia\'])[2]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

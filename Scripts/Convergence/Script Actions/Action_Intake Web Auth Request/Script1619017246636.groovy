@@ -92,7 +92,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Met
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'IntakeWebAuthRequest\'])[2]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

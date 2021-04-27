@@ -68,7 +68,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add
 
 selenium.click('link=CSVImport')
 
-assertEquals('CSVImport', selenium.getText('//ngb-modal-window/div/div/div/h4'))
+assertEquals('CSVImport', selenium.getText('//h4[@class="modal-title"]'))
 
 assertEquals('Name', selenium.getText('//label[@for="nameInput"]'))
 
@@ -80,25 +80,23 @@ assertEquals('File', selenium.getText('//label[@for="FileFileInput"]'))
 
 assertTrue(selenium.isEditable('//input[@id="FileFileInput"]'))
 
-assertTrue(selenium.isElementPresent('//button[@id="FileFileInputMenuToggle"]'))
-
 assertEquals('Delimiter', selenium.getText('//label[@for="DelimiterInput"]'))
 
 assertTrue(selenium.isEditable('//input[@id="DelimiterInput"]'))
 
-assertTrue(selenium.isElementPresent('//button[@id="DelimiterInputMenuToggle"]'))
+assertTrue(selenium.isElementPresent('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[3]/div[1]/div[1]/div[1]/div[1]/app-variable-entry[1]/div[1]/div[1]/div[1]/button[1]/i[1]'))
 
 assertEquals('Quote Character', selenium.getText('//label[@for="QuoteCharacterInput"]'))
 
 assertTrue(selenium.isEditable('//input[@id="QuoteCharacterInput"]'))
 
-assertTrue(selenium.isElementPresent('//button[@id="QuoteCharacterInputMenuToggle"]'))
+assertTrue(selenium.isElementPresent('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[4]/div[1]/div[1]/div[1]/div[1]/app-variable-entry[1]/div[1]/div[1]/div[1]/button[1]'))
 
 assertEquals('End of Line Symbols', selenium.getText('//label[@for="EndofLineSymbolsInput"]'))
 
 assertTrue(selenium.isEditable('//input[@id="EndofLineSymbolsInput"]'))
 
-assertTrue(selenium.isElementPresent('//button[@id="EndofLineSymbolsInputMenuToggle"]'))
+assertTrue(selenium.isElementPresent('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[5]/div[1]/div[1]/div[1]/div[1]/app-variable-entry[1]/div[1]/div[1]/div[1]/button[1]/i[1]'))
 
 assertEquals('First Row Contains Column Headers', selenium.getText('//label[@for="FirstRowContainsColumnHeadersSelectTriggerInput"]'))
 
@@ -106,7 +104,7 @@ assertEquals('YesNo', selenium.getText('id=FirstRowContainsColumnHeadersSelectTr
 
 assertEquals('Index After Header', selenium.getText('//label[@for="IndexAfterHeaderInput"]'))
 
-assertTrue(selenium.isElementPresent('//button[@id="IndexAfterHeaderInputMenuToggle"]'))
+assertTrue(selenium.isElementPresent('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[7]/div[1]/div[1]/div[1]/div[1]/app-variable-entry[1]/div[1]/div[1]/div[1]/button[1]/i[1]'))
 
 selenium.click('id=nameInput')
 
@@ -120,7 +118,7 @@ selenium.typeKeys('//input[@id="FileFileInput"]', 'File')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Index After Header\'])[1]/following::button[2]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

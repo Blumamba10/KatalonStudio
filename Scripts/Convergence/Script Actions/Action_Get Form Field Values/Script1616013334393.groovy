@@ -121,7 +121,7 @@ selenium.typeKeys('//input[@id="FormIdInput"]', 'FormID')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Returned values will be escaped for use in XML\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

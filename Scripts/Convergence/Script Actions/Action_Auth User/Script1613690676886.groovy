@@ -68,7 +68,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Scr
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/Actions/a_AuthUser'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Actions/a_AuthUser'))
 
 assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'AuthUser\'])[2]/following::label[1]'))
 
@@ -102,7 +102,7 @@ selenium.typeKeys('id=descriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Auto Create LDAP Authenticated Users\'])[1]/following::button[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_D
 
 WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
 
-selenium.click('link=Manage Templates')
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'), FailureHandling.CONTINUE_ON_FAILURE)
 
 selenium.click('id=addTemplateButton')
 

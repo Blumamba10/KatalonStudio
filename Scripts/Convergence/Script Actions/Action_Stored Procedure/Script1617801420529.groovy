@@ -32,6 +32,8 @@ import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
@@ -108,7 +110,7 @@ assertEquals('Script should continue on error', selenium.getText('//label[@class
 
 selenium.click('//button[contains(text(),"OK")]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 

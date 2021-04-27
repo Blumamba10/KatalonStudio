@@ -256,7 +256,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('//button[contains(text(),"OK")]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 
