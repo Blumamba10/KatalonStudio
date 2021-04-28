@@ -21,8 +21,6 @@ CustomKeywords.'sqlConnection.blog.connectDB'('localhost', '1433', GlobalVariabl
 
 CustomKeywords.'sqlConnection.blog.execute'('  SET IDENTITY_INSERT tdes_project ON')
 
-CustomKeywords.'sqlConnection.blog.executeQuery'('select value from tdes_setting where id = 1')
-
 CustomKeywords.'sqlConnection.blog.execute'('Update tdes_setting set value = 120000 where name = \'cachedHistoryCountIntervalMillis\'')
 
 CustomKeywords.'sqlConnection.blog.execute'('Update tdes_setting set value = 120000 where name = \'cachedSubmittedCountIntervalMillis\'')
