@@ -30,6 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
@@ -44,7 +46,7 @@ WebUI.delay(2)
 
 selenium.click('id=errorQueueLink')
 
-WebUI.verifyElementText(findTestObject('Convergence/Scripts/Monitor_Page/Error Queue_Page/h1_Error'), 'Error')
+WebUI.verifyElementText(findTestObject('Convergence/Scripts/Monitor/Error Queue_Page/h1_Error'), 'Error')
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error\'])[1]/following::span[1]'))
 

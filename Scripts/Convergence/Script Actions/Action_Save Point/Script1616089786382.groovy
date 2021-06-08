@@ -38,11 +38,11 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 
@@ -74,7 +74,7 @@ selenium.click('link=Save Point')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Save Point\'])[2]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 
@@ -82,7 +82,7 @@ WebUI.closeWindowIndex('1')
 
 WebUI.switchToWindowIndex('0')
 
-WebUI.setText(findTestObject('Convergence/Scripts/ManageScripts_Page/input_Search Filter'), 'Save Point')
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Save Point')
 
 assertEquals('Save Point', selenium.getText('//a[@class="new-editor-open"]'))
 

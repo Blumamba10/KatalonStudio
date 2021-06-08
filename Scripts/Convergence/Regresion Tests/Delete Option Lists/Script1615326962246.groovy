@@ -30,6 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'http://localhost:8082/tdes'
@@ -44,11 +46,11 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.OPTIONAL)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.OPTIONAL)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Convergence/Templates/OptionLists_Page/input_Search Filter'), 'Li')
 

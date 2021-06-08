@@ -38,11 +38,11 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.OPTIONAL)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_All'), 10, FailureHandling.OPTIONAL)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_All'), 10, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_All'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_All'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
 
@@ -110,7 +110,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('id=projectName')
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/New Project_Page/projectName'), '10172018_test')
+WebUI.setText(findTestObject('Convergence/Projects/New Project/projectName'), '10172018_test')
 
 selenium.click('id=projectDescription')
 
@@ -136,23 +136,23 @@ WebUI.delay(6)
 
 selenium.click('id=overlayConfirmOk')
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/input_Search Filter'), 'webapp')
+WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'webapp')
 
-WebUI.click(findTestObject('Convergence/Projects_Page/checkbox_Select all'))
+WebUI.click(findTestObject('Convergence/Projects/checkbox_Select all'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_Delete'))
+WebUI.click(findTestObject('Convergence/Projects/button_Delete'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_OK'))
+WebUI.click(findTestObject('Convergence/Projects/button_OK'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/input_Search Filter'), 'webwebapp')
+WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'webwebapp')
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/checkbox_Check All'))
+WebUI.click(findTestObject('Convergence/Security/Users/checkbox_Check All'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/delete'))
+WebUI.click(findTestObject('Convergence/Security/Users/delete'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/button_OK'))
+WebUI.click(findTestObject('Convergence/Security/Users/button_OK'))
 

@@ -33,11 +33,11 @@ public class Convergence_LogoutLogin {
 		
 
 			
-		WebUI.waitForElementVisible(findTestObject('Convergence/Login_Page/button_Login'), 0)
+		WebUI.waitForElementVisible(findTestObject('Convergence/Login/button_Login'), 0)
 
-		WebUI.sendKeys(findTestObject('Object Repository/Convergence/Login_Page/username'), username)
-		WebUI.sendKeys(findTestObject('Object Repository/Convergence/Login_Page/password'), password)
-		WebUI.click(findTestObject('Convergence/Login_Page/button_Login'))
+		WebUI.sendKeys(findTestObject('Convergence/Login/username'), username)
+		WebUI.sendKeys(findTestObject('Convergence/Login/password'), password)
+		WebUI.click(findTestObject('Convergence/Login/button_Login'))
 		WebUI.delay(2)
 	}
 }

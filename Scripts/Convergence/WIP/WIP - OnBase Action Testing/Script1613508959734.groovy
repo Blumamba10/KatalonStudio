@@ -42,11 +42,11 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Monitor'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/History View_btn'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/History View_btn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Monitor_Page/History Queue_Page/a_onbase-foundep2-test'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/History Queue_Page/a_onbase-foundep2-test'))
 
-String message = WebUI.getText(findTestObject('Convergence/Scripts/Monitor_Page/History Queue_Page/Page_/OnBaseTest/result'))
+String message = WebUI.getText(findTestObject('Convergence/Scripts/Monitor/History Queue_Page/Page_/OnBaseTest/result'))
 
 if (!(message.contains('Document Id=13327'))) {
   //  KeywordUtil.markFailed('Message does not contain expected text.')

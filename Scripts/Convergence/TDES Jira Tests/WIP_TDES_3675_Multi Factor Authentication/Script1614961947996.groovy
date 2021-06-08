@@ -38,11 +38,11 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -50,14 +50,14 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication_Page/h3_Google 2 Factor Authentication'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication/h3_Google 2 Factor Authentication'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication_Page/h3_Google 2 Factor Authentication'), 'Google 2 Factor Authentication')
+WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/h3_Google 2 Factor Authentication'), 'Google 2 Factor Authentication')
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication_Page/p_Google 2 Factor Description'), 'Authenticate users using Google Two Factor Authentication application. This applies to the Administration Console.')
+WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/p_Google 2 Factor Description'), 'Authenticate users using Google Two Factor Authentication application. This applies to the Administration Console.')
 
-WebUI.click(findTestObject('Convergence/Security/Authentication_Page/i_Google 2 Facor button'))
+WebUI.click(findTestObject('Convergence/Security/Authentication/i_Google 2 Facor button'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
 
@@ -88,31 +88,31 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/btn_addUser'))
+WebUI.click(findTestObject('Convergence/Security/Users/btn_addUser'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/_Add User_Page/input_User Name'), 'MFAUser')
+WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_User Name'), 'MFAUser')
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/checkbox_Internal Database'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/checkbox_Internal Database'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/_Add User_Page/input_Enter Password'), 'Password1!')
+WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_Enter Password'), 'Password1!')
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/_Add User_Page/input_Re-Enter Password'), 'Password1!')
+WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_Re-Enter Password'), 'Password1!')
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/Users_Page/_Add User_Page/select_Items Per Page'), '100', 
+WebUI.selectOptionByValue(findTestObject('Convergence/Security/Users/_Add User/select_Items Per Page'), '100', 
     false)
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/checkbox_CheckAll'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/checkbox_CheckAll'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Submit'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Submit'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Configure Project Access'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Configure Project Access'))
 
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/button_addRoleAssociation'))
+WebUI.click(findTestObject('Convergence/Security/Project Roles/button_addRoleAssociation'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/dropdown_Project'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Security/Project Roles/Add Project Role_popup/dropdown_Project'), 
     '1', false)
 
-WebUI.click(findTestObject('Convergence/Security/ProjectRoleAssociations_Page/Add Project Role_popup/button_Add'))
+WebUI.click(findTestObject('Convergence/Security/Project Roles/Add Project Role_popup/button_Add'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -120,20 +120,20 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/input_Search Filter'), 'MFAUser')
+WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'MFAUser')
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/a_MFAUser'))
+WebUI.click(findTestObject('Convergence/Security/Users/a_MFAUser'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Edit User Account'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Edit User Account'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users_Page/_Add User_Page/label_Use 2 Factor Authentication'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_Add User/label_Use 2 Factor Authentication'), 
     0)
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/label_Use 2 Factor Authentication'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/label_Use 2 Factor Authentication'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users_Page/_Add User_Page/a_Clear 2FA Secret'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_Add User/a_Clear 2FA Secret'), 0)
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/_Add User_Page/button_Submit'))
+WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Submit'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
 
@@ -141,71 +141,71 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Logout'))
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'MFAUser')
+WebUI.sendKeys(findTestObject('Convergence/Login/username'), 'MFAUser')
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'Password1!')
+WebUI.sendKeys(findTestObject('Convergence/Login/password'), 'Password1!')
 
-WebUI.click(findTestObject('Convergence/Login_Page/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/QR Code_Page/iframe_Convergence_qrCodeFrame'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/QR Code_Page/iframe_Convergence_qrCodeFrame'), 0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/QR Code_Page/h3_QR Code for 2-Step Authentication'), 'QR Code for 2-Step Authentication')
+WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/h3_QR Code for 2-Step Authentication'), 'QR Code for 2-Step Authentication')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/QR Code_Page/h4_Instructions'), 'Instructions')
+WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/h4_Instructions'), 'Instructions')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/QR Code_Page/p_If you dont already'), 'If you don\'t already have it, install the Google Authenticator app on your phone or other mobile device.')
+WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/p_If you dont already'), 'If you don\'t already have it, install the Google Authenticator app on your phone or other mobile device.')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/QR Code_Page/h5_Get the App'), 'Get the App')
+WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/h5_Get the App'), 'Get the App')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/QR Code_Page/button_For Android'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/QR Code_Page/button_For Android'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/QR Code_Page/button_For iOS'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/QR Code_Page/button_For iOS'), 0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/QR Code_Page/p_Once installed'), 'Once installed, run the Authenticator app and scan this QR Code.')
+WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/p_Once installed'), 'Once installed, run the Authenticator app and scan this QR Code.')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/QR Code_Page/p_At your next login'), 'At your next login, when prompted, you will need to enter the 6-digit code from the Google Authenticator app into the Verification Code field.')
+WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/p_At your next login'), 'At your next login, when prompted, you will need to enter the 6-digit code from the Google Authenticator app into the Verification Code field.')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/QR Code_Page/a_Return to Login'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/QR Code_Page/a_Return to Login'), 0)
 
-WebUI.click(findTestObject('Convergence/Login_Page/QR Code_Page/a_Return to Login'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login/QR Code_Page/a_Return to Login'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'MFAUser')
+WebUI.sendKeys(findTestObject('Convergence/Login/username'), 'MFAUser')
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'Password1!')
+WebUI.sendKeys(findTestObject('Convergence/Login/password'), 'Password1!')
 
-WebUI.click(findTestObject('Convergence/Login_Page/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/Google Verification Code_Page/input_Google Authenticator Verification Code_code'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/Google Verification Code_Page/input_Google Authenticator Verification Code_code'), 
     0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/Google Verification Code_Page/a_Login'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/Google Verification Code_Page/a_Login'), 0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/Google Verification Code_Page/a_Convergence'), 'Convergence')
+WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/a_Convergence'), 'Convergence')
 
-WebUI.click(findTestObject('Convergence/Login_Page/Google Verification Code_Page/i_Help'))
+WebUI.click(findTestObject('Convergence/Login/Google Verification Code_Page/i_Help'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/Google Verification Code_Page/h3_What is a Google Verification Code'), 
+WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/h3_What is a Google Verification Code'), 
     'What is a Google Verification Code?')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/Google Verification Code_Page/p_Convergence uses a Google Verification'), 
+WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/p_Convergence uses a Google Verification'), 
     'Convergence uses a Google Verification Code as part of a multi-factor authentication (MFA) protocol to help ensure the security of your access to the Convergence admin console. Logging into Convergence requires a username and password as the first part of the process. To complete your login, you are asked to enter a numeric code that is sent to your phone or other mobile device after you have submitted your username and password.')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/Google Verification Code_Page/a_Configure your mobile device'), 
+WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/a_Configure your mobile device'), 
     'Configure your mobile device to receive verification codes from Convergence')
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/Google Verification Code_Page/li_Get more information about Google'), 
+WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/li_Get more information about Google'), 
     'Get more information about Google Verification Codes')
 
-WebUI.click(findTestObject('Convergence/Login_Page/Google Verification Code_Page/button_Done'))
+WebUI.click(findTestObject('Convergence/Login/Google Verification Code_Page/button_Done'))
 
-WebUI.click(findTestObject('Convergence/Login_Page/Google Verification Code_Page/a_Login'))
+WebUI.click(findTestObject('Convergence/Login/Google Verification Code_Page/a_Login'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Login_Page/Google Verification Code_Page/p_You must enter a verification code to continue'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Login/Google Verification Code_Page/p_You must enter a verification code to continue'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Login_Page/Google Verification Code_Page/p_You must enter a verification code to continue'), 
+WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/p_You must enter a verification code to continue'), 
     'You must enter a verification code to continue')
 
 WebUI.delay(2)
@@ -216,11 +216,11 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/Access Denied_Pa
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'admin')
+WebUI.sendKeys(findTestObject('Convergence/Login/username'), 'admin')
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'admin')
+WebUI.sendKeys(findTestObject('Convergence/Login/password'), 'admin')
 
-WebUI.click(findTestObject('Convergence/Login_Page/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -230,17 +230,17 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Convergence/Security/Users_Page/input_Search Filter'), 'MFAUser')
+WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'MFAUser')
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/checkbox_Check All'))
+WebUI.click(findTestObject('Convergence/Security/Users/checkbox_Check All'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/delete'))
+WebUI.click(findTestObject('Convergence/Security/Users/delete'))
 
-WebUI.click(findTestObject('Convergence/Security/Users_Page/button_OK'))
+WebUI.click(findTestObject('Convergence/Security/Users/button_OK'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
 
-WebUI.click(findTestObject('Convergence/Security/Authentication_Page/i_Google 2 Facor button'))
+WebUI.click(findTestObject('Convergence/Security/Authentication/i_Google 2 Facor button'))
 

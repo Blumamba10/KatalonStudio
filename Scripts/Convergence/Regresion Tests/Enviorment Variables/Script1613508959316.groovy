@@ -30,6 +30,8 @@ import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
@@ -120,5 +122,5 @@ selenium.click('//button[@id="removeVariabledButton"]')
 
 WebUI.delay(3)
 
-WebUI.doubleClick(findTestObject('Convergence/Scripts/EnviormentVariables_Page/button_OK'))
+WebUI.doubleClick(findTestObject('Convergence/Scripts/Enviorment Variables/button_OK'))
 

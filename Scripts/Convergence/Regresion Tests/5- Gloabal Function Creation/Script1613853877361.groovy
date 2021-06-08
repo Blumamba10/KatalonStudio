@@ -30,17 +30,19 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
 
-WebUI.doubleClick(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -68,25 +70,25 @@ selenium.type('id=scriptDescriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameters_addBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameters_addBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameter_textarea'), 'in')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameter_textarea'), 'in')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameters_addBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameters_addBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameter_textarea'), 'my parameters')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameter_textarea'), 'my parameters')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Output Parameters_add_Btn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Output Parameters_add_Btn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Output Parameter_textarea'), 'out')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Output Parameter_textarea'), 'out')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save Script'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save Script'))
 
 WebUI.delay(3)
 

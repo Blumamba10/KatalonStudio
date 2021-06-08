@@ -38,34 +38,34 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_Add New Project'))
+WebUI.click(findTestObject('Convergence/Projects/button_Add New Project'))
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/New Project_Page/projectName'), 'NewProject')
+WebUI.setText(findTestObject('Convergence/Projects/New Project/projectName'), 'NewProject')
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/New Project_Page/projectDescription'), 'New Project (No Prototype)')
+WebUI.setText(findTestObject('Convergence/Projects/New Project/projectDescription'), 'New Project (No Prototype)')
 
-WebUI.selectOptionByLabel(findTestObject('Convergence/Projects_Page/New Project_Page/Project Type_dropdown'), 'No Prototype', 
+WebUI.selectOptionByLabel(findTestObject('Convergence/Projects/New Project/Project Type_dropdown'), 'No Prototype', 
     false)
 
-WebUI.click(findTestObject('Convergence/Projects_Page/New Project_Page/button_Submit'))
+WebUI.click(findTestObject('Convergence/Projects/New Project/button_Submit'))
 
 WebUI.delay(10)
 
 WebUI.refresh()
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_NewProject'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_NewProject'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_NewProject'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_NewProject'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 
 selenium.click('link=Manage Functions')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/ManageFunctions_Page/button_addScriptButton'), 0)
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Manage Functions/button_addScriptButton'), 0)
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/button_addScriptButton'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/button_addScriptButton'))
 
 WebUI.delay(5)
 
@@ -85,26 +85,26 @@ selenium.type('id=scriptDescriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameters_addBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameters_addBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameter_textarea'), 'in')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameter_textarea'), 'in')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameters_addBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameters_addBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Input Parameter_textarea'), 'my parameters')
+WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Input Parameter_textarea'), 'my parameters')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Output Parameters_add_Btn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Output Parameters_add_Btn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/Output Parameter_textarea'), 
+WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Output Parameter_textarea'), 
     'out')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/checkBtn'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save Script'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save Script'))
 
 WebUI.delay(3)
 
@@ -116,7 +116,7 @@ selenium.refresh()
 
 selenium.waitForPageToLoad('30000')
 
-WebUI.setText(findTestObject('Convergence/Scripts/ManageFunctions_Page/input_Search Filter'), 'TestFunction')
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Functions/input_Search Filter'), 'TestFunction')
 
 assertEquals('TestFunction', selenium.getText('//a[@class="new-editor-open"]'))
 
@@ -188,7 +188,7 @@ selenium.typeKeys('//input[@id="my parametersinput"]', 'myParameter')
 
 selenium.click('//button[contains(text(),"OK")]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 
@@ -196,13 +196,13 @@ WebUI.closeWindowIndex('1')
 
 WebUI.switchToWindowIndex('0')
 
-WebUI.setText(findTestObject('Convergence/Scripts/ManageScripts_Page/input_Search Filter'), 'Test Script')
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Test Script')
 
 assertEquals('Test Script', selenium.getText('//a[@class="new-editor-open"]'))
 
 selenium.click('link=Projects')
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/input_Search Filter'), 'NewProject')
+WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'NewProject')
 
 selenium.click('//button[@id="copyProjectBtn_3"]')
 
@@ -210,7 +210,7 @@ selenium.typeKeys('//input[@id="copyProjectNameInput"]', 'NewProject-copied')
 
 selenium.click('//button[@id="copyProjectSubmitButton"]')
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/input_Search Filter'), 'NewProject-copied')
+WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'NewProject-copied')
 
 WebUI.delay(2)
 
@@ -234,17 +234,17 @@ selenium.submit('name=logonform')
 
 assertTrue(selenium.isElementPresent('link=Convergence'))
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_NewProject-copied'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_NewProject-copied'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_NewProject-copied'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_NewProject-copied'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
 
-WebUI.setText(findTestObject('Convergence/Scripts/ManageScripts_Page/input_Search Filter'), 'Test Script')
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Test Script')
 
 selenium.click('link=Test Script')
 
@@ -260,7 +260,7 @@ selenium.select('id=scriptNamesSelect', 'label=TestFunction')
 
 selenium.click('//button[contains(text(),"OK")]')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageScripts_Page/Script Editor_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
 
@@ -272,9 +272,9 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 selenium.click('link=Manage Functions')
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/checkbox_CheckAll'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/checkbox_CheckAll'))
 
-WebUI.click(findTestObject('Convergence/Scripts/ManageFunctions_Page/button_Delete'))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/button_Delete'))
 
 selenium.click('//button[@id="overlayConfirmOk"]')
 
@@ -284,11 +284,11 @@ selenium.click('link=Projects')
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Convergence/Projects_Page/input_Search Filter'), 'New')
+WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'New')
 
-WebUI.click(findTestObject('Convergence/Projects_Page/checkbox_Select all'))
+WebUI.click(findTestObject('Convergence/Projects/checkbox_Select all'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_Delete'))
+WebUI.click(findTestObject('Convergence/Projects/button_Delete'))
 
 selenium.click('//button[@id="overlayConfirmOk"]')
 

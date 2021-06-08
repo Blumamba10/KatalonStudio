@@ -30,6 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
@@ -106,6 +108,6 @@ assertEquals('Configure', selenium.getText('xpath=(.//*[normalize-space(text()) 
 
 assertTrue(selenium.isElementPresent('id=historyQueueButton'))
 
-WebUI.verifyElementVisible(findTestObject('Convergence/Scripts/Monitor_Page/em_ monitor live updates occur every 3 seconds'), 
+WebUI.verifyElementVisible(findTestObject('Convergence/Scripts/Monitor/em_ monitor live updates occur every 3 seconds'), 
     FailureHandling.STOP_ON_FAILURE)
 

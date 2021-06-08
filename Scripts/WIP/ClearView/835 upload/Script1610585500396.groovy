@@ -38,23 +38,23 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.setEncryptedText(findTestObject('ClearView/NavigationLinks/Financial_link'), '')
+WebUI.setEncryptedText(findTestObject('null'), '')
 
-WebUI.click(findTestObject('ClearView/NavigationLinks/835Remits_link'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('ClearView/835 Remits_Page/a_Select File'))
+WebUI.click(findTestObject('null'))
 
-WebUI.switchToFrame(findTestObject('ClearView/835 Remits_Page/dynaframe'), 60)
+WebUI.switchToFrame(findTestObject('null'), 60)
 
-CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('ClearView/835 Remits_Page/Browse_button'), GlobalVariable.uploadfile)
+CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('null'), GlobalVariable.uploadfile)
 
 WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('ClearView/835 Remits_Page/Upload_btn'))
+WebUI.click(findTestObject('null'))
 
 WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('ClearView/835 Remits_Page/Import Files_btn'))
+WebUI.click(findTestObject('null'))
 

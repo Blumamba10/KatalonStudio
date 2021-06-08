@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>d9b0bda7-b535-4eed-a36b-07146c806ba6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/z_databaseTest/Set Monitor Refresh setting to 2mins</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -44,13 +44,13 @@
    <testCaseLink>
       <guid>d6a5f0cf-c90e-42f6-b9ac-39084f7580b8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/4- Create Basic Template</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1c68c0df-3957-4c1b-be6b-96ec59d01218</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/5- Gloabal Function Creation</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>36f4c8c4-3876-49e1-8cb0-971b51f9bfcd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Gloabl Functions - New</testCaseId>
    </testCaseLink>
    <testCaseLink>

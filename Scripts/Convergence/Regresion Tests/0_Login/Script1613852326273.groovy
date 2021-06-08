@@ -40,19 +40,19 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'admin1')
+WebUI.sendKeys(findTestObject('Convergence/Login/username'), 'admin1')
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'admin1')
+WebUI.sendKeys(findTestObject('Convergence/Login/password'), 'admin1')
 
-WebUI.click(findTestObject('Convergence/Login_Page/button_Login'))
+WebUI.click(findTestObject('Convergence/Login/button_Login'))
 
 assertEquals('Login failed. Invalid security credentials.', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Convergence\'])[1]/following::p[1]'))
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/username'), 'admin')
+WebUI.sendKeys(findTestObject('Convergence/Login/username'), 'admin')
 
-WebUI.sendKeys(findTestObject('Convergence/Login_Page/password'), 'admin')
+WebUI.sendKeys(findTestObject('Convergence/Login/password'), 'admin')
 
-WebUI.click(findTestObject('Convergence/Login_Page/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(2)
 

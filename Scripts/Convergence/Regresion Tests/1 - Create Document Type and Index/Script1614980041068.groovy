@@ -30,6 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'http://localhost:8082/tdes'
@@ -40,11 +42,11 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Document Management'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/SelectProject_values/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/SelectProject_values/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Search'), 'Search', FailureHandling.STOP_ON_FAILURE)
 
@@ -53,45 +55,36 @@ WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Ma
 WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Add Document'), 'Add Document', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/searchButton'), 1, 
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/searchButton'), 1, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/btnClear'), 1, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/Document Type'), 'Document Type', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/btnClear'), 1, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/selectDocumentType'), 1, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/Document Type'), 'Document Type', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/CreatedBy'), 'Created By', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/selectDocumentType'), 
-    1, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/CreatedDate'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/CreatedBy'), 'Created By', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/th_Created'), 'Created', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/CreatedDate'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/dropdown_Created'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/th_Created'), 'Created', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/Updated_header'), 'Updated', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/dropdown_Created'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/updated_dropdown'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/Updated_header'), 'Updated', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/CreatedDate'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/updated_dropdown'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/UpdatedDate'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/CreatedDate'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/Field Name'), 'Field Name', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/UpdatedDate'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/Operator'), 'Operator', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/Field Name'), 'Field Name', 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/Operator'), 'Operator', 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentSearch_Page/Value'), 'Value', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentSearch/Value'), 'Value', FailureHandling.STOP_ON_FAILURE)
 
 assertEquals('Please select a Document Type to view Index Fields', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value\'])[1]/following::td[1]'))
 
@@ -99,157 +92,137 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Document Manageme
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Index Fields'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Index Fields'), 'Index Fields', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Index Fields'), 'Index Fields', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Field Name'), 'Field Name', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Field Name'), 'Field Name', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Type'), 'Type', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Type'), 'Type', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/addIndexFieldButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/IndexFields/addIndexFieldButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/addIndexFieldButton'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Document Management/IndexFields/addIndexFieldButton'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/Add Index Field'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/Add Index Field'), 
     'Add Index Field', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/label_Name'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/label_Name'), 
     'Name', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/label_Type'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/label_Type'), 
     'Type', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/addNewName'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/addNewName'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/selectType'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/selectType'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/addNewName'), 
-    'Script Index', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/addButton'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.check(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/checkAllCheckBox'), 
+WebUI.sendKeys(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/addNewName'), 'Script Index', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/removeButton'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/addButton'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.check(findTestObject('Convergence/Document Management_Pages/IndexFields_Page/Add Index Field_pop-up/checkAllCheckBox'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.check(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/checkAllCheckBox'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/IndexFields/removeButton'), 0, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.check(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/checkAllCheckBox'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Document Management/a_Admin'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Document Types'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/Document Types_header'), 
-    'Document Types', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/Document Type'), 'Document Type', 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentTypes/Document Types_header'), 'Document Types', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/Description'), 'Description', 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentTypes/Document Type'), 'Document Type', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/Created'), 'Created', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentTypes/Description'), 'Description', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/createDocTypeButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentTypes/Created'), 'Created', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/createDocTypeButton'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/createDocTypeButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Edit Document Type'), 
-    'Edit Document Type', FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Document Management/DocumentTypes/createDocTypeButton'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/label_Name'), 'Name', 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Edit Document Type'), 'Edit Document Type', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/label_Description (optional)'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/label_Name'), 'Name', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/label_Description (optional)'), 
     'Description (optional)', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/name_textfield'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/name_textfield'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/description_textfield'), 
-    0, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Index Fields'), 'Index Fields', 
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/description_textfield'), 0, 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Field Name'), 'Field Name', 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Index Fields'), 'Index Fields', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Type'), 'Type', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Field Name'), 'Field Name', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/checkAll'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Type'), 'Type', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/cancelButton'), 0, 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/checkAll'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/updateButton'), 0, 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/cancelButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/addIndexFieldsButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/updateButton'), 0, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/addIndexFieldsButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
 assertEquals('No fields assigned to document type', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Type\'])[1]/following::em[1]'))
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/addIndexFieldsButton'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Document Management/EditDocumentType/addIndexFieldsButton'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/p_Select the index_'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/p_Select the index_'), 
     'Select the index fields from the list below that should be added to the document type.')
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/Add Index Fields'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/Add Index Fields'), 
     'Add Index Fields', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/Field Name'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/Field Name'), 
     'Field Name', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/Type'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/Type'), 
     'Type', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/fieldNameRowValue'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/fieldNameRowValue'), 
     'Script Index', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/typeRowValue'), 
+WebUI.verifyElementText(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/typeRowValue'), 
     'Text', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/indexFieldIdCheckbox'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/indexFieldIdCheckbox'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/indexFieldIdCheckbox'), 
+WebUI.click(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/indexFieldIdCheckbox'), 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/Add Index Fields_pop-up/addButton'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Document Management/EditDocumentType/Add Index Fields_pop-up/addButton'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/checkAll'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/checkAll'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/checkAll'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/EditDocumentType/checkAll'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/name_textfield'), 'Script Document', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Convergence/Document Management/EditDocumentType/name_textfield'), 'Script Document', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/EditDocumentType_Page/updateButton'))
+WebUI.click(findTestObject('Convergence/Document Management/EditDocumentType/updateButton'))
 
-WebUI.click(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/checkAll'))
+WebUI.click(findTestObject('Convergence/Document Management/DocumentTypes/checkAll'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/button_copyDocType'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/button_copyDocType'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/createDocTypeButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/createDocTypeButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/exportTypeButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/exportTypeButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/moveDocTypeButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/moveDocTypeButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Document Management_Pages/DocumentTypes_Page/removeDocTypesButton'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/removeDocTypesButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Main Console'), FailureHandling.STOP_ON_FAILURE)
 

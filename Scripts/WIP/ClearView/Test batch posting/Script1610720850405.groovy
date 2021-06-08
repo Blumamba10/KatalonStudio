@@ -69,7 +69,7 @@ selenium.click('id=fc-editDialog-form-transactionType')
 
 selenium.select('id=fc-editDialog-form-transactionType', 'label=Payment - Self Pay')
 
-WebUI.click(findTestObject('ClearView/PFS Post Batch/Page_Post Batch/select_Description'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('ClearView/PFS Post Batch/Page_Post Batch/select_Description'), 'Check', false)
+WebUI.selectOptionByValue(findTestObject('null'), 'Check', false)
 

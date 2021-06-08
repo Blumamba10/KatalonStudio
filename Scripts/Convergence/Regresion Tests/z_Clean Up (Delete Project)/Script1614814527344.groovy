@@ -46,29 +46,29 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.clearText(findTestObject('Convergence/Projects_Page/input_Search Filter'))
+WebUI.clearText(findTestObject('Convergence/Projects/input_Search Filter'))
 
-WebUI.sendKeys(findTestObject('Convergence/Projects_Page/input_Search Filter'), 'Default')
+WebUI.sendKeys(findTestObject('Convergence/Projects/input_Search Filter'), 'Default')
 
-WebUI.click(findTestObject('Convergence/Projects_Page/checkbox_Select all'))
+WebUI.click(findTestObject('Convergence/Projects/checkbox_Select all'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_Delete'))
+WebUI.click(findTestObject('Convergence/Projects/button_Delete'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_OK'))
+WebUI.click(findTestObject('Convergence/Projects/button_OK'))
 
-WebUI.click(findTestObject('Convergence/Projects_Page/button_Add New Project'))
+WebUI.click(findTestObject('Convergence/Projects/button_Add New Project'))
 
-WebUI.sendKeys(findTestObject('Convergence/Projects_Page/New Project_Page/projectName'), 'Default')
+WebUI.sendKeys(findTestObject('Convergence/Projects/New Project/projectName'), 'Default')
 
-WebUI.sendKeys(findTestObject('Convergence/Projects_Page/New Project_Page/projectDescription'), 'Default Project')
+WebUI.sendKeys(findTestObject('Convergence/Projects/New Project/projectDescription'), 'Default Project')
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Projects_Page/New Project_Page/Project Type_dropdown'), 'NA', false)
+WebUI.selectOptionByValue(findTestObject('Convergence/Projects/New Project/Project Type_dropdown'), 'NA', false)
 
-WebUI.click(findTestObject('Convergence/Projects_Page/New Project_Page/button_Submit'))
+WebUI.click(findTestObject('Convergence/Projects/New Project/button_Submit'))
 
-WebUI.clearText(findTestObject('Convergence/Projects_Page/input_Search Filter'))
+WebUI.clearText(findTestObject('Convergence/Projects/input_Search Filter'))
 
-WebUI.sendKeys(findTestObject('Convergence/Projects_Page/input_Search Filter'), 'Default')
+WebUI.sendKeys(findTestObject('Convergence/Projects/input_Search Filter'), 'Default')
 
-WebUI.verifyElementText(findTestObject('Convergence/Projects_Page/a_Default'), 'Default')
+WebUI.verifyElementText(findTestObject('Convergence/Projects/a_Default'), 'Default')
 
