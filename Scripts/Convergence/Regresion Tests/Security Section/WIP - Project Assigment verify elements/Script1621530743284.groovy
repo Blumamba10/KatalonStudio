@@ -58,10 +58,10 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Assignme
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Assignment/Users_Tab/btn_Delete'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Assignment/Users_Tab/dropdown_Select Project'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Assignment/Users_Tab/ddl_Select Project'), 
     0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Assignment/Users_Tab/Search Filter'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Assignment/Users_Tab/txt_Search Filter'), 0)
 
 WebUI.click(findTestObject('Convergence/Security/Project Assignment/btn_Help Icon'))
 
@@ -72,11 +72,11 @@ assertEquals('Here you can view project role assignments by project. Select "All
 
 selenium.click('//button[contains(text(),"OK")]')
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Project Assignment/Users_Tab/th_ID'), 'ID')
+WebUI.verifyElementText(findTestObject('null'), 'ID')
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Project Assignment/Users_Tab/th_Project'), 'Project')
+WebUI.verifyElementText(findTestObject('null'), 'Project')
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Project Assignment/Users_Tab/th_User'), 'User')
+WebUI.verifyElementText(findTestObject('null'), 'User')
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Project Assignment/Users_Tab/th_Role'), 'Role')
+WebUI.verifyElementText(findTestObject('null'), 'Role')
 

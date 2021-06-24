@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create a User Group with all requirements to become enabled</description>
+   <name>Create and Enable User Group</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1eeeb821-523f-4496-ae14-3701bb637838</testCaseGuid>
+</TestCaseEntity>

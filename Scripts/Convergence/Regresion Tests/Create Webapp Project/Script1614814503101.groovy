@@ -148,11 +148,11 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'webwebapp')
+WebUI.setText(findTestObject('null'), 'webwebapp')
 
-WebUI.click(findTestObject('Convergence/Security/Users/checkbox_Check All'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/delete'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/button_OK'))
+WebUI.click(findTestObject('null'))
 

@@ -44,13 +44,13 @@
    <testCaseLink>
       <guid>d6a5f0cf-c90e-42f6-b9ac-39084f7580b8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/4- Create Basic Template</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1c68c0df-3957-4c1b-be6b-96ec59d01218</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/5- Gloabal Function Creation</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
    <testCaseLink>
       <guid>eb78d606-e808-460d-afe1-a3503c48b1ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Monitor - Each Queue and configure</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -116,7 +116,7 @@
    <testCaseLink>
       <guid>88e3e6c0-4a10-405f-9a04-8511a3384d08</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Web Styles</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>36f4c8c4-3876-49e1-8cb0-971b51f9bfcd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Gloabl Functions - New</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -188,7 +188,7 @@
    <testCaseLink>
       <guid>f1c6b5eb-a25c-4f84-a874-970de8ce356d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Configure Server - Handler</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -210,15 +210,9 @@
       <testCaseId>Test Cases/Convergence/Regresion Tests/Forms</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>fb8f9aff-1ded-487c-9caf-fcd08697f2b9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/WIP___Add User</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>2c3ab687-37e3-48ec-978f-caede67a770e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Project Roles</testCaseId>
    </testCaseLink>
    <testCaseLink>

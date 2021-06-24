@@ -421,11 +421,11 @@ selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Item
 
 selenium.submit('id=frmUserList')
 
-WebUI.click(findTestObject('Convergence/Security/Users/btn_addUser'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_User Name'), 'deleteme')
+WebUI.setText(findTestObject('null'), 'deleteme')
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/checkbox_Internal Database'))
+WebUI.click(findTestObject('null'))
 
 selenium.click('id=password')
 
@@ -441,22 +441,22 @@ selenium.click('//option[@value=\'100\']')
 
 selenium.click('id=checkAllCheck')
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Submit'))
+WebUI.click(findTestObject('null'))
 
 selenium.click('id=addProjectRoleButton')
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Configure Project Access'))
+WebUI.click(findTestObject('null'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Convergence/Security/Project Roles/button_addRoleAssociation'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByLabel(findTestObject('Convergence/Security/Project Roles/Add Project Role_popup/dropdown_Project'), 
+WebUI.selectOptionByLabel(findTestObject('null'), 
     'Default', false)
 
-WebUI.click(findTestObject('Convergence/Security/Project Roles/Add Project Role_popup/button_Add'))
+WebUI.click(findTestObject('null'))
 
 selenium.click('//a[@class=\'dropdown-toggle\'][contains(text(),\'admin\')]')
 
@@ -494,11 +494,11 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'deleteme')
+WebUI.setText(findTestObject('null'), 'deleteme')
 
-WebUI.click(findTestObject('Convergence/Security/Users/checkbox_Check All'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/delete'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/button_OK'))
+WebUI.click(findTestObject('null'))
 

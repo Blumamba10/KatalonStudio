@@ -50,14 +50,14 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication/h3_Google 2 Factor Authentication'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication/btn_Google 2 Factor Authentication'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/h3_Google 2 Factor Authentication'), 'Google 2 Factor Authentication')
+WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/btn_Google 2 Factor Authentication'), 'Google 2 Factor Authentication')
 
-WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/p_Google 2 Factor Description'), 'Authenticate users using Google Two Factor Authentication application. This applies to the Administration Console.')
+WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/Google 2 Factor/p_Google 2 Factor Description'), 'Authenticate users using Google Two Factor Authentication application. This applies to the Administration Console.')
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/i_Google 2 Facor button'))
+WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Google 2 Facor button'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
 
@@ -88,31 +88,31 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Convergence/Security/Users/btn_addUser'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_User Name'), 'MFAUser')
+WebUI.setText(findTestObject('null'), 'MFAUser')
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/checkbox_Internal Database'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_Enter Password'), 'Password1!')
+WebUI.setText(findTestObject('null'), 'Password1!')
 
-WebUI.setText(findTestObject('Convergence/Security/Users/_Add User/input_Re-Enter Password'), 'Password1!')
+WebUI.setText(findTestObject('null'), 'Password1!')
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/Users/_Add User/select_Items Per Page'), '100', 
+WebUI.selectOptionByValue(findTestObject('null'), '100', 
     false)
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/checkbox_CheckAll'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Submit'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Configure Project Access'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Project Roles/button_addRoleAssociation'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Security/Project Roles/Add Project Role_popup/dropdown_Project'), 
+WebUI.selectOptionByValue(findTestObject('null'), 
     '1', false)
 
-WebUI.click(findTestObject('Convergence/Security/Project Roles/Add Project Role_popup/button_Add'))
+WebUI.click(findTestObject('null'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -120,20 +120,20 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'MFAUser')
+WebUI.setText(findTestObject('null'), 'MFAUser')
 
-WebUI.click(findTestObject('Convergence/Security/Users/a_MFAUser'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Edit User Account'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_Add User/label_Use 2 Factor Authentication'), 
+WebUI.verifyElementPresent(findTestObject('null'), 
     0)
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/label_Use 2 Factor Authentication'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_Add User/a_Clear 2FA Secret'), 0)
+WebUI.verifyElementPresent(findTestObject('null'), 0)
 
-WebUI.click(findTestObject('Convergence/Security/Users/_Add User/button_Submit'))
+WebUI.click(findTestObject('null'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
 
@@ -230,17 +230,17 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Convergence/Security/Users/input_Search Filter'), 'MFAUser')
+WebUI.setText(findTestObject('null'), 'MFAUser')
 
-WebUI.click(findTestObject('Convergence/Security/Users/checkbox_Check All'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/delete'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/button_OK'))
+WebUI.click(findTestObject('null'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/i_Google 2 Facor button'))
+WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Google 2 Facor button'))
 
