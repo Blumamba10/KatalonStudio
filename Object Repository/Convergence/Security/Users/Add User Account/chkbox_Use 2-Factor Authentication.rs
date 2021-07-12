@@ -3,15 +3,15 @@
    <description></description>
    <name>chkbox_Use 2-Factor Authentication</name>
    <tag></tag>
-   <elementGuidId>b497ef6b-9827-4866-b52f-17bd35887507</elementGuidId>
+   <elementGuidId>29dbcbb2-8dc6-473b-a5c3-e25a71120ecb</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@name='FF_editUserDialog.use2fa']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>input[name=&quot;FF_editUserDialog.use2fa&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='FF_editUserDialog.use2fa']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

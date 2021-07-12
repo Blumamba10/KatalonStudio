@@ -6,15 +6,19 @@
    <elementGuidId>64a24493-db8b-4cf9-90b0-9d602345518e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Save' or . = 'Save')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[8]</value>
+         <value>//button[contains(text(),'Save')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,7 +28,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -43,13 +47,6 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-dialog-group ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

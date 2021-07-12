@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test is to attement to delete a User Group with active memebers. Verify you cannot delete User Groups with Members.</description>
+   <name>Attempt to Delete User Group with Members</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa5ad08f-6448-47b2-b61d-c61beebf0268</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test will tests the messages that are thrown when either of the following is not assigned to a User Group.
+
+Group is associated with at least one AD group
+Group is assigned at least one project role
+Group is assigned at least one permission</description>
+   <name>Incomplete User Group Messaging</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cadf9784-bf8e-4fe8-9a0a-209266cd98b0</testCaseGuid>
+</TestCaseEntity>

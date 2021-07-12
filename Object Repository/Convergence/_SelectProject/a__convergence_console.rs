@@ -3,18 +3,22 @@
    <description></description>
    <name>a__convergence_console</name>
    <tag></tag>
-   <elementGuidId>62d3c38f-51fa-41ac-81a3-252b890583f0</elementGuidId>
+   <elementGuidId>93016186-1b8c-4cc4-861f-b00db5a05135</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>a[name=&quot;projectSelectionLink_2&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='projectListNav']/li[6]/a</value>
+         <value>//a[@name='projectSelectionLink_2']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@link = '_convergence_console']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,28 +28,35 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>name</name>
       <type>Main</type>
-      <value>#</value>
+      <value>projectSelectionLink_2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-project-id</name>
-      <type>Main</type>
-      <value>2</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Click to select project</value>
+      <value>Click to select this project</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/tdes/console/setProject?projectId=2&amp;_csrf=1805f2c6-aed1-4b8f-b729-68717648eb0b&amp;swat_checkSum=ba5cc5378a03b259ce0d5394a27b449b66770f512c02e683573e68abfd27291b</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_parent</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -56,14 +67,28 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;projectListNav&quot;)/li[6]/a[1]</value>
+      <value>id(&quot;main_menu-projectSelectionMenu_menu-projectSelectionLink_2&quot;)/a[1]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>link</name>
+      <type>Main</type>
+      <value>_convergence_console</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@name='projectSelectionLink_2']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='projectListNav']/li[6]/a</value>
+      <value>//li[@id='main_menu-projectSelectionMenu_menu-projectSelectionLink_2']/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,28 +102,21 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Project Filter Off'])[1]/following::a[6]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='IntakePrototype'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete Form'])[1]/following::a[7]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demo'])[1]/following::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version Information'])[1]/preceding::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Server:'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[2]/preceding::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -112,13 +130,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '#')])[15]</value>
+      <value>//a[contains(@href, '/tdes/console/setProject?projectId=2&amp;_csrf=1805f2c6-aed1-4b8f-b729-68717648eb0b&amp;swat_checkSum=ba5cc5378a03b259ce0d5394a27b449b66770f512c02e683573e68abfd27291b')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[2]/li/ul/li[6]/a</value>
+      <value>//li[8]/div/ul/li[5]/a</value>
    </webElementXpaths>
 </WebElementEntity>

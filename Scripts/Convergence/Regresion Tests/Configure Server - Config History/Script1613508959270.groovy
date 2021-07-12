@@ -42,7 +42,7 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Configure Server'))
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/a_Configuration History'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Configuration History'))
 
 assertEquals('Configuration History', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Edit\'])[2]/following::h2[1]'))
 

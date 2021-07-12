@@ -152,7 +152,7 @@ assertTrue(selenium.isElementPresent('id=previewApplyBtn'))
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'First Name')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'First Name')
 
 selenium.click('id=propertiesSaveBtn')
 
@@ -260,7 +260,7 @@ assertEquals('YesNo', selenium.getText('id=Other.Password'))
 
 selenium.click('link=PROPERTIES')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Last Name')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Last Name')
 
 selenium.click('id=propertiesSaveBtn')
 
@@ -274,7 +274,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Date')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Date')
 
 selenium.click('id=propertiesSaveBtn')
 
@@ -288,7 +288,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'File Upload')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'File Upload')
 
 selenium.click('id=propertiesSaveBtn')
 
@@ -302,7 +302,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Hidden')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Hidden')
 
 assertEquals('Default Value (optional)', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Type\'])[1]/following::label[1]'))
 
@@ -322,7 +322,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'List')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'List')
 
 selenium.click('id=listIdStatic')
 
@@ -330,7 +330,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Opt
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Option Lists\'])[1]/following::button[1]')
 
-WebUI.selectOptionByLabel(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/dropdown_AvailableOption'), 
+WebUI.selectOptionByLabel(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/dropdown_AvailableOption'), 
     'Linked', false)
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Available Option Lists\'])[1]/following::option[1]')
@@ -349,7 +349,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.type('id=fc-name', 'Multi-Value List')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Multi-Value List')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Multi-Value List')
 
 selenium.click('id=fc-name')
 
@@ -371,7 +371,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Number')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Number')
 
 assertEquals('Precision', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Type\'])[1]/following::label[1]'))
 
@@ -399,7 +399,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Typ
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Phone Number')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Phone Number')
 
 selenium.click('id=propertiesSaveBtn')
 
@@ -419,7 +419,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Inp
 
 selenium.click('id=fc-name')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'SSN')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'SSN')
 
 selenium.click('id=propertiesSaveBtn')
 
@@ -532,21 +532,21 @@ selenium.click('link=Properties')
 
 WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Template Properties_header'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Template Properties_header'), 
     'TEMPLATE PROPERTIES')
 
 assertTrue(selenium.isElementPresent('id=templateName'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/label_Description'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/label_Description'), 
     'Description')
 
 assertTrue(selenium.isElementPresent('id=templateDescription'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/label_Category'), 'Category')
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/label_Category'), 'Category')
 
 assertTrue(selenium.isElementPresent('id=templateCategory'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/label_Form Name'), 'Form Name')
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/label_Form Name'), 'Form Name')
 
 assertTrue(selenium.isElementPresent('id=formName'))
 

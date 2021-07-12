@@ -42,7 +42,7 @@ class LoginLogoff  {
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@BeforeTestSuite
+	/*@BeforeTestSuite
 	def login(){
 		WebUI.openBrowser(GlobalVariable.tdesURL)
 		def driver = DriverFactory.getWebDriver()
@@ -92,6 +92,7 @@ class LoginLogoff  {
 		
 	}
 	*/
+	
 		
 	@AfterTestSuite
 	def closeBrowser() {

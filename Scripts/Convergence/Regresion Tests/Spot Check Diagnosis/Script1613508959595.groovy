@@ -74,7 +74,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Classpath\'])[1]/i[1]')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Diagnostics_Page/h4_Apache Tomcat9.0.35'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Server/Diagnostics/h4_Apache Tomcat9.0.35'), 0)
 
 selenium.click('link=JVM')
 

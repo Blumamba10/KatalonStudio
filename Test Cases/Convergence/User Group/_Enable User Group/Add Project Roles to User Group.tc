@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add project roles and validate elements on Project Roles Tab.
+
+Jira Requirments
+https://support.trinisys.com/project/browse/TDES-3785</description>
+   <name>Add Project Roles to User Group</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>31d6fd57-abf3-4d6c-b21e-7b9aace6ac3b</testCaseGuid>
+</TestCaseEntity>

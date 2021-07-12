@@ -6,14 +6,18 @@
    <elementGuidId>0fb28289-95b5-4b15-bd81-88b6618656c1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>(//input[@name='FF_editUserDialog.authenticationModes'])[2]</value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
+         <value>//label[contains(text(),'SAML')][count(. | //*[@type = 'checkbox' and @name = 'FF_editUserDialog.authenticationModes']) = count(//*[@type = 'checkbox' and @name = 'FF_editUserDialog.authenticationModes'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -51,11 +55,11 @@
       <value>tde-multivalue-check</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ff-editUserDialog-authenticationModes&quot;)/label[@class=&quot;tcc-checkbox-label&quot;]/input[@class=&quot;tde-multivalue-check&quot;]</value>
+      <value>//label[contains(text(),'SAML')]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

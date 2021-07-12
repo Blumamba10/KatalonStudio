@@ -3,14 +3,15 @@
    <description></description>
    <name>chkbox_Internal Database</name>
    <tag></tag>
-   <elementGuidId>1aede0b4-34b4-4452-82dc-5c714e418a86</elementGuidId>
+   <elementGuidId>2b5cc5d7-2d7c-44b5-863a-336234211bbc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@name='FF_editUserDialog.authenticationModes'])[4]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(//input[@name='FF_editUserDialog.authenticationModes'])[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -62,20 +63,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@name='FF_editUserDialog.authenticationModes'])[4]</value>
+      <value>(//input[@name='FF_editUserDialog.authenticationModes'])[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ff-editUserDialog-authenticationModes']/label[4]/input</value>
+      <value>//div[@id='ff-editUserDialog-authenticationModes']/label[3]/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//label[4]/input</value>
+      <value>//label[3]/input</value>
    </webElementXpaths>
 </WebElementEntity>

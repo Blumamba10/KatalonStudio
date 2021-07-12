@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validates Elements on the Authentication Page.</description>
-   <name>Authentication</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>63cfaccd-c48a-447f-b92f-687c60baa2fa</testCaseGuid>
-</TestCaseEntity>

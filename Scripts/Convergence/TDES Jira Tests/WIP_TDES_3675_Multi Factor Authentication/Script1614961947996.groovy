@@ -63,24 +63,24 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Configure Server'))
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/a_Actions'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/ConfigureServer_Page/Actions/h2_Actions'), 'Actions')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/h2_Actions'), 'Actions')
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/Actions/btn_addCustomActionButton'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_addCustomActionButton'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
-WebUI.sendKeys(findTestObject('Convergence/Server/ConfigureServer_Page/Actions/_Select an Action_Page/input_Search Filter'), 
+WebUI.sendKeys(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/input_Search Filter'), 
     'Google Authenticator')
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/Actions/_Select an Action_Page/radiobtn_GoogleAuthenticator'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/radiobtn_GoogleAuthenticator'))
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/Actions/_Select an Action_Page/button_submitButton'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/button_submitButton'))
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/Actions/_Select an Action_Page/button_submitButton'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/button_submitButton'))
 
-WebUI.click(findTestObject('Convergence/Server/ConfigureServer_Page/button_Save'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/button_Save'))
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

@@ -54,54 +54,54 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/InsertFormField_btn'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/InsertFormField_btn'))
 
-WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'First Name')
+WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'First Name')
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/button_OK'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/button_OK'))
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/InsertFormField_btn'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/InsertFormField_btn'))
 
-WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Last Name')
+WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Last Name')
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/button_OK'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/button_OK'))
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/InsertFormField_btn'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/InsertFormField_btn'))
 
-WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'SSN')
+WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'SSN')
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/dropdown_Form Type'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/dropdown_Form Type'), 
     'text-mask', false)
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/dropdown_Input Mask'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/dropdown_Input Mask'), 
     'ssn', false)
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/button_OK'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/button_OK'))
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/InsertFormField_btn'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/InsertFormField_btn'))
 
-WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Form Name'), 'Phone Number')
+WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Form Name'), 'Phone Number')
 
-WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/dropdown_Form Type'), 
+WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/dropdown_Form Type'), 
     'number', false)
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/button_OK'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/button_OK'))
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/a_Properties'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/a_Properties'))
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Template Name'), 'Next Template')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Template Name'), 'Next Template')
 
-WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Template Description'), 'Description')
+WebUI.sendKeys(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Template Description'), 'Description')
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/Publish_btn'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/Publish_btn'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/_Success_pop-up/span_Success'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/_Success_pop-up/span_Success'), 
     'SUCCESS')
 
-WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/_Success_pop-up/div_Template published to server'), 
+WebUI.verifyElementText(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/_Success_pop-up/div_Template published to server'), 
     'Template published to server.')
 
-WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/Template Editor/_Success_pop-up/btn_OK'))
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/_Success_pop-up/btn_OK'))
 
 WebUI.delay(2)
 

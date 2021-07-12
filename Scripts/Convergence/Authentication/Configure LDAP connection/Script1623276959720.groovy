@@ -61,3 +61,20 @@ WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_OK'))
 
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
+
+assertEquals("Directory Server Authentication", selenium.getText('//div[@class="tde-template-description"]'))
+
+assertEquals('Connection Name', selenium.getText('//th[contains(text(),"Connection Name")]'))
+
+assertEquals('URL', selenium.getText('//th[contains(text(),"URL")]'))
+
+assertEquals('User Prefix', selenium.getText('//th[contains(text(),"User Prefix")]'))
+assertEquals('Bind Username', selenium.getText('//th[contains(text(),"Bind Username")]'))
+assertEquals('Updated', selenium.getText('//th[contains(text(),"Updated")]'))
+assertEquals('Enabled', selenium.getText('//th[contains(text(),"Enabled")]'))
+selenium.isElementPresent('//i[@class="fas fa-check-circle tcc-text-success"]')
+selenium.isElementPresent('//td[@style="text-align: right;"]//button[@type="button"]')
+
+selenium.isElementPresent('//td[contains(text(),"adlds-test")]//button[@type="button"]')
+

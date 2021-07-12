@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enable Group after running
+- Add Indvidual Member to User Group
+- Add Permissions to User Group
+- Add Project Roles to User Group
+
+Jira Requirements
+https://support.trinisys.com/project/browse/TDES-3897</description>
+   <name>Enable User Group for Internal User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>473c4e93-2cdb-4db6-b3a4-adb88dc679f8</testCaseGuid>
+</TestCaseEntity>

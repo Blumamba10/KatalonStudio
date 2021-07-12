@@ -6,15 +6,19 @@
    <elementGuidId>c7e5624d-31fe-4df7-9227-f0349f767c63</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;FF_editUserDialog.enabled&quot;]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@name='FF_editUserDialog.enabled']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>input[name=&quot;FF_editUserDialog.enabled&quot;]</value>
+         <key>BASIC</key>
+         <value>//label[contains(text(),'Enabled')][count(. | //*[@type = 'checkbox' and @name = 'FF_editUserDialog.enabled']) = count(//*[@type = 'checkbox' and @name = 'FF_editUserDialog.enabled'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,11 +56,11 @@
       <value>tde-multivalue-check</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ff-editUserDialog-enabled&quot;)/label[@class=&quot;tcc-checkbox-label&quot;]/input[@class=&quot;tde-multivalue-check&quot;]</value>
+      <value>//label[contains(text(),'Enabled')]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

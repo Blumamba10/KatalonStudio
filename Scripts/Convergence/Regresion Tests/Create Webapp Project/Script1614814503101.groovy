@@ -38,12 +38,6 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.OPTIONAL)
-
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_All'), 10, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/a_All'), FailureHandling.OPTIONAL)
-
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
 
 assertEquals('Manage Projects', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))

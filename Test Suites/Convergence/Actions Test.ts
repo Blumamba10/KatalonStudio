@@ -278,13 +278,13 @@
    <testCaseLink>
       <guid>eca6351e-597f-47dc-94d0-08010a00d7d1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Script Actions/Action_Stored Procedure</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e2a2639d-9793-4178-a247-0f9a9998b6de</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Script Actions/Action_Stored Procedure with Results</testCaseId>
    </testCaseLink>
    <testCaseLink>

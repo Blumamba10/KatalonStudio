@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Valdiate the elements on the Credential Managnement page.
+Admin Users Tab
+General Users Tab
+Service Accounts Tab</description>
+   <name>Validate Default Values on Credental Managment Page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>501da1d8-8926-44e8-92a5-6a19d8ceda70</testCaseGuid>
+</TestCaseEntity>
