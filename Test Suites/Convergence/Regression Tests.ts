@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteCollectionEntity>
+   <description></description>
+   <name>Regression Tests</name>
+   <tag></tag>
+   <executionMode>SEQUENTIAL</executionMode>
+   <maxConcurrentInstances>8</maxConcurrentInstances>
+   <testSuiteRunConfigurations>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Database</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Document Management</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Monitor Queues</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Templates and Scripts</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Server</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Utilities</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Manage Project</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/_Functionality/Users and User Group</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/Actions Test</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+   </testSuiteRunConfigurations>
+</TestSuiteCollectionEntity>

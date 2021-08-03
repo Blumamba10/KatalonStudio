@@ -78,7 +78,7 @@ WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Role
 
 selenium.click('//button[text()="Add Selections"]')
 
-selenium.click('//body/div[12]/div[3]/div[1]/button[1]')
+selenium.click('//div[@class="ui-dialog-buttonset"]//button[@type="button"][contains(text(),"Close")]')
 
 WebUI.delay(3)
 

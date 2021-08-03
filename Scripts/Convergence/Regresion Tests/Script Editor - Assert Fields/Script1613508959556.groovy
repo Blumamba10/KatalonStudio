@@ -156,13 +156,13 @@ assertEquals('Create JSON', selenium.getText('link=Create JSON'))
 
 assertEquals('Create XML', selenium.getText('link=Create XML'))
 
-assertEquals('CSVImport', selenium.getText('link=CSVImport'))
+not_run: assertEquals('CSVImport', selenium.getText('link=CSVImport'))
 
-assertEquals('DateUtils', selenium.getText('link=DateUtils'))
+not_run: assertEquals('DateUtils', selenium.getText('link=DateUtils'))
 
 assertEquals('DMS Index', selenium.getText('link=DMS Index'))
 
-assertEquals('DmsSearch', selenium.getText('link=DmsSearch'))
+not_run: assertEquals('DmsSearch', selenium.getText('link=DmsSearch'))
 
 assertEquals('DocumentFill', selenium.getText('link=DocumentFill'))
 
@@ -186,11 +186,11 @@ assertEquals('GetFormFieldValues', selenium.getText('link=GetFormFieldValues'))
 
 assertEquals('GetMedia', selenium.getText('link=GetMedia'))
 
-assertEquals('HL7MessageBuilder', selenium.getText('link=HL7MessageBuilder'))
+not_run: assertEquals('HL7MessageBuilder', selenium.getText('link=HL7MessageBuilder'))
 
-assertEquals('HL7MessageSender', selenium.getText('link=HL7MessageSender'))
+not_run: assertEquals('HL7MessageSender', selenium.getText('link=HL7MessageSender'))
 
-assertEquals('HL7Util', selenium.getText('link=HL7Util'))
+not_run: assertEquals('HL7Util', selenium.getText('link=HL7Util'))
 
 assertEquals('Hold', selenium.getText('link=Hold'))
 
@@ -222,7 +222,7 @@ assertEquals('MultipageEvent', selenium.getText('link=MultipageEvent'))
 
 assertEquals('MultiPageGetFormId', selenium.getText('link=MultiPageGetFormId'))
 
-assertEquals('MultiPageMerge', selenium.getText('link=MultiPageMerge'))
+not_run: assertEquals('MultiPageMerge', selenium.getText('link=MultiPageMerge'))
 
 assertEquals('MultipageResponse', selenium.getText('link=MultipageResponse'))
 
@@ -240,7 +240,7 @@ assertEquals('Query XML', selenium.getText('link=Query XML'))
 
 assertEquals('QueryUser', selenium.getText('link=QueryUser'))
 
-assertEquals('RemoveServerObject', selenium.getText('link=RemoveServerObject'))
+not_run: assertEquals('RemoveServerObject', selenium.getText('link=RemoveServerObject'))
 
 assertEquals('ResultSetUtils', selenium.getText('link=ResultSetUtils'))
 
@@ -250,7 +250,7 @@ assertEquals('Send Email', selenium.getText('link=Send Email'))
 
 assertEquals('Set Variable', selenium.getText('link=Set Variable'))
 
-assertEquals('ShaPasswordEncoder', selenium.getText('link=ShaPasswordEncoder'))
+not_run: assertEquals('ShaPasswordEncoder', selenium.getText('link=ShaPasswordEncoder'))
 
 assertEquals('Stored Procedure', selenium.getText('link=Stored Procedure'))
 

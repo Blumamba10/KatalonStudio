@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'sqlConnection.blog.connectDB'('localhost', '1433', 'c19_201231_0921', 'sa', '#749Bloomdale')
+CustomKeywords.'dbConnection.DB.connectDB'('localhost', '1433', 'c19_201231_0921', 'sa', '#749Bloomdale')
 
-CustomKeywords.'sqlConnection.blog.execute'('  SET IDENTITY_INSERT tdes_project ON')
+CustomKeywords.'dbConnection.DB.execute'('  SET IDENTITY_INSERT tdes_project ON')
 
-CustomKeywords.'sqlConnection.blog.execute'('Insert into tdes_project (description,  name, projectType, readAuth, writeAuth, id, deleted, projectGuid) values (\'Test Project\', \'Test\',NULL, NULL, NULL, 5, 0, NULL);')
+CustomKeywords.'dbConnection.DB.execute'('Insert into tdes_project (description,  name, projectType, readAuth, writeAuth, id, deleted, projectGuid) values (\'Test Project\', \'Test\',NULL, NULL, NULL, 5, 0, NULL);')
 
-CustomKeywords.'sqlConnection.blog.closeDatabaseConnection'()
+CustomKeywords.'dbConnection.DB.closeDatabaseConnection'()
 

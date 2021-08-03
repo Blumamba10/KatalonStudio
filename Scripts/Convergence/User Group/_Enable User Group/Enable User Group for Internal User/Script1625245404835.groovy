@@ -55,7 +55,7 @@ WebUI.delay(3)
 
 assertEquals('User Groups', selenium.getText('//div[@class="tde-template-description"]'))
 
-WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Automation Group')
+WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Internal User Group')
 
 selenium.isElementPresent('//i[@class="fas fa-ban"]')
 

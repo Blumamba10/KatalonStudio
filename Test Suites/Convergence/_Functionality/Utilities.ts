@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>Test For Document Managment Section</description>
-   <name>Document Management</name>
+   <description>This will test the following areas within Uitilites:
+- Import Components
+- View Form
+- Delete Form</description>
+   <name>Utilities</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,17 +13,17 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>179bf471-2a95-475d-bf89-ba753e37fab9</testSuiteGuid>
+   <testSuiteGuid>7c8c2c49-b75b-4c51-ab8b-054ddab18e4f</testSuiteGuid>
    <testCaseLink>
-      <guid>bb961c5a-4a32-42ac-94b3-18190407be4d</guid>
+      <guid>34ad859a-2270-473c-bc8c-f5b5b12ece81</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/0_Login</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Forms</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a7f05a30-611a-438b-b756-43aeb9dd7dc2</guid>
+      <guid>59ab473e-7403-4473-903c-1b2ca753cae3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/1 - Create Document Type and Index</testCaseId>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Import Components</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

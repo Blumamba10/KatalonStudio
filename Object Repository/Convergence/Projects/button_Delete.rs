@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[4]</value>
+         <value>//i[@class='shortcut-icon fas fa-trash-alt']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>button.shortcut.btn.btn-danger.tdes-action-tooltip</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//i[@class='shortcut-icon fas fa-trash-alt']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,7 +28,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -52,11 +56,11 @@
       <value>Remove selected projects</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;projectForm&quot;)/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span1&quot;]/div[@class=&quot;stacked affix&quot;]/div[@class=&quot;shortcuts action_list&quot;]/button[@class=&quot;shortcut btn btn-danger tdes-action-tooltip&quot;]</value>
+      <value>//i[@class='shortcut-icon fas fa-trash-alt']</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

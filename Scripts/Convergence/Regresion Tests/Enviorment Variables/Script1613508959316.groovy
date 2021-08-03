@@ -111,8 +111,6 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('id=removeVariabledButton'))
 
-selenium.click('id=checkAll')
-
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]')
 
 selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]', 

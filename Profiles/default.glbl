@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8085/tdes'</initValue>
+      <initValue>'http://localhost:8084/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'c19_210706_0933'</initValue>
+      <initValue>'c19_210729_1720'</initValue>
       <name>dbName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -38,5 +38,10 @@
       <description></description>
       <initValue>'http://localhost:8082/demo'</initValue>
       <name>demoappURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SQL'</initValue>
+      <name>dbType</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

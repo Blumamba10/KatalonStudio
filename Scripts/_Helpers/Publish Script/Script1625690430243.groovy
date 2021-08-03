@@ -30,6 +30,9 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
+
+KeywordUtil.logInfo(TemplateName)
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
 
@@ -43,7 +46,7 @@ selenium.click('xpath=//strong')
 
 WebUI.delay(1)
 
-selenium.click('link=Default')
+selenium.click('link=ActionTest')
 
 WebUI.delay(1)
 

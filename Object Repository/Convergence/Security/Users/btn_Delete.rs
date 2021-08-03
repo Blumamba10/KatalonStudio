@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[3]</value>
+         <value>//i[@class='fas fa-trash-alt']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#btn-main-actions-delete > button[type=&quot;button&quot;]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//i[@class='fas fa-trash-alt']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,7 +28,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -38,14 +42,14 @@
       <value>btn_main_actions_delete_onclick(event)</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
       <value>Delete</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -60,11 +64,11 @@ _ul.deleteButtonClick(buttonObj);
 Delete</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;btn-main-actions-delete&quot;)/button[1]</value>
+      <value>//i[@class='fas fa-trash-alt']</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

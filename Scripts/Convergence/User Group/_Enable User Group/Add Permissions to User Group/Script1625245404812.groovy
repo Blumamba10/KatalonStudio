@@ -88,7 +88,6 @@ assertEquals('EDIT_USERS', selenium.getText('//td[contains(text(),"EDIT_USERS")]
 
 assertEquals('MONITOR_PUBLISHER', selenium.getText('//td[contains(text(),"MONITOR_PUBLISHER")]'))
 
-assertEquals('PASSWORD_NEVER_EXPIRE', selenium.getText('//td[contains(text(),"PASSWORD_NEVER_EXPIRE")]'))
 
 assertEquals('PROJECTS_ADMIN', selenium.getText('//td[contains(text(),"PROJECTS_ADMIN")]'))
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Validate elements on Users page</description>
-   <name>Create Internal Database User</name>
+   <name>1. Create Internal Database User</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c83951df-534a-4043-9889-447c2298ac77</testCaseGuid>

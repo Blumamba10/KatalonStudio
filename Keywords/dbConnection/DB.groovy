@@ -1,4 +1,4 @@
-package sqlConnection
+package dbConnection
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -31,12 +31,12 @@ import com.kms.katalon.core.util.KeywordUtil
 
 
 
-public class blog {
+public class DB {
 	private static Connection connection = null;
 
 
 	@Keyword
-	def connectDB(String server, String port, String dbname, String username, String password){
+	def connectSQL(String server, String port, String dbname, String username, String password){
 		String url = "jdbc:sqlserver://" + server + ":" + port + ";databaseName=" + dbname + ";user=" + username + ";password=" + password
 
 
@@ -49,6 +49,20 @@ public class blog {
 		return connection
 	}
 
+	
+	
+	@Keyword
+	def connectMYSQL(String server, String port, String dbname, String username, String password){
+		String url = "jdbc:mysql://" + server + ":" + port + ";databaseName=" + dbname + ";user=" + username + ";password=" + password
+
+	
+
+		if(connection != null && !connection.isClosed()){
+			connection.close()
+		}
+		connection = DriverManager.getConnection(url)
+		return connection
+	}
 
 	@Keyword
 	def executeQuery(String queryString) {

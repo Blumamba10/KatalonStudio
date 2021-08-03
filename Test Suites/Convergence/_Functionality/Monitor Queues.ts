@@ -44,7 +44,13 @@
    <testCaseLink>
       <guid>c38ebd8c-81c9-43c9-970c-83ded424a889</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Regresion Tests/Monitor - Each Queue and configure</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a6b443ef-15e5-4811-a928-c4dd170d0998</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Regresion Tests/Data Processor Activity Chart</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

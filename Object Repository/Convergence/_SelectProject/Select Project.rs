@@ -6,16 +6,16 @@
    <elementGuidId>8e498e55-4298-46b6-8713-f3af166b38d3</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//a[@id='appNavProjectsLink']/i</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>strong</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>xpath=//strong</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>xpath=//strong</value>
+         <value>//a[@id='appNavProjectsLink']/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -39,7 +39,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>xpath=//strong</value>
+      <value>//a[@id='appNavProjectsLink']/i</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

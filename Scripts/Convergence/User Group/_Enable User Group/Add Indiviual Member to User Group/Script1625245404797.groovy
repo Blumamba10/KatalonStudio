@@ -37,6 +37,7 @@ def driver = DriverFactory.getWebDriver()
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
+
 WebUI.delay(2)
 
 selenium.click('xpath=//strong')
@@ -65,7 +66,7 @@ WebUI.click(findTestObject('Convergence/Security/User Groups/_Add User Group/btn
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Internal User Group')
 
-selenium.click('//a[contains(text(),"Automation Group")]')
+selenium.click('//a[contains(text(),"Internal User Group")]')
 
 assertEquals('Require multi-factor authentication', selenium.getText('//label[contains(text(),"Require multi-factor authentication")]'))
 
@@ -84,7 +85,7 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_Use
     0)
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/_Add Members/txt_Search Filter_User Accounts'), 
-    'UGUser')
+    'AutoUser')
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/_Add Members/chkbox_Select All_User Accounts'), 
     FailureHandling.STOP_ON_FAILURE)
@@ -108,11 +109,12 @@ assertEquals('Name', selenium.getText('//th[@class="sorting"][contains(text(),"N
 
 assertEquals('Last Login', selenium.getText('//th[contains(text(),"Last Login")]'))
 
-assertEquals('UGUser', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"AutoUser")]'))
+assertEquals('AutoUser', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"AutoUser")]'))
 
-assertEquals('User Group User', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"Automation User")]'))
+assertEquals('Automation User', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"Automation User")]'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/chkbox_Select All'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/btn_Delete Member'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/btn_Delete Member'), 
+    0)
 

@@ -17,17 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'sqlConnection.blog.connectDB'('localhost', '1433', GlobalVariable.dbName, 'sa', '#749Bloomdale')
+if (GlobalVariable.dbType == 'SQL') {
+    CustomKeywords.'dbConnection.DB.connectSQL'('localhost', '1433', GlobalVariable.dbName, 'sa', '#749Bloomdale')
 
-CustomKeywords.'sqlConnection.blog.execute'('  SET IDENTITY_INSERT tdes_project ON')
+    CustomKeywords.'dbConnection.DB.execute'('  SET IDENTITY_INSERT tdes_project ON')
 
-CustomKeywords.'sqlConnection.blog.execute'('Update tdes_setting set value = 120000 where name = \'cachedHistoryCountIntervalMillis\'')
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedHistoryCountIntervalMillis\'')
 
-CustomKeywords.'sqlConnection.blog.execute'('Update tdes_setting set value = 120000 where name = \'cachedSubmittedCountIntervalMillis\'')
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedSubmittedCountIntervalMillis\'')
 
-CustomKeywords.'sqlConnection.blog.execute'('Update tdes_setting set value = 120000 where name = \'cachedHoldCountIntervalMillis\'')
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedHoldCountIntervalMillis\'')
 
-CustomKeywords.'sqlConnection.blog.execute'('Update tdes_setting set value = 120000 where name = \'cachedErrorCountIntervalMillis\'')
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedErrorCountIntervalMillis\'')
 
-CustomKeywords.'sqlConnection.blog.closeDatabaseConnection'()
+    CustomKeywords.'dbConnection.DB.closeDatabaseConnection'()
+}
+
+if (GlobalVariable.dbType == 'MYSQL') {
+    CustomKeywords.'dbConnection.DB.connectMYSQL'('localhost', '3306', GlobalVariable.dbName, 'root', '#749Bloomdale')
+
+    CustomKeywords.'dbConnection.DB.execute'('SET SQL_SAFE_UPDATES=0;')
+
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedHistoryCountIntervalMillis\'')
+
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedSubmittedCountIntervalMillis\'')
+
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedHoldCountIntervalMillis\'')
+
+    CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedErrorCountIntervalMillis\'')
+
+    CustomKeywords.'dbConnection.DB.closeDatabaseConnection'()
+}
 

@@ -30,15 +30,13 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-selenium.doubleClick('link=Home')
-
-selenium.click('link=Administration')
 
 assertTrue(selenium.isElementPresent('link=Convergence'))
 

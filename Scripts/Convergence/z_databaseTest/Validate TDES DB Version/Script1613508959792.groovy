@@ -25,7 +25,7 @@ WebUI.verifyEqual(GlobalVariable.ExpectedDBVersion, findTestData('tdes_db_versio
 
 println('DB Version = ' + dbVersion)
 
-CustomKeywords.'sqlConnection.blog.closeDatabaseConnection'()
+CustomKeywords.'dbConnection.DB.closeDatabaseConnection'()
 
-CustomKeywords.'sqlConnection.blog.executeQuery'('')
+CustomKeywords.'dbConnection.DB.executeQuery'('')
 

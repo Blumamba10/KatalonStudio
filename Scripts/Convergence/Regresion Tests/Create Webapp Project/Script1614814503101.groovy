@@ -38,6 +38,10 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Delete Form\'])[1]/following::strong[1]')
+
+selenium.click('link=Default')
+
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
 
 assertEquals('Manage Projects', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
@@ -104,7 +108,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('id=projectName')
 
-WebUI.setText(findTestObject('Convergence/Projects/New Project/projectName'), '10172018_test')
+WebUI.setText(findTestObject('Convergence/Projects/New Project/projectName'), 'Test_Proj')
 
 selenium.click('id=projectDescription')
 
@@ -116,12 +120,11 @@ selenium.waitForPageToLoad('30000')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]')
 
-selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]', 
-    '10172018')
+WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'Test_Proj')
 
-selenium.click('id=10172018_test')
+WebUI.click(findTestObject('Convergence/Projects/checkbox_Select all'))
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Manage Projects\'])[1]/following::button[4]')
+WebUI.click(findTestObject('Convergence/Projects/button_Delete'))
 
 assertEquals('Removing a project will delete ALL of its associated templates, scripts, option lists, and style configurations. Are you sure you want to remove the selected project?', 
     selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Confirm Remove Project\'])[1]/following::p[1]'))
@@ -142,11 +145,11 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
 
-WebUI.setText(findTestObject('null'), 'webwebapp')
+WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'webwebapp')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Convergence/Security/Users/chkbox_Select All'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Convergence/Security/Users/btn_Delete'))
 
-WebUI.click(findTestObject('null'))
+selenium.click('//button[contains(text(),"OK")]')
 

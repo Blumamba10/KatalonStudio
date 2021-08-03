@@ -141,11 +141,10 @@ assertTrue(selenium.isEditable('id=hostPortInput'))
 
 assertEquals('Data Processor Settings', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Port\'])[1]/following::h4[1]'))
 
-assertTrue(selenium.isElementPresent('id=lockTime'))
+assertTrue(selenium.isElementPresent('//input[@id="autoUnlock"]'))
 
 assertEquals('Minutes Hours Days', selenium.getText('id=lockTimeIncrement'))
 
-selenium.click('id=lockTime')
 
 selenium.typeKeys('id=lockTime', '15')
 
