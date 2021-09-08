@@ -22,7 +22,7 @@ import java.sql.Statement
 import java.sql.*
 import java.sql.DriverManager
 import internal.GlobalVariable
-import com.mysql.jdbc.Driver
+
 
 public class Udemy {
 

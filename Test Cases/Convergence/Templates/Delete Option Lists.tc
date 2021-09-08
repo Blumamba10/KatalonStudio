@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Deletes the option lists that were created in tests from Regression Suite</description>
+   <name>Delete Option Lists</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5345bfb-89a8-4f6d-a809-84d0facefe5f</testCaseGuid>
+</TestCaseEntity>

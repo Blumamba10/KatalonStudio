@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This tests test that the page elements on the Project role page.</description>
+   <name>Project Roles Page Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>84fc20a2-9e30-49c5-9419-5a967d5fb08f</testCaseGuid>
+</TestCaseEntity>

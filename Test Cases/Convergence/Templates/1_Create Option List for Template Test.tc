@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Creates 3 Option Lists that are used in the &quot;4 - Create Template&quot; test</description>
+   <name>1_Create Option List for Template Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cb5aa507-9949-4c99-96e5-b366b7dc1bdb</testCaseGuid>
+</TestCaseEntity>

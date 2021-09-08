@@ -6,15 +6,19 @@
    <elementGuidId>d1c60a98-9941-4d1f-a589-c3aad4b92e6b</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>a.selected</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//ul[@id='projectListNav']/li[2]/a</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>a.selected</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Default' or . = 'Default')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,7 +28,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
@@ -45,7 +49,7 @@
       <value>selected</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>

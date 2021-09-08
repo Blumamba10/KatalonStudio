@@ -6,12 +6,12 @@
    <elementGuidId>27b714d1-8a12-4538-9b14-12d0d5efddfa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#fdv-addMemberDialog-lists-users-table_filter > label > input[type=&quot;search&quot;]</value>
+         <key>XPATH</key>
+         <value>(//input[@type='search'])[11]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='search'])[10]</value>
+         <key>CSS</key>
+         <value>#fdv-addMemberDialog-lists-users-table_filter > label > input[type=&quot;search&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

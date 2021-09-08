@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verfy UI elements on the Directory server page</description>
+   <name>Directory Server Page Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ddbe6086-da38-42df-852d-1c9ed7af84c2</testCaseGuid>
+</TestCaseEntity>

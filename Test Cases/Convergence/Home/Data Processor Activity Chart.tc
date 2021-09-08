@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validates elements on Data Processor Activty Chart.</description>
+   <name>Data Processor Activity Chart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b434aaf7-d68b-49bd-a4bd-f848e24773fb</testCaseGuid>
+</TestCaseEntity>

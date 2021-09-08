@@ -26,6 +26,8 @@ import java.sql.PreparedStatement;
 import java.sql.Driver;
 import com.kms.katalon.core.util.KeywordUtil
 
+
+
 // ...
 
 
@@ -49,13 +51,13 @@ public class DB {
 		return connection
 	}
 
-	
-	
+
+
 	@Keyword
 	def connectMYSQL(String server, String port, String dbname, String username, String password){
 		String url = "jdbc:mysql://" + server + ":" + port + ";databaseName=" + dbname + ";user=" + username + ";password=" + password
 
-	
+
 
 		if(connection != null && !connection.isClosed()){
 			connection.close()

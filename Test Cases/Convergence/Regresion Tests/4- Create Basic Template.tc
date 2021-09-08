@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Creates a template and inserts Form Fields.</description>
-   <name>4- Create Basic Template</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3f7d86a1-7e41-4d81-a9c4-5e0b987ecc87</testCaseGuid>
-</TestCaseEntity>

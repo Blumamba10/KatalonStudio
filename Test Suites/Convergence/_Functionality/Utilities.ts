@@ -18,12 +18,12 @@
       <guid>34ad859a-2270-473c-bc8c-f5b5b12ece81</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Forms</testCaseId>
+      <testCaseId>Test Cases/Convergence/Utilities/Forms</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>59ab473e-7403-4473-903c-1b2ca753cae3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Regresion Tests/Import Components</testCaseId>
+      <testCaseId>Test Cases/Convergence/Utilities/Import Components</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

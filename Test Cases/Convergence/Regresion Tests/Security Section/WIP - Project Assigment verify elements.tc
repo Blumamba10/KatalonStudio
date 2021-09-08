@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validate web elements on the on teh Project Assignment Page</description>
-   <name>WIP - Project Assigment verify elements</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>26e98ddd-e5fa-4fb9-a563-3612369a8075</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify elemets on the Project Assignment page</description>
+   <name>Project Assignment Page Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6a8b66a-5e7f-4b22-b177-a340359bf718</testCaseGuid>
+</TestCaseEntity>

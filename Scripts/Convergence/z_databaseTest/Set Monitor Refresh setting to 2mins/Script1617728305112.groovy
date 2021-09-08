@@ -33,7 +33,7 @@ if (GlobalVariable.dbType == 'SQL') {
     CustomKeywords.'dbConnection.DB.closeDatabaseConnection'()
 }
 
-if (GlobalVariable.dbType == 'MYSQL') {
+not_run: if (GlobalVariable.dbType == 'MYSQL') {
     CustomKeywords.'dbConnection.DB.connectMYSQL'('localhost', '3306', GlobalVariable.dbName, 'root', '#749Bloomdale')
 
     CustomKeywords.'dbConnection.DB.execute'('SET SQL_SAFE_UPDATES=0;')
@@ -47,5 +47,8 @@ if (GlobalVariable.dbType == 'MYSQL') {
     CustomKeywords.'dbConnection.DB.execute'('Update tdes_setting set value = 120000 where name = \'cachedErrorCountIntervalMillis\'')
 
     CustomKeywords.'dbConnection.DB.closeDatabaseConnection'()
+
+    if (GlobalVariable.dbType == 'MYSQL') {
+    }
 }
 
