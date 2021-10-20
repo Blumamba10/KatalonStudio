@@ -72,9 +72,11 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add
 
 selenium.click('link=Hold')
 
-assertEquals('Description', selenium.getText('//label[@for="holddescription"]'))
+WebUI.delay(3)
 
-assertTrue(selenium.isElementPresent('id=holddescription'))
+assertEquals('Description', selenium.getText('//label[@for="holdDescription"]'))
+
+assertTrue(selenium.isElementPresent('id=holdDescription'))
 
 assertEquals('Custom Hold Times (optional)', selenium.getText('//label[contains(text(),"Custom Hold Times")]'))
 
@@ -88,11 +90,9 @@ assertTrue(selenium.isElementPresent('id=errorCheck'))
 
 assertEquals('Error after...', selenium.getText('//label[contains(text(),"Error after...")]'))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Seconds\'])[1]/following::i[1]'))
+selenium.click('id=holdDescription')
 
-selenium.click('id=holddescription')
-
-selenium.type('id=holddescription', 'Hold Description')
+selenium.type('id=holdDescription', 'Hold Description')
 
 selenium.click('id=retryCheck')
 
@@ -100,11 +100,7 @@ selenium.click('id=errorCheck')
 
 assertTrue(selenium.isElementPresent('id=retryTime'))
 
-assertEquals('Seconds', selenium.getText('//div[3]/div/div[2]/div/button'))
-
 assertTrue(selenium.isElementPresent('id=errorTime'))
-
-assertEquals('Seconds', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error after...\'])[1]/following::button[1]'))
 
 selenium.click('id=retryCheck')
 

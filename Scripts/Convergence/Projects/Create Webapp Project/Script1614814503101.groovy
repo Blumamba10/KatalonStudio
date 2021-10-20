@@ -151,5 +151,7 @@ WebUI.click(findTestObject('Convergence/Security/Users/chkbox_Select All'))
 
 WebUI.click(findTestObject('Convergence/Security/Users/btn_Delete'))
 
+WebUI.delay(2)
+
 selenium.click('//button[contains(text(),"OK")]')
 

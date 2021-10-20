@@ -113,21 +113,21 @@ assertTrue(selenium.isEditable('id=hostPasswordInput'))
 
 assertEquals('Port', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Password\'])[1]/following::label[1]'))
 
-not_run: selenium.click('id=hostUserNameInput')
+selenium.click('id=hostUserNameInput')
 
-not_run: selenium.type('id=hostUserNameInput', 'username')
+selenium.type('id=hostUserNameInput', 'username')
 
-not_run: selenium.click('id=toAddressesInput')
+selenium.click('id=toAddressesInput')
 
-not_run: selenium.type('id=toAddressesInput', 'username@trinisys.com')
+selenium.type('id=toAddressesInput', 'username@trinisys.com')
 
-not_run: selenium.click('id=hostPasswordInput')
+selenium.click('id=hostPasswordInput')
 
-not_run: selenium.type('id=hostPasswordInput', 'password')
+selenium.type('id=hostPasswordInput', 'password')
 
-not_run: selenium.click('id=hostPortInput')
+selenium.click('id=hostPortInput')
 
-not_run: selenium.type('id=hostPortInput', '8088')
+selenium.type('id=hostPortInput', '8088')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
 
@@ -135,7 +135,7 @@ WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor/a_Config
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'))
 
-not_run: WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
 
 selenium.click('id=autoUnlock')
 

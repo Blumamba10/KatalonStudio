@@ -44,7 +44,7 @@
    <testCaseLink>
       <guid>1bc68602-b8f4-4826-8fcd-7885f2f22077</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Templates/Option Lists - Linked SQL Server</testCaseId>
    </testCaseLink>
    <testCaseLink>

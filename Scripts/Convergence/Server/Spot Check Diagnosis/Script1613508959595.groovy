@@ -74,7 +74,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Classpath\'])[1]/i[1]')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Diagnostics/h4_Apache Tomcat9.0.35'), 0)
+assertEquals('Apache Tomcat/9.0.46', selenium.getText('//h4[contains(text(),"Apache Tomcat/9.0.46")]'))
 
 selenium.click('link=JVM')
 
@@ -93,8 +93,6 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 assertEquals('Server OS', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Java Version\'])[1]/following::td[2]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Server OS\'])[1]/following::pre[1]'))
-
-assertEquals('Memory (free / total)', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Windows 10\'])[1]/following::td[1]'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Memory (free / total)\'])[1]/following::pre[1]'))
 
