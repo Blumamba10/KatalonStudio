@@ -46,12 +46,6 @@
       <testCaseId>Test Cases/Convergence/Security/User Management/Validate Default Values on Credental Managment Page</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ac46051e-fc19-4982-abba-af0016590493</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/TDES_USERS_ADMIN</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>eba7b816-3391-435c-99da-ee71bb215f7f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -90,7 +84,7 @@
    <testCaseLink>
       <guid>5c58eac6-8591-4f21-8b54-4e92fe9cf63f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for LDAP User</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -110,5 +104,29 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Project Assignment Page Elements</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2cca8071-52dd-4627-a4d6-a0dfe9fa7a87</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/Import Project Role Users</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e954a18b-b7b1-461b-bb0f-54546cbde024</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a6496b0a-46c3-49bb-9b8a-f8ec84441286</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>225a7688-3746-4400-82e4-2c7a8f4d8804</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

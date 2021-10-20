@@ -29,7 +29,6 @@ public class UploadFile {
 		WebUI.delay(3) //Delay after click on Browser Button
 		StringSelection ss = new StringSelection(filePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		WebUI.delay(8) //Delay after paste the text
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);

@@ -30,7 +30,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 KeywordUtil.logInfo(TemplateName)
 
@@ -55,6 +55,8 @@ WebUI.doubleClick(findTestObject('Object Repository/Convergence/_NavigationLinks
 WebUI.click(findTestObject('Object Repository/Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
 
 WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), TemplateName)
+
+WebUI.delay(1)
 
 selenium.click('//i[@class="fas fa-globe"]')
 

@@ -6,12 +6,48 @@
    <elementGuidId>70663bb1-8f61-4822-bcc9-a6c2a023a37f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;btn-main-tabs-projectRoles-list-buttons-add&quot;)/button[1][count(. | //*[@type = 'button' and @title = 'Add' and (text() = '
+
+function btn_main_tabs_projectRoles_list_buttons_add_onclick(event)
+{
+	var buttonObj = $(&quot;main.tabs.projectRoles.list.buttons.add&quot;);
+	if (buttonObj.hasClass(&quot;disabled&quot;)) return;
+_ug.openAddProjectRolesDialog(buttonObj);
+}
+Add' or . = '
+
+function btn_main_tabs_projectRoles_list_buttons_add_onclick(event)
+{
+	var buttonObj = $(&quot;main.tabs.projectRoles.list.buttons.add&quot;);
+	if (buttonObj.hasClass(&quot;disabled&quot;)) return;
+_ug.openAddProjectRolesDialog(buttonObj);
+}
+Add')]) = count(//*[@type = 'button' and @title = 'Add' and (text() = '
+
+function btn_main_tabs_projectRoles_list_buttons_add_onclick(event)
+{
+	var buttonObj = $(&quot;main.tabs.projectRoles.list.buttons.add&quot;);
+	if (buttonObj.hasClass(&quot;disabled&quot;)) return;
+_ug.openAddProjectRolesDialog(buttonObj);
+}
+Add' or . = '
+
+function btn_main_tabs_projectRoles_list_buttons_add_onclick(event)
+{
+	var buttonObj = $(&quot;main.tabs.projectRoles.list.buttons.add&quot;);
+	if (buttonObj.hasClass(&quot;disabled&quot;)) return;
+_ug.openAddProjectRolesDialog(buttonObj);
+}
+Add')])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#btn-main-tabs-projectRoles-list-buttons-add > button[type=&quot;button&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[5]</value>
+         <value>id(&quot;btn-main-tabs-projectRoles-list-buttons-add&quot;)/button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -60,7 +96,7 @@ _ug.openAddProjectRolesDialog(buttonObj);
 Add</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

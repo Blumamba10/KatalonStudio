@@ -359,4 +359,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Scripts/Script Actions/Action_Remove Server Object</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>52b371e6-c781-46f0-9599-6e3916fb688f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Scripts/Delete All Scripts</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

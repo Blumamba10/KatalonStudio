@@ -100,10 +100,10 @@ selenium.click('//input[@id="main.tabs.adGroups.list.dataSelectAllCheck"]')
 
 selenium.isElementPresent('//div[@id="btn-main-tabs-adGroups-header-buttons-delete"]//button[text()="Delete"]')
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Permissions to User Group'), [:], 
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Permissions to User Group'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Project Roles to User Group'), [:], 
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Project Roles to User Group'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/btn_Back to User Groups'))

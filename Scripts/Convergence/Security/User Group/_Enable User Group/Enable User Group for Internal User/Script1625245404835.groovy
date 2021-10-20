@@ -30,11 +30,14 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Indiviual Member to User Group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Indiviual Member to User Group'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Project Roles to User Group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Project Roles to User Group'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Permissions to User Group'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Permissions to User Group'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 def driver = DriverFactory.getWebDriver()
 
@@ -70,4 +73,22 @@ WebUI.click(findTestObject('Convergence/Security/User Groups/_Confirm Status Cha
 WebUI.delay(3)
 
 assertEquals('User Groups', selenium.getText('//div[@class="tde-template-description"]'))
+
+WebUI.delay(0)
+
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+
+WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'UGUser')
+
+assertEquals('UGUser', selenium.getText('//a[contains(text(),"UGUser")]'))
+
+selenium.click('//a[contains(text(),"UGUser")]')
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/User Groups Tab/a_User Groups'))
+
+WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/txt_Internal User Group'), 'Internal User Group')
+
+WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/txt_Showing 1 to 1 of 1 entries'), 'Showing 1 to 1 of 1 entries')
 

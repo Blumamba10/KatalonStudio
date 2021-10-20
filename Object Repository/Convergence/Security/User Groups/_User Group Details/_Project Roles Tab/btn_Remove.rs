@@ -6,8 +6,12 @@
    <elementGuidId>e4d6f5d0-3e60-4d69-8dd8-cc98f266a8a0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;btn-main-tabs-projectRoles-list-buttons-delete&quot;)/button[1]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[4]</value>
+         <value>id(&quot;btn-main-tabs-projectRoles-list-buttons-delete&quot;)/button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -24,7 +28,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -38,14 +42,14 @@
       <value>btn_main_tabs_projectRoles_list_buttons_delete_onclick(event)</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
       <value>Delete</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -60,7 +64,7 @@ _ug.updateProjectRolesButtonClick('removeProjectRoles', true);
 Delete</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

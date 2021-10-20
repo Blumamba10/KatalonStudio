@@ -6,8 +6,12 @@
    <elementGuidId>99110329-6e03-4755-a79e-9d3d342172a1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[6]/a</value>
+         <value>(//a[contains(text(),'Security')])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +24,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
@@ -48,7 +52,7 @@
       <value>dropdown</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -58,9 +62,9 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>xpah</name>
       <type>Main</type>
-      <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/a[@class=&quot;dropdown-toggle&quot;]</value>
+      <value>//a[@name='securityMenu']</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

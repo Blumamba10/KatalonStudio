@@ -91,8 +91,10 @@ selenium.select('id=scriptNamesSelect', 'label=testfunc')
 assertEquals('Input Parameters', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Name\'])[1]/following::p[1]'))
 
 assertEquals('in', selenium.getText('//label[@for="ininput"]'))
-
+  
 assertTrue(selenium.isElementPresent('//input[@id="ininput"]'))
+
+assertTrue(selenium.isElementPresent('//button[contains(text(),"View")]'))
 
 assertEquals('my parameters', selenium.getText('//label[@for="my parametersinput"]'))
 

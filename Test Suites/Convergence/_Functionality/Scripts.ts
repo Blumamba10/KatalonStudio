@@ -46,16 +46,16 @@
       <testCaseId>Test Cases/Convergence/Scripts/Scripts - New</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>958403c2-d425-4c74-9d92-d9a41a0a2c30</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Scripts/Monitor - Assert Fields</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>348ed685-f678-4ecb-a235-d11903435dfc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Scripts/Monitor - Each Queue and configure</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>958403c2-d425-4c74-9d92-d9a41a0a2c30</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Scripts/Monitor - Assert Fields</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>59f2405f-9bc3-437a-a150-83f4c9069dc7</guid>

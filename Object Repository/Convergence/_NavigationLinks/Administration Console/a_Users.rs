@@ -6,11 +6,15 @@
    <elementGuidId>d8d81095-8473-4421-844a-b633562bf1f7</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Users' or . = 'Users')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[6]/ul/li[2]/a</value>
+         <value>//a[contains(text(),'Users')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +24,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>

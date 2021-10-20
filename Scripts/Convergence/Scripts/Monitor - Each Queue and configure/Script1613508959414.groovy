@@ -101,7 +101,7 @@ assertTrue(selenium.isElementPresent('id=advancedOptions'))
 
 assertEquals('Enable advanced options', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Email Subject\'])[1]/following::label[1]'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
 
 assertEquals('Username', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Enable advanced options\'])[1]/following::label[1]'))
 
@@ -113,27 +113,29 @@ assertTrue(selenium.isEditable('id=hostPasswordInput'))
 
 assertEquals('Port', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Password\'])[1]/following::label[1]'))
 
-selenium.click('id=hostUserNameInput')
+not_run: selenium.click('id=hostUserNameInput')
 
-selenium.type('id=hostUserNameInput', 'username')
+not_run: selenium.type('id=hostUserNameInput', 'username')
 
-selenium.click('id=toAddressesInput')
+not_run: selenium.click('id=toAddressesInput')
 
-selenium.type('id=toAddressesInput', 'username@trinisys.com')
+not_run: selenium.type('id=toAddressesInput', 'username@trinisys.com')
 
-selenium.click('id=hostPasswordInput')
+not_run: selenium.click('id=hostPasswordInput')
 
-selenium.type('id=hostPasswordInput', 'password')
+not_run: selenium.type('id=hostPasswordInput', 'password')
 
-selenium.click('id=hostPortInput')
+not_run: selenium.click('id=hostPortInput')
 
-selenium.type('id=hostPortInput', '808')
+not_run: selenium.type('id=hostPortInput', '8088')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
 
 WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'), 10)
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'))
+
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
 
 selenium.click('id=autoUnlock')
 

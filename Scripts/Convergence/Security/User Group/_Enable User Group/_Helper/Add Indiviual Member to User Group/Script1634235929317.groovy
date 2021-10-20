@@ -38,19 +38,11 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.delay(2)
-
-selenium.click('xpath=//strong')
-
-WebUI.delay(2)
-
-selenium.click('link=_convergence_console')
-
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a__convergence_console'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_SelectProject/a__convergence_console'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -85,7 +77,7 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_Use
     0)
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/_Add Members/txt_Search Filter_User Accounts'), 
-    'AutoUser')
+    'UGUser')
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/_Add Members/chkbox_Select All_User Accounts'), 
     FailureHandling.STOP_ON_FAILURE)
@@ -109,9 +101,9 @@ assertEquals('Name', selenium.getText('//th[@class="sorting"][contains(text(),"N
 
 assertEquals('Last Login', selenium.getText('//th[contains(text(),"Last Login")]'))
 
-assertEquals('AutoUser', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"AutoUser")]'))
+assertEquals('UGUser', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"UGUser")]'))
 
-assertEquals('Automation User', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"Automation User")]'))
+assertEquals('User Group User', selenium.getText('//table[@id="fdv-main-tabs-members-individualMembers-data-table"]//tbody//tr[@class="odd"]//td[contains(text(),"User Group User")]'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/chkbox_Select All'))
 

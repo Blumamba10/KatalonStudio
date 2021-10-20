@@ -46,8 +46,6 @@ WebUI.selectOptionByValue(findTestObject('Convergence/Security/User Groups/_User
 
 assertEquals('ACCESS_HEAP_DUMP', selenium.getText('//td[contains(text(),"ACCESS_HEAP_DUMP")]'))
 
-assertEquals('ADD_USER', selenium.getText('//td[contains(text(),"ADD_USER")]'))
-
 assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN_CONSOLE_USER")]'))
 
 assertEquals('ADMIN_FORM_DATA_LOOKUP', selenium.getText('//td[contains(text(),"ADMIN_FORM_DATA_LOOKUP")]'))
@@ -63,8 +61,6 @@ assertEquals('CONFIGURE_DATA_SOURCES_AND_HANDLERS', selenium.getText('//td[conta
 assertEquals('DE_USER', selenium.getText('//td[contains(text(),"DE_USER")]'))
 
 assertEquals('DELETE_FORM', selenium.getText('//td[contains(text(),"DELETE_FORM")]'))
-
-assertEquals('DELETE_USER', selenium.getText('//td[contains(text(),"DELETE_USER")]'))
 
 assertEquals('DM_ADD_CONTENT', selenium.getText('//td[contains(text(),"DM_ADD_CONTENT")]'))
 
@@ -84,16 +80,26 @@ assertEquals('EDIT_LOG_SETTINGS', selenium.getText('//td[contains(text(),"EDIT_L
 
 assertEquals('EDIT_QUEUE_SETTINGS', selenium.getText('//td[contains(text(),"EDIT_QUEUE_SETTINGS")]'))
 
-assertEquals('EDIT_USERS', selenium.getText('//td[contains(text(),"EDIT_USERS")]'))
 
 assertEquals('MONITOR_PUBLISHER', selenium.getText('//td[contains(text(),"MONITOR_PUBLISHER")]'))
 
 
 assertEquals('PROJECTS_ADMIN', selenium.getText('//td[contains(text(),"PROJECTS_ADMIN")]'))
 
+assertEquals('PROJECTS_ASSIGNMENT', selenium.getText('//td[contains(text(),"PROJECTS_ASSIGNMENT")]'))
+
 assertEquals('PROJECTS_ROLES', selenium.getText('//td[contains(text(),"PROJECTS_ROLES")]'))
 
 assertEquals('UPDATE_LICENSE', selenium.getText('//td[contains(text(),"UPDATE_LICENSE")]'))
+
+assertEquals('USERGROUPS_ADMIN', selenium.getText('//td[contains(text(),"USERGROUPS_ADMIN")]'))
+
+assertEquals('USERGROUPS_READONLY', selenium.getText('//td[contains(text(),"USERGROUPS_READONLY")]'))
+
+assertEquals('USERS_ADMIN', selenium.getText('//td[contains(text(),"USERS_ADMIN")]'))
+
+
+assertEquals('USERS_READONLY', selenium.getText('//td[contains(text(),"USERS_READONLY")]'))
 
 assertEquals('VIEW_SECURITY_LOG', selenium.getText('//td[contains(text(),"VIEW_SECURITY_LOG")]'))
 

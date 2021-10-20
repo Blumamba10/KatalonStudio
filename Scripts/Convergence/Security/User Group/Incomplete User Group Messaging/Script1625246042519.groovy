@@ -40,9 +40,11 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a__convergence_console'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
 
-WebUI.click(findTestObject('Convergence/_SelectProject/a__convergence_console'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(2)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -125,8 +127,8 @@ assertEquals('Group is assigned at least one project role', selenium.getText('//
 
 selenium.click('//button[contains(text(),"Cancel")]')
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Permissions to User Group'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Permissions to User Group'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/a_Permissions'))
 
@@ -137,8 +139,8 @@ assertEquals('Are you sure you want to continue? This user group cannot be enabl
 
 selenium.click('//button[contains(text(),"Cancel")]')
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/Helper/Add Project Roles to User Group'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Project Roles to User Group'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/btn_Back to User Groups'))
 
