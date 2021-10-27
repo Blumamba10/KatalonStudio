@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>checkbox_Enable advanced options</name>
+   <name>h1_Standard Log Viewer</name>
    <tag></tag>
-   <elementGuidId>36b123ab-0a71-4db6-85f4-88c00cad5d96</elementGuidId>
+   <elementGuidId>57a21f57-22c8-4437-8af9-711a5c94c72d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#advancedOptions</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Build:'])[1]/following::h1[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='advancedOptions']</value>
+         <key>CSS</key>
+         <value>div.page-header > h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,62 +21,50 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>h1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>text</name>
       <type>Main</type>
-      <value>advancedOptions</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>checkbox</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>showAdvancedOptions</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>false</value>
+      <value>Standard Log Viewer
+
+                </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;advancedOptions&quot;)</value>
+      <value>/html[1]/body[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;span12&quot;]/div[@class=&quot;page-header&quot;]/h1[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//input[@id='advancedOptions']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Build:'])[1]/following::h1[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@id='standardErrorEmailConfig']/div/div[2]/label[3]/input</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Server:'])[1]/following::h1[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log entries are ordered most recent to oldest.'])[1]/preceding::h1[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//label[3]/input</value>
+      <value>//div[2]/div/div/div/h1</value>
    </webElementXpaths>
 </WebElementEntity>

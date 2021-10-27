@@ -101,7 +101,13 @@ assertTrue(selenium.isElementPresent('id=advancedOptions'))
 
 assertEquals('Enable advanced options', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Email Subject\'])[1]/following::label[1]'))
 
-not_run: WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
+WebUI.verifyElementNotVisible(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Port'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementNotVisible(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Password'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementNotVisible(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_UserName'), FailureHandling.STOP_ON_FAILURE)
+
+selenium.click('//input[@id="advancedOptions"]')
 
 assertEquals('Username', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Enable advanced options\'])[1]/following::label[1]'))
 
@@ -113,29 +119,35 @@ assertTrue(selenium.isEditable('id=hostPasswordInput'))
 
 assertEquals('Port', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Password\'])[1]/following::label[1]'))
 
-selenium.click('id=hostUserNameInput')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Mail Host'), 'localhost')
 
-selenium.type('id=hostUserNameInput', 'username')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_From Address'), 'Test@trinisys.com')
 
-selenium.click('id=toAddressesInput')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Email Subject'), 'This should save.')
 
-selenium.type('id=toAddressesInput', 'username@trinisys.com')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_UserName'), 'TDES')
 
-selenium.click('id=hostPasswordInput')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Password'), 'test')
 
-selenium.type('id=hostPasswordInput', 'password')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Port'), '8088')
 
-selenium.click('id=hostPortInput')
+WebUI.setText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_To Address(es)'), 'auto@trinisys.com')
 
-selenium.type('id=hostPortInput', '8088')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/btn_Update form poller'))
 
 WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'), 10)
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/checkbox_Enable advanced options'))
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Mail Host'))
+
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_Email Subject'))
+
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_UserName'))
+
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/txt_To Address(es)'))
 
 selenium.click('id=autoUnlock')
 
@@ -155,7 +167,7 @@ selenium.select('id=lockTimeIncrement', 'label=Hours')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::option[2]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/btn_Update form poller'))
 
 WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'), 10)
 

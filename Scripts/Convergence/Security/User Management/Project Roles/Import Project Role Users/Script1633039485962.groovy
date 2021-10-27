@@ -46,14 +46,16 @@ WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandl
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Utilities'))
 
+WebUI.delay(5)
+
 selenium.click('link=Import Components')
 
-WebUI.delay(5)
+WebUI.delay(6)
 
 CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Utilities/Import Components/btn_Import Upload'), 
     'C:\\actionTestFiles\\Roles_Testing_import_Users.zip')
 
-WebUI.delay(3)
+WebUI.delay(6)
 
 WebUI.click(findTestObject('Convergence/Utilities/Import Components/btn_Import'), FailureHandling.CONTINUE_ON_FAILURE)
 

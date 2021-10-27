@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User should be able to see the Log Setting as ready only and able to edit the Email Setting.</description>
+   <name>TDES_EDIT_LOG_EMAIL_SETTINGS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>36995b16-869f-4225-9246-424e824994e7</testCaseGuid>
+</TestCaseEntity>

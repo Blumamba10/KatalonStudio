@@ -12,8 +12,8 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Convergence/_Functionality/Database</testSuiteEntity>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Convergence/Setup</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>

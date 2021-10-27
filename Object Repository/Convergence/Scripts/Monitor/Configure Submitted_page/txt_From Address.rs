@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>checkbox_Enable advanced options</name>
+   <name>txt_From Address</name>
    <tag></tag>
-   <elementGuidId>36b123ab-0a71-4db6-85f4-88c00cad5d96</elementGuidId>
+   <elementGuidId>f8d15a66-46c4-49c9-93a7-2e7681fb4c07</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#advancedOptions</value>
+         <key>XPATH</key>
+         <value>//input[@id='errorFromAddressInput']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='advancedOptions']</value>
+         <key>CSS</key>
+         <value>#errorFromAddressInput</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,55 +28,62 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>advancedOptions</value>
+      <value>errorFromAddressInput</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>checkbox</value>
+      <value>email</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input-block-level</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>size</name>
+      <type>Main</type>
+      <value>30</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>showAdvancedOptions</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>false</value>
+      <value>errorFromAddress</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;advancedOptions&quot;)</value>
+      <value>id(&quot;errorFromAddressInput&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='advancedOptions']</value>
+      <value>//input[@id='errorFromAddressInput']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='standardErrorEmailConfig']/div/div[2]/label[3]/input</value>
+      <value>//div[@id='standardErrorEmailConfig']/div/div[2]/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//label[3]/input</value>
+      <value>//div[2]/input</value>
    </webElementXpaths>
 </WebElementEntity>

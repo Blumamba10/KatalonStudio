@@ -76,6 +76,8 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Cla
 
 assertEquals('Apache Tomcat/9.0.46', selenium.getText('//h4[contains(text(),"Apache Tomcat/9.0.46")]'))
 
+WebUI.delay(2)
+
 selenium.click('link=JVM')
 
 assertEquals('JVM', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'JVM\'])[1]/following::td[1]'))

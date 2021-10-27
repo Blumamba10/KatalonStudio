@@ -38,45 +38,33 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Roles'))
+
+assertEquals('Showing 1 to 3 of 3 entries', selenium.getText('//div[@id="projectRoleTable_info"]'))
+
+WebUI.click(findTestObject('Convergence/Security/Project Role/btn_Add Project Role'))
 
 WebUI.delay(2)
 
-selenium.click('id=submittedQueueLink')
+assertEquals('Add Role', selenium.getText('//h3[@id="addRoleModalLabel"]'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/h1_Submitted'), 'Submitted')
+assertEquals('Role Name', selenium.getText('//label[@for="roleNameInput"]'))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Submitted\'])[1]/following::span[1]'))
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Role/_Add Role/btn_Add'), 0)
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Project Role/_Add Role/btn_Cancel'), 0)
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::a[1]'))
+WebUI.setText(findTestObject('Convergence/Security/Project Role/_Add Role/txt_Role Name'), 'Read All')
 
-assertTrue(selenium.isElementPresent('id=checkAllCheck'))
+WebUI.click(findTestObject('Convergence/Security/Project Role/_Add Role/btn_Add'))
 
-selenium.click('id=checkAllCheck')
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Next\'])[1]/following::div[6]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Next\'])[1]/following::div[2]'))
-
-assertTrue(selenium.isElementPresent('id=checkAllCheck'))
-
-assertEquals('Submitted', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Processing...\'])[1]/following::th[2]'))
-
-assertEquals('User', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Submitted\'])[2]/following::th[1]'))
-
-assertEquals('Form', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'User\'])[1]/following::th[1]'))
-
-assertEquals('Template', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Form\'])[1]/following::th[1]'))
-
-assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Template\'])[1]/following::th[1]'))
-
-assertEquals('Note', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::th[1]'))
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
-
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+assertEquals('Showing 1 to 3 of 3 entries', selenium.getText('//div[@id="projectRoleTable_info"]'))
 

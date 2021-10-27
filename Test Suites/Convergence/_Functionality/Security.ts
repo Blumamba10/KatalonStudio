@@ -84,7 +84,7 @@
    <testCaseLink>
       <guid>5c58eac6-8591-4f21-8b54-4e92fe9cf63f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for LDAP User</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -106,10 +106,10 @@
       <testCaseId>Test Cases/Convergence/Security/Project Assignment Page Elements</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2cca8071-52dd-4627-a4d6-a0dfe9fa7a87</guid>
+      <guid>00f00414-62ba-4d5b-a8f0-b1f836deddca</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/Import Project Role Users</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Convergence/Security/Should not allow duplicate Permission Roles</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e954a18b-b7b1-461b-bb0f-54546cbde024</guid>
@@ -128,5 +128,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b5cc48f3-cb9e-4e38-a228-040e97dcecbb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_EMAIL_SETTINGS</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d439b96f-8055-4445-9bd8-42dff4d67c52</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_SETTINGS</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>44222b49-8cfc-4fc9-bc62-3ff5f585dce1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_VIEW_SECURITY_LOG</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
