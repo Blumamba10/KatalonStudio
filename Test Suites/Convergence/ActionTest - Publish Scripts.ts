@@ -12,6 +12,12 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>7c334aec-9159-441b-9bf9-44a87d7bf533</testSuiteGuid>
    <testCaseLink>
+      <guid>2689ec44-fb08-4f37-af80-fd5cb4c56a6a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/_Helpers/Import Action Test Scripts</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>f1336de0-c5c5-48f0-8537-af9ce914a7ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

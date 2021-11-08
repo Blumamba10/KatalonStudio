@@ -47,15 +47,21 @@ WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Se
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldap://pd-ldap01:389')
+
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
+
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
+
+assertEquals('Bind username and and password are required for Active Directory configurations.', selenium.getText('//p[contains(text(),"Bind username and and password are required for Ac")]'))
+
+selenium.click('//button[contains(text(),"OK")]')
+
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Name'), 
     'adlds-test')
 
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Password'), 
     'JfebiVdhitkNjV6czE05lxlN8Emdeu2V1Htf/KdC1eyYDhxjk/sMdg==')
-
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldap://pd-ldap01:389')
-
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
 
@@ -80,4 +86,12 @@ selenium.isElementPresent('//i[@class="fas fa-check-circle tcc-text-success"]')
 selenium.isElementPresent('//td[@style="text-align: right;"]//button[@type="button"]')
 
 selenium.isElementPresent('//td[contains(text(),"adlds-test")]//button[@type="button"]')
+
+selenium.click('//tbody/tr[1]/td[4]/button[1]')
+
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/btn_edit_Test Credentials'))
+
+assertEquals('Bind username and and password are required for Active Directory configurations.', selenium.getText('//p[contains(text(),"Bind username and and password are required for Ac")]'))
+
+selenium.click('//button[contains(text(),"OK")]')
 
