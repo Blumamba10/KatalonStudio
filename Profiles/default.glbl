@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8084/tdes'</initValue>
+      <initValue>'http://localhost:8073/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -43,5 +43,15 @@
       <description></description>
       <initValue>'MYSQL'</initValue>
       <name>dbType</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2021 Release'</initValue>
+      <name>releaseVersion</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'21.0.0'</initValue>
+      <name>serverNumber</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

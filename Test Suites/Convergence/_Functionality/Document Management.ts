@@ -15,7 +15,7 @@
       <guid>bb961c5a-4a32-42ac-94b3-18190407be4d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Home/0_Login</testCaseId>
+      <testCaseId>Test Cases/Convergence/Home/Invalid Login Credentials</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a7f05a30-611a-438b-b756-43aeb9dd7dc2</guid>

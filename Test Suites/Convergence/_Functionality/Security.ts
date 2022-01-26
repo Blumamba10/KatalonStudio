@@ -60,13 +60,13 @@
    <testCaseLink>
       <guid>3cdcdde1-7b3d-46fe-8e4d-58da89f7ce50</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Add Internal User for User Group</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2a1744f7-11f1-4493-998d-d11dbd838788</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Incomplete User Group Messaging</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -78,7 +78,7 @@
    <testCaseLink>
       <guid>85dd067d-10fd-4093-a7b5-7382dc03fa76</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Attempt to Delete User Group with Members</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -144,7 +144,7 @@
    <testCaseLink>
       <guid>44222b49-8cfc-4fc9-bc62-3ff5f585dce1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_VIEW_SECURITY_LOG</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
