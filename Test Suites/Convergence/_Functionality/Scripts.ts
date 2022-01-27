@@ -19,7 +19,7 @@
       <guid>a8cecf93-33fe-48d1-adef-8d7026ce38fe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Scripts/5- Gloabal Function Creation</testCaseId>
+      <testCaseId>Test Cases/Convergence/Scripts/Gloabal Function Creation</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>fe9ffbe0-4c72-4e52-afc0-d0a4869d0943</guid>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>348ed685-f678-4ecb-a235-d11903435dfc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Scripts/Monitor - Each Queue and configure</testCaseId>
    </testCaseLink>
    <testCaseLink>

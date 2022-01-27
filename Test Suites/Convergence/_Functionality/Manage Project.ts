@@ -26,8 +26,8 @@
    <testCaseLink>
       <guid>a54a4be9-57ed-4d55-8856-fba4916ad248</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Projects/Hide the project from non-Trinisys users</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Convergence/Projects/WIP_Hide the project from non-Trinisys users</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0bf7b307-41ef-428c-a765-63b3f5849753</guid>

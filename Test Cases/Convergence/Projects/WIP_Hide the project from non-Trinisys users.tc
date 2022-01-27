@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Verify that &quot;_convergence_console&quot; is not displayed as a project for non-Trinisys</description>
-   <name>Hide the project from non-Trinisys users</name>
+   <name>WIP_Hide the project from non-Trinisys users</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>82b3a38c-f943-45d3-a7ce-15c20205479d</testCaseGuid>

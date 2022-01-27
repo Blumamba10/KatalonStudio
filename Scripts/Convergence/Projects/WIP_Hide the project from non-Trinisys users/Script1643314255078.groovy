@@ -68,8 +68,7 @@ WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CO
 
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_SelectProject/a_convergence_console'), 
-    10, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_SelectProject/a_convergence_console'), 10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
 
@@ -77,7 +76,7 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 
 WebUI.click(findTestObject('Convergence/Server/LicenseManager/btn_Update License'))
 
-WebUI.setText(findTestObject('Convergence/Server/LicenseManager/txt_Enter License Key_key'), 'FK0dq25Nk/vR7ErWyaqcrwqXajdNAzwFFgoIWyBXZbMJVZxez5Bmug/r4W9SkYbGRjeSwHsiLyFGN5LAeyIvIUY3ksB7Ii8hRjeSwHsiLyHR0p0IVzwazkY8iRLHlOHxauG+YOqQfENq4b5g6pB8Q2rhvmDqkHxDauG+YOqQfEObY784Q1xDOA==')
+WebUI.setText(findTestObject('Convergence/Server/LicenseManager/txt_Enter License Key_key'), 'FK0dq25Nk/vR7ErWyaqcrwqXajdNAzwFtOqMjTs1zpG2xrke/j9VY+IzBdlreKwqRjeSwHsiLyFGN5LAeyIvIUY3ksB7Ii8hRjeSwHsiLyHR0p0IVzwazkY8iRLHlOHxauG+YOqQfENq4b5g6pB8Q2rhvmDqkHxDauG+YOqQfEObY784Q1xDOA==')
 
 WebUI.doubleClick(findTestObject('Convergence/Server/LicenseManager/txt_Enter License Key_key'), FailureHandling.STOP_ON_FAILURE)
 
@@ -101,6 +100,5 @@ WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CO
 
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/_SelectProject/a_convergence_console'), 
-    10, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Convergence/_SelectProject/a_convergence_console'), 10, FailureHandling.STOP_ON_FAILURE)
 
