@@ -38,23 +38,13 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.delay(3)
-
-selenium.click('xpath=//strong')
-
-WebUI.delay(3)
-
-selenium.click('link=_convergence_console')
-
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a__convergence_console'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_SelectProject/a__convergence_console'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a__convergence_console'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/a__convergence_console'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(3)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

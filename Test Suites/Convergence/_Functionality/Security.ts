@@ -43,7 +43,7 @@
       <guid>5ca689ab-6a51-44d4-a531-ed6c27ba355c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Validate Default Values on Credental Managment Page</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Validate Default Values on Credental Managment Page</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>eba7b816-3391-435c-99da-ee71bb215f7f</guid>
@@ -60,13 +60,13 @@
    <testCaseLink>
       <guid>3cdcdde1-7b3d-46fe-8e4d-58da89f7ce50</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Add Internal User for User Group</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2a1744f7-11f1-4493-998d-d11dbd838788</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Incomplete User Group Messaging</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -78,7 +78,7 @@
    <testCaseLink>
       <guid>85dd067d-10fd-4093-a7b5-7382dc03fa76</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Attempt to Delete User Group with Members</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -114,37 +114,37 @@
    <testCaseLink>
       <guid>e954a18b-b7b1-461b-bb0f-54546cbde024</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a6496b0a-46c3-49bb-9b8a-f8ec84441286</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>225a7688-3746-4400-82e4-2c7a8f4d8804</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b5cc48f3-cb9e-4e38-a228-040e97dcecbb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_EMAIL_SETTINGS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d439b96f-8055-4445-9bd8-42dff4d67c52</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_SETTINGS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>44222b49-8cfc-4fc9-bc62-3ff5f585dce1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_VIEW_SECURITY_LOG</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

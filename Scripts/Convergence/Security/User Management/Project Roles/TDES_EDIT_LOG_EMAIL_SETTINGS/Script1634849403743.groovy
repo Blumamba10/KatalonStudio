@@ -40,11 +40,11 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.delay(2)
 
-selenium.click('xpath=//strong')
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-selenium.click('link=_convergence_console')
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -94,7 +94,7 @@ assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN
 
 assertEquals('EDIT_LOG_EMAIL_SETTINGS', selenium.getText('//td[contains(text(),"EDIT_LOG_EMAIL_SETTINGS")]'))
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'editlogemailsettings', '}AjW3N*@Zk)')
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'editlogemailsettings', '_YCNI)RnbNje^F4t')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'), FailureHandling.STOP_ON_FAILURE)
 

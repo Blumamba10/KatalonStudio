@@ -151,7 +151,11 @@ assertEquals('New user groups are disabled by default. You will need to explicit
 
 WebUI.delay(3)
 
-WebUI.doubleClick(findTestObject('Convergence/Security/User Groups/_User Group Details/btn_OK'))
+WebUI.doubleClick(findTestObject('Convergence/Security/User Groups/_User Group Details/Page_Convergence - User Groups/div_OK'))
+
+WebUI.delay(2)
+
+selenium.click('//button[contains(text(),"OK")]')
 
 WebUI.delay(1)
 

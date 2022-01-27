@@ -40,11 +40,11 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.delay(2)
 
-selenium.click('xpath=//strong')
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-selenium.click('link=_convergence_console')
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -66,7 +66,7 @@ assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN
 
 assertEquals('PROJECTS_ADMIN', selenium.getText('//td[contains(text(),"PROJECTS_ADMIN")]'))
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'projectadmin', 'sxu;PK[-I_&>9')
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'projectadmin', '/3ju_$gMW]X}izW4')
 
 WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'), 0)
 

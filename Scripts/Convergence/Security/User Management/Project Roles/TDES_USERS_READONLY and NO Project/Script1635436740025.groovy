@@ -66,7 +66,7 @@ assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN
 
 assertEquals('USERS_READONLY', selenium.getText('//td[contains(text(),"USERS_READONLY")]'))
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'userreadonly', 'ry|??.e:JGS6BYZO=6W')
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'userreadonly', '~F2pM2/`CKNa5C*w')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

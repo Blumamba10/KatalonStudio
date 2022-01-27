@@ -38,13 +38,13 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
+
+WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.delay(2)
-
-selenium.click('xpath=//strong')
-
-WebUI.delay(2)
-
-selenium.click('link=_convergence_console')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -66,7 +66,7 @@ assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN
 
 assertEquals('USERS_ADMIN', selenium.getText('//td[contains(text(),"USERS_ADMIN")]'))
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'useradmin', 'QW[}hsB55TK;')
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'useradmin', '1*[QJ34F3Y=b3n%GZT}')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

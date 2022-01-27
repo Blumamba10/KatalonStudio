@@ -38,13 +38,11 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-selenium.click('xpath=//strong')
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
 
-WebUI.delay(2)
-
-selenium.click('link=_convergence_console')
+WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -94,7 +92,7 @@ selenium.click('//div[@class="ui-dialog-buttonset"]//button[@type="button"][cont
 
 WebUI.delay(3)
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'viewsecuritylog', '[Py1=@QxctD;s')
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'viewsecuritylog', 's6bru85,1q;XNNnB]')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'), FailureHandling.STOP_ON_FAILURE)
 

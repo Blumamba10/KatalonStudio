@@ -51,12 +51,6 @@ WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Serv
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
-
-assertEquals('Bind username and and password are required for Active Directory configurations.', selenium.getText('//p[contains(text(),"Bind username and and password are required for Ac")]'))
-
-selenium.click('//button[contains(text(),"OK")]')
-
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Name'), 
     'adlds-test')
 
@@ -91,7 +85,10 @@ selenium.click('//tbody/tr[1]/td[4]/button[1]')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/btn_edit_Test Credentials'))
 
-assertEquals('Bind username and and password are required for Active Directory configurations.', selenium.getText('//p[contains(text(),"Bind username and and password are required for Ac")]'))
+
+assertEquals('Values for both username and password are required.', selenium.getText('//div[@class="tcc-dialog-content"]'))
 
 selenium.click('//button[contains(text(),"OK")]')
+
+selenium.click('//body/div[11]/div[3]/div[1]/button[2]')
 
