@@ -53,7 +53,7 @@ selenium.click('link=Import Components')
 WebUI.delay(6)
 
 CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Utilities/Import Components/btn_Import Upload'), 
-    'C:\\actionTestFiles\\Template_Scripts\\CV_Automation_Action_Test_Import.zip')
+    'C:\\actionTestFiles\\Scripts to import with ActionTest.zip')
 
 WebUI.delay(6)
 

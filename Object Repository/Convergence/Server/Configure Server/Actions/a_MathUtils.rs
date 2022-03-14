@@ -6,12 +6,15 @@
    <elementGuidId>55945dd2-404d-4354-ae27-fc5f8eaf8d70</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[23]/td[2]/a</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'MathUtils' or . = 'MathUtils')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'MathUtils' or . = 'MathUtils')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,7 +27,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>

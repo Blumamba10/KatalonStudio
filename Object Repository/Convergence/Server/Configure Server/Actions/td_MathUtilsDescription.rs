@@ -6,12 +6,15 @@
    <elementGuidId>9bd31eaf-df3f-4a95-ab05-88422ea5ed02</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[23]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides basic math functionality.' or . = 'Provides basic math functionality.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides basic math functionality.' or . = 'Provides basic math functionality.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

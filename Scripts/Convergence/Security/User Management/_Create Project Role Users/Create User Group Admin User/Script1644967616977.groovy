@@ -44,20 +44,55 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Utilities'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
 
-selenium.click('link=Import Components')
+WebUI.click(findTestObject('Convergence/Security/Users/btn_Add User'))
 
-WebUI.delay(15)
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_User Name'), 'Usergroupadmin')
 
-CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Utilities/Import Components/btn_Import Upload'), 
-    'C:\\actionTestFiles\\Roles_Testing_import_Users.zip')
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Description'), 'User group admin user')
 
-WebUI.delay(6)
+WebUI.click(findTestObject('Convergence/Security/Users/Add User Account/chkbox_Internal Database'))
 
-WebUI.click(findTestObject('Convergence/Utilities/Import Components/btn_Import'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Security/Users/Add User Account/btn_Save'))
 
-WebUI.click(findTestObject('Convergence/Utilities/Import Components/btn_Complete Import'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_New Password'), 'xW_XM7fnpL_7!8H%')
+
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Re-enter Password'), 'xW_XM7fnpL_7!8H%')
+
+selenium.click('//body/div[11]/div[3]/div[1]/button[1]')
+
+assertEquals('User Account Created', selenium.getText('//h1[contains(text(),"User Account Created")]'))
+
+assertEquals('Initial user account configuration is complete.', selenium.getText('//div[@class="tcc-dialog-content"]'))
+
+selenium.click('//button[contains(text(),"OK")]')
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/btn_Update'))
+
+WebUI.setText(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/txt_Search Filter'), 'ADMIN_CONSOLE_USER')
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/chkbox_Select All_Available'))
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/btn_Add Role'))
+
+WebUI.setText(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/txt_Search Filter'), 'USERGROUPS_ADMIN')
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/chkbox_Select All_Available'))
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/btn_Add Role'))
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/button_Done'))
+
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/btn_Retrun to Users'))
+
+WebUI.waitForElementPresent(findTestObject('Convergence/Security/Users/label_manually'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'Usergroupadmin')
+
+assertEquals('Usergroupadmin', selenium.getText('//a[contains(text(),"Usergroupadmin")]'))
 

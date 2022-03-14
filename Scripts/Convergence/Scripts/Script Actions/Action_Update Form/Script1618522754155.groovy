@@ -94,6 +94,11 @@ assertEquals('NoYes', selenium.getText('id=AssociateImageSelectTriggerInput'))
 
 assertEquals('Save Method', selenium.getText('//label[@for="SaveMethodSelectTriggerInput"]'))
 
+assertEquals('Run Mode', selenium.getText('//label[@for="RunModeSelectTriggerInput"]'))
+
+assertEquals('Asynchronous', selenium.getText('//option[contains(text(),"Asynchronous")]'))
+assertEquals('Synchronous', selenium.getText('//option[contains(text(),"Synchronous")]'))
+
 assertEquals('SavePublish', selenium.getText('id=SaveMethodSelectTriggerInput'))
 
 assertEquals('Web Form Style', selenium.getText('//label[@for="WebFormStyleSelectTriggerInput"]'))

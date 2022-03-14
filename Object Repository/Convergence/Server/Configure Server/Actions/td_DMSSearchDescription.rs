@@ -6,12 +6,15 @@
    <elementGuidId>d90e8c4f-ead3-4a5b-8dcb-376b8f88ae34</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[5]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'DMS Search Actions' or . = 'DMS Search Actions')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'DMS Search Actions' or . = 'DMS Search Actions')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

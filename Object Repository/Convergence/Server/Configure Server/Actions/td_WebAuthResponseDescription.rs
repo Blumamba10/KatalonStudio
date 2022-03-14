@@ -6,12 +6,15 @@
    <elementGuidId>90f8ee5a-1933-4910-8e26-50440147f18e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[40]/td[3]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Configures an authentication and authorization response in a Web Platform application' or . = 'Configures an authentication and authorization response in a Web Platform application')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Configures an authentication and authorization response in a Web Platform application' or . = 'Configures an authentication and authorization response in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

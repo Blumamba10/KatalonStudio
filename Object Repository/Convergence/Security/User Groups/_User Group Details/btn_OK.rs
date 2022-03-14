@@ -6,29 +6,29 @@
    <elementGuidId>83312770-edc1-43e8-b07c-8e1090f0104c</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-info ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;][count(. | //div[@class = 'ui-dialog-buttonset' and (text() = 'OK' or . = 'OK')]) = count(//div[@class = 'ui-dialog-buttonset' and (text() = 'OK' or . = 'OK')])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.ui-dialog.tcc-messaging-dialog.tcc-dialog-info.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable.ui-dialog-buttons > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div.ui-dialog-buttonset</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'OK' or . = 'OK')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Configuration Complete'])[1]/following::div[11]</value>
+         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-info ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;][count(. | //div[@class = 'ui-dialog-buttonset' and (text() = 'OK' or . = 'OK')]) = count(//div[@class = 'ui-dialog-buttonset' and (text() = 'OK' or . = 'OK')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -42,7 +42,7 @@
       <value>OK</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

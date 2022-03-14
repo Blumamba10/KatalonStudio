@@ -6,12 +6,15 @@
    <elementGuidId>18072fdf-6708-430b-89ee-60fbdf683a17</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[7]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Exports data in to an Excel format in a Web Platform application' or . = 'Exports data in to an Excel format in a Web Platform application')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Exports data in to an Excel format in a Web Platform application' or . = 'Exports data in to an Excel format in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

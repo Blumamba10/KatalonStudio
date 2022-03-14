@@ -6,12 +6,15 @@
    <elementGuidId>dc24813a-4c47-4b22-938f-9a399984030b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[19]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides access to the authentication and authorization request for the Intake Server Console authentication.' or . = 'Provides access to the authentication and authorization request for the Intake Server Console authentication.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides access to the authentication and authorization request for the Intake Server Console authentication.' or . = 'Provides access to the authentication and authorization request for the Intake Server Console authentication.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

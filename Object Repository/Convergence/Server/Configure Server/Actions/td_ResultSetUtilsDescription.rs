@@ -6,12 +6,15 @@
    <elementGuidId>13b9a3e4-f38b-4c68-8785-d25c94fc39fe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[34]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides functionality to create arbitrary iterable result sets.' or . = 'Provides functionality to create arbitrary iterable result sets.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides functionality to create arbitrary iterable result sets.' or . = 'Provides functionality to create arbitrary iterable result sets.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

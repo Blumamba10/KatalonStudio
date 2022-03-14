@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Creates Internal User with Project Admin Role</description>
+   <name>Create Project Admin User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>573ca6f3-6cc0-48aa-867f-f9eb791f7300</testCaseGuid>
+</TestCaseEntity>

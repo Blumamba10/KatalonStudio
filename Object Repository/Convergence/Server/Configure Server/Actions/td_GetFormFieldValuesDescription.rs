@@ -6,12 +6,15 @@
    <elementGuidId>f075572e-5813-4050-b475-99827dee6b3b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[9]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Returns the values for all fields in a specified form. The returned field names will not be available at design time.' or . = 'Returns the values for all fields in a specified form. The returned field names will not be available at design time.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Returns the values for all fields in a specified form. The returned field names will not be available at design time.' or . = 'Returns the values for all fields in a specified form. The returned field names will not be available at design time.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

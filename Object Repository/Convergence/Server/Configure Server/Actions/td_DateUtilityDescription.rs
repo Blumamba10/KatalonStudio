@@ -6,12 +6,15 @@
    <elementGuidId>bece5509-79c4-4bb0-bb3a-48add9f85208</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[4]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Date Utility Actions' or . = 'Date Utility Actions')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Date Utility Actions' or . = 'Date Utility Actions')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

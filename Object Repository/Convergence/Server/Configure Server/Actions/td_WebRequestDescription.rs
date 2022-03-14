@@ -6,12 +6,15 @@
    <elementGuidId>f7c44072-8956-4b75-9ada-b058d25e3336</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[42]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides access to the web request in a Web Platform application' or . = 'Provides access to the web request in a Web Platform application')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides access to the web request in a Web Platform application' or . = 'Provides access to the web request in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

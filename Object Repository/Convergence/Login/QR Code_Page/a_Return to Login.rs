@@ -10,14 +10,18 @@
          <value>//a[contains(text(),'Return to Login')]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>/html[1]/body[1]/div[@class=&quot;container-fluid&quot;]/form[@class=&quot;form-qr-code&quot;]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;span8&quot;]/h3[2]/a[1][count(. | //a[@href = '/tdes/logoff.jsp' and @title = 'Click to return to the login screen' and (text() = ' Return to Login' or . = ' Return to Login')]) = count(//a[@href = '/tdes/logoff.jsp' and @title = 'Click to return to the login screen' and (text() = ' Return to Login' or . = ' Return to Login')])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>a[title=&quot;Click to return to the login screen&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -45,7 +49,7 @@
       <value> Return to Login</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

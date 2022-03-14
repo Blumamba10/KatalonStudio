@@ -46,12 +46,6 @@
       <testCaseId>Test Cases/Convergence/Security/Validate Default Values on Credental Managment Page</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>eba7b816-3391-435c-99da-ee71bb215f7f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Authentication/Directory Server Page Elements</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>f3286a8a-88f3-4ea8-ab96-2b8b99febaaf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -66,7 +60,7 @@
    <testCaseLink>
       <guid>2a1744f7-11f1-4493-998d-d11dbd838788</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/Incomplete User Group Messaging</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -124,10 +118,22 @@
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>021c756c-8222-46e8-989f-325fab212a2f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERGROUPS_READONLY and NO Project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>225a7688-3746-4400-82e4-2c7a8f4d8804</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e7d4343-dbcc-436a-b5f8-3e9d82327543</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_READONLY and NO Project</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b5cc48f3-cb9e-4e38-a228-040e97dcecbb</guid>
@@ -140,11 +146,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_SETTINGS</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>44222b49-8cfc-4fc9-bc62-3ff5f585dce1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_VIEW_SECURITY_LOG</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

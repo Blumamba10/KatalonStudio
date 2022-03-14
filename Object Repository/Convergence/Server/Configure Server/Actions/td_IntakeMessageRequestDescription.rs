@@ -6,12 +6,15 @@
    <elementGuidId>317b2ae0-dd58-4422-b209-0f385960d046</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[16]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides access to the Intake Server request message.' or . = 'Provides access to the Intake Server request message.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides access to the Intake Server request message.' or . = 'Provides access to the Intake Server request message.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

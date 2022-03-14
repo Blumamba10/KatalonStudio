@@ -6,12 +6,15 @@
    <elementGuidId>de90a1ab-8439-4505-afb8-4c7125b8e5eb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[27]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides access to multi-page specific values/attributes in a Web Platform application' or . = 'Provides access to multi-page specific values/attributes in a Web Platform application')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides access to multi-page specific values/attributes in a Web Platform application' or . = 'Provides access to multi-page specific values/attributes in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

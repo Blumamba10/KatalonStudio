@@ -19,6 +19,12 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>efac8704-7112-4a6e-a9cb-b457c3e00ad5</testSuiteGuid>
    <testCaseLink>
+      <guid>814cc62f-2036-4da5-a892-ae4166dd5b3b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Server/Configure Server - Actions</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>dabd2145-204a-4fc1-b8ec-0b6d0ce39a18</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

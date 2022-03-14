@@ -6,12 +6,15 @@
    <elementGuidId>65c1747e-9be0-45d3-aaa2-24e560396eb9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[8]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'General file system utility methods' or . = 'General file system utility methods')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'General file system utility methods' or . = 'General file system utility methods')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

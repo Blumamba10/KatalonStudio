@@ -6,12 +6,15 @@
    <elementGuidId>8ef32492-e6f0-40d6-a06e-2def0f312e5a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[22]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Manage Convergence Users' or . = 'Manage Convergence Users')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Manage Convergence Users' or . = 'Manage Convergence Users')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

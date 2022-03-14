@@ -30,43 +30,10 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create ReadOnly User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def driver = DriverFactory.getWebDriver()
-
-String baseUrl = 'https://www.google.com/'
-
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
-
-WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(2)
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
-
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
-
-assertEquals('manually', selenium.getText('//label[contains(text(),"manually")]'))
-
-assertEquals('automatically', selenium.getText('//label[contains(text(),"automatically")]'))
-
-WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'userreadonly')
-
-assertEquals('userreadonly', selenium.getText('//a[contains(text(),"userreadonly")]'))
-
-selenium.click('//a[contains(text(),"userreadonly")]')
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
-
-assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN_CONSOLE_USER")]'))
-
-assertEquals('USERS_READONLY', selenium.getText('//td[contains(text(),"USERS_READONLY")]'))
-
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'userreadonly', '~F2pM2/`CKNa5C*w')
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'userreadonly', 'uTh_XM7fnpL_7!8H%')
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 

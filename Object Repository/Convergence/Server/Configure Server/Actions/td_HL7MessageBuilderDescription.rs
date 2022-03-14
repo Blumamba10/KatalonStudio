@@ -6,12 +6,15 @@
    <elementGuidId>df31a402-b692-4411-9402-20a9e92da175</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[11]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'HL7 Message Builder Action' or . = 'HL7 Message Builder Action')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'HL7 Message Builder Action' or . = 'HL7 Message Builder Action')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,15 @@
    <elementGuidId>56efce2a-dc6a-40f0-bd74-a9666f203a29</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[15]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides ability to the configure and initilize the Intake Server settings.' or . = 'Provides ability to the configure and initilize the Intake Server settings.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides ability to the configure and initilize the Intake Server settings.' or . = 'Provides ability to the configure and initilize the Intake Server settings.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -30,69 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
-
-def driver = DriverFactory.getWebDriver()
-
-String baseUrl = 'https://www.google.com/'
-
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
-
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
-
-assertEquals('manually', selenium.getText('//label[contains(text(),"manually")]'))
-
-assertEquals('automatically', selenium.getText('//label[contains(text(),"automatically")]'))
-
-WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'EditLogSetting')
-
-assertEquals('EditLogSetting', selenium.getText('//a[contains(text(),"EditLogSetting")]'))
-
-selenium.click('//a[contains(text(),"EditLogSetting")]')
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/a_Project Roles'))
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/btn_Retrun to Users'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/btn_Add Roles'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/txt_Search Filter'), 
-    0)
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/select_102550100'), 
-    0)
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/btn_Add Roles'))
-
-selenium.isElementPresent('//a[@class="tcc-grouped-dv-expand-all-link"]')
-
-selenium.isElementPresent('//a[@class="tcc-grouped-dv-collapse-all-link"]')
-
-assertEquals('Role', selenium.getText('//table[@id="fdv-projectRolesDialog-availableProjectRoles-table"]//thead//tr[@role="row"]//th[@class="sorting_disabled"][contains(text(),"Role")]'))
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/_Add Project Roles/chkbox_Select All'))
-
-selenium.click('//button[text()="Add Selections"]')
-
-selenium.click('//div[@class="ui-dialog-buttonset"]//button[@type="button"][contains(text(),"Close")]')
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
-
-assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN_CONSOLE_USER")]'))
-
-assertEquals('EDIT_LOG_SETTINGS', selenium.getText('//td[contains(text(),"EDIT_LOG_SETTINGS")]'))
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create Edit Log Setting User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'editlogsetting', '1/)@Q9?t%*&omvj<')
 

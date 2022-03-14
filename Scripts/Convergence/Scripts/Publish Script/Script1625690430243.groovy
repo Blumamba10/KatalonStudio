@@ -32,8 +32,6 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-KeywordUtil.logInfo(TemplateName)
-
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
 
 def driver = DriverFactory.getWebDriver()
@@ -41,6 +39,8 @@ def driver = DriverFactory.getWebDriver()
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
+
+KeywordUtil.logInfo(TemplateName)
 
 selenium.click('xpath=//strong')
 
@@ -56,15 +56,19 @@ WebUI.click(findTestObject('Object Repository/Convergence/_NavigationLinks/Admin
 
 WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), TemplateName)
 
-WebUI.delay(1)
+WebUI.waitForElementClickable(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_fas fa-globe'), 10)
 
-selenium.click('//i[@class="fas fa-globe"]')
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_fas fa-globe'))
 
 WebUI.switchToWindowIndex('1')
 
-selenium.click('//input[@id="publish_button"]')
+WebUI.waitForElementClickable(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_Publish'), 10)
+
+WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_Publish'))
 
 WebUI.delay(3)
+
+WebUI.waitForElementClickable(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'), 0)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
 

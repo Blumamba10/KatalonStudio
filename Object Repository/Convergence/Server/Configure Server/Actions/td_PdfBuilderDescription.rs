@@ -6,12 +6,15 @@
    <elementGuidId>5dcde897-79da-43c2-a15e-910214177dcf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[31]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Custom action that takes a list of files, and concatenates them into a single pdf file' or . = 'Custom action that takes a list of files, and concatenates them into a single pdf file')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Custom action that takes a list of files, and concatenates them into a single pdf file' or . = 'Custom action that takes a list of files, and concatenates them into a single pdf file')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

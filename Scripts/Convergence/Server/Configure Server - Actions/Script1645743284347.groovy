@@ -49,8 +49,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/th_Description'), 'Description')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/btn_addCustomActionButton'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/btn_addCustomActionButton'), 0)
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_addCustomActionButton'), FailureHandling.STOP_ON_FAILURE)
 
@@ -68,8 +67,7 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/A
 WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/input_Search Filter'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/th_Type'), 
-    'Type')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/th_Type'), 'Type')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/th_Description'), 
     'Description')
@@ -87,8 +85,7 @@ WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Select 
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Select an Action_Page/button_submitButton'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_ID'), 
-    'ID')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_ID'), 'ID')
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/input_ID'), 
     0)
@@ -114,9 +111,12 @@ WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_Save
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/input_XmlUtils'))
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/chkbox_XmlUtils'))
 
-WebUI.delay(2)
+WebUI.waitForElementClickable(findTestObject('Convergence/Server/Configure Server/Actions/btn_RemoveCustomActionButton'), 
+    10)
+
+WebUI.focus(findTestObject('Convergence/Server/Configure Server/Actions/btn_RemoveCustomActionButton'))
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_RemoveCustomActionButton'))
 
@@ -131,8 +131,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_Cancel'), 
     0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_OK'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_OK'), 0)
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_OK'), FailureHandling.STOP_ON_FAILURE)
 
@@ -163,8 +162,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_ConvertDocument'), 'ConvertDocument')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ConvertsDocumentDescription'), 
-    'Converts documents from one format to another.')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ConvertsDocumentDescription'), 'Converts documents from one format to another.')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_DateUtils'), 'DateUtils')
 
@@ -197,13 +195,11 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_HL7MessageBuilder'), 'HL7MessageBuilder')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_HL7MessageBuilderDescription'), 
-    'HL7 Message Builder Action')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_HL7MessageBuilderDescription'), 'HL7 Message Builder Action')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_HL7MessageSender'), 'HL7MessageSender')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_HL7MessageSenderDescription'), 
-    'HL7 Message Sender Action')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_HL7MessageSenderDescription'), 'HL7 Message Sender Action')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_HL7Util'), 'HL7Util')
 
@@ -211,8 +207,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_IntakeAuthUser'), 'IntakeAuthUser')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_IntakeAuthUserDescription'), 
-    'Provides support for Intake Server user authentication using Convergence users.')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_IntakeAuthUserDescription'), 'Provides support for Intake Server user authentication using Convergence users.')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_IntakeInit'), 'IntakeInit')
 
@@ -230,8 +225,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_IntakeQueryUser'), 'IntakeQueryUser')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_IntakeQueryUserDescription'), 
-    'Allows Yes/No queries against user data')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_IntakeQueryUserDescription'), 'Allows Yes/No queries against user data')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_IntakeWebAuthRequest'), 'IntakeWebAuthRequest')
 
@@ -240,7 +234,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_IntakeWebAuthResponse'), 'IntakeWebAuthResponse')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_InakeWebAuthResponseDescription'), 
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_IntakeWebAuthResponseDescription'), 
     'Configures an authentication and authorization response back to an Intake Server Console authentication.')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_ManageRoles'), 'ManageRoles')
@@ -257,8 +251,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_MultiPageCreate'), 'MultiPageCreate')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultiPageCreateDescription'), 
-    'Creates and initializes all of the page forms for a multi-page form.')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultiPageCreateDescription'), 'Creates and initializes all of the page forms for a multi-page form.')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_MultiPageGetFormId'), 'MultiPageGetFormId')
 
@@ -267,28 +260,23 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_MultiPageMerge'), 'MultiPageMerge')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultipageMergeDescription'), 
-    'Multipage Merge Action')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultipageMergeDescription'), 'Multipage Merge Action')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_MultipageEvent'), 'MultipageEvent')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultipageEventDescription'), 
-    'Provides access to multi-page specific values/attributes in a Web Platform application')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultipageEventDescription'), 'Provides access to multi-page specific values/attributes in a Web Platform application')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_MultipageResponse'), 'MultipageResponse')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultipageResponseDescription'), 
-    'Configures a web response when moving between multi-page form pages in a Web Platform application')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MultipageResponseDescription'), 'Configures a web response when moving between multi-page form pages in a Web Platform application')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_NavConfigurator'), 'NavConfigurator')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_NavConfiguratorDescription'), 
-    'Configures Site Navigation elements in a Web Platform application')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_NavConfiguratorDescription'), 'Configures Site Navigation elements in a Web Platform application')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_PasswordGenerator'), 'PasswordGenerator')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_PasswordGeneratorDescription'), 
-    'Generates a fixed length password containing numbers and letters.')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_PasswordGeneratorDescription'), 'Generates a fixed length password containing numbers and letters.')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_PdfBuilder'), 'PdfBuilder')
 
@@ -305,8 +293,7 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_ResultSetUtils'), 'ResultSetUtils')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ResultSetUtilsDescription'), 
-    'Provides functionality to create arbitrary iterable result sets.')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ResultSetUtilsDescription'), 'Provides functionality to create arbitrary iterable result sets.')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_ShaPasswordEncoder'), 'ShaPasswordEncoder')
 
@@ -327,17 +314,15 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_WebAuthRequest'), 'WebAuthRequest')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_WebAuthRequestDescription'), 
-    'Provides access to the authentication and authorization request in a Web Platform application')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_WebAuthRequestDescription'), 'Provides access to the authentication and authorization request in a Web Platform application')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_WebAuthResponse'), 'WebAuthResponse')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_WebAuthResponseDescription'), 
-    'Configures an authentication and authorization response in a Web Platform application')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_WebAuthResponseDescription'), 'Configures an authentication and authorization response in a Web Platform application')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_WebInit'), 'WebInit')
+not_run: WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_WebInit'), 'WebInit')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_WebInitDescription'), 'Provides support for configuring a Web Platform application')
+not_run: WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_WebInitDescription'), 'Provides support for configuring a Web Platform application')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_WebRequest'), 'WebRequest')
 
@@ -356,8 +341,7 @@ WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/a_AuthUs
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/span_AuthUser'), 
     'AuthUser')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_ID'), 
-    'ID')
+WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_ID'), 'ID')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_Description'), 
     'Description')

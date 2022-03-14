@@ -6,12 +6,15 @@
    <elementGuidId>85b0250a-343a-4926-832f-cc598c8f3c42</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[25]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Returns the id of a specified page form.' or . = 'Returns the id of a specified page form.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Returns the id of a specified page form.' or . = 'Returns the id of a specified page form.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

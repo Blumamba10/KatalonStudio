@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create Internal User with Edit Log Email project roles</description>
+   <name>Create Edit Log Email Setting User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b87d938-5f7d-4c4f-9860-d04635fd6a82</testCaseGuid>
+</TestCaseEntity>

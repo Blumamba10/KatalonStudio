@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create a User that has View Security Log Project Role</description>
+   <name>Create View Security Log User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0e63e0a3-54c2-45bc-97c7-ea65c231c44d</testCaseGuid>
+</TestCaseEntity>

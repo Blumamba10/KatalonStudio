@@ -42,5 +42,5 @@ WebUI.delay(4)
 
 selenium.click('//a[contains(text(),"2021 Release")]')
 
-WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/td_Server Version'), '21.0.0')
+WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/td_Server Version'), GlobalVariable.serverNumber)
 

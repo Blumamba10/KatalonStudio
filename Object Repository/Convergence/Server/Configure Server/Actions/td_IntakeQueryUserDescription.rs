@@ -6,12 +6,15 @@
    <elementGuidId>310993e7-45f5-4ebd-9126-be123425330b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[18]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Allows Yes/No queries against user data' or . = 'Allows Yes/No queries against user data')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Allows Yes/No queries against user data' or . = 'Allows Yes/No queries against user data')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

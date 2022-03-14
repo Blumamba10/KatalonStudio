@@ -240,11 +240,13 @@ selenium.type('id=idInput', 'Style Name')
 
 selenium.type('id=descriptionInput', 'Description')
 
-selenium.click('id=submitButton')
+selenium.click('//i[@class="shortcut-icon fas fa-check-circle"]')
 
 WebUI.delay(3)
 
 WebUI.refresh()
+
+WebUI.delay(5)
 
 selenium.click('//input[@id="formRenderSettingsId_1"]')
 

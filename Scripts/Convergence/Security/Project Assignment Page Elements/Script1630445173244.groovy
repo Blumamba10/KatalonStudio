@@ -102,7 +102,9 @@ assertEquals('User', selenium.getText('//table[@id="fdv-updateDialog-step2-lists
 
 assertEquals('Role', selenium.getText('//table[@id="fdv-updateDialog-step2-lists-assigned-table"]//thead//tr[@role="row"]//th[@class="sorting"][contains(text(),"Role")]'))
 
-selenium.click('//body/div[10]/div[3]/div[1]/button[1]')
+WebUI.click(findTestObject('Convergence/Security/Project Assignment/Add Assignment/button_Done'))
+
+WebUI.delay(3)
 
 selenium.click('//a[@href="#"][contains(text(),"User Groups")]')
 

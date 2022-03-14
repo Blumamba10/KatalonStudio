@@ -113,5 +113,7 @@ selenium.refresh()
 
 selenium.waitForPageToLoad('30000')
 
+WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), 'Next Template')
+
 assertEquals('Next Template', selenium.getText('//td[2]/a'))
 

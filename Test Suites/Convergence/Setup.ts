@@ -15,6 +15,6 @@
       <guid>7fa1d027-1ec5-43b1-99bc-db3f9d01b253</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/Import Project Role Users</testCaseId>
+      <testCaseId>Test Cases/_Helpers/Import Project Role Users</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

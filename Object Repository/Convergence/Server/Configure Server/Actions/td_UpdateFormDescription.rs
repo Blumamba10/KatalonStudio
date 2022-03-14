@@ -6,12 +6,15 @@
    <elementGuidId>e1c53036-2f33-4b06-9528-84155ffc1148</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[37]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides the ability to make changes to an existing form or create a new form.' or . = 'Provides the ability to make changes to an existing form or create a new form.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides the ability to make changes to an existing form or create a new form.' or . = 'Provides the ability to make changes to an existing form or create a new form.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

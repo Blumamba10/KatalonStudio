@@ -30,41 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
-
-def driver = DriverFactory.getWebDriver()
-
-String baseUrl = 'https://www.google.com/'
-
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-WebUI.delay(2)
-
-selenium.click('xpath=//strong')
-
-WebUI.delay(2)
-
-selenium.click('link=_convergence_console')
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
-
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
-
-assertEquals('manually', selenium.getText('//label[contains(text(),"manually")]'))
-
-assertEquals('automatically', selenium.getText('//label[contains(text(),"automatically")]'))
-
-WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'projroles')
-
-assertEquals('projroles', selenium.getText('//a[contains(text(),"projroles")]'))
-
-selenium.click('//a[contains(text(),"projroles")]')
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
-
-assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN_CONSOLE_USER")]'))
-
-assertEquals('PROJECTS_ROLES', selenium.getText('//td[contains(text(),"PROJECTS_ROLES")]'))
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create Projects Roles User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'projroles', 'h|FU6zJ}58o5`VBYK')
 

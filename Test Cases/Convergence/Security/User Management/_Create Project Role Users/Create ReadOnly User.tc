@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create a user that has Read Only project role.</description>
+   <name>Create ReadOnly User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e94a62b4-92ca-4ef1-84dc-5f9821c7de3c</testCaseGuid>
+</TestCaseEntity>

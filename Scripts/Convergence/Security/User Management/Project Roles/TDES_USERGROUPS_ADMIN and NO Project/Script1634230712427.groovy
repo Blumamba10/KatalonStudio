@@ -30,39 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
-
-def driver = DriverFactory.getWebDriver()
-
-String baseUrl = 'https://www.google.com/'
-
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
-
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
-
-assertEquals('manually', selenium.getText('//label[contains(text(),"manually")]'))
-
-assertEquals('automatically', selenium.getText('//label[contains(text(),"automatically")]'))
-
-WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'Usergroupadmin')
-
-assertEquals('Usergroupadmin', selenium.getText('//a[contains(text(),"Usergroupadmin")]'))
-
-selenium.click('//a[contains(text(),"Usergroupadmin")]')
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
-
-assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN_CONSOLE_USER")]'))
-
-assertEquals('USERGROUPS_ADMIN', selenium.getText('//td[contains(text(),"USERGROUPS_ADMIN")]'))
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create User Group Admin User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'usergroupadmin', 'xW_XM7fnpL_7!8H%')
 
@@ -91,7 +60,7 @@ WebUI.click(findTestObject('Convergence/z_One Offs/a_Internal User Group'))
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/a_Permissions'))
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/txt_Search Filters'), 
-    0)
+    10)
 
 WebUI.selectOptionByValue(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/select_102550100'), 
     '100', false)
@@ -99,10 +68,10 @@ WebUI.selectOptionByValue(findTestObject('Convergence/Security/User Groups/_User
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/chkbox_Select All'))
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/btn_Disable'), 
-    0)
+    10)
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/btn_Enabled'), 
-    0)
+    10)
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Permissions Tab/btn_Enabled'))
 
@@ -117,10 +86,10 @@ WebUI.verifyElementNotVisible(findTestObject('Convergence/Security/User Groups/_
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementNotPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Project Roles Tab/chkbox_Select All'), 
-    0)
+    10)
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_Project Roles Tab/txt_Search Filter'), 
-    0)
+    10)
 
 WebUI.verifyElementNotVisible(findTestObject('Convergence/Security/User Groups/_User Group Details/_Project Roles Tab/select_102550100'), 
     FailureHandling.STOP_ON_FAILURE)

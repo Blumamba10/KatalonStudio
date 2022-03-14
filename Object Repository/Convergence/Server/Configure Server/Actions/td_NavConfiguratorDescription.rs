@@ -6,12 +6,15 @@
    <elementGuidId>c561372e-871f-4e0d-80a9-65f92ae55494</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[29]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Configures Site Navigation elements in a Web Platform application' or . = 'Configures Site Navigation elements in a Web Platform application')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Configures Site Navigation elements in a Web Platform application' or . = 'Configures Site Navigation elements in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

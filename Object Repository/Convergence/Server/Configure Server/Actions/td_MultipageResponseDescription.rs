@@ -6,12 +6,15 @@
    <elementGuidId>3faa88b6-4065-4937-88c2-37c8bb1fed42</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[28]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Configures a web response when moving between multi-page form pages in a Web Platform application' or . = 'Configures a web response when moving between multi-page form pages in a Web Platform application')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Configures a web response when moving between multi-page form pages in a Web Platform application' or . = 'Configures a web response when moving between multi-page form pages in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

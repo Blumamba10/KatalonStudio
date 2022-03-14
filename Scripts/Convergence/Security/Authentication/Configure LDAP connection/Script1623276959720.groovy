@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Se
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldap://pd-ldap01:389')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldaps://pd-ldap01.trinisys.loc:636')
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
@@ -57,9 +57,46 @@ WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Serv
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Password'), 
     'JfebiVdhitkNjV6czE05lxlN8Emdeu2V1Htf/KdC1eyYDhxjk/sMdg==')
 
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
+
+selenium.click('//i[@class="fas fa-trash-alt"]')
+
+assertEquals('Confirm Delete', selenium.getText('//h1[contains(text(),"Confirm Delete")]'))
+
+selenium.doubleClick('//h1[contains(text(),"Confirm Delete")]')
+
+selenium.doubleClick('//div[@class="ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons"]//div[@class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"]')
+
+WebUI.waitForElementClickable(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Delete_OK'), 
+    10)
+
+WebUI.doubleClick(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Delete_OK'))
+
+WebUI.delay(2)
+
+assertEquals('AD configuration successfully deleted from this Convergence node.', selenium.getText('//div[contains(text(),"AD configuration successfully deleted from this Co")]'))
+
+selenium.click('//div[@class="ui-dialog tcc-messaging-dialog tcc-dialog-alert tcc-dialog-alert-success ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons"]//div[@class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"]//div[@class="ui-dialog-buttonset"]//button[@type="button"][contains(text(),"OK")]')
+
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
+
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldap://pd-ldap01:389')
+
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
+
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Name'), 
+    'adlds-test')
+
+WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Password'), 
+    'k/naq+nOIgZf6+3aSVC/raaXfjwNLGxcekAjtgCr8rPObsHjszvGWg==')
+
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_OK'))
+WebUI.delay(2)
+
+selenium.doubleClick('//h1[contains(text(),"Success!")]')
+
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/button_OK'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 
@@ -81,14 +118,15 @@ selenium.isElementPresent('//td[@style="text-align: right;"]//button[@type="butt
 
 selenium.isElementPresent('//td[contains(text(),"adlds-test")]//button[@type="button"]')
 
-selenium.click('//tbody/tr[1]/td[4]/button[1]')
+not_run: selenium.click('//tbody/tr[1]/td[4]/button[1]')
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/btn_edit_Test Credentials'))
+not_run: WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/btn_edit_Test Credentials'))
 
+not_run: assertEquals('Values for both username and password are required.', selenium.getText('//div[contains(text(),"Values for both username and password are required")]'))
 
-assertEquals('Values for both username and password are required.', selenium.getText('//div[@class="tcc-dialog-content"]'))
+not_run: selenium.doubleClick('//div[contains(text(),"Values for both username and password are required")]')
 
-selenium.click('//button[contains(text(),"OK")]')
+not_run: selenium.click('//body/div[12]/div[11]/div[1]/button[1]')
 
-selenium.click('//body/div[11]/div[3]/div[1]/button[2]')
+not_run: selenium.click('//body/div[11]/div[3]/div[1]/button[2]')
 

@@ -6,12 +6,15 @@
    <elementGuidId>47267cab-e7ef-4823-92a3-236b33928da8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[10]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Returns a media item as a file object from the Convergence media management layer' or . = 'Returns a media item as a file object from the Convergence media management layer')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Returns a media item as a file object from the Convergence media management layer' or . = 'Returns a media item as a file object from the Convergence media management layer')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

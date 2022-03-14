@@ -6,12 +6,15 @@
    <elementGuidId>bffbec87-c2fb-4338-83df-905e9e5a77be</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[35]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'SHA Password Encoder Actions' or . = 'SHA Password Encoder Actions')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'SHA Password Encoder Actions' or . = 'SHA Password Encoder Actions')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

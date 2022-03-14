@@ -6,12 +6,15 @@
    <elementGuidId>d7d7091d-dde5-4610-b85a-adb489a668b8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[38]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Simple action that takes a Web Platform URL and adds to its parameters a Web Platform checksum that is used to protect Web Platform application from URL tampering' or . = 'Simple action that takes a Web Platform URL and adds to its parameters a Web Platform checksum that is used to protect Web Platform application from URL tampering')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Simple action that takes a Web Platform URL and adds to its parameters a Web Platform checksum that is used to protect Web Platform application from URL tampering' or . = 'Simple action that takes a Web Platform URL and adds to its parameters a Web Platform checksum that is used to protect Web Platform application from URL tampering')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

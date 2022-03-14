@@ -6,12 +6,15 @@
    <elementGuidId>e5d25488-dc3d-4f3e-9482-faa089d06c7f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[3]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Converts documents from one format to another.' or . = 'Converts documents from one format to another.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Converts documents from one format to another.' or . = 'Converts documents from one format to another.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create user that has User Group Read Only project role.</description>
+   <name>Create User Group Read Only User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df20be91-faec-40b2-99ed-b269ae439b1a</testCaseGuid>
+</TestCaseEntity>

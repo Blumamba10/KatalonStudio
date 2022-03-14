@@ -6,15 +6,18 @@
    <elementGuidId>afeb61a7-5ae0-4cfb-8052-dce30b0821f5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[24]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Creates and initializes all of the page forms for a multi-page form.' or . = 'Creates and initializes all of the page forms for a multi-page form.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Creates and initializes all of the page forms for a multi-page form.' or . = 'Creates and initializes all of the page forms for a multi-page form.')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Log in with user that has VIEW_SECURITY_LOG role.
+
+Verify user should ony see the Security Log as Read-Only.</description>
+   <name>WIP_TDES_VIEW_SECURITY_LOG</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>93d32dda-0a50-4566-b899-7f8800163300</testCaseGuid>
+</TestCaseEntity>

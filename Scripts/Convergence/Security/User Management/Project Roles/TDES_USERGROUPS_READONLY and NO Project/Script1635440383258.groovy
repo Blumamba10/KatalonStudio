@@ -30,41 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
-
-def driver = DriverFactory.getWebDriver()
-
-String baseUrl = 'https://www.google.com/'
-
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
-
-WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(2)
-
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
-
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
-
-assertEquals('manually', selenium.getText('//label[contains(text(),"manually")]'))
-
-assertEquals('automatically', selenium.getText('//label[contains(text(),"automatically")]'))
-
-WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'usergroupreadonly')
-
-assertEquals('usergroupreadonly', selenium.getText('//a[contains(text(),"usergroupreadonly")]'))
-
-selenium.click('//a[contains(text(),"usergroupreadonly")]')
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
-
-assertEquals('ADMIN_CONSOLE_USER', selenium.getText('//td[contains(text(),"ADMIN_CONSOLE_USER")]'))
-
-assertEquals('USERGROUPS_READONLY', selenium.getText('//td[contains(text(),"USERGROUPS_READONLY")]'))
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create User Group Read Only User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'usergroupreadonly', 'e7}m?8bzbYnjOo@%')
 
@@ -89,6 +56,9 @@ WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Internal User Group')
 
 WebUI.click(findTestObject('Convergence/z_One Offs/a_Internal User Group'))
+
+WebUI.waitForElementClickable(findTestObject('Convergence/Security/User Groups/_User Group Details/_Project Roles Tab/a_Project Roles'), 
+    10)
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Project Roles Tab/a_Project Roles'))
 

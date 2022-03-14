@@ -26,7 +26,7 @@ public class UploadFile {
 	@Keyword
 	def uploadFile(TestObject to, String filePath) {
 		WebUI.click(to)
-		WebUI.delay(3) //Delay after click on Browser Button
+		//WebUI.delay(3) //Delay after click on Browser Button
 		StringSelection ss = new StringSelection(filePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		Robot robot = new Robot();
@@ -38,10 +38,10 @@ public class UploadFile {
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		//robot.delay(3000); //Millisecond 3 second delay only if needed
-		//robot.keyRelease(KeyEvent.VK_CONTROL);
-		//robot.keyPress(KeyEvent.VK_ENTER);
-		//robot.keyRelease(KeyEvent.VK_ENTER);
-
+		/*robot.delay(3000); //Millisecond 3 second delay only if needed
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		*/
 	}
 }

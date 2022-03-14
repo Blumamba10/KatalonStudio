@@ -155,7 +155,9 @@ WebUI.doubleClick(findTestObject('Convergence/Security/User Groups/_User Group D
 
 WebUI.delay(2)
 
-selenium.click('//button[contains(text(),"OK")]')
+selenium.doubleClick('//h1[contains(text(),"New User Group Complete")]')
+
+WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/btn_OK'))
 
 WebUI.delay(1)
 

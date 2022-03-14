@@ -6,12 +6,15 @@
    <elementGuidId>f35861f0-9f98-4568-b008-fd93aa2c80da</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[26]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Multipage Merge Action' or . = 'Multipage Merge Action')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Multipage Merge Action' or . = 'Multipage Merge Action')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

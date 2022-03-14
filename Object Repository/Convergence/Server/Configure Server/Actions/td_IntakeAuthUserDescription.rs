@@ -6,12 +6,15 @@
    <elementGuidId>0db29787-bc13-4ea3-8c6d-38cde88d7c5a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[14]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides support for Intake Server user authentication using Convergence users.' or . = 'Provides support for Intake Server user authentication using Convergence users.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides support for Intake Server user authentication using Convergence users.' or . = 'Provides support for Intake Server user authentication using Convergence users.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

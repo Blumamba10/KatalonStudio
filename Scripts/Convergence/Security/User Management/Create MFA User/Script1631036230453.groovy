@@ -125,9 +125,13 @@ WebUI.verifyElementText(findTestObject('Convergence/Login/QR Code_Page/p_At your
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Login/QR Code_Page/a_Return to Login'), 0)
 
-WebUI.click(findTestObject('Convergence/Login/QR Code_Page/a_Return to Login'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Login/QR Code_Page/p_At your next login'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
+WebUI.closeBrowser()
+
+WebUI.openBrowser(GlobalVariable.tdesURL)
+
+WebUI.maximizeWindow()
 
 WebUI.sendKeys(findTestObject('Convergence/Login/username'), 'MFAUser')
 
@@ -194,7 +198,7 @@ WebUI.click(findTestObject('Convergence/Security/Users/chkbox_Select All'))
 
 WebUI.click(findTestObject('Convergence/Security/Users/btn_Delete'))
 
-selenium.click('//button[contains(text(),"OK")]')
+WebUI.click(findTestObject('Convergence/Security/Users/btn_OK'))
 
 WebUI.delay(2)
 

@@ -10,14 +10,18 @@
          <value>div.ui-dialog.tcc-messaging-dialog.tcc-dialog-alert.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[11]</value>
+         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -31,7 +35,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -45,7 +49,7 @@
       <value>OK</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

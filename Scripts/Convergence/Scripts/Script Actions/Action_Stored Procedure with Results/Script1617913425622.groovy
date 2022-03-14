@@ -92,7 +92,7 @@ selenium.select('id=datasourceSelect', 'label=configDataSource')
 
 selenium.click('id=catalogSelect')
 
-selenium.select('//select[@id="catalogSelect"]', 'label=_DoNotDelete')
+selenium.select('//select[@id="catalogSelect"]', 'label=_donotdelete')
 
 selenium.select('//select[@id="schemaSelect"]', 'label=db_accessadmin')
 

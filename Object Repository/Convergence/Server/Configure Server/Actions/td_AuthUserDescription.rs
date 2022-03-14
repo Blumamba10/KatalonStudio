@@ -6,12 +6,15 @@
    <elementGuidId>4c749a40-361a-4e7e-9337-55a606a44bd1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides support for authentication using Convergence users in a Web Platform application' or . = 'Provides support for authentication using Convergence users in a Web Platform application')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides support for authentication using Convergence users in a Web Platform application' or . = 'Provides support for authentication using Convergence users in a Web Platform application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

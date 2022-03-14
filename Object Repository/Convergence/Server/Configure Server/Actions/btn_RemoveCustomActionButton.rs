@@ -10,6 +10,10 @@
          <value>#removeCustomActionButton</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'removeCustomActionButton']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//button[@id='removeCustomActionButton']</value>
       </entry>
@@ -31,7 +35,7 @@
       <value>removeCustomActionButton</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>

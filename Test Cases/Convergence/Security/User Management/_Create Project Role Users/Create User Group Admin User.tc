@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create Internal User with User Group Admin project roles.</description>
+   <name>Create User Group Admin User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>83ef7c24-f221-42dc-9f29-d102c9cc1071</testCaseGuid>
+</TestCaseEntity>

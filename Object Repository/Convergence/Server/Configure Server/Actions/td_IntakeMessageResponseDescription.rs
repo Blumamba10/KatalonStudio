@@ -6,12 +6,15 @@
    <elementGuidId>d9899650-695a-46f4-9aef-ad828979e5ac</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[17]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Provides ablility to respond to an Intake Server message.' or . = 'Provides ablility to respond to an Intake Server message.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Provides ablility to respond to an Intake Server message.' or . = 'Provides ablility to respond to an Intake Server message.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

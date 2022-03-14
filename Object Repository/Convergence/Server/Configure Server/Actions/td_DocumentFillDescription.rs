@@ -6,12 +6,15 @@
    <elementGuidId>4f1bb701-79fe-4883-aa73-a58bc2c5f95d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[6]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Fills out a Document Template (MS Word or Adobe PDF), also known as Mail Merge' or . = 'Fills out a Document Template (MS Word or Adobe PDF), also known as Mail Merge')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Fills out a Document Template (MS Word or Adobe PDF), also known as Mail Merge' or . = 'Fills out a Document Template (MS Word or Adobe PDF), also known as Mail Merge')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

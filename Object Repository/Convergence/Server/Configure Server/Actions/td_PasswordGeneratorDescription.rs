@@ -6,12 +6,15 @@
    <elementGuidId>cdaa9d5f-602d-4c34-b699-d2a14ce0fee7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr[30]/td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Generates a fixed length password containing numbers and letters.' or . = 'Generates a fixed length password containing numbers and letters.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(text() = 'Generates a fixed length password containing numbers and letters.' or . = 'Generates a fixed length password containing numbers and letters.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
