@@ -110,7 +110,15 @@ assertTrue(selenium.isElementPresent('id=asciiCharacterSetISO'))
 
 assertEquals('ISO-8859-1', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'UTF-8\'])[1]/following::label[1]'))
 
-assertEquals('Render Version', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'ISO-8859-1\'])[1]/following::label[1]'))
+assertEquals('Render Version', selenium.getText('//label[@for="renderVersionSelect"]'))
+
+assertEquals('jQuery Version', selenium.getText('//div[contains(text(),"jQuery Version")]'))
+
+assertEquals('1.12.4', selenium.getText('//body/form[@id="editSettingsFrm"]/div[@class="container"]/div[@class="row"]/div[@class="span12"]/div[@class="content-box padded-box"]/div[@class="row-fluid"]/div[1]/div[1]/div[4]/label[1]'))
+
+assertEquals('1.12.4-patched', selenium.getText('//label[contains(text(),"1.12.4-patched")]'))
+
+assertEquals('3.6.0', selenium.getText('//label[contains(text(),"3.6.0")]'))
 
 assertTrue(selenium.isElementPresent('id=renderVersionSelect'))
 

@@ -38,19 +38,23 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-selenium.type('id=fc-l-login-username', 'Test')
+selenium.doubleClick('//input[@id="usernameInput"]')
 
-selenium.type('id=fc-l-login-password', 'Test')
+selenium.type('//input[@id="usernameInput"]', 'Test')
 
-selenium.click('id=tdeLoginButton')
+selenium.type('//input[@id="passwordInput"]', 'Test')
 
-assertEquals('Account not found', selenium.getText('id=lbl-errorMessage'))
+selenium.click('//button[@id="loginButton"]')
 
-selenium.type('id=fc-l-login-username', 'admin')
+assertEquals('Account not found', selenium.getText('//div[@class="cvg-login-error-msg"]'))
 
-selenium.type('id=fc-l-login-password', 'admin')
+selenium.doubleClick('//input[@id="usernameInput"]')
 
-selenium.click('id=tdeLoginButton')
+selenium.type('//input[@id="usernameInput"]', 'admin')
+
+selenium.type('//input[@id="passwordInput"]', 'admin')
+
+selenium.click('//button[@id="loginButton"]')
 
 selenium.submit('id=tde-data-entry-form')
 

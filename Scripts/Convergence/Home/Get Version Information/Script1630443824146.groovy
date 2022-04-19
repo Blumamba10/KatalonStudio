@@ -40,7 +40,7 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.delay(4)
 
-selenium.click('//a[contains(text(),"2021 Release")]')
+selenium.click('//a[contains(text(),"2019 Release")]')
 
 WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/td_Server Version'), GlobalVariable.serverNumber)
 

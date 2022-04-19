@@ -118,15 +118,3 @@ selenium.isElementPresent('//td[@style="text-align: right;"]//button[@type="butt
 
 selenium.isElementPresent('//td[contains(text(),"adlds-test")]//button[@type="button"]')
 
-not_run: selenium.click('//tbody/tr[1]/td[4]/button[1]')
-
-not_run: WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/btn_edit_Test Credentials'))
-
-not_run: assertEquals('Values for both username and password are required.', selenium.getText('//div[contains(text(),"Values for both username and password are required")]'))
-
-not_run: selenium.doubleClick('//div[contains(text(),"Values for both username and password are required")]')
-
-not_run: selenium.click('//body/div[12]/div[11]/div[1]/button[1]')
-
-not_run: selenium.click('//body/div[11]/div[3]/div[1]/button[2]')
-
