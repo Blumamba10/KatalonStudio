@@ -99,45 +99,9 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/A
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_Implementation'), 
     'Implementation')
 
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Update'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Cancel'))
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/h4_Save Changes'), 'Save Changes')
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/btn_Save'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/btn_Cancel'), 0)
-
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_Save'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
-
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/chkbox_XmlUtils'))
-
-WebUI.waitForElementClickable(findTestObject('Convergence/Server/Configure Server/Actions/btn_RemoveCustomActionButton'), 
-    10)
-
-WebUI.focus(findTestObject('Convergence/Server/Configure Server/Actions/btn_RemoveCustomActionButton'))
-
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_RemoveCustomActionButton'))
-
-WebUI.delay(5)
-
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/span_Remove Actions'), 
-    'Remove Actions')
-
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/p_Are you sure you want to remove these actions'), 
-    'Are you sure you want to remove these actions?')
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_Cancel'), 
-    0)
-
-WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_OK'), 0)
-
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Remove Action_popup/btn_OK'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/h4_Save Changes'), 'Save Changes')
-
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/btn_Save'), FailureHandling.STOP_ON_FAILURE)
+not_run: selenium.click('//i[@class="shortcut-icon fas fa-times-circle"]')
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
@@ -363,4 +327,6 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/A
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Update'), 
     0)
+
+WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Cancel'), FailureHandling.STOP_ON_FAILURE)
 

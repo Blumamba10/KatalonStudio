@@ -54,18 +54,17 @@ selenium.click('id=addScriptButton')
 
 WebUI.switchToWindowIndex('1')
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[2]/following::i[2]'))
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[2]/following::i[2]')
+WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Add Action'))
 
 assertTrue(selenium.isElementPresent('id=scriptNameInput'))
 
 assertTrue(selenium.isElementPresent('link=Save'))
 
 assertTrue(selenium.isElementPresent('link=Cancel'))
-assertTrue(selenium.isElementPresent('//i[@class="fa fa-undo"]'))
-assertTrue(selenium.isElementPresent('//i[@class="fas fa-redo"]'))
 
+assertTrue(selenium.isElementPresent('//i[@class="fa fa-undo"]'))
+
+assertTrue(selenium.isElementPresent('//i[@class="fas fa-redo"]'))
 
 selenium.click('id=scriptNameInput')
 

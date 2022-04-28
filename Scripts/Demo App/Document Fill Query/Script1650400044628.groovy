@@ -10,10 +10,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
@@ -29,8 +25,13 @@ import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium as WebDriverB
 import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.testobject.SelectorMethod as SelectorMethod
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+CustomKeywords.'cutomKeywords.Demo_LoginHelper.login'(GlobalVariable.demoappURL, 'admin', 'admin')
 
 def driver = DriverFactory.getWebDriver()
 
@@ -38,9 +39,39 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.delay(4)
+selenium.click('//a[contains(text(),"Document Processing")]')
 
-selenium.click('//a[contains(text(),"2021 Release")]')
+selenium.click('link=Document Fill from Query')
 
-WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/td_Server Version'), GlobalVariable.serverNumber)
+assertEquals('Generate Document from Query', selenium.getText('//tr[2]/td/div'))
+
+assertEquals('Show 102550100 items', selenium.getText('//label'))
+
+assertEquals('102550100', selenium.getText('//select'))
+
+assertEquals('Filter:', selenium.getText('//div[2]/label'))
+
+assertEquals('Policy Detail', selenium.getText('//th'))
+
+assertEquals('Policy Number', selenium.getText('//th[2]'))
+
+assertEquals('Premium Mode', selenium.getText('//th[3]'))
+
+assertEquals('Coverage Amount', selenium.getText('//th[4]'))
+
+assertEquals('Premium Amount', selenium.getText('//th[5]'))
+
+assertEquals('Status', selenium.getText('//th[6]'))
+
+assertEquals('Insured Last Name', selenium.getText('//th[7]'))
+
+assertEquals('Insured First Name', selenium.getText('//th[8]'))
+
+assertEquals('Insured ID', selenium.getText('//th[9]'))
+
+assertEquals('Coverages', selenium.getText('//th[10]'))
+
+assertEquals('Previous', selenium.getText('//div[4]/a'))
+
+assertEquals('Next', selenium.getText('//a[2]'))
 

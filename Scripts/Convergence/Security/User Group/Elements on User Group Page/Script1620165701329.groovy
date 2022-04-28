@@ -58,7 +58,7 @@ WebUI.verifyElementVisible(findTestObject('Convergence/Security/User Groups/_Use
 
 assertEquals('ID', selenium.getText('//th[contains(text(),"ID")]'))
 
-assertEquals('Group', selenium.getText('//body/div[@id="tde-form"]/form[@id="tde-data-entry-form"]/table[@id="form-enclosing-table"]/tbody/tr/td/div[@id="g-main"]/table[@id="g-main:1"]/tbody/tr[@data-groupid="g-main"]/td[@class="tde-table-cell"]/table[@id="gt-main"]/tbody/tr[@data-groupid="g-main"]/td[@class="tde-grid-cell-999"]/div[@id="g-main-list"]/table[@id="g-main-list:1"]/tbody/tr[@data-groupid="g-main-list"]/td[@class="tde-table-cell"]/div[@id="fdv-main-list-userGroupList"]/div[@id="fdv-main-list-userGroupList-table_wrapper"]/table[@id="fdv-main-list-userGroupList-table"]/thead/tr[@role="row"]/th[3]'))
+assertEquals('Group', selenium.getText('//body/div[@id="tde-form"]/form[@id="tde-data-entry-form"]/table[@id="form-enclosing-table"]/tbody/tr/td/div[@id="g-main"]/table[@id="g-main:1"]/tbody/tr[@data-groupid="g-main"]/td[@class="tde-table-cell"]/table[@id="gt-main"]/tbody/tr[@data-groupid="g-main"]/td[@class="tde-grid-cell-999"]/div[@id="g-main-list"]/table[@id="g-main-list:1"]/tbody/tr[@data-groupid="g-main-list"]/td[@class="tde-table-cell"]/div[@id="fdv-main-list-userGroupList"]/div[@id="fdv-main-list-userGroupList-table_wrapper"]/table[@id="fdv-main-list-userGroupList-table"]/thead/tr/th[3]'))
 
 assertEquals('AD Groups', selenium.getText('//th[contains(text(),"AD Groups")]'))
 

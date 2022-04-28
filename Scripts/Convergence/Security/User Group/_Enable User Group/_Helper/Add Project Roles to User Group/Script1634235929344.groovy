@@ -58,7 +58,7 @@ selenium.isElementPresent('//a[@class="tcc-grouped-dv-expand-all-link"]')
 
 selenium.isElementPresent('//a[@class="tcc-grouped-dv-collapse-all-link"]')
 
-assertEquals('Role', selenium.getText('//table[@id="fdv-addProjectRolesDialog-availableProjectRoles-table"]//thead//tr[@role="row"]//th[@class="sorting_disabled"][contains(text(),"Role")]'))
+assertEquals('Role', selenium.getText('//table[@id="fdv-addProjectRolesDialog-availableProjectRoles-table"]//thead//tr//th[@class="sorting_disabled"][contains(text(),"Role")]'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Project Roles Tab/_Add Project Roles/chkbox_Select All'))
 

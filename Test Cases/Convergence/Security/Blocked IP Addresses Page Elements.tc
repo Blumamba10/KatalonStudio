@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The purpose of this test is to validate the web elements o the Blocked IP Addresses</description>
+   <name>Blocked IP Addresses Page Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b38339e1-6438-4550-be0c-d27fed2ce421</testCaseGuid>
+</TestCaseEntity>

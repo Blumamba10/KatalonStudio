@@ -82,7 +82,7 @@ assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
 assertEquals('Method', selenium.getText('//label[@for="MethodSelectTriggerInput"]'))
 
-assertEquals('Get Authorization ModeGet User IdGet User PasswordGet Verification CodeGet User Attribute', selenium.getText(
+assertEquals('Get Authorization ModeGet User IdGet User PasswordGet Verification CodeGet MFA User RolesGet User Attribute', selenium.getText(
         '//select[@id="MethodSelectTriggerInput"]'))
 
 selenium.typeKeys('id=nameInput', 'WebAuthRequest')

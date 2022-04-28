@@ -98,8 +98,6 @@ selenium.click('id=description')
 
 selenium.typeKeys('id=description', 'Error Description')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error\'])[3]/following::div[4]')
-
 selenium.click('id=sendErrorEmail')
 
 selenium.focus('//ngb-modal-window/div/div/div[3]/button')

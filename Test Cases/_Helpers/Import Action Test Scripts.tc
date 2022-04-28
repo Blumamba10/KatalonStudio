@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3a15e6be-86df-494c-9f20-d93588fbbe5c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1bf4267d-d1a5-46ed-96f8-2ee27f04d518</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'C:\\actionTestFiles\\Scripts to import with ActionTest.zip'</defaultValue>
+      <description></description>
+      <id>1bf4267d-d1a5-46ed-96f8-2ee27f04d518</id>
+      <masked>false</masked>
+      <name>filePathForUpload</name>
+   </variable>
 </TestCaseEntity>

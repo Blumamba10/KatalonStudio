@@ -53,11 +53,21 @@ selenium.click('link=Import Components')
 WebUI.delay(6)
 
 CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Utilities/Import Components/btn_Import Upload'), 
-    'C:\\actionTestFiles\\Scripts to import with ActionTest.zip')
+    filePathForUpload)
 
 WebUI.delay(6)
 
 WebUI.click(findTestObject('Convergence/Utilities/Import Components/btn_Import'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/Utilities/Import Components/btn_Complete Import'), FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: assertEquals('Components imported successfully*', selenium.getText('//p[@class="message"]'))
+
+String text = WebUI.getText(findTestObject('Convergence/Utilities/Import Components/popup_Components imported successfully_'))
+
+if (text.contains('Components imported successfully')) {
+    println('Import successful')
+} else {
+    KeywordUtil.markFailed('Message does not contain expected text.')
+}
 

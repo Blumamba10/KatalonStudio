@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This tests the document fill page in the Demo app</description>
+   <name>Document Fill</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d2daa30f-9026-4f78-9886-f0f034903e22</testCaseGuid>
+</TestCaseEntity>

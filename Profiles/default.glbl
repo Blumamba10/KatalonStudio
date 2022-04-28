@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8083/tdes'</initValue>
+      <initValue>'http://localhost:8669/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'2100'</initValue>
+      <initValue>'2101'</initValue>
       <name>ExpectedDBVersion</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8083/demo'</initValue>
+      <initValue>'http://localhost:8081/demo'</initValue>
       <name>demoappURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -51,7 +51,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'19.6.4'</initValue>
+      <initValue>'21.1.0'</initValue>
       <name>serverNumber</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -38,55 +38,33 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
 
-WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(2)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Blocked IP Addresses'))
 
-WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'AutoUser')
+assertEquals('Blocked IP Addresses', selenium.getText('//div[contains(text(),"Blocked IP Addresses")]'))
 
-selenium.click('//a[contains(text(),"AutoUser")]')
+assertEquals('IP Address', selenium.getText('//th[contains(text(),"IP Address")]'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/a_Project Roles'))
+assertTrue(selenium.isElementPresent('//tbody/tr[1]/td[1]/div[1]/div[1]/div[1]/label[1]'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/btn_Retrun to Users'), 0)
+assertTrue(selenium.isElementPresent('//tbody/tr[1]/td[1]/div[1]/div[1]/div[2]/label[1]/input[1]'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/btn_Add Roles'), 0)
+assertTrue(selenium.isElementPresent('//tbody/tr[1]/td[1]/div[1]/button[1]/i[1]'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/txt_Search Filter'), 
-    0)
+assertTrue(selenium.isElementPresent('//tbody/tr[2]/td[1]/div[1]/button[1]/i[1]'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/select_102550100'), 
-    0)
+assertTrue(selenium.isElementPresent('//a[@id="fdv-main-list-blockedIpList-table_previous"]'))
 
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/btn_Add Roles'))
+assertTrue(selenium.isElementPresent('//a[@id="fdv-main-list-blockedIpList-table_next"]'))
 
-selenium.isElementPresent('//a[@class="tcc-grouped-dv-expand-all-link"]')
 
-selenium.isElementPresent('//a[@class="tcc-grouped-dv-collapse-all-link"]')
-
-assertEquals('Role', selenium.getText('//table[@id="fdv-projectRolesDialog-availableProjectRoles-table"]//thead//tr//th[@class="sorting_disabled"][contains(text(),"Role")]'))
-
-WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/_Add Project Roles/chkbox_Select All'))
-
-selenium.click('//button[text()="Add Selections"]')
-
-selenium.click('//div[@class="ui-dialog-buttonset"]//button[@type="button"][contains(text(),"Close")]')
-
-WebUI.delay(3)
-
-assertEquals('Project', selenium.getText('//th[@class="sorting"][contains(text(),"Project")]'))
-
-assertEquals('Role', selenium.getText('//th[@class="sorting"][contains(text(),"Role")]'))
-
-selenium.click('//input[@id="main.tabs.projectRoles.list.dataSelectAllCheck"]')
-
-selenium.isElementPresent('//button[text()="Delete"]')
 
