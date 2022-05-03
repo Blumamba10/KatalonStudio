@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test is to test the feature added to Create a Blank Template from Script Editor
+TDES-4219</description>
+   <name>Create Blank Template</name>
+   <tag>21.1</tag>
+   <comment></comment>
+   <testCaseGuid>2e84daab-a5dd-4955-93f1-caf2f5e0d264</testCaseGuid>
+</TestCaseEntity>

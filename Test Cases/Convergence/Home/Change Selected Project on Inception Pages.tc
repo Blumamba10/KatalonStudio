@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test is to address defect TDES-4545.
+User should be able to change the selected project on inception pages</description>
+   <name>Change Selected Project on Inception Pages</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>78c04db8-7778-4e14-bd0f-debbf0e4de49</testCaseGuid>
+</TestCaseEntity>

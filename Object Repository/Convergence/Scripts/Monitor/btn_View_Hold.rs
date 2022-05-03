@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>a59cda78-1eaf-4dc2-bccf-ae0e43bc4c4c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>a3ef627f-1787-4209-8b3d-f71823582aa5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>displayHoldLink</value>
+      <webElementGuid>50a203ff-34dc-463e-8361-845db7ef9b77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,6 +46,7 @@
       <name>data-resource</name>
       <type>Main</type>
       <value>displayHoldForms</value>
+      <webElementGuid>55f47d1d-af25-4d9e-be0d-9f5192dd8058</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-block view_queue_btn</value>
+      <webElementGuid>ddcfae6d-6a5b-4ccf-8dd4-d389ba0fcd11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Display hold contents</value>
+      <webElementGuid>a91b93cb-201e-4fe6-aed6-71d0a29cd015</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -64,6 +70,7 @@
       <name>text</name>
       <type>Main</type>
       <value>View</value>
+      <webElementGuid>3bd961d0-8b8b-428a-8414-c459c20c841f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;displayHoldLink&quot;)</value>
+      <webElementGuid>c1f72903-8723-4c7d-b78b-3da672db24ba</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id='displayHoldLink']</value>
+      <webElementGuid>82c45205-86ca-4bb1-bb06-ae4bad928ebb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='monitorContent']/div/ul/li[2]/div/div[3]/button</value>
+      <webElementGuid>9794a76e-f16f-4f33-8ee1-d4ffd787787d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure'])[2]/following::button[1]</value>
+      <webElementGuid>a21030cd-4262-4c66-9cd4-fd9dfa21d235</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Run Time'])[2]/following::button[1]</value>
+      <webElementGuid>075265af-bb97-4c24-94d4-104eae18d96f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/preceding::button[1]</value>
+      <webElementGuid>702cc542-0c92-48d5-8a4b-b5ff0a4dafa0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,6 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='As of: 01/27/2022 02:19:44 PM'])[3]/preceding::button[1]</value>
+      <webElementGuid>37ac9f5f-1b98-4d52-9cc7-5cf298557806</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -120,6 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/div/div[3]/button</value>
+      <webElementGuid>ca1f2f61-988f-4e50-a61a-ad541d7ff0c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,5 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @id = 'displayHoldLink' and @title = 'Display hold contents' and (text() = 'View' or . = 'View')]</value>
+      <webElementGuid>53eb19cb-42de-4339-afd9-7569220245f1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

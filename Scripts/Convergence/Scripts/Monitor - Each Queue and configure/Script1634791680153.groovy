@@ -303,10 +303,10 @@ WebUI.delay(10)
 
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Convergence/Scripts/Monitor/Page_Convergence Administration Console/btn_View_Hold'), 
+WebUI.waitForElementClickable(findTestObject('Convergence/Scripts/Monitor/btn_View_Hold'), 
     0)
 
-WebUI.click(findTestObject('Convergence/Scripts/Monitor/Page_Convergence Administration Console/btn_View_Hold'))
+WebUI.click(findTestObject('Convergence/Scripts/Monitor/btn_View_Hold'))
 
 assertEquals('Hold', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 

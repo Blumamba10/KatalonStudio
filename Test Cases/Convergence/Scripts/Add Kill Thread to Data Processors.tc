@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This will test the Kill Thread added to the main branch (TDES-3345)
+
+This test also tests the Wait Action created in 21.1 (TDES-4462)</description>
+   <name>Add Kill Thread to Data Processors</name>
+   <tag>21.1</tag>
+   <comment></comment>
+   <testCaseGuid>be3cdbcd-69f0-4430-82f1-22c5c1791a4a</testCaseGuid>
+</TestCaseEntity>

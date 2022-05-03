@@ -118,3 +118,10 @@ selenium.isElementPresent('//td[@style="text-align: right;"]//button[@type="butt
 
 selenium.isElementPresent('//td[contains(text(),"adlds-test")]//button[@type="button"]')
 
+selenium.isElementPresent('//tbody/tr[1]/td[1]/div[1]/a[1]/i[1]')
+selenium.click('//tbody/tr[1]/td[1]/div[1]/a[1]/i[1]')
+
+assertEquals('Help', selenium.getText('//h1[contains(text(),"Help")]'))
+
+selenium.click('//button[contains(text(),"OK")]')
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test will registar the PDF Signature action and test the its elements.
+This will address changes made in 21.1
+(TDES-2910)</description>
+   <name>Action_PDF Signature</name>
+   <tag>21.1</tag>
+   <comment></comment>
+   <testCaseGuid>2c893ceb-bee5-4924-bdc1-baaeadb5982b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This tests the new feature that was added in 21.1 where we now can hide disabled code in the script editor (TDES-3730)</description>
+   <name>Hide Disabled code in SE</name>
+   <tag>21.1</tag>
+   <comment></comment>
+   <testCaseGuid>52eec683-788c-48de-9256-e196138f4241</testCaseGuid>
+</TestCaseEntity>

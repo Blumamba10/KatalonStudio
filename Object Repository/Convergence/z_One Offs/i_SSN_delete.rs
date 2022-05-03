@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_SSN_delete</name>
+   <tag></tag>
+   <elementGuidId>591bacd7-a7d4-4c1f-bbbc-259c7da4a375</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='2f4fc567-8d9c-4b33-8a81-2221b1bc01c9']/div[3]/div/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#2f4fc567-8d9c-4b33-8a81-2221b1bc01c9 > div.tte-ct-status-actions > div.tte-ct-ctrl-delete > i.fas.fa-times</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;2f4fc567-8d9c-4b33-8a81-2221b1bc01c9&quot;)/div[@class=&quot;tte-ct-status-actions&quot;]/div[@class=&quot;tte-ct-ctrl-delete&quot;]/i[@class=&quot;fas fa-times&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>b2c8864d-f0ea-494c-9b13-129cc0fab2c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-times</value>
+      <webElementGuid>238dc97c-48ac-4df2-a912-04583c20bfb9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;2f4fc567-8d9c-4b33-8a81-2221b1bc01c9&quot;)/div[@class=&quot;tte-ct-status-actions&quot;]/div[@class=&quot;tte-ct-ctrl-delete&quot;]/i[@class=&quot;fas fa-times&quot;]</value>
+      <webElementGuid>063b0c77-ed6e-4ef9-96bf-8906c6ca52ac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='2f4fc567-8d9c-4b33-8a81-2221b1bc01c9']/div[3]/div/i</value>
+      <webElementGuid>4bb48951-19aa-4948-a7ca-a2b826df72de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/div[2]/div[3]/div/i</value>
+      <webElementGuid>73d6ce85-f34e-43a1-96d7-e6e86539bad7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

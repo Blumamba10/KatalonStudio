@@ -129,6 +129,10 @@ assertEquals('Stop on Error', selenium.getText('xpath=(.//*[normalize-space(text
 
 assertEquals('YesNo', selenium.getText('id=StoponErrorSelectInput'))
 
+assertEquals('Max Memory Usage', selenium.getText('//label[contains(text(),"Max Memory Usage")]'))
+
+assertEquals('No Limit64M128M256M512M1024M', selenium.getText('//select[@id="MaxMemoryUsageSelectInput"]'))
+
 selenium.click('id=nameInput')
 
 selenium.typeKeys('id=nameInput', 'PdfBuilder')

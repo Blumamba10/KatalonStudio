@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test is to address the defect TDES-4505 where Option Lists features incorrectly disabled</description>
+   <name>Option Lists Refresh</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>15ad5d5f-9c81-43cc-b655-1d42a62b0a53</testCaseGuid>
+</TestCaseEntity>

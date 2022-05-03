@@ -62,6 +62,11 @@ assertTrue(selenium.isElementPresent('link=Save'))
 
 assertTrue(selenium.isElementPresent('link=Cancel'))
 
+assertTrue(selenium.isElementPresent('link=Save'))
+
+assertTrue(selenium.isElementPresent('link=Cancel'))
+
+
 assertTrue(selenium.isElementPresent('//i[@class="fa fa-undo"]'))
 
 assertTrue(selenium.isElementPresent('//i[@class="fas fa-redo"]'))
