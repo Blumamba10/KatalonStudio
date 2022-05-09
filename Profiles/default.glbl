@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8081/demo'</initValue>
+      <initValue>'http://localhost:8669/demo'</initValue>
       <name>demoappURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

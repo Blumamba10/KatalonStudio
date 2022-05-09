@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_Filter List_varible</name>
+   <tag></tag>
+   <elementGuidId>44e588b1-8f56-4db7-9e29-4db5322eaab2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@id='varibleListFilter'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.dropdown-menu.show > app-variable-list > div.card.tse-variable-list.tse-variable-list-drop > div.card-header > #varibleListFilter</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>455da0b1-10c4-4d62-a2b6-225a7b082d7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>varibleListFilter</value>
+      <webElementGuid>f6149b47-6cd2-4a94-adaa-6ff2af61cca6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Start typing to filter list</value>
+      <webElementGuid>eff207f1-ca00-4735-a748-5a6d6985469f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>search</value>
+      <webElementGuid>c3afb70d-924a-48b1-a22a-d1b2379efcb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control form-control-sm ng-untouched ng-pristine ng-valid</value>
+      <webElementGuid>78e5d87a-a9a6-448c-92d2-36af5c2d9d58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;dropdown&quot;]/div[@class=&quot;dropdown-menu show&quot;]/app-variable-list[1]/div[@class=&quot;card tse-variable-list tse-variable-list-drop&quot;]/div[@class=&quot;card-header&quot;]/input[@id=&quot;varibleListFilter&quot;]</value>
+      <webElementGuid>ddb5b085-5ff9-4546-a4fb-4e6816c8c00b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@id='varibleListFilter'])[2]</value>
+      <webElementGuid>7cf68067-1edc-4216-815e-42986af1c7c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/app-variable-list/div/div/input</value>
+      <webElementGuid>fc868d0b-a2b6-43ce-b1db-474581398f56</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'varibleListFilter' and @placeholder = 'Start typing to filter list' and @type = 'search']</value>
+      <webElementGuid>47252009-d3ea-48ae-acb0-e613b3ac2f7d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -80,13 +80,15 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('//button[@id="variableValueMenuToggle"]')
 
-assertTrue(selenium.isElementPresent('//body/div[1]/div[1]/app-variable-list[1]/div[1]/div[1]/input[1]'))
+WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/txt_Filter List_varible'), 
+    0)
 
-selenium.typeKeys('//body/div[1]/div[1]/app-variable-list[1]/div[1]/div[1]/input[1]', 'Filter')
+WebUI.verifyElementPresent(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/txt_Filter List_varible'), 
+    0)
 
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/txt_Filter List_varible'), 'Filter')
 
+WebUI.closeWindowIndex('1')
 
-
-
-
+WebUI.switchToWindowIndex('0')
 

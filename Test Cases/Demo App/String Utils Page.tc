@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test verifies the page elements on the String Utils Page</description>
+   <name>String Utils Page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8b50424-5515-4f9d-9c55-e2351e8ba8df</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Get Version Information</name>
+   <name>Dialog Forms</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2095407c-3d62-4379-9741-ec7b109acad4</testCaseGuid>
+   <testCaseGuid>99f3542d-b108-44ed-95ab-5950fbe39422</testCaseGuid>
 </TestCaseEntity>

@@ -148,6 +148,9 @@ WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Co
 
 WebUI.click(findTestObject('Convergence/Login/Google Verification Code_Page/i_Help'))
 
+WebUI.waitForElementPresent(findTestObject('Convergence/Login/Google Verification Code_Page/h3_What is a Google Verification Code'), 
+    10)
+
 WebUI.verifyElementText(findTestObject('Convergence/Login/Google Verification Code_Page/h3_What is a Google Verification Code'), 
     'What is a Google Verification Code?')
 

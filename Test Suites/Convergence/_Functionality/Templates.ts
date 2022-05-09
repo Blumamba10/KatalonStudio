@@ -19,6 +19,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>5d84bf6c-45ff-422d-916b-b4065bb2606b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Templates/Get DB Version using Option Lists</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>751d7494-50ee-4c37-80a5-872654bee647</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

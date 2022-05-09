@@ -56,7 +56,7 @@ selenium.click('id=addScriptButton')
 
 WebUI.switchToWindowIndex('1', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.delay(4)
 
 selenium.click('id=scriptNameInput')
 

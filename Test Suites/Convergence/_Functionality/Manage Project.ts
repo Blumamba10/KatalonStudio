@@ -15,7 +15,7 @@
       <guid>9ffe2387-2901-4bb2-ab2f-e493bb41d1f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Home/Get Version Information</testCaseId>
+      <testCaseId>Test Cases/Convergence/Templates/Get DB Version using Option Lists</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

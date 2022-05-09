@@ -141,3 +141,7 @@ selenium.click('//app-actions-list-head/div[1]/div[1]/div[1]/div[1]/div[6]/butto
 
 WebUI.verifyElementPresent(findTestObject('Convergence/z_One Offs/chkbox_comment'), 0)
 
+WebUI.closeWindowIndex('1')
+
+WebUI.switchToWindowIndex('0')
+

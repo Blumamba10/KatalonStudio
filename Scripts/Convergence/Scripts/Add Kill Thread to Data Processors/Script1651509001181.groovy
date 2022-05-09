@@ -153,7 +153,7 @@ selenium.typeKeys('//input[@id="nameInput"]', 'Wait')
 
 selenium.typeKeys('//textarea[@id="descriptionInput"]', 'Wait Action')
 
-selenium.type('//input[@id="MillisecondstopauseInput"]', '800000')
+selenium.typeKeys('//input[@id="MillisecondstopauseInput"]', '800000')
 
 selenium.click('//button[contains(text(),"OK")]')
 

@@ -59,7 +59,7 @@ WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Direc
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 
-selenium.click('//i[@class="fas fa-trash-alt"]')
+selenium.click('//tbody/tr[1]/td[6]/button[1]')
 
 assertEquals('Confirm Delete', selenium.getText('//h1[contains(text(),"Confirm Delete")]'))
 
@@ -123,5 +123,6 @@ selenium.click('//tbody/tr[1]/td[1]/div[1]/a[1]/i[1]')
 
 assertEquals('Help', selenium.getText('//h1[contains(text(),"Help")]'))
 
-selenium.click('//button[contains(text(),"OK")]')
+
+
 

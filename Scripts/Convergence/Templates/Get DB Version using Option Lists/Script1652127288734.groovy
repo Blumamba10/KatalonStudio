@@ -38,9 +38,50 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.delay(4)
 
-selenium.click('//a[contains(text(),"2021 Release")]')
 
-WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/td_Server Version'), GlobalVariable.serverNumber)
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
+
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
+
+WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/createListButton'))
+
+selenium.click('id=optionListName')
+
+selenium.typeKeys('id=optionListName', 'DB Version'.toString())
+
+selenium.click('id=listTypeSelect')
+
+selenium.select('id=listTypeSelect', 'label=Linked')
+
+selenium.click('xpath=//option[@value=\'external\']')
+
+selenium.click('id=newOptionsListSubmitBtn')
+
+selenium.typeKeys('id=optionListDescription', 'Tests the DB Version'.toString())
+
+selenium.click('xpath=//form[@id=\'optionListLinked\']/div/div[2]/div/div/div/div/div[2]/div/div[6]')
+
+selenium.typeKeys('xpath=//form[@id=\'optionListLinked\']/div/div[2]/div/div/div/div/div[2]/div/div/textarea', 'select * from tdes_db_version'.toString())
+
+selenium.click('id=showListButton')
+
+WebUI.verifyElementText(findTestObject('Convergence/z_One Offs/td_DB version value'), GlobalVariable.ExpectedDBVersion)
+
+selenium.click('xpath=//form[@id=\'optionListLinked\']/div/div[2]/div/div/div/div/div/table/tbody/tr/td[2]')
+
+selenium.click('xpath=//button[@id=\'submitButton\']/i')
+
+WebUI.delay(2)
+
+assertEquals('DB Version', selenium.getText('//a[contains(text(),"DB Version")]'))
+
 

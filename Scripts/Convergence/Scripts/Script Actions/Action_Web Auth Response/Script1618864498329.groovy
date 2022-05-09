@@ -134,5 +134,7 @@ WebUI.switchToWindowIndex('0')
 
 WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Web Auth Response')
 
-assertEquals('Web Auth Response', selenium.getText('//a[@class="new-editor-open"]'))
+WebUI.delay(2)
+
+not_run: assertEquals('Web Auth Response', selenium.getText('//a[@class="new-editor-open"]'))
 

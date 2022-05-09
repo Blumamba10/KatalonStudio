@@ -64,10 +64,6 @@ assertTrue(selenium.isElementPresent('//a[@class="tcc-grouped-dv-expand-all-link
 
 assertTrue(selenium.isElementPresent('//a[@class="tcc-grouped-dv-collapse-all-link"]'))
 
-assertEquals('User', selenium.getText('//th[@class="sorting"][contains(text(),"User")]'))
-
-assertEquals('Role', selenium.getText('//th[@class="sorting"][contains(text(),"Role")]'))
-
 selenium.click('//input[@id="main.tabs.users.allProjects.dataSelectAllCheck"]')
 
 assertTrue(selenium.isElementPresent('//div[@id="btn-main-tabs-users-header-buttons-delete"]//button[text()="Delete"]'))
@@ -97,10 +93,6 @@ assertEquals('Available Roles', selenium.getText('//div[@id="lbl-updateDialog-st
 assertEquals('Select User Accounts', selenium.getText('//h5[contains(text(),"Select User Accounts")]'))
 
 assertEquals('Assigned Roles', selenium.getText('//div[@id="lbl-updateDialog-step2-lists-assignedHeading"]//h5[contains(text(),"Assigned Roles")]'))
-
-assertEquals('User', selenium.getText('//table[@id="fdv-updateDialog-step2-lists-assigned-table"]//thead//tr[@role="row"]//th[@class="sorting"][contains(text(),"User")]'))
-
-assertEquals('Role', selenium.getText('//table[@id="fdv-updateDialog-step2-lists-assigned-table"]//thead//tr[@role="row"]//th[@class="sorting"][contains(text(),"Role")]'))
 
 WebUI.click(findTestObject('Convergence/Security/Project Assignment/Add Assignment/button_Done'))
 

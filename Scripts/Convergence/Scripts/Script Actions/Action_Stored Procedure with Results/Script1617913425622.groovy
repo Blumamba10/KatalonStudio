@@ -94,12 +94,13 @@ selenium.click('id=catalogSelect')
 
 selenium.select('//select[@id="catalogSelect"]', 'label=_donotdelete')
 
-selenium.select('//select[@id="schemaSelect"]', 'label=db_accessadmin')
-
 selenium.select('//select[@id="storedProcedureSelect"]', 'label=dm_db_log_info')
 
-assertEquals('Script should continue on error', selenium.getText('//label[@class="form-check-label"]'))
-
+assertTrue(selenium.isElementPresent('//h6[contains(text(),"Runtime Parameters")]'))
+assertTrue(selenium.isElementPresent('//small[contains(text(),"used to get result set column names")]'))
+assertTrue(selenium.isElementPresent('//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[3]/div[3]/div[1]/h6[1]'))
+assertTrue(selenium.isElementPresent('//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[3]/div[3]/div[1]/h6[1]/button[1]'))
+assertTrue(selenium.isElementPresent('//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/div[3]/div[4]/div[1]/small[1]/em[1]'))
 selenium.click('//button[contains(text(),"OK")]')
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
