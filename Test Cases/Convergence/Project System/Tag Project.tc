@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This tests the process and elements of tagging  a project</description>
+   <name>Tag Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b12edfa8-de79-45f6-8a28-06580df68d71</testCaseGuid>
+</TestCaseEntity>

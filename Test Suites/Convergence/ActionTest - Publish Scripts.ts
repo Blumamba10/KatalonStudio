@@ -15,7 +15,7 @@
       <guid>f1336de0-c5c5-48f0-8537-af9ce914a7ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Scripts/Publish Script</testCaseId>
+      <testCaseId>Test Cases/Convergence/Server Admin/Scripts/Publish Script</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>d89863dc-87cd-4133-8706-e3b10dfcad51</id>
@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/PublishScriptData</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>d89863dc-87cd-4133-8706-e3b10dfcad51</testDataLinkId>
          <type>DATA_COLUMN</type>

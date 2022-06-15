@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test verifies the elements on the Member Tab and adds a member to the user group.
+
+
+Jira Requirements
+https://support.trinisys.com/project/browse/TDES-3897</description>
+   <name>Create New User Group for Indiviual Members</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c931bf76-69ce-44af-ab28-79c51bcc5ef6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test deletes the webapp project and validates the associated Templates and Scripts are also deleted</description>
+   <name>Delete Webapp Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>43535945-4c59-42c5-9485-b225d9e5935f</testCaseGuid>
+</TestCaseEntity>

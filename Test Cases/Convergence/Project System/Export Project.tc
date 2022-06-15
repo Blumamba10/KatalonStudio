@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test validates the Page elements on the Export Project page</description>
+   <name>Export Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>49ecc10c-0be3-41f9-a4db-0f0eadf7352a</testCaseGuid>
+</TestCaseEntity>

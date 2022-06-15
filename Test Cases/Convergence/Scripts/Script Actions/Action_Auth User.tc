@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This test validates Auth User action by creating a script using it.</description>
-   <name>Action_Auth User</name>
-   <tag>Script Actions</tag>
-   <comment></comment>
-   <testCaseGuid>43dbe8e9-f684-4ace-8e08-7f3f75fa8ee1</testCaseGuid>
-</TestCaseEntity>

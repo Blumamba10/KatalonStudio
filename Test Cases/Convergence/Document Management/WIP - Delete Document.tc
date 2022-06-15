@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test will search and delete a document in Document Management</description>
+   <name>WIP - Delete Document</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6d2658ff-e20c-4331-ac03-30cd2e343725</testCaseGuid>
+</TestCaseEntity>

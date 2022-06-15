@@ -6,19 +6,19 @@
    <elementGuidId>d1c60a98-9941-4d1f-a589-c3aad4b92e6b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.selected</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='projectListNav']/li[2]/a</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Default' or . = 'Default')]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[contains(text(),'Default')])</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.selected</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>96c7f562-7d73-418a-93e0-ab24509347d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,6 +34,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>93f39d38-1156-4122-b1cb-a93f54837a01</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,6 +42,7 @@
       <name>data-project-id</name>
       <type>Main</type>
       <value>1</value>
+      <webElementGuid>5954e7e9-718e-4356-83cd-06bf928d0632</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,6 +50,7 @@
       <name>class</name>
       <type>Main</type>
       <value>selected</value>
+      <webElementGuid>a2c93e53-3c9a-4302-ab8d-e74dfb6f09d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,6 +58,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Selected project</value>
+      <webElementGuid>a2872982-7054-41c5-b875-af32d386aa8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,6 +66,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Default</value>
+      <webElementGuid>7833b6fa-e6c0-4125-821f-5ab6a909e9bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,6 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;projectListNav&quot;)/li[2]/a[@class=&quot;selected&quot;]</value>
+      <webElementGuid>01285642-b0bd-4992-bb04-7a1bd0f07502</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -75,6 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//ul[@id='projectListNav']/li[2]/a</value>
+      <webElementGuid>d66f0646-c922-4c0a-853e-80ced387236e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +90,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Default')])[2]</value>
+      <webElementGuid>6dfe7e94-fcde-45d7-9dea-936bc85fe31d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Selected Project:'])[1]/following::a[2]</value>
+      <webElementGuid>4c46a158-24d0-412d-b38f-ff71dadf7427</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,6 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete Form'])[1]/following::a[3]</value>
+      <webElementGuid>6cf6b12a-3138-471e-872c-0ab4969dcd15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version Information'])[1]/preceding::a[4]</value>
+      <webElementGuid>a2706e66-3ad6-4a37-8e5e-20644c02fa7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Server:'])[1]/preceding::a[4]</value>
+      <webElementGuid>a9035c37-c51a-4c18-a028-aae57eeed312</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[11]</value>
+      <webElementGuid>fff1dbe0-682a-4847-b2e1-1890c519997f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,5 +138,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[2]/li/ul/li[2]/a</value>
+      <webElementGuid>e3acf918-5f08-4e3c-91f6-da923b557332</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

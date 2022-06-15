@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[4]/a</value>
+         <value>//a[contains(text(),'Scripts')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>206fb23f-2005-4dea-9823-80b6f8c357ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>651f12e1-caad-4401-9728-e8a124251105</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown-toggle</value>
+      <webElementGuid>0c4ae565-cd83-466e-8301-91e2b0daaf9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +42,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>a19eff4d-54b0-41e9-aa95-d41f8ec0ffdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +50,7 @@
       <name>data-hover</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>a8d2cff7-132f-4448-89f1-9f7b02cb7a15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +59,7 @@
       <type>Main</type>
       <value>Scripts
                             </value>
+      <webElementGuid>5ea65e44-d864-4d35-94b3-942d11d7132f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,20 +67,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/a[@class=&quot;dropdown-toggle&quot;]</value>
+      <webElementGuid>4bcbffde-ea97-4f10-b0fc-8c7f330bbdd7</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='primaryNav']/div/div/ul/li[4]/a</value>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Scripts')]</value>
+      <webElementGuid>56116c56-e1a3-4f5b-985e-03b84e69fbed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +83,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Web Styles'])[1]/following::a[1]</value>
+      <webElementGuid>9ab420c1-c60c-4b5f-ba6f-6afad8e9b072</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Option Lists'])[1]/following::a[2]</value>
+      <webElementGuid>08fd0f7e-caf2-425a-99a3-4274502c72a5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,6 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Scripts'])[1]/preceding::a[1]</value>
+      <webElementGuid>4a7632c1-55a0-4053-b738-c64951e6c349</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Functions'])[1]/preceding::a[2]</value>
+      <webElementGuid>5e2bc747-c177-4af4-81ad-c48a03b29b4c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Scripts']/parent::*</value>
+      <webElementGuid>ebf0b01a-d0c3-49db-95c4-2eeec4f2016b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +123,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[5]</value>
+      <webElementGuid>69db67ac-4cbd-43dd-8204-aef9e3915d1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,5 +131,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/ul/li[4]/a</value>
+      <webElementGuid>80e6222e-1c68-46e7-bc48-559b0118ad72</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

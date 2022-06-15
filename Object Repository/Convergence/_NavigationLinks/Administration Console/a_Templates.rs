@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[3]/a</value>
+         <value>//a[contains(text(),'Templates')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>cc902a28-a079-4741-895a-9226197125b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>9b454e2a-6e5e-4140-8d7c-7dbc90f11aef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown-toggle</value>
+      <webElementGuid>09162201-9ab0-46b7-80c7-0932192ba6e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +42,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>a14e5081-aabe-4074-92eb-78f53b21fd95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +50,7 @@
       <name>data-hover</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>ebe2bea7-a4e0-4a1e-91ad-06200596cdc3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +59,7 @@
       <type>Main</type>
       <value>Templates
                             </value>
+      <webElementGuid>ba9f4f42-6903-43c6-a6ab-4d2601440a4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,20 +67,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/a[@class=&quot;dropdown-toggle&quot;]</value>
+      <webElementGuid>2e5d8453-7a51-4d5e-9158-769132d83263</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='primaryNav']/div/div/ul/li[3]/a</value>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Templates')]</value>
+      <webElementGuid>dffea9dc-dc58-4feb-be7d-c201aa0795b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +83,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Projects'])[1]/following::a[1]</value>
+      <webElementGuid>925c268e-47a3-4ea6-83ad-5a5d1184be6c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Document Management'])[1]/following::a[2]</value>
+      <webElementGuid>1882e786-76a5-4228-a7e0-a3e6e48b7a19</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,6 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Templates'])[1]/preceding::a[1]</value>
+      <webElementGuid>6f1ba055-25d9-421b-b936-2869ca9ff9b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Option Lists'])[1]/preceding::a[2]</value>
+      <webElementGuid>2575ccd9-f6d0-4ede-985d-6987b5e24ee7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Templates']/parent::*</value>
+      <webElementGuid>6fa742f0-ae7f-4280-8e53-6f9175550de0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +123,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[4]</value>
+      <webElementGuid>9203e22c-998e-461f-ae5d-8fbfae396ee5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,5 +131,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/a</value>
+      <webElementGuid>9147a3e7-49cd-4340-8b3c-5a72698c4849</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

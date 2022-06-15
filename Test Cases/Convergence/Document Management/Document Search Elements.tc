@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test validates the page elmenets on the document serach page</description>
+   <name>Document Search Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>55e1f7d8-6f21-4f99-9c59-e8a6dae9a04d</testCaseGuid>
+</TestCaseEntity>

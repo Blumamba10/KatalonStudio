@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Tests the new Wait Action
-Added in 21.1 TDES-4462</description>
-   <name>Action_Wait</name>
-   <tag>21.1</tag>
-   <comment></comment>
-   <testCaseGuid>b7398583-92ff-4a22-90fc-effd234dd8b3</testCaseGuid>
-</TestCaseEntity>
