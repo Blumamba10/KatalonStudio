@@ -47,15 +47,20 @@ WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Se
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldaps://pd-ldap01.trinisys.loc:636')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
+    'ldap://trinisysdc0.trinisys.loc:389')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
+    'ou=Employees,dc=Trinisys,dc=loc')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Name'), 
-    'adlds-test')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_User Prefix'), 
+    'trinisys\\')
 
-WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Password'), 
-    'JfebiVdhitkNjV6czE05lxlN8Emdeu2V1Htf/KdC1eyYDhxjk/sMdg==')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Name'), 
+    'njones')
+
+WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
+    'YpFS5WjS5EtvuC6R1HuY4g==')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 
@@ -80,15 +85,20 @@ selenium.click('//div[@class="ui-dialog tcc-messaging-dialog tcc-dialog-alert tc
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_LDAP URL'), 'ldap://pd-ldap01:389')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
+    'ldap://trinisysdc0.trinisys.loc:389')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Search Base'), 'ou=users,dc=adlds,dc=trinisys,dc=loc')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
+    'ou=Employees,dc=Trinisys,dc=loc')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Name'), 
-    'adlds-test')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_User Prefix'), 
+    'trinisys\\')
 
-WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/input_Bind Account Password'), 
-    'k/naq+nOIgZf6+3aSVC/raaXfjwNLGxcekAjtgCr8rPObsHjszvGWg==')
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Name'), 
+    'njones')
+
+WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
+    'YpFS5WjS5EtvuC6R1HuY4g==')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
 
@@ -119,10 +129,8 @@ selenium.isElementPresent('//td[@style="text-align: right;"]//button[@type="butt
 selenium.isElementPresent('//td[contains(text(),"adlds-test")]//button[@type="button"]')
 
 selenium.isElementPresent('//tbody/tr[1]/td[1]/div[1]/a[1]/i[1]')
+
 selenium.click('//tbody/tr[1]/td[1]/div[1]/a[1]/i[1]')
 
 assertEquals('Help', selenium.getText('//h1[contains(text(),"Help")]'))
-
-
-
 

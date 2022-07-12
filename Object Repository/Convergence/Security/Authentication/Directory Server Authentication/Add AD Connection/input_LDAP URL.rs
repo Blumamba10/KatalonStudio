@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
+      <webElementGuid>ed530369-abe6-4af6-a9c4-88137511c122</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>tde-grid-cell-999</value>
+      <webElementGuid>4af698fe-95c8-4535-9dac-3b6389cf3294</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +38,7 @@
       <name>colspan</name>
       <type>Main</type>
       <value>-1</value>
+      <webElementGuid>1995050c-6220-4220-99d5-c1e92b173603</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>LDAP URL*</value>
+      <webElementGuid>4ffcd684-20cf-4207-b205-bac6e2aaeebf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;gt-updateDialog-col1&quot;)/tbody[1]/tr[1]/td[@class=&quot;tde-grid-cell-999&quot;]</value>
+      <webElementGuid>b5cfb254-e3ea-4b35-9362-32be71a01dcc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='gt-updateDialog-col1']/tbody/tr/td</value>
+      <webElementGuid>04cffa80-d7e0-411c-a4d5-acf26a1152ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::td[4]</value>
+      <webElementGuid>b154a6f4-99e5-4c24-8c2b-28f90aa63669</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add AD Connection'])[1]/following::td[4]</value>
+      <webElementGuid>ef6cb5eb-5c24-4a68-8e48-96293913e1e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Search Base'])[1]/preceding::td[1]</value>
+      <webElementGuid>6dc8f3fc-0d27-4227-b3f8-90feb34c8f53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,5 +94,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>05021d18-2639-49c5-9ab5-cd9fb89be63e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

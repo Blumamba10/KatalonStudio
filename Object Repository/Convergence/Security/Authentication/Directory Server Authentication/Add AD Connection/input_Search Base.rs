@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Bind Account Password</name>
+   <name>input_Search Base</name>
    <tag></tag>
-   <elementGuidId>2c19d0b0-38c4-4d34-8ee2-09ca7cd4c1c3</elementGuidId>
+   <elementGuidId>6e7e45a2-abc5-4d3c-a383-cac25a1f6938</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#fc-updateDialog-col2-password</value>
+         <value>#fc-updateDialog-col1-searchBase</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='fc-updateDialog-col2-password']</value>
+         <value>//input[@id='fc-updateDialog-col1-searchBase']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,34 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>357bbaee-360f-4c86-a33d-a6f29dbe0617</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fc-updateDialog-col2-password</value>
+      <value>fc-updateDialog-col1-searchBase</value>
+      <webElementGuid>494a5ed0-71d3-4964-813e-fc66947035df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>password</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
-      <type>Main</type>
-      <value>off</value>
+      <value>text</value>
+      <webElementGuid>2513cdba-addb-4f8e-b7ea-49709d8c58e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>FF_updateDialog.col2.password</value>
+      <value>FF_updateDialog.col1.searchBase</value>
+      <webElementGuid>4a00205e-d8eb-4109-a758-344f6e50f57e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +54,7 @@
       <name>class</name>
       <type>Main</type>
       <value>tde-text-control</value>
+      <webElementGuid>98d07856-4b57-4b1a-b4e0-f34f995fa000</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,33 +62,38 @@
       <name>data-lpignore</name>
       <type>Main</type>
       <value>true</value>
+      <webElementGuid>5bdf64eb-607e-44b9-923d-cc863d0800d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fc-updateDialog-col2-password&quot;)</value>
+      <value>id(&quot;fc-updateDialog-col1-searchBase&quot;)</value>
+      <webElementGuid>9325309e-d291-44cf-b790-4979226ca8ef</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fc-updateDialog-col2-password']</value>
+      <value>//input[@id='fc-updateDialog-col1-searchBase']</value>
+      <webElementGuid>16aa1fd4-b459-4612-b12b-2c67e5c35624</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ff-updateDialog-col2-password']/input</value>
+      <value>//div[@id='ff-updateDialog-col1-searchBase']/input</value>
+      <webElementGuid>f06305da-73ee-4dce-8889-ae35c672f28b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[2]/div/table/tbody/tr/td/table/tbody/tr[3]/td/div[2]/input</value>
+      <value>//tr[2]/td/div[2]/input</value>
+      <webElementGuid>e8d715b8-1297-42c3-b7a4-003d22e0efa1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

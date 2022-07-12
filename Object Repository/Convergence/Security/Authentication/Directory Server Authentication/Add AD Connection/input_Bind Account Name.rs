@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>68a27c71-02b0-48fe-a935-1a2dc3615392</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fc-updateDialog-col2-user</value>
+      <webElementGuid>b4767350-045b-4a71-8def-80dfbbc24a20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>e3457782-959e-4de6-b383-96d04d69fb4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>name</name>
       <type>Main</type>
       <value>FF_updateDialog.col2.user</value>
+      <webElementGuid>10aa8b5b-5283-4db4-bbe4-0fb938998a11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>class</name>
       <type>Main</type>
       <value>tde-text-control</value>
+      <webElementGuid>e6ac7ccf-3735-46e4-8d6c-16b8c6d6529a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +62,7 @@
       <name>data-lpignore</name>
       <type>Main</type>
       <value>true</value>
+      <webElementGuid>16a4f802-2d27-4ace-adf1-3fe030800c63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fc-updateDialog-col2-user&quot;)</value>
+      <webElementGuid>c7df56dc-2a81-4c6f-821b-2004764b331e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fc-updateDialog-col2-user']</value>
+      <webElementGuid>a845aae9-3e68-4ab4-9a3d-75135849a858</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='ff-updateDialog-col2-user']/input</value>
+      <webElementGuid>65de91e8-d5ea-4043-a332-f1f6c17d7ad6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,5 +94,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/div[2]/input</value>
+      <webElementGuid>fea317fc-9c97-43eb-9a14-28879def05ea</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
