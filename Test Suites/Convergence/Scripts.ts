@@ -74,7 +74,7 @@
    <testCaseLink>
       <guid>348ed685-f678-4ecb-a235-d11903435dfc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Scripts/Monitor - Each Queue and configure</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

@@ -109,7 +109,11 @@ WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action 
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Convergence/Server/Configure Server/button_Save'))
+if (selenium.isElementPresent('//button[@id="saveConfigButton"]')) {
+    selenium.click('//button[@id="saveConfigButton"]')
+} else {
+    selenium.click('//span[@class="title"]')
+}
 
 WebUI.comment('Create Wait Action Script')
 

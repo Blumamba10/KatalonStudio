@@ -90,7 +90,7 @@ assertEquals('Quote Character', selenium.getText('//label[@for="QuoteCharacterIn
 
 assertTrue(selenium.isEditable('//input[@id="QuoteCharacterInput"]'))
 
-assertTrue(selenium.isElementPresent('//body[@class="modal-open"]/ngb-modal-window[@class="d-block fade modal show"]/div[@class="modal-dialog modal-dialog-scrollable modal-lg"]/div[@class="modal-content"]/div[@class="modal-body tse-action-dialog"]/div[4]/div[1]/div[1]/div[1]/div[1]/app-variable-entry[1]/div[1]/div[1]/div[1]/button[1]'))
+assertTrue(selenium.isElementPresent('//button[@id="QuoteCharacterInputMenuToggle"]'))
 
 assertEquals('End of Line Symbols', selenium.getText('//label[@for="EndofLineSymbolsInput"]'))
 
