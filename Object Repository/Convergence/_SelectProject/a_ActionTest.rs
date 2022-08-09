@@ -6,12 +6,12 @@
    <elementGuidId>be7b6027-202c-4465-95e4-d4dad9309917</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='projectListNav']/li[2]/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a[title=&quot;Click to select project&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'ActionTest')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>5e436ddd-c760-4f06-a8fd-2622fe80456f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>f21ccd69-a938-43f4-90f9-5bfc2c040e71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +38,7 @@
       <name>data-project-id</name>
       <type>Main</type>
       <value>5</value>
+      <webElementGuid>c9ed8b75-b7d5-4bea-81f4-ce812dc14538</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Click to select project</value>
+      <webElementGuid>264c9da5-3af4-4984-aa31-c12fd27867bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,6 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ActionTest</value>
+      <webElementGuid>046a14f1-9cbd-4ebf-a18d-c15c3a5f59a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;projectListNav&quot;)/li[2]/a[1]</value>
+      <webElementGuid>ae6d21ad-23c0-4a51-b9eb-8ab82364b471</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//ul[@id='projectListNav']/li[2]/a</value>
+      <webElementGuid>903892cd-f93f-492f-ba5c-1316df8d0551</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'ActionTest')]</value>
+      <webElementGuid>f7e3eeed-cf22-4f16-b1b4-1bab13a7ca3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Project Filter Off'])[1]/following::a[2]</value>
+      <webElementGuid>b4c5bd34-f2e0-467c-b3e2-f331ddb173f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete Form'])[1]/following::a[3]</value>
+      <webElementGuid>1101a895-f736-42a1-b6da-d60a9272abb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version Information'])[1]/preceding::a[5]</value>
+      <webElementGuid>558da861-dbfa-444f-8936-7915763d80b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Server:'])[1]/preceding::a[5]</value>
+      <webElementGuid>4a86cfa1-29c7-4da8-8639-7b90a9374b29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='ActionTest']/parent::*</value>
+      <webElementGuid>699b3f5d-4e24-46d2-ac50-d81bc97ce627</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,6 +126,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[11]</value>
+      <webElementGuid>453ead63-e3f3-4fd6-bd7b-46332d992c11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -120,5 +134,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[2]/li/ul/li[2]/a</value>
+      <webElementGuid>48fd6fa2-80f9-4679-a9ed-7cd03400e9b2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

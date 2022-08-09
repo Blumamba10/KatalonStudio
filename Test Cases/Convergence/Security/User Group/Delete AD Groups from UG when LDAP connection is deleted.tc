@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Now we delete the LDAP groups from User Groups regardless of Enabled/Disabled if AD connection is deleted.</description>
+   <name>Delete AD Groups from UG when LDAP connection is deleted</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90ea373b-fe5b-4d8a-ad7a-eac09bd51863</testCaseGuid>
+</TestCaseEntity>

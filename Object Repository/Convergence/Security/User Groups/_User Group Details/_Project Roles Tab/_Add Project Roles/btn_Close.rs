@@ -6,12 +6,11 @@
    <elementGuidId>44c904f9-f333-4d48-9936-c2e6a783bc10</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[24]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='ui-dialog-buttonset']//button[@type='button'][contains(text(),'Close')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>53e767f0-2e5d-4dda-a012-561d102af43c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +29,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>4a226d1c-8d98-45e1-951d-cc237de8b014</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button ui-corner-all ui-widget</value>
+      <webElementGuid>2eab3b7b-75ee-4ae1-9e7d-950e8e3a4f40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Close</value>
+      <webElementGuid>5e1018aa-93c7-46b5-ab71-efbfbbb413b6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-dialog-group ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
+      <webElementGuid>e3e32f6f-f2de-4c57-b9ca-841cbe721636</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[24]</value>
+      <webElementGuid>11bba2b6-14db-4255-a153-b9c6eeb90b31</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(all visible items selected)'])[1]/following::button[1]</value>
+      <webElementGuid>b65fe9e1-be9e-4f56-8c45-2c9f9708d81d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,5 +77,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[13]/div[3]/div/button</value>
+      <webElementGuid>cec0f76a-c2e4-4229-9b05-dc4c6655422b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>8a875525-b1ac-4185-b34e-d8c08d026635</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[13]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.ui-dialog.tcc-messaging-dialog.tcc-dialog-alert.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(text(),'OK')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>3d3828a3-dbf9-41d5-a7e1-186adb393b85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>e8e8dd5c-2104-49fc-8308-1c139bf61ad5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button ui-corner-all ui-widget</value>
+      <webElementGuid>4cd07fc2-7ce6-4b40-aafe-ba1b5ce70d6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>OK</value>
+      <webElementGuid>008c48c4-d396-469a-94e9-c0bcdec1cf9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
+      <webElementGuid>04d1bd3e-39ad-47ca-9591-80eaf92e03fc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[13]</value>
+      <webElementGuid>690f4639-2d43-4035-af29-e8ca7dee4719</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Are you sure you want to enable this group? This action will take effect immediately.'])[1]/following::button[1]</value>
+      <webElementGuid>5df049a8-2f5d-4c54-83d0-82449e38a725</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirm Status Change'])[1]/following::button[1]</value>
+      <webElementGuid>995560ef-7cf7-4ef5-9e4d-824a74ee25ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::button[1]</value>
+      <webElementGuid>48ddbed7-02b9-4b74-a8e5-06c5fe5135f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
+      <webElementGuid>6d424da0-f9ed-40d0-9612-c8d567e28a8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,5 +102,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[12]/div[3]/div/button</value>
+      <webElementGuid>bfe791b0-87fd-4004-81bb-99ae40e1364c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

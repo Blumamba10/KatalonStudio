@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>dropdown_Data (FDL)</name>
+   <tag></tag>
+   <elementGuidId>f0a3f099-e895-4bc4-9259-64835b0d391a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='fdlSelect']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#fdlSelect</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>5e5068e3-fcf3-411d-89cb-822c9dd4c26a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>fdlSelect</value>
+      <webElementGuid>ee57f0b5-daf4-43b2-b753-f482f49cd058</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control ng-untouched ng-pristine ng-valid</value>
+      <webElementGuid>10346743-ca36-4a79-9703-c56c2b97ca2e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>user role usersselect projectAuto SQL FDL</value>
+      <webElementGuid>6c275635-ecbd-49b9-8877-f147137bf044</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;fdlSelect&quot;)</value>
+      <webElementGuid>f4547692-4796-4c01-9536-5a3abde3d8a9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='fdlSelect']</value>
+      <webElementGuid>b1027918-608b-4a48-a818-a167b4d25948</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data (FDL)'])[1]/following::select[1]</value>
+      <webElementGuid>c7d165ad-78a2-4309-b06a-a856aae0a4ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID'])[1]/following::select[1]</value>
+      <webElementGuid>39b527d3-fa7b-4c2a-974f-7b95850daec5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure FDL Parameters'])[1]/preceding::select[1]</value>
+      <webElementGuid>13df9374-f5e6-46ff-933f-873c4c37337a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Features'])[1]/preceding::select[1]</value>
+      <webElementGuid>46061316-5002-4b3c-a675-0056a5273c9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>4ca60670-c755-4ff8-87e4-b38a03fa79f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'fdlSelect' and (text() = 'user role usersselect projectAuto SQL FDL' or . = 'user role usersselect projectAuto SQL FDL')]</value>
+      <webElementGuid>ce6c3c69-e2f3-4d97-b9c4-d09bade46241</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

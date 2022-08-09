@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_Export</name>
+   <tag></tag>
+   <elementGuidId>a497f08b-9385-4ed0-a021-2b3f4655f65e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='btn-main-actions-export']/button/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fas.fa-download</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>3db1b6d1-b74c-47ea-9e89-628ea775fe70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-download</value>
+      <webElementGuid>74a51844-94dc-4968-8e88-f316e5d01ddc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btn-main-actions-export&quot;)/button[1]/i[@class=&quot;fas fa-download&quot;]</value>
+      <webElementGuid>b1c91be7-8a0a-4f60-9ec9-8d7661479e8f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='btn-main-actions-export']/button/i</value>
+      <webElementGuid>c791834b-f7e6-43bd-9cbd-0f08ad908d78</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td/div/button/i</value>
+      <webElementGuid>cd03d5db-702b-4900-9fdf-b882045bdb19</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

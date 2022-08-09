@@ -6,12 +6,11 @@
    <elementGuidId>de5bf600-f221-4be2-8f2a-a0d965532d89</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[6]/ul/li[2]/a</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'Blocked IP Addresses')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>e13ebcb6-0563-4df4-b5f9-04e607503d74</webElementGuid>
+      <webElementGuid>11583130-d2f5-4aea-b81a-9b00fd124d1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +29,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/tdes/view/security/blockedIps</value>
-      <webElementGuid>e695e13f-cd58-427d-b24b-1ecc139f5f3c</webElementGuid>
+      <webElementGuid>0ea9a83c-3bf0-4944-90c8-5f6850fbaef4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Blocked IP Addresses</value>
-      <webElementGuid>c0391e45-1b2e-49e7-a22e-f2092c29c22d</webElementGuid>
+      <webElementGuid>1b12fab0-e8ec-46a5-92d7-fc906d32ab64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[2]/a[1]</value>
-      <webElementGuid>af6b2022-f327-4a67-89b3-974e88679b85</webElementGuid>
+      <webElementGuid>a5a8dea3-b0b4-49c1-b50f-def8db854ac0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='primaryNav']/div/div/ul/li[6]/ul/li[2]/a</value>
-      <webElementGuid>288d99c8-57da-426d-bada-0cbe4eb91d26</webElementGuid>
+      <webElementGuid>c1b667df-704c-4b84-967b-21424817be8e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Blocked IP Addresses')]</value>
-      <webElementGuid>6a3883bc-588b-4e4c-a41d-e93eed697018</webElementGuid>
+      <webElementGuid>87e5b4cc-ea57-470f-bc33-d3730b554d4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Authentication'])[1]/following::a[1]</value>
-      <webElementGuid>827670ea-22d9-45d4-bffb-8e95f10dd17e</webElementGuid>
+      <webElementGuid>ab908093-ec6b-47a9-b0cb-09c37266c44a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Diagnostics'])[1]/following::a[3]</value>
-      <webElementGuid>0e60edde-b3e4-4016-b587-d18770731c36</webElementGuid>
+      <webElementGuid>ee59581d-5ac1-4cc0-a44e-58afa817af0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Users'])[1]/preceding::a[1]</value>
-      <webElementGuid>45ab119c-a902-4bb7-9281-255b2ae88cea</webElementGuid>
+      <webElementGuid>d6333bac-537a-47e6-9168-eeccfc2cfee6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='User Groups'])[1]/preceding::a[2]</value>
-      <webElementGuid>89fee630-a915-472a-8455-2310742e311e</webElementGuid>
+      <webElementGuid>66dd47c8-c518-4537-b299-00413818b88f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Blocked IP Addresses']/parent::*</value>
-      <webElementGuid>0ba324bf-ce15-4e15-b6ae-40a73779e2e6</webElementGuid>
+      <webElementGuid>e3e83b4a-894a-431e-9cdb-91daa7c91820</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/tdes/view/security/blockedIps')]</value>
-      <webElementGuid>a7b563a6-845c-4705-9e3c-563d69fd74b2</webElementGuid>
+      <webElementGuid>7179bb96-05b8-4702-853d-80ce6d856578</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[6]/ul/li[2]/a</value>
-      <webElementGuid>81c41735-89da-49a3-b031-1a18dc3eebc3</webElementGuid>
+      <webElementGuid>982fd02a-11ff-4020-81cb-7b1d97eb9eb8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/tdes/view/security/blockedIps' and (text() = 'Blocked IP Addresses' or . = 'Blocked IP Addresses')]</value>
-      <webElementGuid>c9957f76-efed-43d8-92df-12f246c30643</webElementGuid>
+      <webElementGuid>35cca6d5-a697-4ba9-948f-ef0152d5722d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

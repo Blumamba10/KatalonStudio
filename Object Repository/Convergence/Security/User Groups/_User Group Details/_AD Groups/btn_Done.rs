@@ -6,22 +6,27 @@
    <elementGuidId>2ba96dae-a59b-46bc-8385-980c41b8b222</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[17]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[17]</value>
+         <key>BASIC</key>
+         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-dialog-group ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'Done' or . = 'Done')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'Done' or . = 'Done')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>8bdd6b93-bb36-40b8-8047-611095b04f4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,13 +34,15 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>0997d95c-b457-441c-9c98-087941426f94</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>ui-button ui-corner-all ui-widget</value>
+      <webElementGuid>149117ba-9739-488c-8954-27f8c9086b54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,13 +50,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Done</value>
+      <webElementGuid>485e6213-6da0-4296-9d5b-651c8648fdb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-dialog-group ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
+      <webElementGuid>8770d442-74e0-40a3-b7cf-6e1119e103ac</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[17]</value>
+      <webElementGuid>7983d7dc-b4b0-416c-8745-54b96e759f6c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next'])[9]/following::button[1]</value>
+      <webElementGuid>1a7236a9-e13d-49eb-8a25-fa264fc888e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Previous'])[9]/following::button[1]</value>
+      <webElementGuid>f7e4605c-78be-4e53-8c93-6f4281109431</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add User Group Members'])[1]/preceding::button[1]</value>
+      <webElementGuid>3ea481c0-7972-422e-8bd4-3bf431b3c596</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[2]/preceding::button[1]</value>
+      <webElementGuid>4cb6639c-517a-4e56-9e84-646f8d032a9d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Done']/parent::*</value>
+      <webElementGuid>a7576e86-d50b-4523-9d3f-e13aa4611c4e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,5 +114,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/button</value>
+      <webElementGuid>f847fe27-993b-4b2f-8b20-371d56621f31</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

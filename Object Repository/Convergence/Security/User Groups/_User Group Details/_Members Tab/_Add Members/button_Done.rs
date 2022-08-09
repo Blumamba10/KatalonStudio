@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[21]</value>
+         <value>//body/div[11]/div[3]/div[1]/button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>a66bfa43-7a71-466c-928d-8f4c364b3331</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,6 +29,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>758028ee-61e3-4c93-8ad9-2a74397229ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -35,6 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button ui-corner-all ui-widget</value>
+      <webElementGuid>cba33f6c-71ae-4607-948d-4d3c9252668f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,6 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Done</value>
+      <webElementGuid>b9a2bd9e-0a63-42c0-8fe2-9a3942afe387</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,6 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-dialog-group ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
+      <webElementGuid>4b085de9-4d2b-4a3f-8b0f-f1ca0821ae44</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -56,6 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[21]</value>
+      <webElementGuid>275d701e-c1a4-4c06-836b-f2e046396786</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -63,6 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next'])[11]/following::button[1]</value>
+      <webElementGuid>3f76f127-63a7-4b86-a2a4-166407029aec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Previous'])[11]/following::button[1]</value>
+      <webElementGuid>fbce829f-6475-4524-a1c5-6f6a0da84e2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Project Roles'])[1]/preceding::button[1]</value>
+      <webElementGuid>6cc6a87f-9cb0-4d5b-9b61-3fa84a92ac6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,6 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[3]/preceding::button[1]</value>
+      <webElementGuid>90632707-f5e0-4e64-a754-e2619f2776eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -91,5 +101,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[12]/div[3]/div/button</value>
+      <webElementGuid>3dd92962-a8bd-4ad9-99c5-9936f0c6013e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -26,21 +26,21 @@
       <guid>f4bc1a75-eeee-4f60-9574-e5e35c93e90b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/1. Create Internal Database User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Create Internal Database User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>615e0eb4-74d4-4d62-8ae1-e911a35c4164</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/2. Add Project Roles to User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Add Project Roles to User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>84ef1c12-44d9-4ecb-82e1-71f07336089b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/3. Add Roles to User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/Add Roles to User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -96,7 +96,14 @@
       <guid>5c58eac6-8591-4f21-8b54-4e92fe9cf63f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for LDAP User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for AD User</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>13e04b7a-07e8-4ea4-a2fe-7fbc578cbeea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for an empty AD Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -104,6 +111,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for Internal User</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6b76de76-01f8-4691-a70c-9bffe01de0b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Group/Delete AD Groups from UG when LDAP connection is deleted</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[7]/a</value>
+         <value>//a[contains(text(),'Utilities')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>74f3a8b6-c547-4c2a-bcb1-63ad6919a3ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>5149d154-94d4-4c48-8499-c49a95b3347e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown-toggle</value>
+      <webElementGuid>28d0ccf0-2eb9-49cf-9fec-34658f61b09f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +42,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>ce83f675-a31e-4e7b-8b6d-cf66f7f9f254</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +50,7 @@
       <name>data-hover</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>d2b5ecb3-ec1a-41c1-8a95-edaf961d64c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +59,7 @@
       <type>Main</type>
       <value>Utilities
                             </value>
+      <webElementGuid>1c735ec8-6eb1-4cb4-a26d-27de44489b01</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,6 +67,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/a[@class=&quot;dropdown-toggle&quot;]</value>
+      <webElementGuid>006ab4a6-9ed8-4ed4-a97b-795318216392</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -68,6 +75,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='primaryNav']/div/div/ul/li[7]/a</value>
+      <webElementGuid>d97d94a9-a4ba-4101-b221-38b567c808c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,6 +83,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Utilities')]</value>
+      <webElementGuid>500aa977-22d8-4314-9a10-0170e0aabf0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Project Assignment'])[1]/following::a[1]</value>
+      <webElementGuid>17843a2f-fd09-498c-8407-b25c8277fd22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Project Roles'])[1]/following::a[2]</value>
+      <webElementGuid>0c0ad404-a8f1-4781-9784-b00210899b0b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,6 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Import Components'])[1]/preceding::a[1]</value>
+      <webElementGuid>37d0e8e0-2cbe-4321-a7b6-4cdcc4cf242b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='View Form'])[1]/preceding::a[2]</value>
+      <webElementGuid>594a764f-4a6e-4105-b766-6c31350d8d91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +123,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Utilities']/parent::*</value>
+      <webElementGuid>71eb3739-c157-424f-aa08-d09c8134f023</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +131,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[8]</value>
+      <webElementGuid>bb2b540b-c3d9-475d-9f71-fdad467899f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,5 +139,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[7]/a</value>
+      <webElementGuid>a695c93a-9096-4e95-bb7b-0dbd91bda58d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

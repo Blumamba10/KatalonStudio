@@ -86,6 +86,28 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_Use
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/txt_Search Filter_Available'), 
     0)
 
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/btn_Refresh'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/div_Search Base'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/div_Search Filter'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/radiobtn_Organization Unit'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/radiobtn_User'), 
+    0)
+
+WebUI.setText(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/input_Search Base'), 
+    'dc=adlds,dc=trinisys,dc=loc')
+
+WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/radiobtn_Organization Unit'))
+
+WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/btn_Refresh'))
+
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/chkbox_Select All_Available'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/btn_Add'))
@@ -99,12 +121,6 @@ assertEquals('LDAP Group', selenium.getText('//th[contains(text(),"LDAP Group")]
 selenium.click('//input[@id="main.tabs.adGroups.list.dataSelectAllCheck"]')
 
 selenium.isElementPresent('//div[@id="btn-main-tabs-adGroups-header-buttons-delete"]//button[text()="Delete"]')
-
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Permissions to User Group'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Convergence/Security/User Group/_Enable User Group/_Helper/Add Project Roles to User Group'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/btn_Back to User Groups'))
 

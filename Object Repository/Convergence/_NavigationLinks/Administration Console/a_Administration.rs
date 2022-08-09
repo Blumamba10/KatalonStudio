@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li/ul/li/a</value>
+         <value>//a[contains(text(),'Administration')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>391cec49-832d-4c12-8b33-546d40317cef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/tdes</value>
+      <webElementGuid>cdee56bb-ae15-4d4e-9653-5dd6f9c26fbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,6 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Administration</value>
+      <webElementGuid>945bdc61-bf23-483e-9219-adf6bc082c21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[1]/a[1]</value>
+      <webElementGuid>d6f71feb-afb1-4587-99ca-846615d47214</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,6 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='primaryNav']/div/div/ul/li/ul/li/a</value>
+      <webElementGuid>a215b645-376d-45e2-941b-121ecc549a83</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -53,6 +58,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Administration')]</value>
+      <webElementGuid>2a89dcda-5b73-4b34-9085-60b122a080a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -60,6 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::a[2]</value>
+      <webElementGuid>01eec58e-a38e-4cba-8190-da5e8331ee08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -67,6 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/following::a[3]</value>
+      <webElementGuid>1f7dde4a-4454-496e-9a57-a8a5e9adf241</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Document Management'])[1]/preceding::a[1]</value>
+      <webElementGuid>07953512-77ab-47c6-98ab-81668dc63973</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Projects'])[1]/preceding::a[2]</value>
+      <webElementGuid>5aed9fe4-d0ee-4eed-a08c-d93fd2c920be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Administration']/parent::*</value>
+      <webElementGuid>efbb3152-104e-423f-b784-1e8dc4e131d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +106,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '/tdes')])[4]</value>
+      <webElementGuid>6b7a1af7-fd0a-4202-981a-d347fb7710aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,5 +114,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/ul/li/ul/li/a</value>
+      <webElementGuid>aeeb5218-7da5-4150-b44a-2af50b13b806</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

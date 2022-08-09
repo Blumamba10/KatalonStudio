@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_insertDataview</name>
+   <tag></tag>
+   <elementGuidId>2799feeb-7a07-4e4a-a5bd-d4fc95783061</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[5]/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa-table.far</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>f81797d6-42be-44dc-bbc7-d8d9654eecaf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa-table far</value>
+      <webElementGuid>80400a47-a25e-4d25-9a38-4343bdbc341d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;&quot;]/body[1]/app-root[1]/main-component[1]/div[@class=&quot;tte-container&quot;]/div[@class=&quot;container tte-sidebar-container&quot;]/div[@class=&quot;row tte-sidebar-header-wrap&quot;]/sidebar-header[1]/div[@class=&quot;col-xs-12 tte-sidebar-header&quot;]/ul[@class=&quot;list-inline tte-sidebar-header-insert-icons&quot;]/li[5]/a[1]/i[@class=&quot;fa-table far&quot;]</value>
+      <webElementGuid>4f8aeaa3-05c8-4ba7-97c5-680a95dc1cb6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/a/i</value>
+      <webElementGuid>aedbc9c6-5dd3-4a27-ad10-da42d8aa1ad3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

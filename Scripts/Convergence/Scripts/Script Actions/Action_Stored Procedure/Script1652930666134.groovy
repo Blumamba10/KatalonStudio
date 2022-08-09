@@ -94,13 +94,13 @@ selenium.click('id=catalogSelect')
 
 selenium.select('//select[@id="catalogSelect"]', 'label=_donotdelete')
 
-selenium.select('//select[@id="schemaSelect"]', 'label=db_accessadmin')
+not_run: selenium.select('//select[@id="storedProcedureSelect"]', 'label=dm_db_log_info')
 
-selenium.select('//select[@id="storedProcedureSelect"]', 'label=dm_db_log_info')
+not_run: selenium.select('//select[@id="schemaSelect"]', 'label=db_accessadmin')
 
 assertEquals('Catalog', selenium.getText('//label[@for="catalogSelect"]'))
 
-assertEquals('Schema', selenium.getText('//label[@for="schemaSelect"]'))
+not_run: assertEquals('Schema', selenium.getText('//label[@for="schemaSelect"]'))
 
 WebUI.delay(2)
 

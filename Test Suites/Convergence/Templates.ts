@@ -43,7 +43,7 @@
       <guid>19ab1bcd-b8b1-4cb6-bf5a-1a3f1b77ec51</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Templates/Templates Page Elemements</testCaseId>
+      <testCaseId>Test Cases/Convergence/Templates/Manage Templates Page Elemements</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

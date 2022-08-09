@@ -7,11 +7,15 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[3]</value>
+         <value>//i[@class='fas fa-ban']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>button.tcc-btn.tcc-btn-small.tcc-btn-icon.tcc-text-danger</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Click to enable this user group' and @type = 'button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>514593a6-ef22-481e-839e-347dca72896a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>tcc-btn tcc-btn-small tcc-btn-icon tcc-text-danger</value>
+      <webElementGuid>e25ad31a-5fa4-4d3e-ace4-912115f54335</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +42,7 @@
       <name>data-group-id</name>
       <type>Main</type>
       <value>20</value>
+      <webElementGuid>afab226a-60ec-4f6b-bb51-526df012608a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,6 +50,7 @@
       <name>data-enabled</name>
       <type>Main</type>
       <value>0</value>
+      <webElementGuid>2be2fbe1-b99f-4554-b652-f50776598604</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,6 +58,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Click to enable this user group</value>
+      <webElementGuid>887bea78-6ca1-4573-b948-ff740641ad5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,6 +66,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>6655885c-5f7e-49d5-96dd-6445889a49f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,6 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fdv-main-list-userGroupList-table&quot;)/tbody[1]/tr[@class=&quot;odd&quot;]/td[7]/button[@class=&quot;tcc-btn tcc-btn-small tcc-btn-icon tcc-text-danger&quot;]</value>
+      <webElementGuid>9ec54840-522f-491c-bd72-ce51f72e0819</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -71,6 +82,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[3]</value>
+      <webElementGuid>6b1e4a21-8d61-41a6-838f-e4fe832e4504</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='fdv-main-list-userGroupList-table']/tbody/tr/td[7]/button</value>
+      <webElementGuid>db774b3a-58c2-4d20-83b8-49fa689c1ce3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Group created by automation.'])[1]/following::button[1]</value>
+      <webElementGuid>a350d971-3923-494a-8d66-12d051a006f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Automation Group'])[1]/following::button[1]</value>
+      <webElementGuid>99c31ac9-a31c-4c67-891a-7f1b6771411a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Showing 1 to 1 of 1 entries (filtered from 3 total entries)'])[1]/preceding::button[2]</value>
+      <webElementGuid>c09dfe23-a7f1-4c4b-bc67-ca242a133a32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Previous'])[1]/preceding::button[2]</value>
+      <webElementGuid>0f624ef2-a4f3-4768-88f6-7db4b6f9aa24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,5 +130,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[7]/button</value>
+      <webElementGuid>ef26282e-6dd9-4b39-bf4d-cd3958c7ae11</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

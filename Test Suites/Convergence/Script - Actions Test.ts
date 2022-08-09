@@ -350,14 +350,14 @@
    <testCaseLink>
       <guid>00063b5a-3522-40f0-95f5-0ec1987d4e28</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Scripts/Script Actions/Action_Stored Procedure</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>cb178533-f422-45e0-9684-6e9d1c76a1dd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Scripts/Script Actions/Action_Stored Procedure with Results</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

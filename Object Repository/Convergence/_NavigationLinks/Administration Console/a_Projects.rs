@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[2]/a</value>
+         <value>//a[contains(text(),'Projects')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>44f5353d-574e-4d97-91df-93b764afda23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/tdes/console/getProjectList</value>
+      <webElementGuid>6d11b710-8958-4f53-9740-0d8768734931</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,6 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Projects</value>
+      <webElementGuid>ad878c42-eba2-45e3-ba18-1bacd6f65319</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[2]/a[1]</value>
+      <webElementGuid>89be52e4-acda-40cc-ba01-4b7e21efded7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,6 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='primaryNav']/div/div/ul/li[2]/a</value>
+      <webElementGuid>b1673959-a54d-4b1c-898e-7cb8103fe016</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -53,6 +58,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Projects')]</value>
+      <webElementGuid>cc026b3f-65b6-48b1-80fd-80784ba896e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -60,6 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Document Management'])[1]/following::a[1]</value>
+      <webElementGuid>1ecf9403-6730-47c8-9b9a-bb9acec67d2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -67,6 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Administration'])[1]/following::a[2]</value>
+      <webElementGuid>c8ade19f-f736-40cb-b7b2-c222952fa078</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Manage Templates'])[1]/preceding::a[2]</value>
+      <webElementGuid>91e511d4-0603-4d0c-9335-b2781ef83650</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Option Lists'])[1]/preceding::a[3]</value>
+      <webElementGuid>5bd9369c-2270-4480-8b1f-0d0229ed79f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Projects']/parent::*</value>
+      <webElementGuid>0eb6a8ea-f311-4276-ae80-d534b8e40b89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +106,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/tdes/console/getProjectList')]</value>
+      <webElementGuid>2535765e-283a-41ce-8c03-73c8f1da1e47</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,5 +114,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/ul/li[2]/a</value>
+      <webElementGuid>0ecd886f-28c8-4f6e-b523-ce4151172e70</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

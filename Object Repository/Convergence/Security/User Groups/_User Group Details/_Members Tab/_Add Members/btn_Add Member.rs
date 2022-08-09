@@ -6,12 +6,16 @@
    <elementGuidId>364e350a-0640-4e8a-9b4c-8b189327bbbb</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id='btn-addMemberDialog-lists-buttons-addButton']//button[text()='+']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#btn-addMemberDialog-lists-buttons-addButton > button[type=&quot;button&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[19]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,13 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>84478863-283f-458c-b281-30ec23bf3548</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>9b79552d-e91e-4be9-85de-a022fa473b6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,16 +42,18 @@
       <name>onclick</name>
       <type>Main</type>
       <value>btn_addMemberDialog_lists_buttons_addButton_onclick(event)</value>
+      <webElementGuid>9449c106-5d44-4cdd-b27d-ead136c81120</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
       <value>+</value>
+      <webElementGuid>2d800f1d-8ec7-41d8-9126-0ab6404fe34f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -58,6 +66,7 @@ function btn_addMemberDialog_lists_buttons_addButton_onclick(event)
 _ug.updateMembersButtonClick('addMembers');
 }
 +</value>
+      <webElementGuid>68a10b21-55fd-4f64-b4fe-b60793bcbcc8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,6 +74,7 @@ _ug.updateMembersButtonClick('addMembers');
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;btn-addMemberDialog-lists-buttons-addButton&quot;)/button[1]</value>
+      <webElementGuid>65f0771f-3096-4023-9c03-a703e85c2f39</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -72,6 +82,7 @@ _ug.updateMembersButtonClick('addMembers');
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[19]</value>
+      <webElementGuid>c548dc66-7031-4660-8774-481d91635215</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,6 +90,7 @@ _ug.updateMembersButtonClick('addMembers');
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='btn-addMemberDialog-lists-buttons-addButton']/button</value>
+      <webElementGuid>fb951402-e7a6-465b-9e55-cf2c49834207</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +98,7 @@ _ug.updateMembersButtonClick('addMembers');
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next'])[10]/following::button[1]</value>
+      <webElementGuid>c6d24f2d-7459-4008-9cc4-b7f75915f147</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +106,7 @@ _ug.updateMembersButtonClick('addMembers');
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Previous'])[10]/following::button[1]</value>
+      <webElementGuid>16e674b1-47f9-449b-9ca8-ccb4a7865714</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,5 +114,6 @@ _ug.updateMembersButtonClick('addMembers');
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/div/table/tbody/tr/td/table/tbody/tr[2]/td[2]/div/table/tbody/tr/td/table/tbody/tr/td/div/button</value>
+      <webElementGuid>bd00a810-f808-4d78-bf86-4174d8564747</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

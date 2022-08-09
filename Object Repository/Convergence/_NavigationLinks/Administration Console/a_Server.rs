@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='primaryNav']/div/div/ul/li[5]/a</value>
+         <value>//a[contains(text(),'Server')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>2e54ea91-e487-4549-9618-7b8de4da04c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>b722f064-7f5d-4197-91b7-029e4b4e6170</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown-toggle</value>
+      <webElementGuid>5375a166-0502-40a2-b7c6-5564b26fb9c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +42,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>4479cf4f-6a85-45b5-9860-ab54389eab1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +50,7 @@
       <name>data-hover</name>
       <type>Main</type>
       <value>dropdown</value>
+      <webElementGuid>684c1505-197f-4c7e-a194-976e05e208ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +59,7 @@
       <type>Main</type>
       <value>Server
                             </value>
+      <webElementGuid>e14264b4-d0ad-4c9d-bfcd-81b7cef4d054</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,6 +67,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;primaryNav&quot;)/div[@class=&quot;navbar-inner&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;nav tcp-primary-nav&quot;]/li[@class=&quot;dropdown open&quot;]/a[@class=&quot;dropdown-toggle&quot;]</value>
+      <webElementGuid>0583d0a3-78c6-4d50-b546-6e62761a35e3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -68,6 +75,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='primaryNav']/div/div/ul/li[5]/a</value>
+      <webElementGuid>b6059c4c-6dd1-4311-a73b-f74f61a1b280</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,6 +83,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Server')]</value>
+      <webElementGuid>dd5d8ce7-841b-4c83-90a6-368d2b8589bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Environment Variables'])[1]/following::a[1]</value>
+      <webElementGuid>00fe6cd5-135a-4952-93aa-e17a26760b9f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Monitor'])[1]/following::a[2]</value>
+      <webElementGuid>89c5cc3f-1df1-4d0b-809b-e1ec3eb18167</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,6 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Configure Server'])[1]/preceding::a[1]</value>
+      <webElementGuid>0b4a4b42-ff1c-4776-a8df-d2d40e6e5186</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='License Manager'])[1]/preceding::a[2]</value>
+      <webElementGuid>292b1571-02ff-45bc-85b5-e987b912a915</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +123,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Server']/parent::*</value>
+      <webElementGuid>6c6be7a3-749c-41fb-a26e-e6c1f420f087</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +131,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[6]</value>
+      <webElementGuid>2af102d4-5747-4847-b3c7-0e06e330e4ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,5 +139,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[5]/a</value>
+      <webElementGuid>71a45d38-a136-40cd-841a-faf0ff8d0ad0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

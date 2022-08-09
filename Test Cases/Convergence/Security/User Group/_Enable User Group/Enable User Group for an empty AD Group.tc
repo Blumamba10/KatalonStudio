@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that you can enable a user group for an AD Group without any users.</description>
+   <name>Enable User Group for an empty AD Group</name>
+   <tag>21.1.2</tag>
+   <comment></comment>
+   <testCaseGuid>84cf220c-4fa9-429e-9ffa-69a0890eee4e</testCaseGuid>
+</TestCaseEntity>
