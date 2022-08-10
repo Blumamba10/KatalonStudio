@@ -6,6 +6,10 @@
    <elementGuidId>ec7816b2-f1b6-4516-9a8f-e6d2c092e689</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;optionListDynamicFrm&quot;)/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;content-box padded-box&quot;]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;span7&quot;]/div[@class=&quot;CodeMirror cm-s-default  CodeMirror-focused&quot;]/div[1]/textarea[1]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//form[@id='optionListDynamicFrm']/div/div[2]/div/div/div[2]/div/div/textarea</value>
       </entry>
@@ -18,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>textarea</value>
+      <webElementGuid>2bf25adb-eb39-416f-b665-59b5613c2331</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,6 +30,7 @@
       <name>autocorrect</name>
       <type>Main</type>
       <value>off</value>
+      <webElementGuid>c8bb505f-d6d7-403b-86de-d0806f65596c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +38,7 @@
       <name>autocapitalize</name>
       <type>Main</type>
       <value>off</value>
+      <webElementGuid>3d7bb922-ae22-4660-b686-48462ceca9cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +46,7 @@
       <name>spellcheck</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>9044c5d0-555d-4d25-8590-52d71778dc59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +54,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
+      <webElementGuid>c78b58c4-61eb-4da7-af0f-f9ef677f0578</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,6 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;optionListDynamicFrm&quot;)/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;content-box padded-box&quot;]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;span7&quot;]/div[@class=&quot;CodeMirror cm-s-default  CodeMirror-focused&quot;]/div[1]/textarea[1]</value>
+      <webElementGuid>a42ac46b-2a90-4183-8c4c-747abafadcee</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -60,6 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='optionListDynamicFrm']/div/div[2]/div/div/div[2]/div/div/textarea</value>
+      <webElementGuid>ceb0a7a8-4cb1-4c2c-b195-512ee3ce781a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -67,5 +78,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/textarea</value>
+      <webElementGuid>56bcc412-0e3d-432d-9714-555c7b064b04</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

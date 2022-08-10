@@ -57,7 +57,7 @@ WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Serv
     'adlds-test')
 
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
-    'RnHw21PVgelT8HP/ztNLnXD3x8lexSesv347Yb75KYhOC5Bdp8/85w==')
+    'XcnV7MFBhB0cDxi+XBwFoaErNd1sH/N021nL06HUdmNeyIawoAxHoA==')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 
@@ -92,7 +92,7 @@ WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Serv
     'adlds-test')
 
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
-    'RnHw21PVgelT8HP/ztNLnXD3x8lexSesv347Yb75KYhOC5Bdp8/85w==')
+    'XcnV7MFBhB0cDxi+XBwFoaErNd1sH/N021nL06HUdmNeyIawoAxHoA==')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
 
