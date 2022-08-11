@@ -54,7 +54,7 @@
       <guid>c81ad3b8-6841-4950-9aa9-f6e2e1bb93dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Scripts/Gloabl Functions - New</testCaseId>
+      <testCaseId>Test Cases/Convergence/Scripts/Gloabl Functions Page Elements</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

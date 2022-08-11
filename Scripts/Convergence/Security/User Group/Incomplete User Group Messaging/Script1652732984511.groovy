@@ -58,6 +58,8 @@ WebUI.setText(findTestObject('Convergence/Security/User Groups/_Add User Group/t
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_Add User Group/btn_Save'))
 
+WebUI.enableSmartWait()
+
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Incomplete User Group')
 
 selenium.click('//a[contains(text(),"Incomplete User Group")]')

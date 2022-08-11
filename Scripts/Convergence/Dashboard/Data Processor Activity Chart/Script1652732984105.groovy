@@ -46,5 +46,5 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Bui
 
 assertTrue(selenium.isElementPresent('id=monitorModalLabel'))
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Windows 10\'])[1]/following::button[1]')
+selenium.click('//button[@type="button"]')
 

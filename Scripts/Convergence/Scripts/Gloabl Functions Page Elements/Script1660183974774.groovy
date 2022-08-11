@@ -71,15 +71,14 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('id=checkAllCheck'))
 
-assertEquals('Template Pattern', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Processing...\'])[1]/following::th[2]'))
+assertEquals('Name', selenium.getText('//th[contains(text(),"Name")]'))
 
-assertEquals('Last Updated', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Template Pattern\'])[1]/following::th[1]'))
+assertEquals('Last Updated', selenium.getText('//th[contains(text(),"Last Updated")]'))
 
-assertEquals('Info', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Last Updated\'])[1]/following::th[1]'))
+assertEquals('Info', selenium.getText('//th[@class="small_column center sorting_disabled"]'))
 
-assertEquals('Order', selenium.getText('//table[@id=\'controllerListTable\']/thead/tr/th[5]'))
 
-assertEquals('Actions', selenium.getText('//table[@id=\'controllerListTable\']/thead/tr/th[6]'))
+assertEquals('Actions', selenium.getText('//th[@class="center sorting_disabled"]'))
 
 selenium.click('id=checkAllCheck')
 

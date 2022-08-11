@@ -145,49 +145,49 @@
       <guid>e954a18b-b7b1-461b-bb0f-54546cbde024</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a6496b0a-46c3-49bb-9b8a-f8ec84441286</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>021c756c-8222-46e8-989f-325fab212a2f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERGROUPS_READONLY and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERGROUPS_READONLY and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>225a7688-3746-4400-82e4-2c7a8f4d8804</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERS_ADMIN and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2e7d4343-dbcc-436a-b5f8-3e9d82327543</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_USERS_READONLY and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERS_READONLY and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b5cc48f3-cb9e-4e38-a228-040e97dcecbb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_EMAIL_SETTINGS</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_EDIT_LOG_EMAIL_SETTINGS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d439b96f-8055-4445-9bd8-42dff4d67c52</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Project Roles/TDES_EDIT_LOG_SETTINGS</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_EDIT_LOG_SETTINGS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
