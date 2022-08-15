@@ -30,21 +30,12 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create Project Admin User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def driver = DriverFactory.getWebDriver()
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'projectadmin', '/3ju_$gMW]X}izW4')
 
-String baseUrl = 'https://www.google.com/'
+WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'), 0)
 
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-selenium.doubleClick('link=Home')
-
-selenium.click('link=Administration')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::i[1]')
-
-assertTrue(selenium.isElementPresent('id=monitorModalLabel'))
-
-selenium.click('//button[@type="button"]')
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'), 0)
 

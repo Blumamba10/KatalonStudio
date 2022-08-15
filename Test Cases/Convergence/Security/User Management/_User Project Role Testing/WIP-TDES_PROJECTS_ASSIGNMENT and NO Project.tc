@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>>Should only see the Security > Project Assignment menu link
+>This role should NOT see the Security > Project Roles menu link nor the Security > Projects menu link
+>Should be allowed to assign any projects to Users or User Groups even if they don’t have access to those projects via the Project Assignment page
+>If they don’t also have USERS_ADMIN and/or USERGROUPS_ADMIN then the hyperlinks to Users and UGs details on the Project Assignment pages should be read-only/ non-clickable links.</description>
+   <name>WIP-TDES_PROJECTS_ASSIGNMENT and NO Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89e678b0-6780-441b-a82a-3f026a674994</testCaseGuid>
+</TestCaseEntity>

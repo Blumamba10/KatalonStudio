@@ -62,14 +62,20 @@ WebUI.switchToWindowIndex('1')
 WebUI.selectOptionByLabel(findTestObject('Convergence/Document Management/Add New Document/select_DocumentType'), 'Script Document', 
     false)
 
-WebUI.delay(3)
+WebUI.enableSmartWait()
+
+not_run: WebUI.delay(3)
 
 CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Document Management/Add New Document/span_Upload Document'), 
     '"C:\\actionTestFiles\\MRI Knee.docx"')
 
-WebUI.delay(3)
+WebUI.enableSmartWait()
+
+WebUI.delay(5)
 
 selenium.click('//button[@id="addDocumentButton"]')
+
+WebUI.enableSmartWait()
 
 assertEquals('Document Viewer', selenium.getText('//h2[contains(text(),"Document Viewer")]'))
 

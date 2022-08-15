@@ -30,21 +30,21 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Project Role Users/Create Edit Log Setting User'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-def driver = DriverFactory.getWebDriver()
+CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'editlogsetting', '1/)@Q9?t%*&omvj<')
 
-String baseUrl = 'https://www.google.com/'
+WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'), FailureHandling.STOP_ON_FAILURE)
 
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
+WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Standard Log Viewer'), FailureHandling.STOP_ON_FAILURE)
 
-selenium.doubleClick('link=Home')
+WebUI.click(findTestObject('Convergence/Server/Security Log Viewer/btn_Configure Logging'))
 
-selenium.click('link=Administration')
+WebUI.verifyElementPresent(findTestObject('Convergence/Server/Security Log Viewer/Log Settings/dropdown_Level'), 0)
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::i[1]')
+WebUI.verifyElementNotPresent(findTestObject('Convergence/Server/Security Log Viewer/Log Settings/h4_Email Notifications'), 
+    0)
 
-assertTrue(selenium.isElementPresent('id=monitorModalLabel'))
-
-selenium.click('//button[@type="button"]')
+WebUI.verifyElementNotPresent(findTestObject('Convergence/Server/Security Log Viewer/Log Settings/btn_Update'), 0)
 

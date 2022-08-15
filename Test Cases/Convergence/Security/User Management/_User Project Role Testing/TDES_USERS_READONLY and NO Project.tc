@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>>Should only show the Security > Users menu link - but when clicked they can click the Users links to see their Details and their User Details tab info but all of it is read only.
+>These users should NOT be allowed to edit, delete, add or export Users (all permissions here)
+>Should only be able to EDIT/ADD/DELETE Project Roles (separate tab) for Users only if they have the PROJECTS_ASSIGNMENT role too. For the Users links on this page, they can click them like above but everything should be read- only here with this access.</description>
+   <name>TDES_USERS_READONLY and NO Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f887644e-56dc-4bd6-9427-961766683ff0</testCaseGuid>
+</TestCaseEntity>
