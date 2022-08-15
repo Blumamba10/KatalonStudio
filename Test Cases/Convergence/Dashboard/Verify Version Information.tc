@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the Release and Server version of the instance</description>
+   <name>Verify Version Information</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>941c515d-ce55-4e26-9ef8-fdcd2e6d5ed2</testCaseGuid>
+</TestCaseEntity>

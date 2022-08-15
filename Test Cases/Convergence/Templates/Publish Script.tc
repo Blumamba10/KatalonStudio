@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Publish Script</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>514dd212-e5ab-46c8-a1e4-b8a659977f5e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>48f7b8f8-c3ed-41ba-9706-89a0c6cbf01b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>48f7b8f8-c3ed-41ba-9706-89a0c6cbf01b</id>
+      <masked>false</masked>
+      <name>TemplateName</name>
+   </variable>
+</TestCaseEntity>

@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8669/tdes'</initValue>
+      <initValue>'http://localhost:8084/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8669/demo'</initValue>
+      <initValue>'http://localhost:8084/demo'</initValue>
       <name>demoappURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -51,7 +51,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'21.1.0'</initValue>
+      <initValue>'21.2.0'</initValue>
       <name>serverNumber</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

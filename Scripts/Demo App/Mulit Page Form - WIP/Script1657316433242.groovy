@@ -38,6 +38,8 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
+WebUI.enableSmartWait()
+
 selenium.click('link=Web Platform')
 
 selenium.click('link=Multi-Page Forms')
@@ -125,15 +127,13 @@ selenium.click('//form[@id=\'tde-data-entry-form\']')
 
 selenium.waitForPageToLoad('30000')
 
-selenium.click('//div[5]')
-
-Thread.sleep(NaN)
+selenium.click('id=btn-Next')
 
 selenium.click('id=btn-Next')
 
-selenium.click('//div[2]/div/input')
+selenium.click('id=publish_button')
 
-selenium.click('//input[@id=\'show-errors\']')
+WebUI.enableSmartWait()
 
 assertEquals('Field Required', selenium.getText('//td[3]/span'))
 
@@ -151,51 +151,78 @@ assertEquals('Field Required', selenium.getText('//div/table/tbody/tr[2]/td[3]/s
 
 assertEquals('Field Required', selenium.getText('//div[2]/table/tbody/tr[2]/td[3]/span'))
 
-selenium.type('//td/div/input', 'test')
+selenium.type('id=fc-patient-identity-firstName', 'Lebron')
 
-selenium.type('//td[2]/div/input', 'user')
+selenium.type('id=fc-patient-identity-lastName', 'James')
 
-selenium.type('//td[3]/div/input', '123456789')
+selenium.type('id=fc-patient-addresses-home-street', '123 Test')
 
-selenium.type('//td[4]/div/input', '01011990')
+selenium.type('id=fc-patient-addresses-home-city', 'Hermitage')
 
-selenium.type('//div[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/div/input', '123 Test')
+selenium.select('id=fc-patient-addresses-home-state', 'label=TN')
 
-selenium.type('//div[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/div/input', 'Hermitage')
+selenium.click('xpath=//option[@value=\'TN\']')
 
-selenium.select('//select', 'label=TN')
+selenium.type('id=fc-patient-addresses-home-zipcode', '37211')
 
-selenium.type('//td[5]/div/input', '37076')
+selenium.type('id=fc-patient-detail-1-email', 'test@gmail.com')
 
-selenium.select('//td[2]/div/select', 'label=Male')
+selenium.select('id=fc-patient-detail-2-sex', 'label=Male')
 
-selenium.select('//tr[2]/td[2]/div/select', 'label=Married')
+selenium.click('xpath=//option[@value=\'Male\']')
 
-assertTrue(selenium.isVisible('//tr[3]/td/div/span'))
+selenium.select('id=fc-patient-detail-2-maritalStatus', 'label=Single')
 
-selenium.click('//tr[2]/td[2]/div/select')
+selenium.click('id=fc-patient-detail-2-healthcareProxy')
 
-selenium.select('//tr[2]/td[2]/div/select', 'label=Single')
+selenium.select('id=fc-patient-detail-2-healthcareProxy', 'label=No')
 
-assertFalse(selenium.isVisible('//tr[3]/td/div/span'))
+selenium.type('id=fc-patient-referringPhysician-name', 'Tim')
 
-selenium.select('//tr[4]/td[2]/div/select', 'label=Yes')
+selenium.type('id=fc-patient-referringPhysician-street', 'Jones')
 
-selenium.select('//div[2]/table/tbody/tr[2]/td[2]/div/select', 'label=Yes')
+selenium.type('id=fc-patient-referringPhysician-city', 'Brentwood')
 
-assertEquals('Employer *', selenium.getText('//div[2]/table/tbody/tr[3]/td/div/span'))
+selenium.select('id=fc-patient-referringPhysician-state', 'label=TN')
 
-assertEquals('Occupation *', selenium.getText('//tr[4]/td/div/span'))
+selenium.click('xpath=//select[@id=\'fc-patient-referringPhysician-state\']/option[44]')
 
-selenium.select('//div[2]/table/tbody/tr[2]/td[2]/div/select', 'label=No')
+selenium.type('id=fc-patient-referringPhysician-zipcode', '37888')
 
-selenium.click('//input[@id=\'btn-Next\']')
+selenium.select('id=fc-employment-employed', 'label=Yes')
 
-assertTrue(selenium.isElementPresent('id=pagenav-yes-button'))
+selenium.click('id=fc-employment-employer')
 
-assertTrue(selenium.isElementPresent('//input[@id=\'pagenav-no-button\']'))
+selenium.type('id=fc-employment-employer', 'VGT')
 
-assertTrue(selenium.isElementPresent('//input[@id=\'pagenav-cancel-button\']'))
+selenium.click('id=fc-employment-occupation')
 
-selenium.click('id=pagenav-yes-button')
+selenium.type('id=fc-employment-occupation', 'Sales')
 
+selenium.click('id=fc-employment-address-street')
+
+selenium.type('id=fc-employment-address-street', '888 Gaming')
+
+selenium.click('id=fc-employment-address-city')
+
+selenium.type('id=fc-employment-address-city', 'Orlando')
+
+selenium.click('id=fc-employment-address-state')
+
+selenium.select('id=fc-employment-address-state', 'label=FL')
+
+selenium.click('xpath=//select[@id=\'fc-employment-address-state\']/option[11]')
+
+selenium.click('id=fc-employment-address-zipcode')
+
+selenium.type('id=fc-employment-address-zipcode', '88845')
+
+selenium.click('id=fc-employment-address-phone')
+
+selenium.type('//input[@id="fc-patient-identity-ssn"]', '445165889')
+
+selenium.type('//input[@id="fc-patient-identity-dateOfBirth"]', '06/06/1980')
+
+selenium.click('id=btn-Next')
+
+selenium.click("id=pagenav-yes-button");
