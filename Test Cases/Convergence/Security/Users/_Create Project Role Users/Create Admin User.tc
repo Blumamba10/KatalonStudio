@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Create a user with User Admin project role.</description>
-   <name>Create Admin User</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a1a54500-414d-4d96-bd17-21631e5b6aee</testCaseGuid>
-</TestCaseEntity>

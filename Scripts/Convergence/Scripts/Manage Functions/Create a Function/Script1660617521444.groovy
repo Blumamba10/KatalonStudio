@@ -50,9 +50,9 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Co
 
 WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Functions'))
 
-WebUI.delay(2)
+WebUI.enableSmartWait()
 
-selenium.click('id=addScriptButton')
+selenium.click('//i[@class="shortcut-icon fas fa-plus-circle"]')
 
 WebUI.switchToWindowIndex('1', FailureHandling.STOP_ON_FAILURE)
 
