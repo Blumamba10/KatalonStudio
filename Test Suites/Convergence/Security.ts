@@ -1,376 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>This tests the follwoing areas within Security:
-- Authentication
-- Users
-- Project Roles
-<<<<<<< HEAD
-- Project Assignment</description>
+   <description></description>
    <name>Security</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>c09124d7-0392-48be-aca8-196b3f707499</testSuiteGuid>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>cef14725-6daf-45d6-a3ee-27b2b0e04eb4</testSuiteGuid>
    <testCaseLink>
-      <guid>f4bc1a75-eeee-4f60-9574-e5e35c93e90b</guid>
+      <guid>c2257303-eb39-421e-8422-158f2b801be8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Users/Create Internal Database User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>615e0eb4-74d4-4d62-8ae1-e911a35c4164</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Add Project Roles to User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>84ef1c12-44d9-4ecb-82e1-71f07336089b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Add Roles to User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>920ad3fb-5d1d-4bf8-b726-2f798ba2ab04</guid>
+      <guid>7fef438a-a269-42f3-8462-d7778aaf9acb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Users/Create MFA User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5ca689ab-6a51-44d4-a531-ed6c27ba355c</guid>
+      <guid>104762b4-8ff9-4c55-af5c-1e0b658cb931</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/Users/Create Admin User</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4553a4c5-a29d-42ca-ae7b-b97eb96a5655</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/Authentication/Configure LDAP connection</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2141cc69-3811-4e5e-a2d0-d33dba0079ea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/Blocked IP Addresses/Blocked IP Addresses Page Elements</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a83b1f8e-6b02-47ca-b798-6c32367d426d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Credential Management/Default Values on Credental Managment Page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f3286a8a-88f3-4ea8-ab96-2b8b99febaaf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Authentication/Configure LDAP connection</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3cdcdde1-7b3d-46fe-8e4d-58da89f7ce50</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/Add Internal User for User Group</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2a1744f7-11f1-4493-998d-d11dbd838788</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/Incomplete User Group Messaging</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>88ee5405-207b-47fe-ad34-c693159f3daa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/Elements on User Group Page</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>85dd067d-10fd-4093-a7b5-7382dc03fa76</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/Attempt to Delete User Group with Members</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5c58eac6-8591-4f21-8b54-4e92fe9cf63f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for AD User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>13e04b7a-07e8-4ea4-a2fe-7fbc578cbeea</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for an empty AD Group</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d4ea7b4d-62da-4654-92aa-e86e2c86cf4f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for Internal User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6b76de76-01f8-4691-a70c-9bffe01de0b2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Groups/Delete AD Groups from UG when LDAP connection is deleted</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ac570f73-5512-4bd5-8d0b-fbdee50c3605</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Project Roles/Project Roles Page Elements</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fcc4d5af-cf47-4e2d-863e-288c30c5586c</guid>
+      <guid>06465425-e697-4db9-893f-22f3d3f58d99</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Project Assignment/Project Assignment Page Elements</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>00f00414-62ba-4d5b-a8f0-b1f836deddca</guid>
+      <guid>8609848b-7fd5-4865-8fb7-76a3898dd079</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Should not allow duplicate Project Roles</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Project Roles/Project Roles Page Elements</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e954a18b-b7b1-461b-bb0f-54546cbde024</guid>
+      <guid>94226cca-01c4-4bd4-b641-c048be8e530b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Project Roles/Should not allow duplicate Permission Roles</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a6496b0a-46c3-49bb-9b8a-f8ec84441286</guid>
+      <guid>926f37d9-1c2c-480e-802c-51f8019aa198</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/Add Internal User for User Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>021c756c-8222-46e8-989f-325fab212a2f</guid>
+      <guid>112b2eff-dfbd-4f7f-9e23-079284ed4795</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERGROUPS_READONLY and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for AD User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>225a7688-3746-4400-82e4-2c7a8f4d8804</guid>
+      <guid>7ad60a83-99d8-49bf-a80e-340458354b85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for an empty AD Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2e7d4343-dbcc-436a-b5f8-3e9d82327543</guid>
+      <guid>b12b5c18-321d-456a-91b6-c128e28523c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERS_READONLY and NO Project</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for Internal User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b5cc48f3-cb9e-4e38-a228-040e97dcecbb</guid>
+      <guid>2433f15d-1da3-4dc1-a8a9-ca86f095a188</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/Attempt to Delete User Group with Members</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a5ed1ae2-8287-4b8f-a3ca-5b5b2dc029b7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/Delete AD Groups from UG when LDAP connection is deleted</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6a2068d4-8a33-4a09-9781-b8b9b985208d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/Elements on User Group Page</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>be1fccb5-5a39-4cfd-87cc-d2ce03628c8c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Security/User Groups/Incomplete User Group Messaging</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>95906d80-882c-496d-a5d5-52c9d5a9cb91</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_EDIT_LOG_EMAIL_SETTINGS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d439b96f-8055-4445-9bd8-42dff4d67c52</guid>
+      <guid>312e417f-87ac-4bc0-8429-980c90f16104</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_EDIT_LOG_SETTINGS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-</TestSuiteEntity>
-=======
-- Project Assignment</description>
-   <name>Security</name>
-   <tag></tag>
-   <isRerun>false</isRerun>
-   <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
-   <pageLoadTimeout>30</pageLoadTimeout>
-   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
-   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>c09124d7-0392-48be-aca8-196b3f707499</testSuiteGuid>
    <testCaseLink>
-      <guid>d4d79442-4f10-42f4-9adf-4d3d2b9b576c</guid>
+      <guid>0b90f4a2-95a3-4748-9167-686153106fe2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Invalid Login Credentials</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f4bc1a75-eeee-4f60-9574-e5e35c93e90b</guid>
+      <guid>3451230e-8d7d-4d65-9f3d-39ecffda4b88</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Create Internal Database User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>615e0eb4-74d4-4d62-8ae1-e911a35c4164</guid>
+      <guid>55f6d421-f8e9-4a76-89ab-541506774094</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Add Project Roles to User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERGROUPS_READONLY and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>84ef1c12-44d9-4ecb-82e1-71f07336089b</guid>
+      <guid>5ac8f300-6d74-4ebb-a0ae-2f30b7f789d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Add Roles to User</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERS_ADMIN and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>920ad3fb-5d1d-4bf8-b726-2f798ba2ab04</guid>
+      <guid>925861c5-780d-4fc5-af38-4c9756beda1e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/Create MFA User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5ca689ab-6a51-44d4-a531-ed6c27ba355c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Validate Default Values on Credental Managment Page</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f3286a8a-88f3-4ea8-ab96-2b8b99febaaf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Authentication/Configure LDAP connection</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3cdcdde1-7b3d-46fe-8e4d-58da89f7ce50</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/Add Internal User for User Group</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2a1744f7-11f1-4493-998d-d11dbd838788</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/Incomplete User Group Messaging</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>88ee5405-207b-47fe-ad34-c693159f3daa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/Elements on User Group Page</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>85dd067d-10fd-4093-a7b5-7382dc03fa76</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/Attempt to Delete User Group with Members</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5c58eac6-8591-4f21-8b54-4e92fe9cf63f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for AD User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>13e04b7a-07e8-4ea4-a2fe-7fbc578cbeea</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for an empty AD Group</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d4ea7b4d-62da-4654-92aa-e86e2c86cf4f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/_Enable User Group/Enable User Group for Internal User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6b76de76-01f8-4691-a70c-9bffe01de0b2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Group/Delete AD Groups from UG when LDAP connection is deleted</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ac570f73-5512-4bd5-8d0b-fbdee50c3605</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Project Roles Page Elements</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fcc4d5af-cf47-4e2d-863e-288c30c5586c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Project Assignment Page Elements</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>00f00414-62ba-4d5b-a8f0-b1f836deddca</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/Should not allow duplicate Permission Roles</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e954a18b-b7b1-461b-bb0f-54546cbde024</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_PROJECTS_ADMIN and NO Project</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a6496b0a-46c3-49bb-9b8a-f8ec84441286</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERGROUPS_ADMIN and NO Project</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>021c756c-8222-46e8-989f-325fab212a2f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERGROUPS_READONLY and NO Project</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>225a7688-3746-4400-82e4-2c7a8f4d8804</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERS_ADMIN and NO Project</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2e7d4343-dbcc-436a-b5f8-3e9d82327543</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_USERS_READONLY and NO Project</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b5cc48f3-cb9e-4e38-a228-040e97dcecbb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_EDIT_LOG_EMAIL_SETTINGS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d439b96f-8055-4445-9bd8-42dff4d67c52</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Security/User Management/_User Project Role Testing/TDES_EDIT_LOG_SETTINGS</testCaseId>
+      <testCaseId>Test Cases/Convergence/Security/Users/Project Roles/TDES_USERS_READONLY and NO Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
->>>>>>> branch 'master' of https://github.com/Blumamba10/KatalonStudio.git

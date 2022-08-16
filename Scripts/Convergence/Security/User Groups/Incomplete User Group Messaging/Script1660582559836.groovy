@@ -44,7 +44,7 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.enableSmartWait()
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
 
@@ -149,17 +149,17 @@ assertEquals('New User Group Complete', selenium.getText('//h1[contains(text(),"
 assertEquals('New user groups are disabled by default. You will need to explicitly enable this user group from the main user group page when are ready to make the group active.', 
     selenium.getText('//p[contains(text(),"New user groups are disabled by default. You will ")]'))
 
-WebUI.delay(3)
+WebUI.enableSmartWait()
 
 WebUI.doubleClick(findTestObject('Convergence/Security/User Groups/_User Group Details/Page_Convergence - User Groups/div_OK'))
 
-WebUI.delay(2)
+WebUI.enableSmartWait()
 
 selenium.doubleClick('//h1[contains(text(),"New User Group Complete")]')
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/btn_OK'))
 
-WebUI.delay(1)
+WebUI.enableSmartWait()
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Incomplete User Group')
 

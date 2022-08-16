@@ -30,7 +30,7 @@ import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 
-WebUI.callTestCase(findTestCase('Convergence/Scripts/Manage Functions/Gloabal Function Creation'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Scripts/Manage Functions/Create a Function'), [:], FailureHandling.STOP_ON_FAILURE)
 
 def driver = DriverFactory.getWebDriver()
 

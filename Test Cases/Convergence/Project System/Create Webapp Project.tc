@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Validates the Project Page and Creates a new Web Application.</description>
+   <description>Validates the Project Page and Creates a new Web Application. Also validated the correct Templates, Scripts and Webuser is created</description>
    <name>Create Webapp Project</name>
    <tag></tag>
    <comment></comment>

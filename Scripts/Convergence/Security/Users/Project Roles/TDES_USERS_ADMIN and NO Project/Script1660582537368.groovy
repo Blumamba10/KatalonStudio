@@ -30,7 +30,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.callTestCase(findTestCase('Convergence/Security/Users/_Create Project Role Users/Create Admin User'), [:], 
+WebUI.callTestCase(findTestCase('Convergence/Security/Users/Create Admin User'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'AdminUser', '/3ju_$gMW]X}izW4')

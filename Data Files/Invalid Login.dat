@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>f1a70ee5-5c46-4b63-9fa3-012653c88126</dataFileGUID>
-   <dataSourceUrl>C:\Users\njones\Documents\Automation\Invalid Login.xlsx</dataSourceUrl>
+   <dataSourceUrl>Invalid Login.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>

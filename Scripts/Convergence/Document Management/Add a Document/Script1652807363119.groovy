@@ -64,14 +64,10 @@ WebUI.selectOptionByLabel(findTestObject('Convergence/Document Management/Add Ne
 
 WebUI.enableSmartWait()
 
-not_run: WebUI.delay(3)
-
 CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Document Management/Add New Document/span_Upload Document'), 
     '"C:\\actionTestFiles\\MRI Knee.docx"')
 
 WebUI.enableSmartWait()
-
-WebUI.delay(5)
 
 selenium.click('//button[@id="addDocumentButton"]')
 
