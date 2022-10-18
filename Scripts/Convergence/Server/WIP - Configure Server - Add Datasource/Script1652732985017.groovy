@@ -38,7 +38,7 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
 selenium.clcik('//i[@class="margin-left-10 fas fa-caret-down"]')
 

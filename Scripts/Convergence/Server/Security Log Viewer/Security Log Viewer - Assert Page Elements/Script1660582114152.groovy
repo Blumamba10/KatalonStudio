@@ -38,9 +38,9 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security Log Viewer'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security Log Viewer'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::i[1]'))
 
@@ -196,7 +196,7 @@ assertTrue(selenium.isElementPresent('link=View Log'))
 
 assertTrue(selenium.isElementPresent('id=updateEmailNotificationsBtn'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 

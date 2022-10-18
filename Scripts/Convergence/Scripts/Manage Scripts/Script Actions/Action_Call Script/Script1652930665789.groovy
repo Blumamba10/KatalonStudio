@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 selenium.click('id=addScriptButton')
 
@@ -78,7 +78,7 @@ assertEquals('Description', selenium.getText('//label[@for="descriptionInput"]')
 
 assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
-assertEquals('Script Name', selenium.getText('//label[@for="scriptNamesSelect"]'))
+assertEquals('Function Name', selenium.getText('//label[@for="scriptNamesSelect"]'))
 
 selenium.typeKeys('id=nameInput', 'Call_Script')
 
@@ -88,10 +88,10 @@ selenium.click('id=scriptNamesSelect')
 
 selenium.select('id=scriptNamesSelect', 'label=testfunc')
 
-assertEquals('Input Parameters', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Name\'])[1]/following::p[1]'))
+assertEquals('Input Parameters', selenium.getText('//p[@class="font-weight-bold"]'))
 
 assertEquals('in', selenium.getText('//label[@for="ininput"]'))
-  
+
 assertTrue(selenium.isElementPresent('//input[@id="ininput"]'))
 
 assertTrue(selenium.isElementPresent('//button[contains(text(),"View")]'))

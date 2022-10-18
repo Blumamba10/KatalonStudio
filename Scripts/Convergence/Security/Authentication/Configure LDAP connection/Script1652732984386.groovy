@@ -39,13 +39,16 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Authentication'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Server'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
+
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Connection Name'), 
+    'Trinisys')
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
     'ldap://pd-ldap01:389')
@@ -53,7 +56,7 @@ WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Serv
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
     'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Name'), 
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Username'), 
     'adlds-test')
 
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
@@ -88,19 +91,19 @@ WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Serv
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
     'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Name'), 
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Username'), 
     'adlds-test')
 
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
     'XcnV7MFBhB0cDxi+XBwFoaErNd1sH/N021nL06HUdmNeyIawoAxHoA==')
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
+not_run: WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-selenium.doubleClick('//h1[contains(text(),"Success!")]')
+not_run: selenium.doubleClick('//h1[contains(text(),"Success!")]')
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/button_OK'))
+not_run: WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/button_OK'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 

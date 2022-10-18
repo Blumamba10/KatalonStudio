@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Credential Management'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Credential Management'))
 
 WebUI.verifyElementText(findTestObject('Convergence/Security/Credential Management/_Admin Users Tab/a_Admin Users'), 'Admin Users')
 

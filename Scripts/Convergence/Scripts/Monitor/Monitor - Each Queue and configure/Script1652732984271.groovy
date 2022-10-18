@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Monitor'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Monitor'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(3)
 
@@ -198,7 +198,7 @@ selenium.click('//h1[contains(text(),"Help")]')
 
 assertEquals('Items Per Page', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Submitted\'])[1]/following::span[1]'))
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+assertEquals('102550100All', selenium.getText('name=submittedFormsTable_length'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]'))
 
@@ -325,7 +325,7 @@ selenium.click('//h1[contains(text(),"Help")]')
 
 assertEquals('Items Per Page', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Hold\'])[1]/following::span[1]'))
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+assertEquals('102550100All', selenium.getText('name=submittedFormsTable_length'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]'))
 
@@ -373,7 +373,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Nex
 
 assertEquals('Items Per Page', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error\'])[1]/following::span[1]'))
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+assertEquals('102550100All', selenium.getText('name=submittedFormsTable_length'))
 
 assertTrue(selenium.isElementPresent('id=checkAllCheck'))
 
@@ -472,7 +472,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Nex
 
 assertEquals('Items Per Page', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'View All\'])[2]/following::span[1]'))
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+assertEquals('102550100All', selenium.getText('name=submittedFormsTable_length'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Items Per Page\'])[1]/following::input[1]'))
 
@@ -502,15 +502,18 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'liv
 
 assertEquals('Data Processors', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'* monitor live updates occur every 3 seconds\'])[1]/following::h2[1]'))
 
-assertEquals('Start Time', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Data Processors\'])[1]/following::th[1]'))
+assertEquals('Project', selenium.getText('//thead/tr/th[1]'))
 
-assertEquals('Status', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Start Time\'])[1]/following::th[1]'))
+assertEquals('Start Time', selenium.getText('//thead/tr/th[2]'))
 
-assertEquals('Form ID', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Status\'])[1]/following::th[1]'))
+assertEquals('Status', selenium.getText('//thead/tr/th[3]'))
 
-assertEquals('Template', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Form ID\'])[1]/following::th[1]'))
+assertEquals('Form ID', selenium.getText('//thead/tr/th[4]'))
 
-assertEquals('Action', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Template\'])[1]/following::th[1]'))
+assertEquals('Template', selenium.getText('//thead/tr/th[5]'))
+
+assertEquals('Action', selenium.getText('//thead/tr/th[6]'))
+ 
 
 selenium.click('id=editHistoryFilter')
 

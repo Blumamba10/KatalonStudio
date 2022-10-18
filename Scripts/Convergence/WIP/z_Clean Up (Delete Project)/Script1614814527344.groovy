@@ -40,11 +40,11 @@ selenium.click('id=appNavProjectsLink')
 
 selenium.click('link=Default')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.clearText(findTestObject('Convergence/Projects/input_Search Filter'))
 

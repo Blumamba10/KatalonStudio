@@ -42,7 +42,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Del
 
 selenium.click('link=Default')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'))
 
 assertEquals('Manage Projects', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
@@ -68,7 +68,10 @@ selenium.type('id=projectName', 'webapp')
 
 selenium.type('id=projectDescription', 'test')
 
-assertEquals('Project Type', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Description\'])[1]/following::label[1]'))
+assertEquals('Max FDL Query Results (0 for unlimited)', selenium.getText('//label[contains(text(),"Max FDL Query Results (0 for unlimited)")]'))
+
+
+assertEquals('Project Type', selenium.getText('//label[contains(text(),"Project Type")]'))
 
 selenium.click('name=createApp')
 
@@ -98,27 +101,29 @@ WebUI.click(findTestObject('Convergence/_SelectProject/a_webapp'))
 
 WebUI.comment('Verify  associatied scripts are created')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 assertEquals('Showing 1 to 7 of 7 entries', selenium.getText('//div[@id="controllerListTable_info"]'))
 
 WebUI.comment('Verify associatied templates are created')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
 assertEquals('Showing 1 to 10 of 13 entries', selenium.getText('//div[@id="templateListTable_info"]'))
 
 WebUI.comment('Verify User is Created')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'webwebapp')
 
 assertEquals('Webwebapp', selenium.getText('//a[contains(text(),"Webwebapp")]'))
+
+WebUI.comment('Log into Project')
 

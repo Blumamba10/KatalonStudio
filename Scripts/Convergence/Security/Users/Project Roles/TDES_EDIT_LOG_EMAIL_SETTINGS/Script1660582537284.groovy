@@ -35,9 +35,9 @@ WebUI.callTestCase(findTestCase('Convergence/Security/Users/_Create Project Role
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'editlogemailsettings', '_YCNI)RnbNje^F4t')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'), FailureHandling.STOP_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Standard Log Viewer'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Standard Log Viewer'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/Server/Security Log Viewer/btn_Configure Logging'))
 

@@ -44,7 +44,7 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Utilities'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Utilities'))
 
 selenium.click('link=View Form')
 
@@ -62,11 +62,11 @@ assertEquals('Display form in read-only mode', selenium.getText('xpath=(.//*[nor
 
 assertEquals('View Form', selenium.getText('id=submitButton'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
 selenium.click('link=Administration')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Utilities'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Utilities'))
 
 selenium.click('link=Delete Form')
 

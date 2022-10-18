@@ -3,15 +3,15 @@
    <description></description>
    <name>input_Bind Account Password</name>
    <tag></tag>
-   <elementGuidId>2c19d0b0-38c4-4d34-8ee2-09ca7cd4c1c3</elementGuidId>
+   <elementGuidId>c98e4f16-d535-484b-b77a-e650dc3d94bf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#fc-updateDialog-col2-password</value>
+         <key>XPATH</key>
+         <value>//input[@id='fc-updateDialog-row3-col2-password']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='fc-updateDialog-col2-password']</value>
+         <key>CSS</key>
+         <value>#fc-updateDialog-row3-col2-password</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c252949c-8458-4919-9b0d-01301f863589</webElementGuid>
+      <webElementGuid>70dce258-f342-41b1-a483-c991030a48d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fc-updateDialog-col2-password</value>
-      <webElementGuid>debed6c1-6119-45d0-926f-5b7b1b03341d</webElementGuid>
+      <value>fc-updateDialog-row3-col2-password</value>
+      <webElementGuid>8038643b-e97d-46d6-b02f-09b39a46f07f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>password</value>
-      <webElementGuid>12f321d6-2508-4534-add1-b6b538b61006</webElementGuid>
+      <webElementGuid>0dfb7ba5-8b32-479d-a332-0f98341d6210</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,15 +46,15 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>bc701973-6142-441b-9bb4-c7c62dbf8a54</webElementGuid>
+      <webElementGuid>aebce4d7-3a29-4eec-b72a-9c1a8a7f5cf4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>FF_updateDialog.col2.password</value>
-      <webElementGuid>fcd08a89-7f9e-4135-9355-ae8e719fbc5c</webElementGuid>
+      <value>FF_updateDialog.row3.col2.password</value>
+      <webElementGuid>7f7e3daa-b0e0-45b3-96c6-4ed6f35cc4c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>class</name>
       <type>Main</type>
       <value>tde-text-control</value>
-      <webElementGuid>c02dc139-442b-4752-a03d-e6e65fc8c294</webElementGuid>
+      <webElementGuid>a5ed2b43-4ab8-4ba9-9eca-20a29123e872</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,38 +70,46 @@
       <name>data-lpignore</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>871b6024-1930-4086-b633-e095f500e01d</webElementGuid>
+      <webElementGuid>88416d5b-e13e-408b-8df1-3dc893722ff7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fc-updateDialog-col2-password&quot;)</value>
-      <webElementGuid>6686fe91-474a-446e-b876-25431cb8a50c</webElementGuid>
+      <value>id(&quot;fc-updateDialog-row3-col2-password&quot;)</value>
+      <webElementGuid>08d6fdc3-dadd-4275-adc9-a20d6c087d97</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fc-updateDialog-col2-password']</value>
-      <webElementGuid>e897c2b7-fbb3-4ede-85e8-4cade84b12f2</webElementGuid>
+      <value>//input[@id='fc-updateDialog-row3-col2-password']</value>
+      <webElementGuid>988a8105-4d0d-4f31-b42a-cedc9d8fa233</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ff-updateDialog-col2-password']/input</value>
-      <webElementGuid>893d9668-ae8e-4a65-8c6a-26dc011b8893</webElementGuid>
+      <value>//div[@id='ff-updateDialog-row3-col2-password']/input</value>
+      <webElementGuid>258449a5-5eae-4270-8778-3d324c85da84</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[2]/div/table/tbody/tr/td/table/tbody/tr[3]/td/div[2]/input</value>
-      <webElementGuid>a042b131-b8d6-4987-a0de-61153e2b077c</webElementGuid>
+      <value>//td[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/div[2]/input</value>
+      <webElementGuid>138be995-a8dc-405e-b87b-52b2ed516b4c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'fc-updateDialog-row3-col2-password' and @type = 'password' and @name = 'FF_updateDialog.row3.col2.password']</value>
+      <webElementGuid>516ceeb2-9ff3-4c4b-a112-a817c727aa33</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

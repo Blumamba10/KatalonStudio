@@ -46,9 +46,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/btn_Add New User Group'))
 
@@ -152,9 +152,9 @@ assertEquals('AD Group', selenium.getText('//a[contains(text(),"AD Group")]'))
 
 selenium.isElementPresent('//td[@style="text-align: right;"][contains(text(),"2")]')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Authentication'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Server'))
 
@@ -162,41 +162,41 @@ selenium.click('//i[@class="fas fa-trash-alt"]')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Delete_OK'))
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/button_OK'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'))
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'AD Group')
 
 selenium.isElementPresent('//body/div[@id="tde-form"]/form[@id="tde-data-entry-form"]/table[@id="form-enclosing-table"]/tbody/tr/td/div[@id="g-main"]/table[@id="g-main:1"]/tbody/tr[@data-groupid="g-main"]/td[@class="tde-table-cell"]/table[@id="gt-main"]/tbody/tr[@data-groupid="g-main"]/td[@class="tde-grid-cell-999"]/div[@id="g-main-list"]/table[@id="g-main-list:1"]/tbody/tr[@data-groupid="g-main-list"]/td[@class="tde-table-cell"]/div[@id="fdv-main-list-userGroupList"]/div[@id="fdv-main-list-userGroupList-table_wrapper"]/table[@id="fdv-main-list-userGroupList-table"]/tbody/tr[@class="odd"]/td[4]')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Authentication'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Server'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
+WebUI.setText(findTestObject('null'), 
     'ldap://pd-ldap01:389')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
+WebUI.setText(findTestObject('null'), 
     'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Name'), 
+WebUI.setText(findTestObject('null'), 
     'adlds-test')
 
-WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
+WebUI.setEncryptedText(findTestObject('null'), 
     'RnHw21PVgelT8HP/ztNLnXD3x8lexSesv347Yb75KYhOC5Bdp8/85w==')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'))
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'AD Group')
 

@@ -44,7 +44,7 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
 selenium.click('link=Manage Templates')
 

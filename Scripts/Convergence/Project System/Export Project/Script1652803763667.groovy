@@ -42,7 +42,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Del
 
 selenium.click('link=Default')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'))
 
 WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'webapp')
 

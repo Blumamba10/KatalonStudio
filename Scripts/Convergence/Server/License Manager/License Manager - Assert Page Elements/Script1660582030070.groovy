@@ -38,9 +38,9 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_License Manager'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_License Manager'))
 
 assertEquals('License Manager', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 
@@ -81,7 +81,7 @@ assertEquals('Active Disabled', selenium.getText('id=filter-status'))
 
 assertTrue(selenium.isElementPresent('id=applyFilterButton'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 

@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='submit']</value>
+         <value>//button[contains(text(),'Complete Import')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>button.btn.btn-primary.margin-left-10</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[contains(text(),'Complete Import')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,13 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>4410f3a1-8346-4fcb-9ddf-26de425aeb5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>submit</value>
+      <webElementGuid>4c168d11-c60c-494a-9bb4-241acd5df67c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,20 +42,23 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary margin-left-10</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Complete Import</value>
+      <webElementGuid>6979f987-8ccb-40d4-845f-c38b614db6d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Complete Import</value>
+      <webElementGuid>21297d55-753b-437a-99b2-13559bb8eaba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;frmImport&quot;)/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span6&quot;]/div[@class=&quot;content-box padded-box&quot;]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;span12&quot;]/div[@class=&quot;pull-right clearfix margin-bottom-20&quot;]/button[@class=&quot;btn btn-primary margin-left-10&quot;]</value>
+      <value>//button[contains(text(),'Complete Import')]</value>
+      <webElementGuid>d53b55fd-3800-40cf-9ced-0e38f82cca4c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='submit']</value>
+      <webElementGuid>81c47355-9e70-4a18-b5a0-10438b7fa695</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='frmImport']/div/div[2]/div/div/div[3]/div/div/button[2]</value>
+      <webElementGuid>dd840829-e235-4ebc-b16f-2095cc13dc5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/following::button[1]</value>
+      <webElementGuid>0aa90928-b1c1-42d6-a8a8-b5498228d3e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='test'])[1]/following::button[2]</value>
+      <webElementGuid>e07143f0-387b-45a4-a692-f265e98a7930</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Working'])[1]/preceding::button[1]</value>
+      <webElementGuid>e796343e-d2b2-4c5d-975a-4018b1381de5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Trinisys, LLC'])[1]/preceding::button[1]</value>
+      <webElementGuid>1c543788-335a-47f3-9e92-04156f1287c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,5 +114,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]</value>
+      <webElementGuid>df087280-a1f8-44da-8b0b-79981102801a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

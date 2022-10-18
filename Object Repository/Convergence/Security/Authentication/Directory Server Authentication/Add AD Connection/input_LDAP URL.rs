@@ -3,15 +3,15 @@
    <description></description>
    <name>input_LDAP URL</name>
    <tag></tag>
-   <elementGuidId>483eacbb-6bbd-451a-afa7-31d0e7453986</elementGuidId>
+   <elementGuidId>7246645a-21a6-40ac-b366-da4ff27a6ba3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#gt-updateDialog-col1 > tbody > tr > td.tde-grid-cell-999</value>
+         <key>XPATH</key>
+         <value>//textarea[@id='fc-updateDialog-row2-ldapUrl']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='fc-updateDialog-col1-ldapUrl']</value>
+         <key>CSS</key>
+         <value>#fc-updateDialog-row2-ldapUrl</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,79 +21,159 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>ed530369-abe6-4af6-a9c4-88137511c122</webElementGuid>
+      <value>textarea</value>
+      <webElementGuid>41a0c505-789b-4529-ab9a-b238e25a7480</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>fc-updateDialog-row2-ldapUrl</value>
+      <webElementGuid>eb8dd985-dfff-4e90-ae15-a1af17365d60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rows</name>
+      <type>Main</type>
+      <value>4</value>
+      <webElementGuid>97aedd07-75f0-4222-a5ea-501700e584dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>cols</name>
+      <type>Main</type>
+      <value>25</value>
+      <webElementGuid>d65f4f13-ff7f-437c-aff3-7a5b4679a9a5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>FF_updateDialog.row2.ldapUrl</value>
+      <webElementGuid>caa4c383-4f91-4e03-84c7-4b8f7d390784</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>tde-grid-cell-999</value>
-      <webElementGuid>4af698fe-95c8-4535-9dac-3b6389cf3294</webElementGuid>
+      <value>tde-text-control</value>
+      <webElementGuid>c67f78c0-9e04-45e3-aaa8-83690a0077f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>colspan</name>
+      <name>data-lpignore</name>
       <type>Main</type>
-      <value>-1</value>
-      <webElementGuid>1995050c-6220-4220-99d5-c1e92b173603</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>LDAP URL*</value>
-      <webElementGuid>4ffcd684-20cf-4207-b205-bac6e2aaeebf</webElementGuid>
+      <value>true</value>
+      <webElementGuid>7f0ba7d5-804d-4065-ba51-ac8a5a225c5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;gt-updateDialog-col1&quot;)/tbody[1]/tr[1]/td[@class=&quot;tde-grid-cell-999&quot;]</value>
-      <webElementGuid>b5cfb254-e3ea-4b35-9362-32be71a01dcc</webElementGuid>
+      <value>id(&quot;fc-updateDialog-row2-ldapUrl&quot;)</value>
+      <webElementGuid>258a8781-7008-45b2-a283-dba314ba0d65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>58044534-4a3f-4f15-a209-1bc6ab6261a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>fc-updateDialog-row2-ldapUrl</value>
+      <webElementGuid>a4c7ae62-2e88-45e6-8cac-e8872d805541</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rows</name>
+      <type>Main</type>
+      <value>4</value>
+      <webElementGuid>d09b535f-35ce-4903-8fbb-5b209351e207</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>cols</name>
+      <type>Main</type>
+      <value>25</value>
+      <webElementGuid>23ad5fb6-3fc9-4568-a95b-39bf73c01cd2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>FF_updateDialog.row2.ldapUrl</value>
+      <webElementGuid>dc9ee1f0-94b8-4153-99ce-83d9c21257fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tde-text-control</value>
+      <webElementGuid>752192f8-575e-4f38-abac-3014d1cd078f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-lpignore</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>a7bd1898-8d6d-429c-9b90-1364c325bc50</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;fc-updateDialog-row2-ldapUrl&quot;)</value>
+      <webElementGuid>0ce0c4c1-d21d-41df-9e99-4afa235b3ae1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//textarea[@id='fc-updateDialog-row2-ldapUrl']</value>
+      <webElementGuid>1051f019-38f3-4e8f-8e86-f043e4aa8160</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='gt-updateDialog-col1']/tbody/tr/td</value>
-      <webElementGuid>04cffa80-d7e0-411c-a4d5-acf26a1152ff</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::td[4]</value>
-      <webElementGuid>b154a6f4-99e5-4c24-8c2b-28f90aa63669</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add AD Connection'])[1]/following::td[4]</value>
-      <webElementGuid>ef6cb5eb-5c24-4a68-8e48-96293913e1e0</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search Base'])[1]/preceding::td[1]</value>
-      <webElementGuid>6dc8f3fc-0d27-4227-b3f8-90feb34c8f53</webElementGuid>
+      <value>//div[@id='ff-updateDialog-row2-ldapUrl']/textarea</value>
+      <webElementGuid>721e081f-ce49-41d2-a76c-10a22498db66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td</value>
-      <webElementGuid>05021d18-2639-49c5-9ab5-cd9fb89be63e</webElementGuid>
+      <value>//textarea</value>
+      <webElementGuid>9af07fcd-d0ee-4367-9482-955007916415</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'fc-updateDialog-row2-ldapUrl' and @name = 'FF_updateDialog.row2.ldapUrl']</value>
+      <webElementGuid>1a132f27-9654-4ec6-9d6e-6d303238ca24</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

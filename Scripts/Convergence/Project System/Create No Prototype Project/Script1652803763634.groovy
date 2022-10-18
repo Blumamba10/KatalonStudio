@@ -42,7 +42,7 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Del
 
 selenium.click('link=Default')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'))
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Manage Projects\'])[1]/following::button[1]')
 
@@ -55,8 +55,10 @@ assertTrue(selenium.isElementPresent('id=projectName'))
 assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::label[1]'))
 
 assertTrue(selenium.isElementPresent('id=projectDescription'))
+assertEquals('Max FDL Query Results (0 for unlimited)', selenium.getText('//label[contains(text(),"Max FDL Query Results (0 for unlimited)")]'))
+ 
 
-assertEquals('Project Type', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Description\'])[1]/following::label[1]'))
+assertEquals('Project Type', selenium.getText('//label[contains(text(),"Project Type")]'))
 
 assertTrue(selenium.isElementPresent('id=submitButton'))
 
@@ -90,23 +92,23 @@ WebUI.click(findTestObject('Convergence/_SelectProject/a_Test_Proj'))
 
 WebUI.comment('Verify no associatied scripts are created')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="controllerListTable_info"]'))
 
 WebUI.comment('Verify no associatied templates are created')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
 assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="templateListTable_info"]'))
 
 WebUI.comment('Delete the Project')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'))
 
 WebUI.delay(2)
 

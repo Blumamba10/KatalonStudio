@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test will validate the undo button in the Script Editor and Template editor.
+Undo button was added in 21.1 (TDES-4480)</description>
+   <name>WIP-Undo_Redo Button</name>
+   <tag>21.1</tag>
+   <comment></comment>
+   <testCaseGuid>d36b8461-48ec-49aa-b89e-d6a5b4491727</testCaseGuid>
+</TestCaseEntity>

@@ -46,9 +46,9 @@ WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), Failur
 
 WebUI.delay(2)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Blocked IP Addresses'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Blocked IP Addresses'))
 
 assertEquals('Blocked IP Addresses', selenium.getText('//div[contains(text(),"Blocked IP Addresses")]'))
 

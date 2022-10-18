@@ -38,9 +38,9 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Usage'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Usage'))
 
 assertEquals('Usage', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::h1[1]'))
 

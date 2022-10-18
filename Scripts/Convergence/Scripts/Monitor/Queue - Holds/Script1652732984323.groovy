@@ -38,9 +38,9 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 
 WebUI.delay(2)
 
@@ -50,7 +50,7 @@ assertEquals('Hold', selenium.getText('xpath=(.//*[normalize-space(text()) and n
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Hold\'])[1]/following::span[1]'))
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+assertEquals('102550100All', selenium.getText('name=submittedFormsTable_length'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::a[1]'))
 
@@ -84,7 +84,7 @@ assertEquals('Name', selenium.getText('xpath=(.//*[normalize-space(text()) and n
 
 assertEquals('Note', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::th[1]'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 

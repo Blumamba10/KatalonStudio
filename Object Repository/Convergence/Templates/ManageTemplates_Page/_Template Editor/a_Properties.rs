@@ -6,11 +6,15 @@
    <elementGuidId>735da4e6-39f5-4856-b99f-44a273fa1fc6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Properties' or . = 'Properties')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='center-panel']/preview-script-rules/app-tab-control/ul/li[4]/a</value>
+         <value>//a[contains(text(),'Properties')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>d6d4e16a-e775-4c6b-97b6-e5ef17c7fed2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Properties</value>
+      <webElementGuid>970bffea-62f8-4406-9bb8-ae9b6f6c973b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;center-panel&quot;)/preview-script-rules[1]/app-tab-control[1]/ul[@class=&quot;nav nav-tabs tte-main-tabs&quot;]/li[4]/a[1]</value>
+      <webElementGuid>665138ce-d668-4760-bcb5-86de4553b4be</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -39,6 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='center-panel']/preview-script-rules/app-tab-control/ul/li[4]/a</value>
+      <webElementGuid>dafce3cd-1757-4e3d-8734-ad1fafe33db7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -46,6 +54,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Properties')]</value>
+      <webElementGuid>e50b3f31-5ec3-483f-9759-1367a9dc117b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -53,6 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rules'])[1]/following::a[1]</value>
+      <webElementGuid>f6d6a7f5-09ce-4bcd-a769-25e03bfb4012</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -60,6 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Script'])[1]/following::a[2]</value>
+      <webElementGuid>dfab7b3b-72ad-4d72-9d4c-d2d06a3813ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -67,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='User Preferences'])[1]/preceding::a[1]</value>
+      <webElementGuid>6e916524-2dee-4bf0-bb96-4787445411a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Print'])[1]/preceding::a[2]</value>
+      <webElementGuid>2127b825-03d0-4964-b283-319dbc1720ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Properties']/parent::*</value>
+      <webElementGuid>2e079162-b5cb-4cec-b886-7c3c31ee4a7b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,5 +102,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//app-tab-control/ul/li[4]/a</value>
+      <webElementGuid>a02486f5-134e-4531-a0ef-22ebb0497d40</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

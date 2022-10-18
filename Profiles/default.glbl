@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8669/tdes'</initValue>
+      <initValue>'http://localhost:8073/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -21,28 +21,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8080/cv'</initValue>
+      <initValue>'http://localhost:8073/cv'</initValue>
       <name>cvURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Users\\njones\\Desktop\\FilesForTesting\\835 Remits\\835_2patients_JayCannon_WilliamHarrison.txt'</initValue>
-      <name>uploadfile</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'C:\\Users\\njones\\Katalon Studio\\Convergence 2019\\ScreenShots\\'</initValue>
-      <name>ssPath</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'http://localhost:8669/demo'</initValue>
+      <initValue>'http://localhost:8073/demo'</initValue>
       <name>demoappURL</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'MYSQL'</initValue>
-      <name>dbType</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

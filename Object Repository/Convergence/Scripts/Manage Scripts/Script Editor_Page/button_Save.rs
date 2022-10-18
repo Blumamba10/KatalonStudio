@@ -7,13 +7,17 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[3]</value>
+         <value>(//button[@type='button'])[4]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Save script' and @type = 'button' and (text() = 'Save' or . = 'Save')]</value>
       </entry>
       <entry>
          <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,6 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>53558fd7-48c7-4b8a-8863-6bbc6c4beb42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,6 +33,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Save script</value>
+      <webElementGuid>938fa098-e04c-4565-80df-acfde2d229b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -35,6 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>27a977b5-f62a-48ec-9a89-290e292e9563</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,6 +49,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-sm tse-btn-default</value>
+      <webElementGuid>d149e2e1-4b30-495e-9d9b-9bec7a8a124f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,6 +57,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
+      <webElementGuid>2a9876f3-87ed-443a-b9bc-c13f9dfa3ca9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -56,13 +65,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;controllerForm&quot;)/app-actions-list-head[@class=&quot;ng-tns-c84-0&quot;]/div[@class=&quot;tse-actions-head&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;btn-toolbar&quot;]/div[@class=&quot;btn-group btn-group-sm&quot;]/button[@class=&quot;btn btn-sm tse-btn-default&quot;]</value>
+      <webElementGuid>12089006-0767-4a84-8805-ce342692800c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[3]</value>
+      <value>(//button[@type='button'])[4]</value>
+      <webElementGuid>820ba898-cc3b-4875-86aa-0f5c00c9b12c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='controllerForm']/app-actions-list-head/div/div/div/div/div[3]/button</value>
+      <webElementGuid>84e1bcbb-4ae2-4860-bb0b-004d793baa0b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Verify Script'])[1]/preceding::button[1]</value>
+      <webElementGuid>c7413c9c-07bd-445f-9a64-b7c3b05ae775</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,5 +97,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button</value>
+      <webElementGuid>e43d3520-19f1-4d9f-83b1-69dc59951c62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

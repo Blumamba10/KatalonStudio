@@ -25,7 +25,7 @@ public class Convergence_LogoutLogin {
 	@Keyword
 	public void LogoutLogin(String username, String password){
 
-		WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+		WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_admin'))
 		
 		selenium.click('link=Logout')
 		

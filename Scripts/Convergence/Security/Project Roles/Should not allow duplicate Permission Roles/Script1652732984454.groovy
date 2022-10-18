@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Roles'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Roles'))
 
 assertEquals('Showing 1 to 3 of 3 entries', selenium.getText('//div[@id="projectRoleTable_info"]'))
 

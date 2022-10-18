@@ -38,9 +38,9 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_License Manager'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_License Manager'))
 
 WebUI.click(findTestObject('Convergence/Server/LicenseManager/btn_Update License'))
 
@@ -54,11 +54,11 @@ WebUI.refresh()
 
 WebUI.delay(5)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Logout/a_admin'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/Access Denied_Page/a_Logout'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/Access Denied_Page/a_Logout'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Return'))
 
 WebUI.setText(findTestObject('Convergence/Login/username'), 'admin')
 
@@ -70,9 +70,9 @@ WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), Failure
 
 WebUI.verifyElementNotPresent(findTestObject('Convergence/_SelectProject/a_convergence_console'), 10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_License Manager'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_License Manager'))
 
 WebUI.click(findTestObject('Convergence/Server/LicenseManager/btn_Update License'))
 
@@ -86,11 +86,11 @@ WebUI.refresh()
 
 WebUI.delay(3)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Logout/a_admin'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/Access Denied_Page/a_Logout'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/Access Denied_Page/a_Logout'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Return'))
 
 WebUI.setText(findTestObject('Convergence/Login/username'), 'admin')
 

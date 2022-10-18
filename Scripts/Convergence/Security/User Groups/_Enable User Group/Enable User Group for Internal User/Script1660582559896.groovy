@@ -30,7 +30,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Groups/_Enable User Group/_Helper/Create New User Group for Indiviual Members'), 
+WebUI.callTestCase(findTestCase('Convergence/Security/User Groups/Create New User Group for Indiviual Members'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Convergence/Security/User Groups/_Enable User Group/_Helper/Add Project Roles to User Group'), 
@@ -76,9 +76,9 @@ assertEquals('User Groups', selenium.getText('//div[@class="tde-template-descrip
 
 WebUI.delay(0)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'UGUser')
 

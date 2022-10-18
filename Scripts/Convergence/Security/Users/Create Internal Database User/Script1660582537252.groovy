@@ -40,9 +40,9 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.delay(2)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 assertEquals('manually', selenium.getText('//label[contains(text(),"manually")]'))
 
@@ -62,7 +62,7 @@ WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Ne
 
 WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Re-enter Password'), ')4d<{%9r~FHdX,#(46SU')
 
-selenium.click('//body/div[11]/div[3]/div[1]/button[1]')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/btn_Save pw change'))
 
 assertEquals('User Account Created', selenium.getText('//h1[contains(text(),"User Account Created")]'))
 

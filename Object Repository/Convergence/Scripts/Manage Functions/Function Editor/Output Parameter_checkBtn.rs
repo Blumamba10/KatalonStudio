@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Output Parameter_checkBtn</name>
+   <tag></tag>
+   <elementGuidId>00c357ec-a039-46ee-8c00-0cb3f079ce9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='sidebarContentWrap']/div[6]/div/ul/li/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>03c12e8a-a693-483a-8b41-45804160d690</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-check</value>
+      <webElementGuid>1f669f60-9073-484c-9c11-834d4e5fbf9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sidebarContentWrap&quot;)/div[@class=&quot;tse-sidebar-param-list ng-star-inserted&quot;]/div[@class=&quot;mt-2 ng-star-inserted&quot;]/ul[@class=&quot;nav float-right tse-sidebar-edit-btns&quot;]/li[@class=&quot;nav-item&quot;]/a[@class=&quot;nav-link&quot;]/i[@class=&quot;fas fa-check&quot;]</value>
+      <webElementGuid>0ec0e2f0-cc79-4c08-9162-e14fb3ebcc69</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='sidebarContentWrap']/div[6]/div/ul/li/a/i</value>
+      <webElementGuid>1d9bd940-7de5-44a0-bb84-92eedc6edc3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/ul/li/a/i</value>
+      <webElementGuid>aacb20a2-885d-43cc-b312-5254909b6668</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -44,15 +44,21 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
 WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/addTemplate'))
 
 WebUI.switchToWindowIndex(1)
 
 WebUI.enableSmartWait()
+
+assertEquals('Default', selenium.getText('//button[@id="templateTypeDefaultBtn"]'))
+
+assertEquals('View', selenium.getText('//button[@id="templateTypeViewBtn"]'))
+
+selenium.click('//button[@id="templateTypeDefaultBtn"]')
 
 WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/InsertFormField_btn'))
 

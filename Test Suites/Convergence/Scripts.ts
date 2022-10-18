@@ -49,8 +49,8 @@
    <testCaseLink>
       <guid>82926309-4448-426f-a756-4aca192f941a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Convergence/Scripts/Manage Scripts/Undo_Redo Button</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Convergence/Scripts/Manage Scripts/WIP-Undo_Redo Button</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

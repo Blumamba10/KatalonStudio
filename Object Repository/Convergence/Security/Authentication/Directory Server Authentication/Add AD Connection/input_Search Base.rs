@@ -3,15 +3,15 @@
    <description></description>
    <name>input_Search Base</name>
    <tag></tag>
-   <elementGuidId>6e7e45a2-abc5-4d3c-a383-cac25a1f6938</elementGuidId>
+   <elementGuidId>d52c92e3-8a05-472a-8083-35dedb1d6dc2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#fc-updateDialog-col1-searchBase</value>
+         <key>XPATH</key>
+         <value>//input[@id='fc-updateDialog-row3-col1-searchBase']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='fc-updateDialog-col1-searchBase']</value>
+         <key>CSS</key>
+         <value>#fc-updateDialog-row3-col1-searchBase</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>357bbaee-360f-4c86-a33d-a6f29dbe0617</webElementGuid>
+      <webElementGuid>e6456f0a-4a99-47ee-8c47-b4ba7a564e8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fc-updateDialog-col1-searchBase</value>
-      <webElementGuid>494a5ed0-71d3-4964-813e-fc66947035df</webElementGuid>
+      <value>fc-updateDialog-row3-col1-searchBase</value>
+      <webElementGuid>7950408f-4a60-4b19-aeb8-e6acc123aeda</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +38,15 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>2513cdba-addb-4f8e-b7ea-49709d8c58e0</webElementGuid>
+      <webElementGuid>0b7741bc-d79c-427e-bb03-ccdd2d4380e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>FF_updateDialog.col1.searchBase</value>
-      <webElementGuid>4a00205e-d8eb-4109-a758-344f6e50f57e</webElementGuid>
+      <value>FF_updateDialog.row3.col1.searchBase</value>
+      <webElementGuid>9d56bdc9-5871-418f-88d0-c4f6aa8524df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>class</name>
       <type>Main</type>
       <value>tde-text-control</value>
-      <webElementGuid>98d07856-4b57-4b1a-b4e0-f34f995fa000</webElementGuid>
+      <webElementGuid>56fa9d3a-cd0f-405d-84e3-5055bc5082c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,38 +62,46 @@
       <name>data-lpignore</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>5bdf64eb-607e-44b9-923d-cc863d0800d9</webElementGuid>
+      <webElementGuid>ebfb0363-9bc0-4f93-afda-da9c7a9d99d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fc-updateDialog-col1-searchBase&quot;)</value>
-      <webElementGuid>9325309e-d291-44cf-b790-4979226ca8ef</webElementGuid>
+      <value>id(&quot;fc-updateDialog-row3-col1-searchBase&quot;)</value>
+      <webElementGuid>3d26d5cf-2dfb-4949-8957-9f806778180e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fc-updateDialog-col1-searchBase']</value>
-      <webElementGuid>16aa1fd4-b459-4612-b12b-2c67e5c35624</webElementGuid>
+      <value>//input[@id='fc-updateDialog-row3-col1-searchBase']</value>
+      <webElementGuid>4cfb387a-290c-4bc5-ad46-d904d54d188e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ff-updateDialog-col1-searchBase']/input</value>
-      <webElementGuid>f06305da-73ee-4dce-8889-ae35c672f28b</webElementGuid>
+      <value>//div[@id='ff-updateDialog-row3-col1-searchBase']/input</value>
+      <webElementGuid>5ac07057-e55c-4caa-8eda-024ade845203</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td/div[2]/input</value>
-      <webElementGuid>e8d715b8-1297-42c3-b7a4-003d22e0efa1</webElementGuid>
+      <value>//tr[3]/td/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td/div[2]/input</value>
+      <webElementGuid>7fb70ebf-6e9e-4693-ad14-8879fecec481</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'fc-updateDialog-row3-col1-searchBase' and @type = 'text' and @name = 'FF_updateDialog.row3.col1.searchBase']</value>
+      <webElementGuid>dbbee202-bf02-402f-8055-fc70350ee5d1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

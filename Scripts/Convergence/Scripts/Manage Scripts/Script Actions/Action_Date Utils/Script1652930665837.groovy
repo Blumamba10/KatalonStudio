@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 selenium.click('id=addScriptButton')
 
@@ -69,6 +69,8 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Scr
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Action\'])[1]/following::button[1]')
 
 selenium.click('link=DateUtils')
+
+WebUI.delay(2)
 
 assertEquals('DateUtils', selenium.getText('//h4[@class="modal-title"]'))
 

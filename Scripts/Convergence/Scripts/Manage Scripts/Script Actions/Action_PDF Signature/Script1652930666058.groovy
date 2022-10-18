@@ -41,9 +41,9 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.comment('Register PDF Signature Action')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Configure Server'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Configure Server'))
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
@@ -119,9 +119,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 WebUI.delay(2)
 

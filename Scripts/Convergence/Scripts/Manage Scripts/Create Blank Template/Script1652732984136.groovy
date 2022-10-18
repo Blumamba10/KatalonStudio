@@ -46,9 +46,9 @@ WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandl
 
 WebUI.delay(1)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 selenium.click('id=addScriptButton')
 
@@ -58,7 +58,7 @@ WebUI.switchToWindowIndex('1')
 
 selenium.click('id=scriptNameInput')
 
-selenium.type('id=scriptNameInput', 'test template')
+selenium.type('id=scriptNameInput', 'Blank Template')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Title\'])[1]/following::i[1]')
 
@@ -72,27 +72,27 @@ assertTrue(selenium.isElementPresent('//button[contains(text(),"Create Blank Tem
 
 assertEquals('Create Blank Template', selenium.getText('//button[contains(text(),"Create Blank Template")]'))
 
-selenium.click('//button[contains(text(),"Create Blank Template")]')
+selenium.doubleClick('//button[contains(text(),"Create Blank Template")]')
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.closeWindowIndex('1')
 
 WebUI.switchToWindowIndex('0')
 
-WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'test template')
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Blank Template')
 
-assertEquals('test template', selenium.getText('//a[contains(text(),"test template")]'))
+assertEquals('Blank Template', selenium.getText('//a[contains(text(),"Blank Template")]'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
-WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), 'test template')
+WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), 'Blank Template')
 
-assertEquals('test template', selenium.getText('//a[contains(text(),"test template")]'))
+assertEquals('Blank Template', selenium.getText('//a[contains(text(),"Blank Template")]'))
 
 WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/chkbox_Select All'))
 
@@ -106,11 +106,11 @@ WebUI.delay(1)
 
 assertTrue(selenium.isElementPresent('//p[contains(text(),"Removed 1 templates")]'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
-WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'test template')
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Blank Template')
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/chkbox_Select All'))
 

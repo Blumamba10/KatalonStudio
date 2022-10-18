@@ -46,9 +46,9 @@ WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandl
 
 WebUI.delay(1)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 selenium.click('id=addScriptButton')
 

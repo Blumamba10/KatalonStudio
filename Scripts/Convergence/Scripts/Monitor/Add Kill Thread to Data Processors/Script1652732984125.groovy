@@ -41,9 +41,9 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.comment('Register Wait Action')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Configure Server'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Configure Server'))
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
@@ -123,9 +123,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 WebUI.delay(2)
 
@@ -177,9 +177,9 @@ assertEquals('Wait Action', selenium.getText('//a[contains(text(),"Wait Action")
 
 WebUI.comment('Create Wait Action Template')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
 WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/addTemplate'))
 
@@ -229,11 +229,11 @@ WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_Publi
 
 WebUI.delay(3)
 
-WebUI.waitForElementClickable(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'), 0)
+WebUI.waitForElementClickable(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'), 0)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Monitor'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Monitor'))
 
 WebUI.delay(5)
 
@@ -263,9 +263,9 @@ selenium.click('//button[@id="moveToHistoryButton"]')
 
 WebUI.comment('Delete Template and Script')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
 WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), 'Wait Action')
 
@@ -283,9 +283,9 @@ WebUI.delay(1)
 
 assertTrue(selenium.isElementPresent('//p[contains(text(),"Removed 1 templates")]'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/input_Search Filter'), 'Wait Action')
 

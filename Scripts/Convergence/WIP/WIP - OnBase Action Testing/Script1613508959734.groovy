@@ -38,9 +38,9 @@ String baseUrl = 'http://localhost:8082/tdes'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Monitor'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Monitor'))
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/History View_btn'))
 
@@ -52,7 +52,7 @@ if (!(message.contains('Document Id=13327'))) {
   //  KeywordUtil.markFailed('Message does not contain expected text.')
 }
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Configure Server'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Configure Server'))
 

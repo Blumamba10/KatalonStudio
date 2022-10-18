@@ -45,9 +45,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Object Repository/Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Object Repository/Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
+WebUI.click(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Option Lists'))
 
 WebUI.delay(2)
 

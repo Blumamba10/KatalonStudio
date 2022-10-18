@@ -35,7 +35,7 @@ WebUI.callTestCase(findTestCase('Convergence/Security/User Management/_Create Pr
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'projectadmin', '/3ju_$gMW]X}izW4')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'), 0)
 

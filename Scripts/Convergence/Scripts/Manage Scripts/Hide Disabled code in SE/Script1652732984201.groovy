@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 selenium.click('id=addScriptButton')
 
@@ -70,53 +70,6 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/Actions/a_Comment'))
 
-assertEquals('Comment', selenium.getText('//h4[@class="modal-title"]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Comment\'])[2]/following::div[7]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Bold\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Italic\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Underline\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Strikethrough\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('link=Superscript'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Superscript\'])[1]/following::div[2]'))
-
-assertTrue(selenium.isElementPresent('link=Align right'))
-
-assertTrue(selenium.isElementPresent('link=Center'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Center\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Justify\'])[1]/following::div[2]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Font Name\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Font Color\'])[1]/following::div[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Remove Formatting\'])[1]/following::div[2]'))
-
-assertTrue(selenium.isElementPresent('link=Bullet list'))
-
-assertTrue(selenium.isElementPresent('link=Numbered list'))
-
-assertTrue(selenium.isElementPresent('link=Insert a table'))
-
-assertTrue(selenium.isElementPresent('link=Code'))
-
-assertTrue(selenium.isElementPresent('link=Insert a Quote'))
-
-assertTrue(selenium.isElementPresent('link=Insert a horizontal rule'))
-
-//assertTrue(selenium.isElementPresent('//body'))
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Insert a horizontal rule\'])[1]/following::button[1]'))
-
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'OK\'])[1]/following::button[1]'))
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/action_Comment/body_Comment'))
 
 WebUI.setText(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/action_Comment/body_Comment'), 'This is a comment!')
@@ -125,21 +78,21 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Ins
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Comment\'])[1]/following::i[1]')
 
-assertTrue(selenium.isElementPresent('//app-actions-list-head/div[1]/div[1]/div[1]/div[1]/div[6]/button[3]/i[1]'))
 
-WebUI.click(findTestObject('Convergence/z_One Offs/chkbox_comment'))
+selenium.click('//input[@id="cb-"]')
 
-selenium.click('//app-actions-list-head/div[1]/div[1]/div[1]/div[1]/div[8]/button[5]/i[1]')
+selenium.click('//i[@class="fal fa-ban"]')
 
-selenium.click('//app-actions-list-head/div[1]/div[1]/div[1]/div[1]/div[6]/button[3]/i[1]')
+selenium.click('//i[@class="fal fa-eye-slash"]')
 
 WebUI.verifyElementNotPresent(findTestObject('Convergence/z_One Offs/chkbox_comment'), 0)
 
 WebUI.delay(3)
 
-selenium.click('//app-actions-list-head/div[1]/div[1]/div[1]/div[1]/div[6]/button[3]/i[1]')
+selenium.click('//i[@class="fal fa-eye"]')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/z_One Offs/chkbox_comment'), 0)
+
+assertTrue(selenium.isElementPresent('//input[@id="cb-"]'))
 
 WebUI.closeWindowIndex('1')
 

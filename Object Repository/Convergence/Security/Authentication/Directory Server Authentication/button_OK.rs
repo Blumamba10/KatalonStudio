@@ -10,11 +10,11 @@
          <value>div.ui-dialog.tcc-messaging-dialog.tcc-dialog-alert.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')])]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
          <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')])]</value>
       </entry>
    </selectorCollection>
@@ -26,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>5229ba80-f6a6-4b0f-ba37-9456155c2203</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,6 +34,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>beffefdc-bb01-46b8-85d6-2ab1e53507d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,6 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ui-button ui-corner-all ui-widget</value>
+      <webElementGuid>79e77a6f-f717-470b-8711-691e0a25d231</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,6 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>OK</value>
+      <webElementGuid>c064212a-406b-4abc-8299-ad965dfc0eaa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,6 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
+      <webElementGuid>d9ed31ca-3d21-465c-bdc7-b797032c4334</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,6 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[11]</value>
+      <webElementGuid>45eb04cd-7d63-4c28-8459-5772e0c96a6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,6 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Convergence was able to connect to the specified LDAP server.'])[1]/following::button[1]</value>
+      <webElementGuid>039ffa99-3ef1-4781-b8af-48ded825bfdf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Success!'])[1]/following::button[1]</value>
+      <webElementGuid>1299f8e0-cf04-4413-bc9b-0bf5d8957442</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
+      <webElementGuid>f6019344-2679-4cea-a91a-bc23b2b7290a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,5 +98,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[14]/div[3]/div/button</value>
+      <webElementGuid>70d2b36f-248e-4d40-ad0a-a1f6e965ca19</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

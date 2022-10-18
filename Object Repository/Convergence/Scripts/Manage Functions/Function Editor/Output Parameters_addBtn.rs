@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Output Parameters_addBtn</name>
+   <tag></tag>
+   <elementGuidId>a9a68e7f-7df3-42fb-af7d-b8800e4c0d57</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='sidebarContentWrap']/div[6]/h6/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>05372031-0a00-413a-96ac-a832883f8017</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-plus-circle</value>
+      <webElementGuid>00edb27f-8c7b-4eb6-a610-015c90ef337b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sidebarContentWrap&quot;)/div[@class=&quot;tse-sidebar-param-list ng-star-inserted&quot;]/h6[@class=&quot;card-title text-uppercase&quot;]/a[@class=&quot;tse-sidebar-add-link float-right ng-star-inserted&quot;]/i[@class=&quot;fas fa-plus-circle&quot;]</value>
+      <webElementGuid>e7e17a0a-98b7-45ed-8ff2-77dd10e92514</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='sidebarContentWrap']/div[6]/h6/a/i</value>
+      <webElementGuid>3d3c0fbf-5d2a-4e32-818e-b02efbfac9b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/h6/a/i</value>
+      <webElementGuid>87c14e29-d066-4038-af22-b66d27c23128</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

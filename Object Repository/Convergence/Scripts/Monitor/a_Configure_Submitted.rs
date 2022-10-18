@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='monitorContent']/div/ul/li/div/div[2]/div/a</value>
+         <value>(//a[contains(text(),'Configure')])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>78402e28-bc5e-4a45-96bb-9a8cffc5517a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>configureTaskView?job=poller</value>
+      <webElementGuid>0acecf23-44c4-4488-b803-9f54cc1a8631</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Configure submitted</value>
+      <webElementGuid>933dfb78-2a87-4946-a37e-a66378f984c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Configure</value>
+      <webElementGuid>a6034071-b4b9-4b03-a1d4-46b7a9babbc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;monitorContent&quot;)/div[@class=&quot;row-fluid&quot;]/ul[@class=&quot;thumbnails queue-info&quot;]/li[@class=&quot;span3&quot;]/div[@class=&quot;thumbnail success&quot;]/div[@class=&quot;caption text-center&quot;]/div[@class=&quot;queue-detail&quot;]/a[1]</value>
+      <webElementGuid>9635d63e-428c-4c90-9417-030d9fdc4c53</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='monitorContent']/div/ul/li/div/div[2]/div/a</value>
+      <webElementGuid>94baf6cd-1098-4ba9-ba06-3ad80737c6cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Configure')])[2]</value>
+      <webElementGuid>e5b66fa8-c0f1-4bb6-9b04-f3d3821f2557</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Run Time'])[1]/following::a[2]</value>
+      <webElementGuid>58ab05ff-011b-45a7-96be-1d9cc13dd33d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Run Time'])[1]/following::a[2]</value>
+      <webElementGuid>ada321db-0799-4f77-81a8-2e8842cb2eee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='View'])[1]/preceding::a[1]</value>
+      <webElementGuid>645c61cc-a616-4cae-bd87-efe0e657f91f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Hold'])[1]/preceding::a[1]</value>
+      <webElementGuid>aca3c849-a211-4d0e-95a3-d4ce60ee7126</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Configure']/parent::*</value>
+      <webElementGuid>22341f53-291d-4383-9c59-f30eab90ab35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +118,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'configureTaskView?job=poller')]</value>
+      <webElementGuid>140f626b-47f0-45a5-8207-9b44fffee5dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,5 +126,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/a</value>
+      <webElementGuid>5bea8e82-e50c-4c25-9885-db7d2a81747b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

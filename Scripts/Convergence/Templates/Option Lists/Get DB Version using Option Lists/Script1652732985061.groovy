@@ -49,9 +49,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Option Lists'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Option Lists'))
 
 WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/createListButton'))
 

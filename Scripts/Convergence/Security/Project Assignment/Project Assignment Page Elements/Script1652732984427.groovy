@@ -46,9 +46,9 @@ WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), Failur
 
 WebUI.delay(2)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Assignment'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Assignment'))
 
 assertEquals('Project Assignment', selenium.getText('//div[@class="tde-template-description"]'))
 

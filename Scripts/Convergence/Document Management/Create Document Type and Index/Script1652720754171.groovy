@@ -38,9 +38,9 @@ String baseUrl = 'http://localhost:8082/tdes'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'), FailureHandling.STOP_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Document Management'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Document Management'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -48,11 +48,11 @@ WebUI.enableSmartWait()
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Search'), 'Search', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/_NavigationMenu/Document Management/a_Search'), 'Search', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Admin'), 'Admin', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/_NavigationMenu/Document Management/a_Admin'), 'Admin', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Add Document'), 'Add Document', 
+WebUI.verifyElementText(findTestObject('Convergence/_NavigationMenu/Document Management/a_Add Document'), 'Add Document', 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentSearch/searchButton'), 1, FailureHandling.STOP_ON_FAILURE)
@@ -88,9 +88,9 @@ WebUI.verifyElementText(findTestObject('Convergence/Document Management/Document
 
 assertEquals('Please select a Document Type to view Index Fields', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Value\'])[1]/following::td[1]'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Document Management/a_Admin'), FailureHandling.STOP_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Document Management/a_Admin'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Index Fields'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Document Management/a_Index Fields'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Convergence/Document Management/IndexFields/Index Fields'), 'Index Fields', FailureHandling.STOP_ON_FAILURE)
 
@@ -128,9 +128,9 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/Index
 
 WebUI.check(findTestObject('Convergence/Document Management/IndexFields/Add Index Field_pop-up/checkAllCheckBox'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Document Management/a_Admin'), FailureHandling.STOP_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Document Management/a_Admin'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Document Types'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Document Management/a_Document Types'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Convergence/Document Management/DocumentTypes/Document Types_header'), 'Document Types', 
     FailureHandling.STOP_ON_FAILURE)
@@ -224,5 +224,5 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/Docum
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Document Management/DocumentTypes/removeDocTypesButton'), 0, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Main Console'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Document Management/a_Main Console'), FailureHandling.STOP_ON_FAILURE)
 

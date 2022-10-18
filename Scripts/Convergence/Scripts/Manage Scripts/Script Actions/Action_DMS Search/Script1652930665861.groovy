@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 selenium.click('id=addScriptButton')
 
@@ -80,7 +80,7 @@ assertEquals('Description', selenium.getText('//label[@for="descriptionInput"]')
 
 assertEquals('Document Type', selenium.getText('//label[@for="DocumentTypeSelectTriggerInput"]'))
 
-selenium.select('//select', 'label=Script Document')
+selenium.select('//select[@id="DocumentTypeSelectTriggerInput"]', 'value=Script Document')
 
 assertEquals('Document Type', selenium.getText('//label[@for="DocumentTypeSelectTriggerInput"]'))
 

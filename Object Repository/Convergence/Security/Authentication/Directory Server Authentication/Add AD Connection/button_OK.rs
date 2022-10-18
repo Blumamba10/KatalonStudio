@@ -3,29 +3,26 @@
    <description></description>
    <name>button_OK</name>
    <tag></tag>
-   <elementGuidId>584f038e-ad7d-4c06-891e-5b9234d44a32</elementGuidId>
+   <elementGuidId>baafaa26-a14a-4ea3-b80f-18197c5e8b06</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[11]</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>div.ui-dialog.tcc-messaging-dialog.tcc-dialog-alert.tcc-dialog-alert-success.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable.ui-dialog-buttons > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div.ui-dialog-buttonset > button.ui-button.ui-corner-all.ui-widget</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert tcc-dialog-alert-success ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')])]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert tcc-dialog-alert-success ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;][count(. | //button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')]) = count(//button[@type = 'button' and @class = 'ui-button ui-corner-all ui-widget' and (text() = 'OK' or . = 'OK')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>948362ca-2374-4998-b3e1-e6cfe7709c84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,13 +30,15 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>bf53c278-271a-45dc-ac33-d73343f1ad65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>ui-button ui-corner-all ui-widget</value>
+      <webElementGuid>4bcefb4b-c931-44b1-9d2b-610951babdab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,13 +46,15 @@
       <name>text</name>
       <type>Main</type>
       <value>OK</value>
+      <webElementGuid>903a19e4-9cd2-44af-bbeb-3b968efe8d96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;ui-dialog tcc-messaging-dialog tcc-dialog-alert tcc-dialog-alert-success ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons&quot;]/div[@class=&quot;ui-dialog-buttonpane ui-widget-content ui-helper-clearfix&quot;]/div[@class=&quot;ui-dialog-buttonset&quot;]/button[@class=&quot;ui-button ui-corner-all ui-widget&quot;]</value>
+      <webElementGuid>d8ce13e5-66c3-4583-bd08-0024677862ea</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,6 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[11]</value>
+      <webElementGuid>643243d5-b239-4f4a-bbe5-19ec74056791</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,6 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Convergence was able to connect to the specified LDAP server.'])[1]/following::button[1]</value>
+      <webElementGuid>89ce141c-bae7-4b5b-acd9-fe3bd4b1f53a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Success!'])[1]/following::button[1]</value>
+      <webElementGuid>b7f58d34-2d11-4465-9b53-f85a9826c360</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,13 +86,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
+      <webElementGuid>b6678cf2-0692-4704-86df-f2c9c126bf06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[11]/div/button</value>
+      <value>//div[14]/div[11]/div/button</value>
+      <webElementGuid>5d577a29-0c4f-4f70-bd7b-159962c324dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,5 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'OK' or . = 'OK')]</value>
+      <webElementGuid>4ae53585-4248-45a2-8351-73a715cf3f41</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

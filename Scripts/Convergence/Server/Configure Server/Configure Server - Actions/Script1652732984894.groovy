@@ -37,9 +37,9 @@ def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Server'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Configure Server'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Configure Server'))
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 

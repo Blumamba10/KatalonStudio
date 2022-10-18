@@ -16,12 +16,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 //get data
-def data = findTestData('tdes_db_version')
+def data = findTestData('null')
 
 // Get specific data (column, row) as a variable
 String dbVersion = data.getValue(2, 1)
 
-WebUI.verifyEqual(GlobalVariable.ExpectedDBVersion, findTestData('tdes_db_version').getValue(2, 1))
+WebUI.verifyEqual(GlobalVariable.ExpectedDBVersion, findTestData('null').getValue(2, 1))
 
 println('DB Version = ' + dbVersion)
 

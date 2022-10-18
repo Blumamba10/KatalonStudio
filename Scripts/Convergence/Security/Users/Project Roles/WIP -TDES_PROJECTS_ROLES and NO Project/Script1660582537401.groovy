@@ -35,23 +35,23 @@ WebUI.callTestCase(findTestCase('Convergence/Security/Users/_Create Project Role
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'projroles', 'h|FU6zJ}58o5`VBYK')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Roles'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Roles'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Credential Management'), 
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Credential Management'), 
     0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Assignment'), 
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Assignment'), 
     0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'), 0)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Roles'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Roles'))
 
 WebUI.delay(0)
 

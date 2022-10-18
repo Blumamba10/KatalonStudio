@@ -46,9 +46,9 @@ WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandl
 
 WebUI.delay(3)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), 'AutoUser')
 

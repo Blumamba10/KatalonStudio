@@ -38,9 +38,9 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 
 WebUI.delay(2)
 
@@ -52,7 +52,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 assertTrue(selenium.isElementPresent('link=View All'))
 
-assertEquals('102550100', selenium.getText('name=submittedFormsTable_length'))
+assertEquals('102550100All', selenium.getText('name=submittedFormsTable_length'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Build:\'])[1]/following::a[1]'))
 
@@ -86,7 +86,7 @@ assertEquals('Help The History Queue contains forms that have been processed suc
 assertEquals('Help The History Queue contains forms that have been processed successfully or that have been explicitly moved from one of the other queues.', 
     selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Next\'])[1]/following::div[2]'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Administration'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Administration'))
 

@@ -35,23 +35,23 @@ WebUI.callTestCase(findTestCase('Convergence/Security/Users/Create Admin User'),
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'AdminUser', '/3ju_$gMW]X}izW4')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Roles'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Roles'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Credential Management'), 
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Credential Management'), 
     0)
 
-WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Project Assignment'), 
+WebUI.verifyElementNotPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Project Assignment'), 
     0)
 
-WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'), 0)
+WebUI.verifyElementPresent(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'), 0)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.delay(0)
 

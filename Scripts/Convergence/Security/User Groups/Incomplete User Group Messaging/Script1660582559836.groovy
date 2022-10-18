@@ -46,9 +46,9 @@ WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), Failur
 
 WebUI.enableSmartWait()
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/btn_Add New User Group'))
 
@@ -175,9 +175,9 @@ selenium.click('//i[@class="fas fa-question-circle"]')
 
 selenium.click('//button[contains(text(),"OK")]')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_User Groups'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_User Groups'))
 
 WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter'), 'Incomplete User Group')
 

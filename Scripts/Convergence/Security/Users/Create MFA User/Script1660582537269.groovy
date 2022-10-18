@@ -44,9 +44,9 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Authentication'))
 
 WebUI.delay(2)
 
@@ -59,9 +59,9 @@ WebUI.verifyElementText(findTestObject('Convergence/Security/Authentication/Goog
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Google 2 Facor button'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.delay(2)
 
@@ -81,7 +81,7 @@ WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Ne
 
 WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Re-enter Password'), 'Password1!')
 
-selenium.click('//body/div[11]/div[3]/div[1]/button[1]')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/btn_Save pw change'))
 
 assertEquals('User Account Created', selenium.getText('//h1[contains(text(),"User Account Created")]'))
 
@@ -93,11 +93,11 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/Users/_User Deta
 
 WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/btn_Retrun to Users'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_admin'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Logout'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Logout'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Return'))
 
 WebUI.setText(findTestObject('Convergence/Login/username'), 'MFAUser')
 
@@ -177,9 +177,9 @@ WebUI.delay(2)
 
 WebUI.navigateToUrl(GlobalVariable.tdesURL)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/Access Denied_Page/a_Logout'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/Access Denied_Page/a_Logout'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Return'))
 
 WebUI.setText(findTestObject('Convergence/Login/username'), 'admin')
 
@@ -189,9 +189,9 @@ WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CO
 
 WebUI.delay(2)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.delay(2)
 
@@ -205,11 +205,11 @@ WebUI.click(findTestObject('Convergence/Security/Users/btn_OK'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_admin'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_admin'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Logout'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Logout'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Logout/a_Return'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Logout/a_Return'))
 
 WebUI.setText(findTestObject('Convergence/Login/username'), 'admin')
 
@@ -217,9 +217,9 @@ WebUI.setText(findTestObject('Convergence/Login/password'), 'admin')
 
 WebUI.click(findTestObject('Convergence/Login/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Authentication'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Authentication'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Google 2 Facor button'))
 

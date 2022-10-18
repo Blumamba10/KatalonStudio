@@ -6,12 +6,16 @@
    <elementGuidId>f67e5141-685c-4445-8c26-a566a817b706</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//td[6]/div/button</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>i.fas.fa-globe</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='previewButton_2']/i</value>
+         <key>BASIC</key>
+         <value>id(&quot;previewButton_2&quot;)/i[@class=&quot;fas fa-globe&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
+      <webElementGuid>e7e46e10-e89a-4961-92ff-33057822ca82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fas fa-globe</value>
+      <webElementGuid>b927809f-8933-4a00-94be-01378b81745a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;previewButton_2&quot;)/i[@class=&quot;fas fa-globe&quot;]</value>
+      <webElementGuid>92a39af0-a179-487c-bf04-4919ff495b24</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -43,6 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='previewButton_2']/i</value>
+      <webElementGuid>6df71458-24e0-4c8b-910d-9e8ab263c0d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -50,5 +58,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[6]/div/button/i</value>
+      <webElementGuid>1e3f2c77-8675-407e-ba8c-54622b04bd06</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

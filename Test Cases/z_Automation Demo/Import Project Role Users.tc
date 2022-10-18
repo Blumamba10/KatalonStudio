@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Import Users to test the followoing Project Roles
+ - ROLE_TDES_PROJECTS_ASSIGNMENT
+- ROLE_TDES_PROJECTS_ROLES
+- ROLE_TDES_PROJECTS_ADMIN
+- ROLE_TDES_USERS_ADMIN
+- ROLE_TDES_USERGROUPS_ADMIN
+- ROLE_TDES_USERS_READONLY
+- ROLE_TDES_USERGROUPS_READONLY</description>
+   <name>Import Project Role Users</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>579e12bf-fd55-4b1f-a442-9c0d503f125d</testCaseGuid>
+</TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='monitorContent']/div/ul/li[4]/div/div[2]/div/p[3]/a</value>
+         <value>(//a[contains(text(),'Configure')])[5]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>ce88af83-420e-4cde-8084-e0eaff660f95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>configureTaskView?job=historyCleanUp</value>
+      <webElementGuid>fc710671-3b9d-4bf3-95de-c29327b0b2cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Configure history</value>
+      <webElementGuid>56f808ba-7961-41d6-a1ee-a26f38ea17e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Configure</value>
+      <webElementGuid>11dcfb34-60f9-4fda-a973-f3f92a65060b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;monitorContent&quot;)/div[@class=&quot;row-fluid&quot;]/ul[@class=&quot;thumbnails queue-info&quot;]/li[@class=&quot;span3&quot;]/div[@class=&quot;thumbnail info&quot;]/div[@class=&quot;caption text-center&quot;]/div[@class=&quot;queue-detail&quot;]/p[3]/a[1]</value>
+      <webElementGuid>1fb59330-a875-4408-892f-e44f14e08b09</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='monitorContent']/div/ul/li[4]/div/div[2]/div/p[3]/a</value>
+      <webElementGuid>d06d3e4a-5f08-4337-b5a5-c07c0986b0d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Configure')])[5]</value>
+      <webElementGuid>930f731c-9880-4b0b-ad77-2313109f7ddb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Run Time'])[4]/following::a[2]</value>
+      <webElementGuid>a82a9e8c-3429-475e-b62c-a39126f00276</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Run Time'])[4]/following::a[2]</value>
+      <webElementGuid>b7a34ffd-3aa5-4b0f-8470-226746d3c83d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='View'])[4]/preceding::a[1]</value>
+      <webElementGuid>a9e36a7a-fd98-4891-b472-972329a82b07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='* monitor live updates occur every 3 seconds'])[1]/preceding::a[1]</value>
+      <webElementGuid>95ca09bc-c3ab-4786-80f4-8c633b2ea038</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +110,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'configureTaskView?job=historyCleanUp')]</value>
+      <webElementGuid>f875decb-4b75-46a3-a5aa-48d224e31463</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,5 +118,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/div/div[2]/div/p[3]/a</value>
+      <webElementGuid>b4d3c1ec-91a9-4a16-942f-dbd33df8b4fb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

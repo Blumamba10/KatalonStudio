@@ -38,9 +38,9 @@ String baseUrl = 'http://localhost:8082/tdes'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Home'), FailureHandling.STOP_ON_FAILURE)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Document Management'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Document Management'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -48,14 +48,14 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Search'), 'Search', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/_NavigationMenu/Document Management/a_Search'), 'Search', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Admin'), 'Admin', FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Convergence/_NavigationMenu/Document Management/a_Admin'), 'Admin', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Convergence/_NavigationLinks/Document Management/a_Add Document'), 'Add Document', 
+WebUI.verifyElementText(findTestObject('Convergence/_NavigationMenu/Document Management/a_Add Document'), 'Add Document', 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Document Management/a_Add Document'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Document Management/a_Add Document'))
 
 WebUI.switchToWindowIndex('1')
 
@@ -64,7 +64,7 @@ WebUI.selectOptionByLabel(findTestObject('Convergence/Document Management/Add Ne
 
 WebUI.enableSmartWait()
 
-CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Document Management/Add New Document/span_Upload Document'), 
+CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Document Management/Add New Document/Upload Document'), 
     '"C:\\actionTestFiles\\MRI Knee.docx"')
 
 WebUI.enableSmartWait()

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Copy and paste the script from this test and place it in your Convergence Test Case.</description>
+   <name>Convergece Test Setup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b2faa85-9814-4497-bcdd-207a7c9d8b63</testCaseGuid>
+</TestCaseEntity>

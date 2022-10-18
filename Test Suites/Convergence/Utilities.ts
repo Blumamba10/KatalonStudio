@@ -19,13 +19,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Utilities/View Form/Forms - Assert Page Elements</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>59ab473e-7403-4473-903c-1b2ca753cae3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Utilities/Import Components/Import Components - Assert Page Elements</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dbc4b224-c939-49ad-a2f5-53421634ee4d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/z_Automation Demo/Import Project Role Users</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

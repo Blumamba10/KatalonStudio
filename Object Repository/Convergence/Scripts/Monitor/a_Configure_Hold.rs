@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='monitorContent']/div/ul/li[2]/div/div[2]/div/p[3]/a</value>
+         <value>(//a[contains(text(),'Configure')])[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>27645152-4a92-4ed0-9a49-79d90cac5712</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>configureHoldQueue</value>
+      <webElementGuid>2421c9c2-7de8-42c7-9eac-5801b0386642</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Configure hold</value>
+      <webElementGuid>41f19581-0579-43ff-8c66-e2267eb89df0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Configure</value>
+      <webElementGuid>d664507e-52a2-4534-929a-50fcfe9fabe0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;monitorContent&quot;)/div[@class=&quot;row-fluid&quot;]/ul[@class=&quot;thumbnails queue-info&quot;]/li[@class=&quot;span3&quot;]/div[@class=&quot;thumbnail warning&quot;]/div[@class=&quot;caption text-center&quot;]/div[@class=&quot;queue-detail&quot;]/p[3]/a[1]</value>
+      <webElementGuid>2e64b637-2cfa-4b66-a668-56ed45584e46</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='monitorContent']/div/ul/li[2]/div/div[2]/div/p[3]/a</value>
+      <webElementGuid>896fda7b-63a9-4f77-8ece-395823054615</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Configure')])[3]</value>
+      <webElementGuid>da67d1f1-0580-419f-aa35-3d0413942039</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Next Run Time'])[2]/following::a[1]</value>
+      <webElementGuid>09a0865e-495b-475d-8659-2b3fc68ccdae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Run Time'])[2]/following::a[1]</value>
+      <webElementGuid>cd93e9dc-a554-4e37-ae06-217fc672c781</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='View'])[2]/preceding::a[1]</value>
+      <webElementGuid>066b2e21-d0e2-4d88-814e-0d3104b5163d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/preceding::a[1]</value>
+      <webElementGuid>811b4ff8-5252-41f2-bca5-8bd648b0d2a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +110,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'configureHoldQueue')]</value>
+      <webElementGuid>bbefcb84-681a-48ff-8c6b-9acbb4c61e0a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,5 +118,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p[3]/a</value>
+      <webElementGuid>09d2421e-7387-466f-aeaa-10cd49f0f258</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

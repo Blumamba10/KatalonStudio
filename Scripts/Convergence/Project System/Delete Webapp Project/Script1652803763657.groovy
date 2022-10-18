@@ -54,9 +54,9 @@ WebUI.refresh(FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Scripts'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/chkbox_Select All'))
 
@@ -64,9 +64,9 @@ WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/btn_Delete Script
 
 selenium.click('//button[@id="overlayConfirmOk"]')
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Templates'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
 WebUI.selectOptionByValue(findTestObject('Convergence/Templates/ManageTemplates_Page/select_102550100'), '100', false)
 
@@ -82,7 +82,7 @@ WebUI.delay(1)
 
 WebUI.comment('Delete Project')
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Projects'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Projects'))
 
 WebUI.setText(findTestObject('Convergence/Projects/input_Search Filter'), 'webapp')
 
@@ -92,9 +92,9 @@ WebUI.click(findTestObject('Convergence/Projects/button_Delete'))
 
 WebUI.click(findTestObject('Convergence/Projects/button_OK'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Security'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-WebUI.click(findTestObject('Convergence/_NavigationLinks/Administration Console/a_Users'))
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
 WebUI.selectOptionByValue(findTestObject('Convergence/Security/Users/select_102550100'), '100', false)
 
