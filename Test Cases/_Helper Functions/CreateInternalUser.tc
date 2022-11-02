@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create Internal User helper
+- Creates User
+- Does not assign any roles or permissions</description>
+   <name>CreateInternalUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28ba3a88-8afc-46b2-b508-54600dfb88d2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>53fbb6e2-ef42-43c0-9aed-16ae0fd9a84c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>54e924f7-ed74-4b15-a761-ceed4557857b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>53fbb6e2-ef42-43c0-9aed-16ae0fd9a84c</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54e924f7-ed74-4b15-a761-ceed4557857b</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

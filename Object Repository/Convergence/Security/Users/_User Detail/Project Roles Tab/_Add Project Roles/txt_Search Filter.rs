@@ -3,15 +3,15 @@
    <description></description>
    <name>txt_Search Filter</name>
    <tag></tag>
-   <elementGuidId>dd89b0d7-021c-4027-ad2d-069c38df0c21</elementGuidId>
+   <elementGuidId>f6399fe8-ae07-4752-b0e1-e328b4f4d553</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='search'])[2]</value>
+         <value>(//input[@type='search'])[7]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#fdv-main-tabs-projectRoles-list-data-table_filter > label > input[type=&quot;search&quot;]</value>
+         <value>#fdv-projectRolesDialog-availableProjectRoles-table_filter > label > input[type=&quot;search&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>afc3f882-e18d-4701-975e-ade013ae651f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,13 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>search</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-controls</name>
-      <type>Main</type>
-      <value>fdv-main-tabs-projectRoles-list-data-table</value>
+      <webElementGuid>a0c4a158-a8d2-4849-a94c-a5188040736a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,33 +38,54 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search Filter</value>
+      <webElementGuid>60808dcf-f3e0-4bfc-822d-5f45a10371ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>fdv-projectRolesDialog-availableProjectRoles-table</value>
+      <webElementGuid>bf77fb37-bca8-448e-aa9a-e59f3cfc7fef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fdv-main-tabs-projectRoles-list-data-table_filter&quot;)/label[1]/input[1]</value>
+      <value>id(&quot;fdv-projectRolesDialog-availableProjectRoles-table_filter&quot;)/label[1]/input[1]</value>
+      <webElementGuid>0dcfa933-30be-4265-bad0-520bc544d53e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@type='search'])[2]</value>
+      <value>(//input[@type='search'])[7]</value>
+      <webElementGuid>92e743d9-c6a9-4d0c-bcc8-0aec91d07c7a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='fdv-main-tabs-projectRoles-list-data-table_filter']/label/input</value>
+      <value>//div[@id='fdv-projectRolesDialog-availableProjectRoles-table_filter']/label/input</value>
+      <webElementGuid>c16c8a0f-7ed9-41b2-a4dc-94c37fbcc3d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/table/tbody/tr/td/div/div/div[2]/label/input</value>
+      <value>//div[14]/div[2]/table/tbody/tr/td/table/tbody/tr[2]/td/div/div/div[2]/label/input</value>
+      <webElementGuid>90f7831a-a58f-4f2a-b7ec-110c82566cf7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'search' and @placeholder = 'Search Filter']</value>
+      <webElementGuid>c103b654-fbb7-4551-8fc6-9c392ec8a3df</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

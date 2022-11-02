@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8073/tdes'</initValue>
+      <initValue>'http://localhost:8085/tdes'</initValue>
       <name>tdesURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://localhost:8073/demo'</initValue>
+      <initValue>'http://localhost:8083/demo'</initValue>
       <name>demoappURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

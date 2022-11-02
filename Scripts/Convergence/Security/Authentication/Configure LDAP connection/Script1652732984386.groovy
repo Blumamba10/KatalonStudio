@@ -64,7 +64,10 @@ WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Direc
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
 
-selenium.click('//tbody/tr[1]/td[6]/button[1]')
+WebUI.waitForElementPresent(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Delete Connection'), 
+    0)
+
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Delete Connection'))
 
 assertEquals('Confirm Delete', selenium.getText('//h1[contains(text(),"Confirm Delete")]'))
 

@@ -95,12 +95,6 @@ selenium.select('id=MethodSelectTriggerInput', 'label=Get User Password')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Method\'])[1]/following::button[1]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'WebAuthRequest\'])[2]/following::i[1]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'WebAuthRequest\'])[2]/following::i[1]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'WebAuthRequest\'])[2]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)

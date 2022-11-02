@@ -116,8 +116,6 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File Variable\'])[1]/following::button[1]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Set Variable\'])[1]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)

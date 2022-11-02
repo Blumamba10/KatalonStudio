@@ -138,8 +138,6 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Redirect URL\'])[1]/following::button[2]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'MultipageResponse\'])[1]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)

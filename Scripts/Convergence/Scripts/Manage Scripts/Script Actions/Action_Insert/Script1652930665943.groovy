@@ -80,13 +80,13 @@ assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()
 
 assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
-assertEquals('Data Source', selenium.getText('//div[2]/div/div/label'))
+assertEquals('Data Source', selenium.getText('//label[@for="dataSourceSelect"]'))
 
 assertTrue(selenium.isElementPresent('id=dataSourceSelect'))
 
-assertEquals('SQL Statement', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Data Source\'])[1]/following::label[1]'))
+assertEquals('SQL Statement', selenium.getText('//label[@for="sqlstatement"]'))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'SQL Statement\'])[1]/following::div[9]'))
+assertTrue(selenium.isElementPresent('//div[@style="position: relative;"]//pre[contains(@class,"CodeMirror-line")]'))
 
 assertEquals('Variables', selenium.getText('//label[contains(text(),"Variables")]'))
 

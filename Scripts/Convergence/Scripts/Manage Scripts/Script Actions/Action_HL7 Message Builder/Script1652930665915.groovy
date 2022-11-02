@@ -106,15 +106,17 @@ selenium.click('id=HL7MessageTypeSelectTriggerInput')
 
 selenium.select('id=HL7MessageTypeSelectTriggerInput', 'label=ADT_A12')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'HL7 Message Type\'])[1]/following::option[8]')
+not_run: selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'HL7 Message Type\'])[1]/following::option[8]')
 
-assertEquals('Segment - MSH', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'HL7 message type to write\'])[1]/following::h5[2]'))
+not_run: assertEquals('Segment - MSH', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'HL7 message type to write\'])[1]/following::h5[2]'))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Include optional DG1 segment?\'])[1]/following::button[1]'))
+not_run: assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Include optional DG1 segment?\'])[1]/following::button[1]'))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'OK\'])[1]/following::button[1]'))
+not_run: assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'OK\'])[1]/following::button[1]'))
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Include optional DG1 segment?\'])[1]/following::button[1]')
+not_run: selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Include optional DG1 segment?\'])[1]/following::button[1]')
+
+selenium.doubleClick('//button[contains(text(),"OK")]')
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 

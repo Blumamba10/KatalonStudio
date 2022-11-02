@@ -66,7 +66,6 @@ assertTrue(selenium.isElementPresent('link=Save'))
 
 assertTrue(selenium.isElementPresent('link=Cancel'))
 
-
 assertTrue(selenium.isElementPresent('//i[@class="fa fa-undo"]'))
 
 assertTrue(selenium.isElementPresent('//i[@class="fas fa-redo"]'))
@@ -291,11 +290,10 @@ assertEquals('Scripts', selenium.getText('link=Scripts'))
 
 selenium.click('link=Scripts')
 
-assertEquals('Click a script name to make a selection', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Search\'])[1]/following::div[3]'))
+assertEquals('Click a script name to make a selection', selenium.getText('//div[contains(text(),"Click a script name to make a selection")]'))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Click a script name to make a selection\'])[1]/following::button[1]'))
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Click a script name to make a selection\'])[1]/following::button[1]')
+selenium.click('//button[contains(text(),"Cancel")]')
 
 selenium.close()
 

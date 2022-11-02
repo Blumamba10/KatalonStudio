@@ -103,8 +103,6 @@ selenium.type('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'User
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'User Id\'])[1]/following::button[2]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'IntakeQueryUser\'])[1]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)

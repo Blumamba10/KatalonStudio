@@ -29,8 +29,6 @@ import static org.apache.commons.lang3.StringUtils.join
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
 
@@ -42,49 +40,41 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.enableSmartWait()
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-selenium.click('link=ActionTest')
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
-TestData PublishScriptData = findTestData('PublishScriptData')
+WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Users'))
 
-System.out.println('[Row Count] : ' + PublishScriptData.getRowNumbers())
+WebUI.click(findTestObject('Convergence/Security/Users/btn_Add User'))
 
-//for (int i = 1; i <= PublishScriptData.getRowNumbers(); i++) {
-for (int i = 1; i <= 34; i++) {
-    KeywordUtil.logInfo(findTestData('PublishScriptData').getValue('Template Name', i))
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_User Name'), userName)
 
-    WebUI.doubleClick(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Templates'))
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Description'), userName)
 
-    WebUI.click(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
+WebUI.click(findTestObject('Convergence/Security/Users/Add User Account/chkbox_Internal Database'))
 
-    WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), findTestData('PublishScriptData').getValue(
-            'Template Name', i))
+WebUI.click(findTestObject('Convergence/Security/Users/Add User Account/btn_Save'))
 
-    WebUI.waitForElementPresent(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_fas fa-globe'), 0)
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_New Password'), password)
 
-    selenium.click('//td[6]/div/button')
+WebUI.setText(findTestObject('Convergence/Security/Users/Add User Account/txt_Re-enter Password'), password)
 
-    WebUI.switchToWindowIndex('1')
+WebUI.click(findTestObject('Convergence/Security/Users/Add User Account/button_Save_Change Password'))
 
-    WebUI.waitForElementClickable(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_Publish'), 10)
+assertEquals('User Account Created', selenium.getText('//h1[contains(text(),"User Account Created")]'))
 
-    WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_Publish'))
+assertEquals('Initial user account configuration is complete.', selenium.getText('//div[@class="tcc-dialog-content"]'))
 
-    WebUI.waitForElementClickable(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'), 0)
+selenium.click('//button[contains(text(),"OK")]')
 
-    WebUI.closeWindowIndex('1')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/btn_Retrun to Users'))
 
-    WebUI.switchToWindowIndex('0')
+WebUI.waitForElementPresent(findTestObject('Convergence/Security/Users/label_manually'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
+WebUI.setText(findTestObject('Convergence/Security/Users/txt_Search FIlter'), userName)
 
-    WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Monitor'))
-
-    WebUI.click(findTestObject('Convergence/Scripts/Monitor/button_View_Error'), FailureHandling.CONTINUE_ON_FAILURE)
-
-    assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
-}
+assertEquals(userName, selenium.getText(((('//a[contains(text(),' + '\'') + userName) + '\'') + ')]'))
 

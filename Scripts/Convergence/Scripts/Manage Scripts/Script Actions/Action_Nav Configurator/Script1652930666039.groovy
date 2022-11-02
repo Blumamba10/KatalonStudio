@@ -102,8 +102,6 @@ selenium.select('id=ModeSelectTriggerInput', 'label=Configure Navigation Menu')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Menu Item Count\'])[1]/following::button[2]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'NavConfigurator\'])[2]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)

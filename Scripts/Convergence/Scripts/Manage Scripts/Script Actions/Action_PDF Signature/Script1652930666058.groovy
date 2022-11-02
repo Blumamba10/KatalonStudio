@@ -153,41 +153,47 @@ selenium.typeKeys('//input[@id="nameInput"]', 'PdfSignature')
 
 selenium.typeKeys('//textarea[@id="descriptionInput"]', 'PdfSignature Action')
 
-
 assertTrue(selenium.isElementPresent('//input[@id="parameterFilterInput"]'))
 
 assertEquals('Show...', selenium.getText('//label[contains(text(),"Show...")]'))
+
 assertEquals('All', selenium.getText('//label[contains(text(),"All")]'))
+
 assertEquals('Empty Only', selenium.getText('//label[contains(text(),"Empty Only")]'))
+
 assertEquals('Completed Only', selenium.getText('//label[contains(text(),"Completed Only")]'))
 
-
 assertEquals('Signing Key', selenium.getText('//label[contains(text(),"Signing Key")]'))
+
 assertEquals('Alias name of the trusted signing authority.', selenium.getText('//div[contains(text(),"Alias name of the trusted signing authority.")]'))
+
 assertEquals('Subject DN', selenium.getText('//label[contains(text(),"Subject DN")]'))
+
 assertEquals('Lower Left X', selenium.getText('//label[contains(text(),"Lower Left X")]'))
 
-
 assertEquals('Lower Left X coordinate for the signature box.', selenium.getText('//div[contains(text(),"Lower Left X coordinate for the signature box.")]'))
+
 assertEquals('Lower Left Y', selenium.getText('//label[contains(text(),"Lower Left Y")]'))
+
 assertEquals('Upper Right Y coordinate for the signature box.', selenium.getText('//div[contains(text(),"Upper Right Y coordinate for the signature box.")]'))
+
 assertEquals('Page Number', selenium.getText('//label[contains(text(),"Page Number")]'))
 
-
 assertEquals('Page number upon which the signature should appear', selenium.getText('//div[contains(text(),"Page number upon which the signature should appear")]'))
+
 assertEquals('Signing Location', selenium.getText('//label[contains(text(),"Signing Location")]'))
+
 assertEquals('The physical location where the document was signed', selenium.getText('//div[contains(text(),"The physical location where the document was signe")]'))
+
 assertEquals('Original File to Sign', selenium.getText('//label[contains(text(),"Original File to Sign")]'))
 
-
 assertEquals('The pdf to sign.', selenium.getText('//div[contains(text(),"The pdf to sign.")]'))
+
 assertEquals('Additional Signature', selenium.getText('//label[contains(text(),"Additional Signature")]'))
+
 assertEquals('True if this is the second (or third, or fourth...) signature added', selenium.getText('//div[contains(text(),"True if this is the second (or third, or fourth...")]'))
 
-
 selenium.click('//button[contains(text(),"OK")]')
-
-
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 

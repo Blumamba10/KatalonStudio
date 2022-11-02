@@ -114,8 +114,6 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Group\'])[1]/following::button[2]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'ManageRoles\'])[1]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)

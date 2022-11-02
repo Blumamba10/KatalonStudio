@@ -113,8 +113,6 @@ selenium.typeKeys('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'The 1-based index of the page form id to return\'])[1]/following::button[1]')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'MultiPageGetFormId\'])[1]/following::i[1]')
-
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 
 WebUI.delay(2)
