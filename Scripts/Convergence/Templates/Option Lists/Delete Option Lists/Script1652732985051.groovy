@@ -52,11 +52,11 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Convergence/Templates/OptionLists_Page/input_Search Filter'), 'Li')
-
 WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/checkbox_Check All'))
 
 WebUI.click(findTestObject('Convergence/Templates/OptionLists_Page/button_Delete'))
 
 selenium.click('//button[@id="overlayConfirmOk"]')
+
+
 

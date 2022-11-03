@@ -112,7 +112,11 @@ WebUI.delay(2)
 if (selenium.isElementPresent('//button[@id="saveConfigButton"]')) {
     selenium.click('//button[@id="saveConfigButton"]')
 } else {
-    selenium.click('//span[@class="title"]')
+    selenium.click('//p[@class="message"]')
+
+    WebUI.navigateToUrl(GlobalVariable.tdesURL)
+
+    WebUI.delay(3)
 }
 
 WebUI.comment('Create Wait Action Script')
@@ -123,7 +127,7 @@ WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default
 
 WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
+WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
 
 WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Scripts'))
 
@@ -186,6 +190,8 @@ WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/addTempla
 WebUI.switchToWindowIndex(1)
 
 WebUI.delay(2)
+
+selenium.click("//button[@id='templateTypeDefaultBtn']")
 
 WebUI.click(findTestObject('Convergence/Templates/ManageTemplates_Page/_Template Editor/a_Properties'))
 

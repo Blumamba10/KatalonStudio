@@ -48,11 +48,13 @@ WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Con
 
 WebUI.delay(5)
 
-selenium.click('link=Import Components')
+WebUI.uploadFile(findTestObject('Convergence/Utilities/Import Components/btn_Import'), 'C:\\actionTestFiles\\Template & Scripts\\CV Scripts to import Publish - ActionTest.zip')
 
-WebUI.delay(6)
+not_run: selenium.click('link=Import Components')
 
-CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Utilities/Import Components/btn_Import Upload'), 
+not_run: WebUI.delay(6)
+
+not_run: CustomKeywords.'cutomKeywords.UploadFile.uploadFile'(findTestObject('Convergence/Utilities/Import Components/btn_Import Upload'), 
     filePathForUpload)
 
 WebUI.delay(6)

@@ -169,6 +169,8 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'aft
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/Configure Submitted_page/btn_Update form poller'))
 
+selenium.click('//i[@class=\'fas fa-times\']')
+
 WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'), 10)
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'))
@@ -176,6 +178,8 @@ WebUI.click(findTestObject('Convergence/Scripts/Monitor/a_Configure_Submitted'))
 selenium.click('id=autoUnlock')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'after...\'])[1]/following::button[2]')
+
+selenium.click('//i[@class=\'fas fa-times\']')
 
 WebUI.waitForElementPresent(findTestObject('Convergence/Scripts/Monitor/button_View_Submited'), 10)
 
@@ -275,6 +279,8 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Err
 
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
+selenium.click('//i[@class=\'fas fa-times\']')
+
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/a_Configure_Hold'))
 
 selenium.click('name=holdBeforeRetryEligible')
@@ -299,12 +305,11 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Err
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Error After\'])[1]/following::button[2]')
 
-WebUI.delay(10)
-
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Convergence/Scripts/Monitor/btn_View_Hold'), 
-    0)
+selenium.click('//i[@class=\'fas fa-times\']')
+
+WebUI.waitForElementClickable(findTestObject('Convergence/Scripts/Monitor/btn_View_Hold'), 0)
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/btn_View_Hold'))
 
@@ -513,7 +518,6 @@ assertEquals('Form ID', selenium.getText('//thead/tr/th[4]'))
 assertEquals('Template', selenium.getText('//thead/tr/th[5]'))
 
 assertEquals('Action', selenium.getText('//thead/tr/th[6]'))
- 
 
 selenium.click('id=editHistoryFilter')
 
