@@ -9,6 +9,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -28,14 +29,13 @@ import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium as WebDriverB
 import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
-import org.openqa.selenium.Keys as Keys
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
 
 def driver = DriverFactory.getWebDriver()
 
 String baseUrl = 'https://www.google.com/'
+selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Server'))
 
@@ -105,16 +105,20 @@ not_run: selenium.click('//i[@class="shortcut-icon fas fa-times-circle"]')
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
-WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/a_AuthUser'))
+selenium.click("//a[contains(text(),'Assert')]")
+
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/input_Description'), 
-    'Provides support for authentication using Convergence users in a Web Platform application')
+    'Logs warning to script or errors based on if production license.')
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Cancel'))
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/a_Actions'))
 
 WebUI.enableSmartWait()
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'Assert')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Logs warning to script or errors based on if produ')]"))
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_AuthUser'), 'AuthUser')
 
@@ -123,6 +127,9 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_CSVImport'), 'CSVImport')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_CSVImportDescription'), 'CSV Import Actions')
+assertTrue(selenium.isElementPresent("//a[contains(text(),'CodeGenerator')]"))
+
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Code Generator Operations')]"))
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_ConvertDocument'), 'ConvertDocument')
 
@@ -145,6 +152,12 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ExcelExportDescription'), 'Exports data in to an Excel format in a Web Platform application')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_FileUtils'), 'FileUtils')
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'ForEachBreak')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Stops a For Each Action')]"))
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'ForEachContinue')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Continues a For Each Action')]"))
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_FileUtilsDescription'), 'General file system utility methods')
 
@@ -201,6 +214,15 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_IntakeWebAuthResponseDescription'), 
     'Configures an authentication and authorization response back to an Intake Server Console authentication.')
 
+assertTrue(selenium.isElementPresent("//a[@class='custom_action_link'][contains(text(),'List')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'List Operations')]"))
+
+assertTrue(selenium.isElementPresent("//a[@class='custom_action_link'][contains(text(),'Log')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Logs messages to server log.')]"))
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'Map')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Map Operations')]"))
+
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_ManageRoles'), 'ManageRoles')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ManageRoleDescription'), 'Manage Convergence Roles')
@@ -210,6 +232,10 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ManageUserDescription'), 'Manage Convergence Users')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_MathUtils'), 'MathUtils')
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'NumberResults')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Returns numbers to be used by For Each Action')]"))
+
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_MathUtilsDescription'), 'Provides basic math functionality.')
 
@@ -242,6 +268,10 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_PasswordGeneratorDescription'), 'Generates a fixed length password containing numbers and letters.')
 
+assertTrue(selenium.isElementPresent("//a[contains(text(),'ProjectLicense')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'License Operations')]"))
+
+
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_PdfBuilder'), 'PdfBuilder')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_PdfBuilderDescription'), 'Custom action that takes a list of files, and concatenates them into a single pdf file')
@@ -264,9 +294,19 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_ShaPasswordEncoderDescription'), 
     'SHA Password Encoder Actions')
 
+assertTrue(selenium.isElementPresent("//a[contains(text(),'Sleep')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Pauses execution for a specified time')]"))
+
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'StringBuilder')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'String Builder Operations')]"))
+
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_StringUtils'), 'StringUtils')
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/td_StringUtilsDescription'), 'Provides basic string functionality.')
+
+assertTrue(selenium.isElementPresent("//a[contains(text(),'TableMetaData')]"))
+assertTrue(selenium.isElementPresent("//td[contains(text(),'Database MetaData Operations')]"))
 
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/a_UpdateForm'), 'UpdateForm')
 

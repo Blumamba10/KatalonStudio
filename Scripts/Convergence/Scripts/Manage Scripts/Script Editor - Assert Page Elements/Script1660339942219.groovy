@@ -66,9 +66,41 @@ assertTrue(selenium.isElementPresent('link=Save'))
 
 assertTrue(selenium.isElementPresent('link=Cancel'))
 
-assertTrue(selenium.isElementPresent('//i[@class="fa fa-undo"]'))
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-undo\']'))
 
-assertTrue(selenium.isElementPresent('//i[@class="fas fa-redo"]'))
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-redo\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-arrow-to-left\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-moon\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-bolt\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-save\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-exclamation-triangle fa-solid\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-save\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-minus-square\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-plus-square\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-eye-slash\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-regular fa-level-up-alt\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-regular fa-level-down-alt\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-square\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-copy\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-cut\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-check-circle\']'))
+
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-solid fa-trash\']'))
 
 selenium.click('id=scriptNameInput')
 
@@ -94,11 +126,13 @@ assertEquals('No linked templates', selenium.getText('xpath=(.//*[normalize-spac
 
 assertEquals('Data SourcesAdd Data Source Variable', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No linked templates\'])[1]/following::h6[1]'))
 
+assertTrue(selenium.isElementPresent('//button[contains(text(),\'Generate Template\')]'))
+
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No linked templates\'])[1]/following::i[1]'))
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No linked templates\'])[1]/following::i[1]')
+selenium.click("//body/app-root[1]/form[1]/div[2]/app-sidebar[1]/div[1]/div[1]/div[1]/div[2]/h6[1]/a[1]/i[1]")
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Data Source Variable\'])[1]/following::input[1]'))
+assertTrue(selenium.isElementPresent("//input[@id='addDsInput']"))
 
 assertTrue(selenium.isElementPresent('link=Add'))
 
@@ -291,7 +325,6 @@ assertEquals('Scripts', selenium.getText('link=Scripts'))
 selenium.click('link=Scripts')
 
 assertEquals('Click a script name to make a selection', selenium.getText('//div[contains(text(),"Click a script name to make a selection")]'))
-
 
 selenium.click('//button[contains(text(),"Cancel")]')
 

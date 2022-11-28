@@ -70,25 +70,30 @@ selenium.type('id=scriptDescriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameters_addBtn'))
+WebUI.comment('Need to add Parameters')
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameter_textarea'), 'in')
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameters_addBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
+not_run: WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameter_textarea'), 
+    'in')
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameters_addBtn'))
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameter_textarea'), 'my parameters')
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameters_addBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
+not_run: WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameter_textarea'), 
+    'my parameters')
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input File Parameters_addBtn'))
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/checkBtn'))
 
-WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input File Parameter_textarea'), 'Input File')
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input File Parameters_addBtn'))
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input File Parameter_checkBtn'))
+not_run: WebUI.sendKeys(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input File Parameter_textarea'), 
+    'Input File')
 
-WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save Script'))
+not_run: WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input File Parameter_checkBtn'))
+
+selenium.click('//app-actions-list-head/div[1]/div[1]/div[1]/div[1]/div[4]/button[1]/i[1]')
 
 WebUI.delay(3)
 
