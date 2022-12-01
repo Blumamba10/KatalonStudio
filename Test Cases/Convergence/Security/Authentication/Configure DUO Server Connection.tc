@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Configure DUO Server Connection</description>
+   <name>Configure DUO Server Connection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>71e1a485-db16-43ce-95cf-4c118f7ac593</testCaseGuid>
+</TestCaseEntity>

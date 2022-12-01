@@ -54,8 +54,6 @@ WebUI.doubleClick(findTestObject('Object Repository/Convergence/_NavigationMenu/
 
 WebUI.click(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
 
-
-
 WebUI.setText(findTestObject('Convergence/Templates/ManageTemplates_Page/txt_Search Filter'), TemplateName)
 
 WebUI.waitForElementClickable(findTestObject('Convergence/Templates/ManageTemplates_Page/btn_fas fa-globe'), 10)
@@ -76,5 +74,5 @@ WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/button_View_Error'))
 
-assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
+not_run: assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
 

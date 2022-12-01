@@ -85,6 +85,6 @@ for (int i = 1; i <= 34; i++) {
 
     WebUI.click(findTestObject('Convergence/Scripts/Monitor/button_View_Error'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
+    not_run: assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
 }
 

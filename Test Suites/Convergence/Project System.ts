@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>a3ca18ca-e8a8-4630-a3b8-620d6539b359</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Convergence/Project System/Change Selected Project on Inception Pages</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
