@@ -35,6 +35,8 @@ CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.t
 
 def driver = DriverFactory.getWebDriver()
 
+String password = '$MM6155196872'
+
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
@@ -45,24 +47,76 @@ WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Server'))
 
+assertEquals('Directory Server Authentication', selenium.getText('//div[@class="tde-template-description"]'))
+
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Connection Name'), 
-    'Trinisys')
+    'Trinisys LDPA')
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
-    'ldap://pd-ldap01:389')
+    'ldap://trinisysdc0.trinisys.loc:389')
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
-    'ou=users,dc=adlds,dc=trinisys,dc=loc')
+    'ou=Employees,dc=Trinisys,dc=loc')
+
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_User Prefix'), 
+    'trinisys\\')
 
 WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Username'), 
-    'adlds-test')
+    'njones')
 
 WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
-    'XcnV7MFBhB0cDxi+XBwFoaErNd1sH/N021nL06HUdmNeyIawoAxHoA==')
+    'M2nxV8GkxwvA8pJxndtsDw==')
+
+WebUI.comment('Test Connection')
+
+selenium.click('//button[text()=\'Test Connection\']')
+
+WebUI.delay(2)
+
+assertEquals('Success!', selenium.getText('//h1[contains(text(),\'Success!\')]'))
+
+selenium.click('//button[contains(text(),\'OK\')]')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
+
+WebUI.waitForElementVisible(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Delete Connection'), 
+    10)
+
+WebUI.comment('Assert Values')
+
+assertEquals('Trinisys LDPA', selenium.getText('//td[contains(text(),\'Trinisys LDPA\')]'))
+
+assertEquals('ldap://trinisysdc0.trinisys.loc:389', selenium.getText('//a[contains(text(),\'ldap://trinisysdc0.trinisys.loc:389\')]'))
+
+assertEquals('njones', selenium.getText('//div[@style=\'float: left;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;\']'))
+
+selenium.isElementPresent('//body/div[@id=\'tde-form\']/form[@id=\'tde-data-entry-form\']/table[@id=\'form-enclosing-table\']/tbody/tr/td/div[@id=\'g-main\']/table[@id=\'g-main:1\']/tbody/tr[@data-groupid=\'g-main\']/td[@class=\'tde-table-cell\']/table[@id=\'gt-main\']/tbody/tr[@data-groupid=\'g-main\']/td[@class=\'tde-grid-cell-999\']/div[@id=\'g-main-list\']/table[@id=\'g-main-list:1\']/tbody/tr[@data-groupid=\'g-main-list\']/td[@class=\'tde-table-cell\']/table[@id=\'gt-main-list\']/tbody/tr[@data-groupid=\'g-main-list\']/td[@class=\'tde-grid-cell-999\']/div[@id=\'fdv-main-list-data\']/div[@id=\'fdv-main-list-data-table_wrapper\']/table[@id=\'fdv-main-list-data-table\']/tbody/tr[@class=\'odd\']/td[4]/button[1]')
+
+selenium.isElementPresent('//td[@style=\'text-align: right;\']//button[@type=\'button\']')
+
+selenium.click('//body/div[@id=\'tde-form\']/form[@id=\'tde-data-entry-form\']/table[@id=\'form-enclosing-table\']/tbody/tr/td/div[@id=\'g-main\']/table[@id=\'g-main:1\']/tbody/tr[@data-groupid=\'g-main\']/td[@class=\'tde-table-cell\']/table[@id=\'gt-main\']/tbody/tr[@data-groupid=\'g-main\']/td[@class=\'tde-grid-cell-999\']/div[@id=\'g-main-list\']/table[@id=\'g-main-list:1\']/tbody/tr[@data-groupid=\'g-main-list\']/td[@class=\'tde-table-cell\']/table[@id=\'gt-main-list\']/tbody/tr[@data-groupid=\'g-main-list\']/td[@class=\'tde-grid-cell-999\']/div[@id=\'fdv-main-list-data\']/div[@id=\'fdv-main-list-data-table_wrapper\']/table[@id=\'fdv-main-list-data-table\']/tbody/tr[@class=\'odd\']/td[4]/button[1]')
+
+assertEquals('Edit Bind Account', selenium.getText('//span[@id=\'ui-id-2\']'))
+
+selenium.type('//input[@id=\'fc-credentialsDialog-serviceUsername\']', 'njones')
+
+WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/input_Password'), 
+    'M2nxV8GkxwvA8pJxndtsDw==')
+
+selenium.click('//button[text()=\'Test Credentials\']')
+
+assertEquals('Success!', selenium.getText('//h1[contains(text(),\'Success!\')]'))
+
+selenium.click('//button[contains(text(),\'OK\')]')
+
+WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Edit Bind Account/button_Save'))
+
+WebUI.waitForElementPresent(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Delete Connection'), 
+    10)
+
+WebUI.comment('Delete Connection')
 
 WebUI.waitForElementPresent(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Delete Connection'), 
     0)
@@ -85,32 +139,6 @@ WebUI.delay(2)
 assertEquals('AD configuration successfully deleted from this Convergence node.', selenium.getText('//div[contains(text(),"AD configuration successfully deleted from this Co")]'))
 
 selenium.click('//div[@class="ui-dialog tcc-messaging-dialog tcc-dialog-alert tcc-dialog-alert-success ui-widget ui-widget-content ui-front ui-draggable ui-resizable ui-dialog-buttons"]//div[@class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"]//div[@class="ui-dialog-buttonset"]//button[@type="button"][contains(text(),"OK")]')
-
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
-
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
-    'ldap://pd-ldap01:389')
-
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
-    'ou=users,dc=adlds,dc=trinisys,dc=loc')
-
-WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Username'), 
-    'adlds-test')
-
-WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
-    'XcnV7MFBhB0cDxi+XBwFoaErNd1sH/N021nL06HUdmNeyIawoAxHoA==')
-
-not_run: WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Test Connection'))
-
-not_run: WebUI.delay(2)
-
-not_run: selenium.doubleClick('//h1[contains(text(),"Success!")]')
-
-not_run: WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/button_OK'))
-
-WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
-
-assertEquals('Directory Server Authentication', selenium.getText('//div[@class="tde-template-description"]'))
 
 assertEquals('Connection Name', selenium.getText('//th[contains(text(),"Connection Name")]'))
 

@@ -14,14 +14,20 @@
    <testCaseLink>
       <guid>4553a4c5-a29d-42ca-ae7b-b97eb96a5655</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Authentication/Configure LDAP connection</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fdb0dc5e-c104-4879-be03-e2bc915f3d51</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>3ef7c071-95e5-4902-9e48-37b159d3fd3e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Authentication/Configure DUO Server Connection</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -70,7 +76,7 @@
    <testCaseLink>
       <guid>7fef438a-a269-42f3-8462-d7778aaf9acb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Users/Create MFA User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -91,14 +97,14 @@
    <testCaseLink>
       <guid>112b2eff-dfbd-4f7f-9e23-079284ed4795</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for AD User</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7ad60a83-99d8-49bf-a80e-340458354b85</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Groups/_Enable User Group/Enable User Group for an empty AD Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -119,7 +125,7 @@
    <testCaseLink>
       <guid>a5ed1ae2-8287-4b8f-a3ca-5b5b2dc029b7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/User Groups/Delete AD Groups from UG when LDAP connection is deleted</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

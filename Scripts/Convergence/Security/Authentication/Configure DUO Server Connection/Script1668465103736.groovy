@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/btn_DUO Server Authentication'))
 
-WebUI.waitForElementPresent(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/btn_Add DUO Server'), 
+WebUI.waitForElementPresent(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Add DUO Server'), 
     15)
 
 assertEquals('DUO', selenium.getText('//body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]'))
@@ -66,24 +66,24 @@ assertEquals('Last Updated', selenium.getText('//th[contains(text(),\'Last Updat
 
 assertEquals('Add DUO Server', selenium.getText('//span[@id=\'ui-id-1\']'))
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/btn_Add DUO Server'))
+WebUI.click(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Add DUO Server'))
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/txt _Duo Name'), 
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt _Duo Name'), 
     'Trinisys DUO Test')
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/txt_API Host'), 
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_API Host'), 
     'api-71b49296.duosecurity.com')
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/txt_Integration Key'), 
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_Integration Key'), 
     'DI224EVB3R9ZDHU5CBZO')
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/txt_Secret'), 
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_Secret'), 
     'BCY3zCXVUu1bGVjUrf8Aj7M6IjKi1FDd0zbBHHwa')
 
-WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/btn_Cancel'), 
+WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Cancel'), 
     0)
 
-WebUI.click(findTestObject('Convergence/Security/Authentication/Page_Convergence - DUO/Add DUO Connection/btn_Save'))
+WebUI.click(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Save'))
 
 assertEquals('Trinisys DUO Test', selenium.getText('//a[contains(text(),\'Trinisys DUO Test\')]'))
 

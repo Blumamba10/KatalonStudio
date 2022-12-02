@@ -108,6 +108,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Convergence/Security/Authentication/Configure LDAP connection</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fdb0dc5e-c104-4879-be03-e2bc915f3d51</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>27f77331-6a6a-441a-97e2-a5ce9b5bbd79</guid>
