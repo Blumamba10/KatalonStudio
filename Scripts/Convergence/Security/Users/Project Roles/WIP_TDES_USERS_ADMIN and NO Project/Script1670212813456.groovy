@@ -30,7 +30,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.tdesURL, 'admin', 'admin')
+WebUI.callTestCase(findTestCase('_Helper Functions/CreateInternalUser'), [('userName') : 'AdminUser', ('password') : 'asd354*&(saf'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 def driver = DriverFactory.getWebDriver()
 
@@ -38,60 +39,46 @@ String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.CONTINUE_ON_FAILURE)
+selenium.click('//a[contains(text(),"AdminConsoleUser")]')
 
-WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10)
+WebUI.comment('Add Project Role')
 
-WebUI.doubleClick(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/a_Roles'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/btn_Update'))
 
-WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Scripts'))
+WebUI.setText(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/txt_Search Filter'), 'ADMIN_CONSOLE_USER')
 
-WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Manage Functions'))
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/chkbox_Select All_Available'))
 
-WebUI.enableSmartWait()
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/btn_Add Role'))
 
-selenium.click('//i[@class="shortcut-icon fas fa-plus-circle"]')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Roles Tab/Update User Roles/button_Done'))
 
-WebUI.switchToWindowIndex('1', FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Add Project Access')
 
-WebUI.delay(4)
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/a_Project Roles'))
 
-selenium.click('id=scriptNameInput')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/btn_Add Roles'))
 
-selenium.type('id=scriptNameInput', 'testfunc')
+WebUI.sendKeys(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/_Add Project Roles/txt_Search Filter'), 
+    'Default')
 
-selenium.click('link=Save')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/_Add Project Roles/chkbox_Select All'))
 
-selenium.click('id=scriptDescriptionInput')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/_Add Project Roles/btn_Add Selections'))
 
-selenium.type('id=scriptDescriptionInput', 'Description')
+WebUI.click(findTestObject('Convergence/Security/Users/_User Detail/Project Roles Tab/_Add Project Roles/btn_Close'))
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
+WebUI.comment('Log out and login with Admin Console User')
 
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Data Sources')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Input Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Input File Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Output Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Output File Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Exception Handler')]"))
-assertTrue(selenium.isElementPresent("xpath=//div[@id='sidebarContentWrap']/div[4]/h6/a/i"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Exception Handler')]"))
+CustomKeywords.'cutomKeywords.Convergence_LogoutLogin.LogoutLogin'('AdminConsoleUser', 'asd354*&(saf')
 
-assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Log Level (for log action)\')]'))
+WebUI.click(findTestObject('Convergence/_SelectProject/Select Project'), FailureHandling.OPTIONAL)
 
-selenium.click("//i[@class='fa-light fa-save']")
+WebUI.waitForElementPresent(findTestObject('Convergence/_SelectProject/a_Default'), 10, FailureHandling.OPTIONAL)
 
-WebUI.delay(3)
+WebUI.click(findTestObject('Convergence/_SelectProject/a_Default'), FailureHandling.OPTIONAL)
 
-selenium.close()
-
-WebUI.switchToWindowIndex('0')
-
-selenium.refresh()
-
-selenium.waitForPageToLoad('30000')
-
-assertEquals('testfunc', selenium.getText('//td[2]/a'))
+WebUI.comment('Verify access to Home page')
 

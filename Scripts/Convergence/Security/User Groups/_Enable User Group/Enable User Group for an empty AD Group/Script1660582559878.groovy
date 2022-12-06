@@ -101,10 +101,9 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_Use
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/radiobtn_User'), 
     0)
 
-WebUI.setText(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/input_Search Base'), 
-    'dc=adlds,dc=trinisys,dc=loc')
+WebUI.setText(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/input_Search Base'), 'ou=Employees,dc=Trinisys,dc=loc')
 
-WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/radiobtn_Organization Unit'))
+WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/radiobtn_User'))
 
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_AD Groups/btn_Refresh'))
 

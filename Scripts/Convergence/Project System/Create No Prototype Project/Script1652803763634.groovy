@@ -55,7 +55,7 @@ assertTrue(selenium.isElementPresent('id=projectName'))
 assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Name\'])[1]/following::label[1]'))
 
 assertTrue(selenium.isElementPresent('id=projectDescription'))
-assertEquals('Max FDL Query Results (0 for unlimited)', selenium.getText('//label[contains(text(),"Max FDL Query Results (0 for unlimited)")]'))
+assertEquals('Max FDL Query Results (0 for unlimited)', selenium.getText('//body[1]/form[1]/div[1]/div[2]/div[1]/div[1]/fieldset[1]/label[3]'))
  
 
 assertEquals('Project Type', selenium.getText('//label[contains(text(),"Project Type")]'))

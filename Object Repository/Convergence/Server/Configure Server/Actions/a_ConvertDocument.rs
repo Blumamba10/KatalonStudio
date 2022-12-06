@@ -14,7 +14,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[(text() = 'ConvertDocument' or . = 'ConvertDocument')]</value>
+         <value>//a[contains(text(),'ConvertDocument')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -25,6 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>88e93062-3cb9-4db1-9375-469635ae51a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +33,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>042778a0-4008-45b9-b909-8c2e9d1c384a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +41,7 @@
       <name>data-handler-id</name>
       <type>Main</type>
       <value>ConvertDocument</value>
+      <webElementGuid>9ff9b10e-d1a6-4c1c-a892-a50a237c0663</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +49,7 @@
       <name>class</name>
       <type>Main</type>
       <value>custom_action_link</value>
+      <webElementGuid>ecc772eb-518e-4a62-9960-1eeb8a4aa23f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,6 +57,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ConvertDocument</value>
+      <webElementGuid>4766771a-a108-4b2c-8527-c923267d12cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,6 +65,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmPublishers&quot;)/table[@class=&quot;table table-striped table-hover&quot;]/tbody[1]/tr[3]/td[2]/a[@class=&quot;custom_action_link&quot;]</value>
+      <webElementGuid>633ed87f-c997-4309-85be-b819ce71588b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -67,6 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='frmPublishers']/table/tbody/tr[3]/td[2]/a</value>
+      <webElementGuid>3fe2ee1a-1d62-4964-881f-99beaa5a41fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,6 +81,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'ConvertDocument')]</value>
+      <webElementGuid>3c61b732-1051-487f-b963-8f6d145dad4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,6 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CSV Import Actions'])[1]/following::a[1]</value>
+      <webElementGuid>6668979c-9e82-4dc4-98b6-b005deb5b34f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Provides support for authentication using Convergence users in a Web Platform application'])[1]/following::a[2]</value>
+      <webElementGuid>715b00f2-7ea8-4363-b8d6-c3b8d9eaa77e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Converts documents from one format to another.'])[1]/preceding::a[1]</value>
+      <webElementGuid>e6627984-2310-453d-9a0c-169a74d621a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Date Utility Actions'])[1]/preceding::a[2]</value>
+      <webElementGuid>c5bd847e-6167-4e3f-b0ca-82f21b292962</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='ConvertDocument']/parent::*</value>
+      <webElementGuid>8e11947d-23fc-463c-bee3-1f112640b3d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,6 +129,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[20]</value>
+      <webElementGuid>4723b2b5-da76-4734-94fa-19449a15625f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -123,5 +137,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td[2]/a</value>
+      <webElementGuid>ceb930ea-b7c7-4154-9d73-c5e52fd4120a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

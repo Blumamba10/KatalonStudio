@@ -74,4 +74,11 @@
       <testCaseId>Test Cases/Convergence/Server/Usage/Usage - Assert Page Elements</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ec976d89-773b-4624-ade9-b49078da1ccc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Convergence/Server/Schema Compare/Schema Compare - Verify Elements</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

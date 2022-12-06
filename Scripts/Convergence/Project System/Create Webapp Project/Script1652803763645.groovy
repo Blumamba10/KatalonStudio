@@ -68,8 +68,7 @@ selenium.type('id=projectName', 'webapp')
 
 selenium.type('id=projectDescription', 'test')
 
-assertEquals('Max FDL Query Results (0 for unlimited)', selenium.getText('//label[contains(text(),"Max FDL Query Results (0 for unlimited)")]'))
-
+assertEquals('Max FDL Query Results (0 for unlimited)', selenium.getText('//body[1]/form[1]/div[1]/div[2]/div[1]/div[1]/fieldset[1]/label[3]'))
 
 assertEquals('Project Type', selenium.getText('//label[contains(text(),"Project Type")]'))
 

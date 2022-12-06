@@ -6,12 +6,16 @@
    <elementGuidId>abe96b9d-c285-4e29-ad7a-b68668a91a19</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='frmPublishers']/table/tbody/tr/td[2]/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.custom_action_link</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'AuthUser')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '#' and (text() = 'AuthUser' or . = 'AuthUser')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>baac070f-0e03-416e-bef4-842d22751795</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +34,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
+      <webElementGuid>9bc0f040-75d6-47e4-b60e-7f2daca14fc2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +42,7 @@
       <name>data-handler-id</name>
       <type>Main</type>
       <value>AuthUser</value>
+      <webElementGuid>663046c0-fcf2-46cf-8b17-719acfc10b8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,6 +50,7 @@
       <name>class</name>
       <type>Main</type>
       <value>custom_action_link</value>
+      <webElementGuid>d089f745-975f-44e9-832f-82fe2837f765</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,6 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>AuthUser</value>
+      <webElementGuid>2b12b903-22bf-4796-ab81-090a62440c69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmPublishers&quot;)/table[@class=&quot;table table-striped table-hover&quot;]/tbody[1]/tr[1]/td[2]/a[@class=&quot;custom_action_link&quot;]</value>
+      <webElementGuid>4f624244-ca21-4fb5-8cdd-2e7f199ccff3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -64,6 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='frmPublishers']/table/tbody/tr/td[2]/a</value>
+      <webElementGuid>bb17c80c-723c-45c3-8b15-ce9cfac91cbe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'AuthUser')]</value>
+      <webElementGuid>11daadb9-50b3-4954-b9c5-1287155dec3a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[2]/following::a[1]</value>
+      <webElementGuid>ca2ded99-b29a-431e-92ce-011570a5f18d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/following::a[1]</value>
+      <webElementGuid>a0218590-713f-4b4c-8717-79a270e242a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Provides support for authentication using Convergence users in a Web Platform application'])[1]/preceding::a[1]</value>
+      <webElementGuid>2c4a1b02-0d34-4b2e-9630-a8cc60a883a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,6 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CSV Import Actions'])[1]/preceding::a[2]</value>
+      <webElementGuid>238bd8b2-a68d-4014-9a6e-3513b21bafaf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='AuthUser']/parent::*</value>
+      <webElementGuid>8fe09aa4-62bd-46b3-ab2a-3dd3718962ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,6 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[18]</value>
+      <webElementGuid>3771aa7f-e996-4f05-8c15-18f9f9f33c50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -120,5 +138,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/a</value>
+      <webElementGuid>f579fac2-f3ca-4939-9162-623150213df7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

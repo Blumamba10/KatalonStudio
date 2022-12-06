@@ -316,9 +316,6 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/label_Implementation'), 
     'Implementation')
 
-WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/implementationDescription'), 
-    'com.trinisys.tdes.swat.scripting.tdes.AuthUserAction')
-
 WebUI.verifyElementPresent(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Back'), 
     0)
 

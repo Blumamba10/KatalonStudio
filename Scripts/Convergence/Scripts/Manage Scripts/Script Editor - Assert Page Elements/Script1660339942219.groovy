@@ -66,9 +66,9 @@ assertTrue(selenium.isElementPresent('link=Save'))
 
 assertTrue(selenium.isElementPresent('link=Cancel'))
 
-assertTrue(selenium.isElementPresent('//i[@class="fa fa-undo"]'))
+assertTrue(selenium.isElementPresent('//i[@class="fa-light fa-undo"]'))
 
-assertTrue(selenium.isElementPresent('//i[@class="fas fa-redo"]'))
+assertTrue(selenium.isElementPresent('//i[@class=\'fa-light fa-redo\']'))
 
 selenium.click('id=scriptNameInput')
 
@@ -98,13 +98,7 @@ assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and no
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'No linked templates\'])[1]/following::i[1]')
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add Data Source Variable\'])[1]/following::input[1]'))
-
-assertTrue(selenium.isElementPresent('link=Add'))
-
-assertTrue(selenium.isElementPresent('link=Cancel'))
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Add\'])[1]/following::i[1]')
+assertTrue(selenium.isElementPresent('//a[@class=\'tse-sidebar-add-link float-right ng-star-inserted\']//i[@class=\'fa-solid fa-plus-circle\']'))
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Verify Script\'])[1]/preceding::button[1]'))
 
@@ -291,7 +285,6 @@ assertEquals('Scripts', selenium.getText('link=Scripts'))
 selenium.click('link=Scripts')
 
 assertEquals('Click a script name to make a selection', selenium.getText('//div[contains(text(),"Click a script name to make a selection")]'))
-
 
 selenium.click('//button[contains(text(),"Cancel")]')
 

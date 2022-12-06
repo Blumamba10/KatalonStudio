@@ -30,8 +30,7 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.callTestCase(findTestCase('Convergence/Security/User Groups/Create New User Group for Indiviual Members'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Convergence/Security/User Groups/Create New User Group for Indiviual Members'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Convergence/Security/User Groups/_Enable User Group/_Helper/Add Project Roles to User Group'), 
     [:], FailureHandling.STOP_ON_FAILURE)

@@ -60,8 +60,6 @@ WebUI.setText(findTestObject('Convergence/Security/User Groups/txt_Search Filter
 
 selenium.click('//a[contains(text(),"Test User Group")]')
 
-assertEquals('Require multi-factor authentication', selenium.getText('//label[contains(text(),"Require multi-factor authentication")]'))
-
 assertEquals('Allow individual members', selenium.getText('//label[contains(text(),"Allow individual members")]'))
 
 WebUI.verifyElementText(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/a_Members'), 'Members')
@@ -93,7 +91,7 @@ WebUI.verifyElementPresent(findTestObject('Convergence/Security/User Groups/_Use
 WebUI.click(findTestObject('Convergence/Security/User Groups/_User Group Details/_Members Tab/_Add Members/button_Done'), 
     FailureHandling.STOP_ON_FAILURE)
 
-assertEquals('ID', selenium.getText('//th[@class="sorting"][contains(text(),"ID")]'))
+assertEquals('ID', selenium.getText("//th[@class='tde-dataview-numeric-cell sorting']"))
 
 assertEquals('Username', selenium.getText('//th[@class="sorting"][contains(text(),"Username")]'))
 

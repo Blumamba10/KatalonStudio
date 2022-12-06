@@ -165,7 +165,8 @@ selenium.typeKeys('//input[@id="MillisecondstopauseInput"]', '800000')
 
 selenium.click('//button[contains(text(),"OK")]')
 
-assertTrue(selenium.isElementPresent('//button[contains(text(),"Create Blank Template")]'))
+assertTrue(selenium.isElementPresent("//button[contains(text(),'Generate Template')]"))
+
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 

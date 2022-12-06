@@ -35,8 +35,6 @@ CustomKeywords.'cutomKeywords.Convergence_LoginHelper.loginApp'(GlobalVariable.t
 
 def driver = DriverFactory.getWebDriver()
 
-String password = '$MM6155196872'
-
 String baseUrl = 'https://www.google.com/'
 
 selenium = new WebDriverBackedSelenium(driver, baseUrl)

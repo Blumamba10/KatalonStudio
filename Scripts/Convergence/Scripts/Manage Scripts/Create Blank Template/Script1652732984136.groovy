@@ -68,11 +68,11 @@ selenium.type('id=scriptDescriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-assertTrue(selenium.isElementPresent('//button[contains(text(),"Create Blank Template")]'))
+assertTrue(selenium.isElementPresent("//button[contains(text(),'Generate Template')]"))
 
-assertEquals('Create Blank Template', selenium.getText('//button[contains(text(),"Create Blank Template")]'))
+assertEquals('Generate Template', selenium.getText("//button[contains(text(),'Generate Template')]"))
 
-selenium.doubleClick('//button[contains(text(),"Create Blank Template")]')
+selenium.click("//button[contains(text(),'Generate Template')]")
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 

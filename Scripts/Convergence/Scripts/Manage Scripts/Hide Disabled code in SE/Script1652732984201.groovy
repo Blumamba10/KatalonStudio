@@ -81,15 +81,15 @@ selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Com
 
 selenium.click('//input[@id="cb-"]')
 
-selenium.click('//i[@class="fal fa-ban"]')
+selenium.click("//i[@class='fa-light fa-ban']")
 
-selenium.click('//i[@class="fal fa-eye-slash"]')
+selenium.click("//i[@class='fa-light fa-eye-slash']")
 
 WebUI.verifyElementNotPresent(findTestObject('Convergence/z_One Offs/chkbox_comment'), 0)
 
 WebUI.delay(3)
 
-selenium.click('//i[@class="fal fa-eye"]')
+selenium.click("//i[@class='fa-light fa-eye']")
 
 
 assertTrue(selenium.isElementPresent('//input[@id="cb-"]'))

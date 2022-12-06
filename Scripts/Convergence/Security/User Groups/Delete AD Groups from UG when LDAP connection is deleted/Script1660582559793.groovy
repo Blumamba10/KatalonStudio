@@ -162,7 +162,7 @@ selenium.click('//i[@class="fas fa-trash-alt"]')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Delete_OK'))
 
-WebUI.click(findTestObject('null'))
+WebUI.doubleClick(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Delete_OK'))
 
 WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Security'))
 
@@ -180,16 +180,16 @@ WebUI.click(findTestObject('Convergence/Security/Authentication/btn_Directory Se
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/btn_Add AD Config'))
 
-WebUI.setText(findTestObject('null'), 
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_LDAP URL'), 
     'ldap://pd-ldap01:389')
 
-WebUI.setText(findTestObject('null'), 
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Search Base'), 
     'ou=users,dc=adlds,dc=trinisys,dc=loc')
 
-WebUI.setText(findTestObject('null'), 
+WebUI.setText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Username'), 
     'adlds-test')
 
-WebUI.setEncryptedText(findTestObject('null'), 
+WebUI.setEncryptedText(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/Add AD Connection/input_Bind Account Password'), 
     'RnHw21PVgelT8HP/ztNLnXD3x8lexSesv347Yb75KYhOC5Bdp8/85w==')
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/Directory Server Authentication/button_Save'))
