@@ -107,9 +107,17 @@ WebUI.verifyElementText(findTestObject('Convergence/Server/Configure Server/Acti
 
 WebUI.click(findTestObject('Convergence/Server/Configure Server/Actions/_Action Configuration/btn_Update'))
 
-WebUI.delay(2)
+if (selenium.isElementPresent('//button[@id="saveConfigButton"]')) {
+    selenium.click('//button[@id="saveConfigButton"]')
+} else {
+    selenium.click('//p[@class="message"]')
 
-WebUI.click(findTestObject('Convergence/Server/Configure Server/button_Save'))
+    WebUI.navigateToUrl(GlobalVariable.tdesURL)
+
+    WebUI.delay(3)
+}
+
+WebUI.delay(2)
 
 WebUI.comment('Create PDF Signature Script')
 
@@ -189,9 +197,9 @@ assertEquals('Original File to Sign', selenium.getText('//label[contains(text(),
 
 assertEquals('The pdf to sign.', selenium.getText('//div[contains(text(),"The pdf to sign.")]'))
 
-assertEquals('Additional Signature', selenium.getText('//label[contains(text(),"Additional Signature")]'))
+assertEquals('Additional Signature', selenium.getText("//label[@for='AdditionalSignatureSelectInput']"))
 
-assertEquals('True if this is the second (or third, or fourth...) signature added', selenium.getText('//div[contains(text(),"True if this is the second (or third, or fourth...")]'))
+assertEquals('True if this is the second (or third, or fourth...) signature added', selenium.getText("//div[contains(text(),'True if this is the second (or third, or fourth...')]"))
 
 selenium.click('//button[contains(text(),"OK")]')
 

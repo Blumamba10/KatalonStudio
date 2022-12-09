@@ -72,14 +72,26 @@ assertEquals('Last Accessed', selenium.getText('xpath=(.//*[normalize-space(text
 
 assertEquals('Type', selenium.getText('//form[@id=\'updateClientsForm\']/div/div/span'))
 
-assertEquals('All Capture DataEntry FormRecognition ImageMonitor JavaClient MSClient TemplateEditor Unknown', selenium.getText(
-        'id=filter-type'))
+assertEquals('Extend License', selenium.getText("//button[@id='extendLicenseButton']"))
+
+selenium.click("//button[@id='extendLicenseButton']")
+assertTrue(selenium.isElementPresent("//label[@for='licenseCodeField']"))
+
+assertTrue(selenium.isElementPresent("//input[@id='licenseCodeField']"))
+
+assertTrue(selenium.isElementPresent("//button[@id='cancelExtendLicenseButton']"))
+assertTrue(selenium.isElementPresent("//button[@id='submitExtendLicenseButton']"))
+
+selenium.click("//button[@id='cancelExtendLicenseButton']")
+
+assertEquals('All Capture DataEntry FormRecognition ImageMonitor JavaClient MSClient TemplateEditor Unknown', selenium.getText("//select[@id='filterTypeSelect']"))
 
 assertEquals('Status', selenium.getText('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Type\'])[3]/following::span[1]'))
 
-assertEquals('Active Disabled', selenium.getText('id=filter-status'))
+assertEquals('Active Disabled', selenium.getText("//select[@id='filterStatusSelect']"))
+assertTrue(selenium.isElementPresent("//button[@id='applyFilterButton']"))
 
-assertTrue(selenium.isElementPresent('id=applyFilterButton'))
+
 
 WebUI.doubleClick(findTestObject('Convergence/_NavigationMenu/Administration Console/a_Home'))
 

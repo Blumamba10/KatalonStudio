@@ -70,18 +70,33 @@ selenium.type('id=scriptDescriptionInput', 'Description')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Description\'])[1]/following::i[1]')
 
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Data Sources')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Input Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Input File Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Output Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Output File Parameters')]"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Exception Handler')]"))
-assertTrue(selenium.isElementPresent("xpath=//div[@id='sidebarContentWrap']/div[4]/h6/a/i"))
-assertTrue(selenium.isElementPresent("//h6[contains(text(),'Exception Handler')]"))
+WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameters_addBtn'))
+
+WebUI.setText(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameter_textarea'), 'In')
+
+WebUI.click(findTestObject('Convergence/Scripts/Manage Functions/Function Editor/Input Parameter_checkBtn'))
+
+WebUI.delay(3)
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Data Sources\')]'))
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Input Parameters\')]'))
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Input File Parameters\')]'))
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Output Parameters\')]'))
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Output File Parameters\')]'))
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Exception Handler\')]'))
+
+assertTrue(selenium.isElementPresent('xpath=//div[@id=\'sidebarContentWrap\']/div[4]/h6/a/i'))
+
+assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Exception Handler\')]'))
 
 assertTrue(selenium.isElementPresent('//h6[contains(text(),\'Log Level (for log action)\')]'))
 
-selenium.click("//i[@class='fa-light fa-save']")
+selenium.click('//i[@class=\'fa-light fa-save\']')
 
 WebUI.delay(3)
 

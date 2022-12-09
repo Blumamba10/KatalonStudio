@@ -80,21 +80,21 @@ assertEquals('Description', selenium.getText('xpath=(.//*[normalize-space(text()
 
 assertTrue(selenium.isElementPresent('id=descriptionInput'))
 
-assertEquals('File', selenium.getText('//label[@for=dmsIndexFile"]'))
+assertEquals('File', selenium.getText("//label[@for='dmsIndexFile']"))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File\'])[1]/following::input[1]'))
+assertTrue(selenium.isElementPresent("//input[@id='dmsIndexFile']"))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File\'])[1]/following::button[1]'))
+assertTrue(selenium.isElementPresent("//button[@id='dmsIndexFileMenuToggle']"))
 
-assertEquals('Created by', selenium.getText('//label[contains(text(),"Created by")]'))
+assertEquals('Created by', selenium.getText("//label[@for='dmsIndexCreatedBy']"))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Created by\'])[1]/following::input[1]'))
+assertTrue(selenium.isElementPresent("//input[@id='dmsIndexCreatedBy']"))
 
-assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Created by\'])[1]/following::button[1]'))
+assertTrue(selenium.isElementPresent("//button[@id='dmsIndexCreatedByMenuToggle']"))
 
-assertEquals('Document type', selenium.getText('//label[contains(text(),"Document type")]'))
+assertEquals('Document type', selenium.getText("//label[@for='dmsIndexDocumentType']"))
 
-assertTrue(selenium.isElementPresent('//select[@id="dmsIndexDocumentType"]'))
+assertTrue(selenium.isElementPresent("//select[@id='dmsIndexDocumentType']"))
 
 selenium.click('id=nameInput')
 
@@ -102,18 +102,19 @@ selenium.typeKeys('id=nameInput', 'DMS_Index')
 
 selenium.typeKeys('id=descriptionInput', 'Description')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File\'])[1]/following::input[1]')
+selenium.click("//input[@id='dmsIndexFile']")
 
-selenium.typeKeys('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'File\'])[1]/following::input[1]', 'File')
+selenium.typeKeys("//input[@id='dmsIndexFile']", 'File')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Created by\'])[1]/following::input[1]')
+selenium.click("//label[@for='dmsIndexCreatedBy']")
 
-selenium.typeKeys('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Created by\'])[1]/following::input[1]', 
+selenium.typeKeys("//input[@id='dmsIndexCreatedBy']", 
     'Createdby')
 
 selenium.click('//select[@id="dmsIndexDocumentType"]')
 
-selenium.select('id=dmsIndexDocumentType', 'label=Script Document')
+
+selenium.select("//select[@id='dmsIndexDocumentType']", 'label=Script Document')
 
 assertTrue(selenium.isElementPresent('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Script Index\'])[1]/following::button[2]'))
 

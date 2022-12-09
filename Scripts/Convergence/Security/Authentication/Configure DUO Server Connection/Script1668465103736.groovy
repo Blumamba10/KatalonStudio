@@ -68,22 +68,21 @@ assertEquals('Add DUO Server', selenium.getText('//span[@id=\'ui-id-1\']'))
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Add DUO Server'))
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt _Duo Name'), 
-    'Trinisys DUO Test')
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt _Duo Name'), 'Trinisys DUO Test')
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_API Host'), 
-    'api-71b49296.duosecurity.com')
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_API Host'), 'api-71b49296.duosecurity.com')
 
 WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_Integration Key'), 
     'DI224EVB3R9ZDHU5CBZO')
 
-WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_Secret'), 
-    'BCY3zCXVUu1bGVjUrf8Aj7M6IjKi1FDd0zbBHHwa')
+WebUI.sendKeys(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/txt_Secret'), 'BCY3zCXVUu1bGVjUrf8Aj7M6IjKi1FDd0zbBHHwa')
 
 WebUI.verifyElementPresent(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Cancel'), 
     0)
 
 WebUI.click(findTestObject('Convergence/Security/Authentication/DUO Server/Add DUO Connection/btn_Save'))
+
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 assertEquals('Trinisys DUO Test', selenium.getText('//a[contains(text(),\'Trinisys DUO Test\')]'))
 
@@ -125,7 +124,6 @@ assertEquals('Success!', selenium.getText('//h1[contains(text(),\'Success!\')]')
 selenium.click('//body/div[13]/div[11]/div[1]/button[1]')
 
 WebUI.comment('verify the Connection is no longer displayed')
-
 
 driver.findElements(By.xpath('//a[contains(text(),\'Trinisys DUO Test\')]')).size() < 1
 

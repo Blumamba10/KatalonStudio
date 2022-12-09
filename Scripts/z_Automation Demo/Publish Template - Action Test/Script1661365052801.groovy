@@ -56,6 +56,8 @@ System.out.println('[Row Count] : ' + PublishScriptData.getRowNumbers())
 for (int i = 1; i <= 34; i++) {
     KeywordUtil.logInfo(findTestData('PublishScriptData').getValue('Template Name', i))
 
+    WebUI.delay(1)
+
     WebUI.doubleClick(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Templates'))
 
     WebUI.click(findTestObject('Object Repository/Convergence/_NavigationMenu/Administration Console/a_Manage Templates'))
@@ -85,6 +87,6 @@ for (int i = 1; i <= 34; i++) {
 
     WebUI.click(findTestObject('Convergence/Scripts/Monitor/button_View_Error'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    not_run: assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
+    assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
 }
 

@@ -106,15 +106,13 @@ selenium.click('id=retryCheck')
 
 selenium.type('id=retryTime', '5')
 
+assertTrue(selenium.isElementPresent('//div[2]/select'))
+
 selenium.click('id=errorTime')
 
 selenium.type('id=errorTime', '5')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Seconds\'])[2]/following::div[2]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Seconds\'])[2]/following::button[1]')
-
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Hold\'])[2]/following::i[1]')
+selenium.click("//button[contains(text(),'OK')]")
 
 WebUI.click(findTestObject('Convergence/Scripts/Manage Scripts/Script Editor_Page/button_Save'))
 

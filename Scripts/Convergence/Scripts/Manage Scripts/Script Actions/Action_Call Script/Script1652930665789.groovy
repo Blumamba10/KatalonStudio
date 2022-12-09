@@ -96,19 +96,9 @@ assertTrue(selenium.isElementPresent('//input[@id="ininput"]'))
 
 assertTrue(selenium.isElementPresent('//button[contains(text(),"View")]'))
 
-assertEquals('my parameters', selenium.getText('//label[@for="my parametersinput"]'))
-
-assertTrue(selenium.isElementPresent('//label[@for="my parametersinput"]'))
-
-assertTrue(selenium.isElementPresent('//label[@for="my parametersinput"]'))
-
 selenium.click('//input[@id="ininput"]')
 
 selenium.typeKeys('//input[@id="ininput"]', 'in')
-
-selenium.click('//input[@id="my parametersinput"]')
-
-selenium.typeKeys('//input[@id="my parametersinput"]', 'myParameter')
 
 selenium.click('//button[contains(text(),"OK")]')
 

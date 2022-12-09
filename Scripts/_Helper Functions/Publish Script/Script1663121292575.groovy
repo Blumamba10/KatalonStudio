@@ -74,5 +74,5 @@ WebUI.click(findTestObject('Convergence/_NavigationMenu/Administration Console/a
 
 WebUI.click(findTestObject('Convergence/Scripts/Monitor/button_View_Error'))
 
-not_run: assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
+assertEquals('Showing 0 to 0 of 0 entries', selenium.getText('//div[@id="submittedFormsTable_info"]'))
 

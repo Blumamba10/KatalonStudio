@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Input Parameter_checkBtn</name>
+   <tag></tag>
+   <elementGuidId>826affc8-16f6-41ee-9110-4b1f7fa94650</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='sidebarContentWrap']/div[4]/div/ul/li/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.nav-item.ng-star-inserted > a.nav-link > i.fa-solid.fa-check</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>c58a36b9-58e8-42a8-b2cb-b1583c01cc0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa-solid fa-check</value>
+      <webElementGuid>fad006bd-afd6-4b15-aa80-9f933b29bff0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sidebarContentWrap&quot;)/div[@class=&quot;tse-sidebar-param-list ng-star-inserted&quot;]/div[@class=&quot;mt-2 ng-star-inserted&quot;]/ul[@class=&quot;nav float-right tse-sidebar-edit-btns&quot;]/li[@class=&quot;nav-item ng-star-inserted&quot;]/a[@class=&quot;nav-link&quot;]/i[@class=&quot;fa-solid fa-check&quot;]</value>
+      <webElementGuid>7aeb3e12-3eeb-46fd-b0ca-61993402090f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='sidebarContentWrap']/div[4]/div/ul/li/a/i</value>
+      <webElementGuid>945e7906-361d-437a-9636-41799758bcc8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/ul/li/a/i</value>
+      <webElementGuid>3b690538-9028-4589-9599-07b004a049f8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
